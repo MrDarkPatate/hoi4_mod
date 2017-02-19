@@ -5589,7 +5589,7 @@ country_event = {
 # Operation Barbarossa
 country_event = {
 	id = germany.238
-	title = germany.238.t
+	title = Operation Barbarossa
 	desc = germany.238.d
 	picture = GFX_report_event_german_troops
 
