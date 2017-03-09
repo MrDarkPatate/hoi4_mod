@@ -240,7 +240,7 @@ turkey_ignore_sov = {
 brazil_ignore_chi = {
 	enable = {
 		tag = BRA  tag = URG tag = ARG tag = MEX
-		date > 1937.3.31
+		date > 1937.1.31
 		country_exists = CHI
 	}
 	abort = {
@@ -253,20 +253,32 @@ brazil_ignore_chi = {
 	ai_strategy = { type = ignore id = "JAP" value = 100 }	
 }
 
-brazil_ignore_chi = {
+chi_ignore_bra = {
 	enable = {
-		tag = BRA  tag = URG tag = ARG tag = MEX
-		date > 1937.3.31
-		country_exists = CHI
+		tag = CHI
+		date > 1937.1.31
+		country_exists = BRA
 	}
 	abort = {
 		always = no
 	}
 	
-	ai_strategy = {  type = befriend  id = "CHI" value = -200}
-	ai_strategy = {  type = befriend  id = "JAP" value = -200}
-	ai_strategy = { type = ignore id = "CHI" value = 100 }	
-	ai_strategy = { type = ignore id = "JAP" value = 100 }	
+	ai_strategy = {  type = befriend  id = "BRA" value = -100}
+	ai_strategy = { type = ignore id = "BRA" value = 100 }	
+}
+
+jap_ignore_bra = {
+	enable = {
+		tag = JAP
+		date > 1937.1.31
+		country_exists = BRA
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {  type = befriend  id = "BRA" value = -80}
+	ai_strategy = { type = ignore id = "BRA" value = 80 }	
 }
 
 

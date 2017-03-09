@@ -830,6 +830,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+		available = { has_country_flag = cas_germany }
 		available_if_capitulated = yes	
 		completion_reward = {
 		air_experience = 25	

@@ -7,12 +7,8 @@
 		garrison = { x = 0 y = 2 }
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
-		garrison = { x = 1 y = 2 }
-		
-		
-		
-		artillery_brigade_mot = { x = 3 y = 0 }
-		light_armor = { x = 4 y = 0 }
+		garrison = { x = 1 y = 2 }	
+		artillery_brigade = { x = 2 y = 0 }
 	}
 	support = {
         DIV_HQ = { x = 0 y = 0 }
@@ -246,24 +242,24 @@ instant_effect = {
 	############################# equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_1
-			amount = 1000
+			amount = 500
 			producer = CAN
 		}
 	
 	add_equipment_to_stockpile = {
 		type = infantry_uniforms_0
-			amount = 1500
+			amount = 500
 			producer = CAN
 		}
 	
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 1300
+			amount = 800
 			producer = CAN
 		}
 		add_equipment_to_stockpile = {
 		type = garrison_equipment_0
-			amount = 1500
+			amount = 400
 			producer = CAN
 		}
 }
