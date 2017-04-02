@@ -1689,7 +1689,7 @@ focus_tree = {
 		id = SOV_anti_capitalist_diplomacy
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 18
+		x = 24
 		y = 2
 		cost = 30
 		ai_will_do = {
@@ -1744,7 +1744,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = SOV_anti_capitalist_diplomacy }
 		available = { has_offensive_war = no }
-		x = 17
+		x = 23
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -1819,7 +1819,7 @@ focus_tree = {
 		id = SOV_anti_colonialist_rebels
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = SOV_expand_red_fleet }
-		x = 16
+		x = 22
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -1840,7 +1840,7 @@ focus_tree = {
 		id = SOV_southern_thrust
 		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = SOV_anti_colonialist_rebels }
-		x = 16
+		x = 22
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -1965,7 +1965,7 @@ focus_tree = {
 			has_war_with = ENG
 		}
 		will_lead_to_war_with = ENG
-		x = 17
+		x = 23
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -2007,7 +2007,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_expand_red_fleet }
 		available = {
 		}
-		x = 18
+		x = 24
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -2054,7 +2054,7 @@ focus_tree = {
 		bypass = {
 			187 = { is_controlled_by = SOV }
 		}
-		x = 18
+		x = 24
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -2084,7 +2084,7 @@ focus_tree = {
 		bypass = {
 			NOT = { country_exists = JAP }
 		}
-		x = 20
+		x = 26
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -2110,7 +2110,7 @@ focus_tree = {
 		available = {
 			JAP = { has_war_with = CHI }
 		}
-		x = 20
+		x = 26
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -2157,7 +2157,7 @@ focus_tree = {
 			NOT = { has_country_flag = counter_purge }
 			has_government = communism
 		}
-		x = 24
+		x = 30
 		y = 0
 		cost = 30
 		ai_will_do = {
@@ -2354,7 +2354,7 @@ focus_tree = {
 			has_government = communism
 			has_civil_war = no
 		}
-		x = 19
+		x = 25
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -2381,7 +2381,7 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SOV_great_purge focus = SOV_permanent_revolution }
 		mutually_exclusive = { focus = SOV_nkvd_primacy }
-		x = 22
+		x = 28
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2402,7 +2402,7 @@ focus_tree = {
 		id = SOV_military_reorganization
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = SOV_rehabilitated_military }
-		x = 22
+		x = 28
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -2429,7 +2429,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_great_purge }
 		mutually_exclusive = { focus = SOV_rehabilitated_military }
-		x = 24
+		x = 30
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2451,7 +2451,7 @@ focus_tree = {
 		id = SOV_nkvd_divisions
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = SOV_nkvd_primacy }
-		x = 24
+		x = 30
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -2483,7 +2483,7 @@ focus_tree = {
 				has_country_flag = SOV_war_since_purge
 			}
 		}
-		x = 23
+		x = 29
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -2528,7 +2528,7 @@ focus_tree = {
 		available = {
 
 		}
-		x = 23
+		x = 29
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -2552,7 +2552,7 @@ focus_tree = {
 		available = {
 
 		}
-		x = 23
+		x = 29
 		y = 4
 		cost = 10
 		ai_will_do = {
@@ -2576,7 +2576,7 @@ focus_tree = {
 		available = {
 
 		}
-		x = 23
+		x = 29
 		y = 6
 		cost = 10
 		ai_will_do = {
@@ -2607,7 +2607,7 @@ focus_tree = {
 		bypass = {
 			NOT = { has_idea = trotskyite_plot_purged }
 		}
-		x = 26
+		x = 32
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -2624,7 +2624,7 @@ focus_tree = {
 		id = SOV_partisan_suppression
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = SOV_smersh }
-		x = 26
+		x = 32
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -2644,7 +2644,7 @@ focus_tree = {
 	focus = {
 		id = SOV_Tank_Corps_focus
 		icon = GFX_goal_generic_army_tanks
-		x = 30
+		x = 36
 		y = 0
 		cost = 5
 		available = {
@@ -2673,7 +2673,7 @@ focus_tree = {
 		id = SOV_Tank_Corps_wave_two_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_Tank_Corps_focus  }
-		x = 30
+		x = 36
 		y = 1
 		cost = 5
 		available = {
@@ -2700,7 +2700,7 @@ focus_tree = {
 		id = SOV_Tank_Corps_wave_three_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_Tank_Corps_wave_two_focus  }
-		x = 30
+		x = 36
 		y = 2
 		cost = 5
 		available = {
@@ -2728,7 +2728,7 @@ focus_tree = {
 		id = SOV_Mechanised_Corps_focus
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = SOV_Tank_Corps_wave_three_focus  }
-		x = 32
+		x = 38
 		y = 3
 		cost = 5
 		available = {
@@ -2753,7 +2753,7 @@ focus_tree = {
 		id = SOV_Tank_Corps_wave_four_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_Tank_Corps_wave_three_focus  }
-		x = 28
+		x = 34
 		y = 3
 		cost = 5
 		available = {
@@ -2781,7 +2781,7 @@ focus_tree = {
 		id = SOV_Tank_Corps_wave_five_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_Tank_Corps_wave_four_focus  }
-		x = 28
+		x = 34
 		y = 4
 		cost = 5
 		available = {
@@ -2808,7 +2808,7 @@ focus_tree = {
 		id = SOV_Tank_Corps_upgrade_one_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_Tank_Corps_wave_five_focus  }
-		x = 28
+		x = 34
 		y = 5
 		cost = 5
 		available = {
@@ -2835,7 +2835,7 @@ focus_tree = {
 		id = SOV_Tank_Corps_upgrade_two_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_Tank_Corps_upgrade_one_focus  }
-		x = 28
+		x = 34
 		y = 6
 		cost = 5
 		available = {
@@ -2860,7 +2860,7 @@ focus_tree = {
 		id = SOV_Tank_Corps_upgrade_three_focus
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_Tank_Corps_upgrade_two_focus  }
-		x = 28
+		x = 34
 		y = 7
 		cost = 5
 		available = {
@@ -2887,7 +2887,7 @@ focus_tree = {
 		id = SOV_Mechanised_Corps_II_focus
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = SOV_Mechanised_Corps_focus  }
-		x = 32
+		x = 38
 		y = 4
 		cost = 5
 		available = {
