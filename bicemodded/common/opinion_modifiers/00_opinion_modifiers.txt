@@ -291,19 +291,23 @@ opinion_modifiers = {
 		value = 60
 	}
 
-	anti_fascist_diplomacy_focus = {
+	SOV_molotov_diplomacy = {
 		value = 30
 	}
-	anti_fascist_diplomacy_fascists = {
+	SOV_molotov_diplomacy_fascists = {
 		value = -40
 	}
 
-	anti_capitalist_diplomacy_focus = {
+	SOV_lenninist_diplomacy_capitalist = {
 		value = 30
 	}
 
-	anti_capitalist_diplomacy_capitalists = {
+	SOV_lenninist_diplomacy = {
 		value = -40
+	}
+	
+	SOV_litvinov_diplomacy = {
+		value = 40
 	}
 
 	operation_zet_chi = {

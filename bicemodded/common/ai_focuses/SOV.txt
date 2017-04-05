@@ -1,4 +1,4 @@
-ai_historical_focus_list_SOV = {
+﻿ai_historical_focus_list_SOV = {
 	ai_national_focuses = {
 		SOV_finish_the_second_five_year_plan
 		SOV_begin_the_third_five_year_plan_focus
