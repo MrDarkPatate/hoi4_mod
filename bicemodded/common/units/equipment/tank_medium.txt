@@ -1430,7 +1430,7 @@ equipments = {
 	################################### There were no AA guns mounted in Pz III 
 
 	#Flammpanzer III						# 9 Flammethrower tank is using AA. I skip for now. This occupies a 1943 SPAA Slot (1st Slot 3rd stug)
-	panzer_iii_flamm_equipment_1 = {
+	panzer_iii_flamm_equipment_0 = {
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
 		family = panzer_iii_equipment_4
@@ -1703,8 +1703,8 @@ equipments = {
 		priority = 60
 		visual_level = 0
 		
-		maximum_speed = 
-		reliability = 0.4
+		maximum_speed = 6.2
+		reliability = 0.5
 
 		#Defensive Abilities
 		defense = 19
