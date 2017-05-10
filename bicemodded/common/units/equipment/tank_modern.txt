@@ -1,4 +1,6 @@
 # modern tank/self propelled equipment
+
+########### REWORK STILL NOT DONE. LATE WAR TANKS ----- NO, these are not used in this mod, IGNORE THEM
 equipments = {
 
 	modern_tank_equipment = {
