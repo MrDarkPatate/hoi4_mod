@@ -1,3 +1,7 @@
+################################ NOTE: Adjusted research years to historical values as much as possible. However game balance takes priority.
+################################ AI "will do factors" adjusted slighlty to priorize best tanks and change research focus as best as possible.  
+
+
 technologies = {
 	#Vertical position
 	@1934 = -2
@@ -101,10 +105,10 @@ technologies = {
 		}
 	
 		research_cost = 2
-		start_year = 1938					# 1937 Was 1939 in fact, 1938 is ok
+		start_year = 1938					# 1937 Was 1939 in fact. But 1938 is fine
 		folder = {
 			name = german_pz_folder
-			position = { x = 8 y = @1937 }	# It would be better moving to 1938
+			position = { x = 8 y = @1938 }	# 1937
 		}
 		
 		ai_will_do = {
@@ -142,7 +146,7 @@ technologies = {
 		
 		
 		research_cost = 1.3
-		start_year = 1943					# 1943 This was a Cheap 1944 designed TD 
+		start_year = 1944					# 1943 This was a Cheap 1944 and very well designed TD 
 		
 		ai_will_do = {
 			factor = 0
@@ -218,17 +222,34 @@ technologies = {
 	}
 	#Panzerjäger I
 	subtech_panzer_i_td_equipment_1 = {
-
+		
+		allow = {							# This tank should need Cz equipment to be produced. (Same as 38t). check if this works properly
+		     tag = GER
+		     owns_state = 9
+		}
+		
 		enable_equipments = {
 			panzer_i_td_equipment_1
 		}
 		
 		
 		research_cost = 1.3
-		start_year = 1939					# 1938 This tank needs Cz equipment to be produced. Can be 1940.
+		start_year = 1939					# 1938 
 		
 		ai_will_do = {
-			factor = 0
+			factor = 11						# changed from 0 to make AI get the OOB. Also: good TD available until 1941
+		}
+		
+			    on_research_complete = {	# This OOB has been moved from Marder II because is 1941.
+		    if = {
+		         limit = {
+			     	is_ai = yes
+		    	}
+		 	
+		    	hidden_effect = {
+			    	load_oob = "GER_Panzer_Division_1939"
+			    }
+			}
 		}
 
 		dependencies = {
@@ -287,13 +308,30 @@ technologies = {
 		}
 	}
 	## Panzer II tree ##
-	#Panzer II A/B 
+	#Panzer II A/B							# Includes A/B/C same tank
 	tech_panzer_ii_equipment_1 = {
 		
 		enable_equipments = {
 			panzer_ii_equipment_1
 		}
 		
+		on_research_complete = {			# Note: Moved from Pz II D as now must be researched
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+						NOT = {	has_template_containing_unit = medium_armor }
+						is_ai = no
+					}
+
+					load_oob = "GER_Leichte_Division"
+					load_oob = "GER_Panzer_Division_1937"
+				}
+				
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 		
 		path = {
 			leads_to_tech = tech_panzer_ii_equipment_2
@@ -313,14 +351,14 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936					# 1935. This tank now is not researched. Research cost of this tank and next Pz II can be halved to balance
+		start_year = 1936					# 1935. This tank now is not researched.
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1935 }
+			position = { x = -3 y = @1936 }	# 1936
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 175					# 10. Absolutely priority to this tank as is prerequisite to all German tanks
 		}
 		
 		categories = {
@@ -328,30 +366,14 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	# Pz II D								# C
+	# Pz II D								# C version was exactly same as A/B just different production runs
 	tech_panzer_ii_equipment_2 = {
 		
 		enable_equipments = {
 			panzer_ii_equipment_2
 		}
 		
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-						NOT = {	has_template_containing_unit = medium_armor }
-						is_ai = no
-					}
-
-					load_oob = "GER_Leichte_Division"
-					load_oob = "GER_Panzer_Division_1937"
-				}
-				
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
+		
 
 		path = {
 			leads_to_tech = tech_panzer_ii_equipment_3
@@ -366,11 +388,11 @@ technologies = {
 		start_year = 1938					# 1936
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1936 }
+			position = { x = -3 y = @1938 }	# 1936
 		}
 		
 		ai_will_do = {
-			factor = 175
+			factor = 12						# Was 175 Now moved to previous Pz II
 		}
 		
 		categories = {
@@ -403,14 +425,14 @@ technologies = {
 		start_year = 1940					# 1937
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1937 }
+			position = { x = -3 y = @1940 }	# 1937
 		}
 		sub_technologies = {
 			subtech_panzer_ii_td_equipment_1
 			subtech_panzer_ii_art_equipment_1
 		}			
 		ai_will_do = {
-			factor = 10
+			factor = 2						# 10 By 1940 this tank is too weak. Could be reduced to 0 to help AI go for better tanks. 
 		}
 		
 		categories = {
@@ -418,7 +440,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	#Marder II Sd.Kfz. 132 Panzer II D/E based	# Was Sd Kfz 131. Now correct model. 
+	#Marder II Sd.Kfz. 132 Panzer II D/E based	# Was Sd Kfz 131. Now correct model. Should be moved to previous parent. Pending next rework
 	subtech_panzer_ii_td_equipment_1 = {
 
 		enable_equipments = {
@@ -430,23 +452,13 @@ technologies = {
 		}
 		
 		research_cost = 1.1
-		start_year = 1941					# 1939. This tank needs captured Ru equipment. Option: Minsk Captured. 
+		start_year = 1941					# 1939. This tank should need captured Ru equipment. Option: Minsk Captured. 
 		
 		ai_will_do = {
-			factor = 90
+			factor = 20						# 90 A good TD. AI should go for it if ever researches parent.
 		}
 		
-	    on_research_complete = {			# This OOB must be moved to Pz Jg I
-		    if = {
-		         limit = {
-			     	is_ai = yes
-		    	}
-		 	
-		    	hidden_effect = {
-			    	load_oob = "GER_Panzer_Division_1939"
-			    }
-			}
-		}
+
 		
 		categories = {
 			armor
@@ -497,7 +509,7 @@ technologies = {
 		start_year = 1942					# 1940
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1940 }
+			position = { x = -3 y = @1942 }	# 1940
 		}
 		sub_technologies = {
 			subtech_panzer_ii_td_equipment_2
@@ -505,7 +517,7 @@ technologies = {
 			subtech_panzer_ii_flamm_equipment_1
 		}				
 		ai_will_do = {
-			factor = 10
+			factor = 5						# 10
 		}
 		
 		categories = {
@@ -528,7 +540,7 @@ technologies = {
 		start_year = 1942					#1940
 		
 		ai_will_do = {
-			factor = 10
+			factor = 11						# Was 10 
 		}
 		
 		categories = {
@@ -602,11 +614,11 @@ technologies = {
 		start_year = 1944					# 1942
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1942 }
+			position = { x = -3 y = @1944 }	# 1942
 		}
 			
 		ai_will_do = {
-			factor = 10
+			factor = 3						# 10
 		}
 		
 		categories = {
@@ -614,7 +626,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	# Pz II L Leopard						# Cancelled, Too much Pz II variants even with Lepoard
+	# Pz II L Leopard						# Cancelled. Too much Pz II variants even with Lepoard
 	#tech_panzer_ii_equipment_6 = {
 	#	
 	#	enable_equipments = {
@@ -741,7 +753,7 @@ technologies = {
 	}
 	
 	## PANZER-III Tech tree##				# REWORK DONE UNTIL THIS LINE
-	# Panzer III A
+	# Panzer III A							# Includes all variants with 15mm plate. 70 produced 
 	tech_panzer_iii_equipment_1 = {
 
 		enable_equipments = {
@@ -785,14 +797,14 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1937					# 1936
 		folder = {
 			name = german_pz_folder
-			position = { x = -6 y = @1936 }
+			position = { x = -6 y = @1937 }	# 1936
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 20						# Pz III is going to be best battle tank until 1942. Better get it now than tomorrow
 		}
 		
 		categories = {
@@ -801,7 +813,7 @@ technologies = {
 		}
 	}
 
-	#Panzer III E
+	#Panzer III E							# Includes F. Around 550 built but less than 100 before poland
 	tech_panzer_iii_equipment_2 = {
 
 		enable_equipments = {
@@ -830,7 +842,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 15						# 10
 		}
 		
 		categories = {
@@ -839,7 +851,7 @@ technologies = {
 		}
 	}
 
-	# Panzer III F/J #
+	# Panzer III H 							# Includes G and Early J
 	tech_panzer_iii_equipment_3 = {
 
 		enable_equipments = {
@@ -868,7 +880,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 15						# 10
 		}
 		
 		categories = {
@@ -877,7 +889,7 @@ technologies = {
 		}
 	}
 
-	tech_panzer_iii_ag_equipment_1 = { #Stug A
+	tech_panzer_iii_ag_equipment_1 = { 		# Stug A
 
 		enable_equipments = {
 			panzer_iii_ag_equipment_1
@@ -908,7 +920,7 @@ technologies = {
 			cat_stug
 		}
 	}
-	# Panzer III L #
+	# Panzer III J 							# Late J with improved gun
 	tech_panzer_iii_equipment_4 = {
 
 		enable_equipments = {
@@ -930,14 +942,14 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1942
+		start_year = 1941					# 1942 Inferior tank compared to Pz IV G. Was built several months earlier
 		folder = {
 			name = german_pz_folder
-			position = { x = -6 y = @1942 }
+			position = { x = -6 y = @1941 }	# 1942
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 15						# Increased. German AI should research until this Pz III variant then go for Pz IV / Panther / Tigers
 		}
 		
 		categories = {
@@ -1082,7 +1094,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	# Panzer III M #
+	# Panzer III M 							# Includes L
 	tech_panzer_iii_equipment_5 = {
 
 		enable_equipments = {
@@ -1107,7 +1119,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 10
+			factor = 4						# Was 10. Now reduced priority to help AI get Panthers as this is a dead end
 		}
 		
 		categories = {
@@ -1182,7 +1194,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	# Panzer III N #
+	# Panzer III N 							# Note. This tank can be reintroduced for flavour. Is a 75 Inf tank. AI should not do it 
 	#tech_panzer_iii_equipment_6 = {
 #
 #		enable_equipments = {
@@ -1194,14 +1206,14 @@ technologies = {
 #		}
 #		
 #		research_cost = 2
-#		start_year = 1943
+#		start_year = 1944					# 1943
 #		folder = {
 #			name = german_pz_folder
-#			position = { x = -6 y = @1943 }
+#			position = { x = -6 y = @1944 }	# 1943
 #		}
 #		
 #		ai_will_do = {
-#			factor = 10
+#			factor = 0						# 10.  AI should not do it. 
 #		}
 #		
 #		categories = {
@@ -1210,7 +1222,7 @@ technologies = {
 #		}
 #	}
 	##PANZER-IV-TECH##
-	# Panzer IV A
+	# Panzer IV A							# Early prototypes with 15mm plate
 	tech_panzer_iv_equipment_1 = {
 
 		enable_equipments = {
@@ -1237,14 +1249,14 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1936
+		start_year = 1937					# 1936
 		folder = {
 			name = german_pz_folder
-			position = { x = 0 y = @1936 }
+			position = { x = 0 y = @1937 }	# 1936
 		}
 				
 		ai_will_do = {
-			factor = 0
+			factor = 10						# Was 0. Now GER AI should research Pz IVs after reaching Pz III dead end 
 		}
 		
 		categories = {
@@ -1252,7 +1264,7 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	# Panzer IV E
+	# Panzer IV C							# Was E. Includes B/C/D. 30 mm plate
 	tech_panzer_iv_equipment_2 = {
 
 		enable_equipments = {
@@ -1269,14 +1281,14 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1939
+		start_year = 1938					# 1939
 		folder = {
 			name = german_pz_folder
-			position = { x = 0 y = @1939 }
+			position = { x = 0 y = @1938 }	# 1939
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10						# 0
 		}
 		
 		categories = {
@@ -1284,7 +1296,7 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	# Panzer IV F
+	# Panzer IV E							# Was F. Plate 50mm
 	tech_panzer_iv_equipment_3 = {
 
 		enable_equipments = {
@@ -1295,10 +1307,7 @@ technologies = {
 			leads_to_tech = tech_panzer_iv_equipment_4
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = tech_panzer_v_equipment_1
-			research_cost_coeff = 1
-		}
+		
 		dependencies = {
 			german_tech = 1
 		}
@@ -1320,7 +1329,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10							# 0
 		}
 		
 		categories = {
@@ -1337,6 +1346,14 @@ technologies = {
 		
 		path = {
 			leads_to_tech = tech_panzer_iv_equipment_5
+			research_cost_coeff = 1
+		}
+		path = {								# NOTE: Now this tank is prerequisite for Tiger / Panther. 
+			leads_to_tech = tech_panzer_v_equipment_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_panzer_vi_equipment_1
 			research_cost_coeff = 1
 		}
 		
@@ -1358,7 +1375,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 175						# 0. Now this tank is prerequisite for Tiger / Panther. 
 		}
 		
 		categories = {
@@ -1463,7 +1480,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		
 		categories = {
@@ -1561,7 +1578,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 5							# 0
 		}
 		
 		categories = {
@@ -1681,14 +1698,14 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1943						# 1942 0 This is best overall tank available from 1943 
 		folder = {
 			name = german_pz_folder
-			position = { x = 3 y = @1942 }
+			position = { x = 3 y = @1943 }		# 1942
 		}
 				
 		ai_will_do = {
-			factor = 0
+			factor = 90						
 		}
 		
 		categories = {
@@ -1712,7 +1729,7 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = german_pz_folder
-			position = { x = 3 y = @1944 }
+			position = { x = 3 y = @1944 }		# 0 This is best overall tank available from 1944
 		}
 
 		sub_technologies = {
@@ -1721,7 +1738,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
 		}
 		
 		categories = {
@@ -1782,12 +1799,6 @@ technologies = {
 			nbfz_equipment_1
 		}
 		
-		
-		path = {
-			leads_to_tech = tech_panzer_vi_equipment_1
-			research_cost_coeff = 1
-		}
-		
 		dependencies = {
 			german_tech = 1
 		}
@@ -1842,10 +1853,10 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1941
+		start_year = 1942								# 1941
 		folder = {
 			name = german_pz_folder
-			position = { x = 6 y = @1941 }
+			position = { x = 6 y = @1942 }				# 1941
 		}
 		
 		sub_technologies = {
@@ -1923,10 +1934,10 @@ technologies = {
 		}
 		
 		research_cost = 2.5
-		start_year = 1943
+		start_year = 1944					# 1943
 		folder = {
 			name = german_pz_folder
-			position = { x = 6 y = @1943 }
+			position = { x = 6 y = @1944 }	# 1943
 		}
 		
 		sub_technologies = {
@@ -2011,7 +2022,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = german_pz_folder
-			position = { x = 8 y = @1942 }
+			position = { x = 8 y = @1943 }		# 1942
 		}
 		
 		ai_will_do = {
@@ -2038,7 +2049,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = german_pz_folder
-			position = { x = 8 y = @1944}
+			position = { x = 8 y = @1945}		# 1944
 		}
 		
 		ai_will_do = {
