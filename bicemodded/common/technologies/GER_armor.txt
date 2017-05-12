@@ -1,5 +1,6 @@
-################################ NOTE: Adjusted research years to historical values as much as possible. However game balance takes priority.
-################################ AI "will do factors" adjusted slighlty to priorize best tanks and change research focus as best as possible.  
+	################################ NOTE: Adjusted research years to historical values as much as possible. However game balance takes priority.
+	################################ AI "will do factors" adjusted slighlty to priorize best tanks and change research focus as best as possible. 
+	################################ AI research priorities: Pz III (until 50L60) / PzJg I TD / Improved 30mm plate Pz II / Improved 50mm plate 38t /Pz IV (until 75L43) / Panther & Tiger 
 
 
 technologies = {
@@ -58,7 +59,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 12					# 0 Value 12 means will be researched after Pz II
 		}
 	}
 	tech_czech_panzer_1 = {
@@ -85,7 +86,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 12					# 0 Value 12 means will be researched after Pz II
 		}
 	}
 	tech_czech_panzer_2 = {
@@ -112,7 +113,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 12						# 0 Value 12 means will be researched after Pz II. 
 		}
 	}
 	subtech_czech_panzer_td_1 = {
@@ -126,7 +127,7 @@ technologies = {
 		start_year = 1942					# 1940 Marder III is a 1942 Gun.
 		
 		ai_will_do = {
-			factor = 0
+			factor = 13						# 0 Best TD by 1942
 		}
 
 		dependencies = {
@@ -149,7 +150,7 @@ technologies = {
 		start_year = 1944					# 1943 This was a Cheap 1944 and very well designed TD 
 		
 		ai_will_do = {
-			factor = 0
+			factor = 13						# 0 Cheapest TD by 1944
 		}
 
 		dependencies = {
@@ -175,7 +176,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10						# 0 Best Light Armor for AI
 		}
 	}
 	#Panzer I
@@ -237,10 +238,10 @@ technologies = {
 		start_year = 1939					# 1938 
 		
 		ai_will_do = {
-			factor = 11						# changed from 0 to make AI get the OOB. Also: good TD available until 1941
+			factor = 14						# changed from 0 to make AI get the OOB. Value 14 means 2nd in priority. Best TD available until 1941
 		}
 		
-			    on_research_complete = {	# This OOB has been moved from Marder II because is 1941.
+			    on_research_complete = {	# This OOB has been moved from Marder II because that one is 1941.
 		    if = {
 		         limit = {
 			     	is_ai = yes
@@ -350,7 +351,7 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 2
+		research_cost = 2					# 2 Consider reducing this value and next Pz II to balance same research cost 
 		start_year = 1936					# 1935. This tank now is not researched.
 		folder = {
 			name = german_pz_folder
@@ -392,7 +393,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12						# Was 175 Now moved to previous Pz II
+			factor = 13						# Was 175 Now moved to previous Pz II. Value 13 means 3rd in priority research. However this is last Pz II for AI: will switch to 38(t)
 		}
 		
 		categories = {
@@ -517,7 +518,7 @@ technologies = {
 			subtech_panzer_ii_flamm_equipment_1
 		}				
 		ai_will_do = {
-			factor = 5						# 10
+			factor = 2						# 10 Reduced to 2 instead 0 because of Marder II still has this as parent
 		}
 		
 		categories = {
@@ -618,7 +619,7 @@ technologies = {
 		}
 			
 		ai_will_do = {
-			factor = 3						# 10
+			factor = 2						# 10 Could be 0
 		}
 		
 		categories = {
@@ -1119,7 +1120,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 4						# Was 10. Now reduced priority to help AI get Panthers as this is a dead end
+			factor = 1						# Was 10. Now reduced priority to help AI get Panthers as this is a dead end
 		}
 		
 		categories = {
@@ -1256,7 +1257,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 10						# Was 0. Now GER AI should research Pz IVs after reaching Pz III dead end 
+			factor = 13						# Was 0. Value 12 means will be researched 3rd priority. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
 		}
 		
 		categories = {
@@ -1288,7 +1289,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10						# 0
+			factor = 13						# 0
 		}
 		
 		categories = {
@@ -1329,7 +1330,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10							# 0
+			factor = 13							# 0
 		}
 		
 		categories = {
@@ -1375,7 +1376,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 175						# 0. Now this tank is prerequisite for Tiger / Panther. 
+			factor = 175						# 0. Now this tank is critical: prerequisite for Tiger / Panther. 
 		}
 		
 		categories = {
