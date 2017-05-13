@@ -59,7 +59,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12					# 0 Value 12 means will be researched after Pz II
+			factor = 10					# 0 Value means will be researched after Pz II
 		}
 	}
 	tech_czech_panzer_1 = {
@@ -86,7 +86,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12					# 0 Value 12 means will be researched after Pz II
+			factor = 10					# 0 Value means will be researched after Pz II
 		}
 	}
 	tech_czech_panzer_2 = {
@@ -100,10 +100,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		sub_technologies = {
-			subtech_czech_panzer_td_1
-			subtech_czech_panzer_td_2
-		}
+		#sub_technologies = {				# Delayed to next version. Should be split between both models
+		#	subtech_czech_panzer_td_1
+		#	subtech_czech_panzer_td_2
+		#}
 	
 		research_cost = 2
 		start_year = 1938					# 1937 Was 1939 in fact. But 1938 is fine
@@ -113,7 +113,30 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12						# 0 Value 12 means will be researched after Pz II. 
+			factor = 10						# 0 Value means will be researched after Pz II. 
+		}
+	}
+	
+	tech_czech_panzer_3 = {
+	
+		enable_equipments = {
+			czech_panzer_equipment_3
+		}
+		
+		sub_technologies = {
+			subtech_czech_panzer_td_1
+			subtech_czech_panzer_td_2
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = german_pz_folder
+			position = { x = 8 y = @1940 }
+		}
+		
+		ai_will_do = {
+			factor = 8						# 0 Best Light Armor for AI
 		}
 	}
 	subtech_czech_panzer_td_1 = {
@@ -127,7 +150,7 @@ technologies = {
 		start_year = 1942					# 1940 Marder III is a 1942 Gun.
 		
 		ai_will_do = {
-			factor = 13						# 0 Best TD by 1942
+			factor = 11						# 0 Best TD by 1942
 		}
 
 		dependencies = {
@@ -150,7 +173,7 @@ technologies = {
 		start_year = 1944					# 1943 This was a Cheap 1944 and very well designed TD 
 		
 		ai_will_do = {
-			factor = 13						# 0 Cheapest TD by 1944
+			factor = 11						# 0 Cheapest TD by 1944
 		}
 
 		dependencies = {
@@ -160,23 +183,6 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
-		}
-	}
-	tech_czech_panzer_3 = {
-	
-		enable_equipments = {
-			czech_panzer_equipment_3
-		}
-		
-		research_cost = 2
-		start_year = 1940
-		folder = {
-			name = german_pz_folder
-			position = { x = 8 y = @1940 }
-		}
-		
-		ai_will_do = {
-			factor = 10						# 0 Best Light Armor for AI
 		}
 	}
 	#Panzer I
@@ -213,7 +219,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 12
 		}
 		
 		categories = {
@@ -238,7 +244,7 @@ technologies = {
 		start_year = 1939					# 1938 
 		
 		ai_will_do = {
-			factor = 14						# changed from 0 to make AI get the OOB. Value 14 means 2nd in priority. Best TD available until 1941
+			factor = 12						# changed from 0 to make AI get the OOB. Value means 2nd in priority. Best TD available until 1941
 		}
 		
 			    on_research_complete = {	# This OOB has been moved from Marder II because that one is 1941.
@@ -391,49 +397,12 @@ technologies = {
 			name = german_pz_folder
 			position = { x = -3 y = @1938 }	# 1936
 		}
-		
-		ai_will_do = {
-			factor = 13						# Was 175 Now moved to previous Pz II. Value 13 means 3rd in priority research. However this is last Pz II for AI: will switch to 38(t)
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	# Pz II F								# D/E
-	tech_panzer_ii_equipment_3 = {
-		
-		enable_equipments = {
-			panzer_ii_equipment_3
-		}
-
-		path = {
-			leads_to_tech = tech_panzer_ii_equipment_4
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = tech_panzer_ii_amph_equipment_1
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 2
-		start_year = 1940					# 1937
-		folder = {
-			name = german_pz_folder
-			position = { x = -3 y = @1940 }	# 1937
-		}
 		sub_technologies = {
 			subtech_panzer_ii_td_equipment_1
 			subtech_panzer_ii_art_equipment_1
-		}			
+		}	
 		ai_will_do = {
-			factor = 2						# 10 By 1940 this tank is too weak. Could be reduced to 0 to help AI go for better tanks. 
+			factor = 12						# Was 175 Now moved to previous Pz II. Value means 2nd in priority research. However this is last Pz II for AI: will switch to 38(t)
 		}
 		
 		categories = {
@@ -441,7 +410,8 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	#Marder II Sd.Kfz. 132 Panzer II D/E based	# Was Sd Kfz 131. Now correct model. Should be moved to previous parent. Pending next rework
+	
+	#Marder II Sd.Kfz. 132 					# Was Sd Kfz 131 D/E based. Now correct model. Should be moved to previous parent. Pending next rework
 	subtech_panzer_ii_td_equipment_1 = {
 
 		enable_equipments = {
@@ -453,7 +423,7 @@ technologies = {
 		}
 		
 		research_cost = 1.1
-		start_year = 1941					# 1939. This tank should need captured Ru equipment. Option: Minsk Captured. 
+		start_year = 1942					# 1939. This tank should need captured Ru equipment. Option: Minsk Captured: then can be changed Research to 1941. 
 		
 		ai_will_do = {
 			factor = 20						# 90 A good TD. AI should go for it if ever researches parent.
@@ -489,36 +459,45 @@ technologies = {
 			cat_light_armor
 		}
 	}
-
-	#Pz II L Luchs							# F
-	tech_panzer_ii_equipment_4 = {
+	
+	# Pz II F								# D/E
+	tech_panzer_ii_equipment_3 = {
 		
 		enable_equipments = {
-			panzer_ii_equipment_4
+			panzer_ii_equipment_3
 		}
 
 		path = {
-			leads_to_tech = tech_panzer_ii_equipment_5
+			leads_to_tech = tech_panzer_ii_equipment_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tech_panzer_ii_amph_equipment_1
 			research_cost_coeff = 1
 		}
 		
 		dependencies = {
 			german_tech = 1
 		}
-		
+
 		research_cost = 2
-		start_year = 1942					# 1940
+		start_year = 1940					# 1937
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1942 }	# 1940
+			position = { x = -3 y = @1940 }	# 1937
 		}
-		sub_technologies = {
+		#sub_technologies = {				# Moved to previous Pz II
+		#	subtech_panzer_ii_td_equipment_1
+		#	subtech_panzer_ii_art_equipment_1
+		#}		
+		sub_technologies = {				# Moved from next Pz II
 			subtech_panzer_ii_td_equipment_2
 			subtech_panzer_ii_art_equipment_2
 			subtech_panzer_ii_flamm_equipment_1
-		}				
+		}
 		ai_will_do = {
-			factor = 2						# 10 Reduced to 2 instead 0 because of Marder II still has this as parent
+			factor = 6						# 10 Tank and subtechs not so important Could be reduced to 0 to help AI go for better tanks. 
 		}
 		
 		categories = {
@@ -526,6 +505,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
+	
 	#Marder II Sd.Kfz. 131 Panzer II C and F based		# Was Sd Kfz 132. Now correct model
 	subtech_panzer_ii_td_equipment_2 = {
 
@@ -541,7 +521,7 @@ technologies = {
 		start_year = 1942					#1940
 		
 		ai_will_do = {
-			factor = 11						# Was 10 
+			factor = 9						# Was 10 
 		}
 		
 		categories = {
@@ -564,7 +544,7 @@ technologies = {
 		start_year = 1943					#1940
 		
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
 		
 		categories = {
@@ -595,6 +575,44 @@ technologies = {
 			cat_light_armor
 		}
 	}
+	
+	#Pz II L Luchs							# F
+	tech_panzer_ii_equipment_4 = {
+		
+		enable_equipments = {
+			panzer_ii_equipment_4
+		}
+
+		path = {
+			leads_to_tech = tech_panzer_ii_equipment_5
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			german_tech = 1
+		}
+		
+		research_cost = 2
+		start_year = 1942					# 1940
+		folder = {
+			name = german_pz_folder
+			position = { x = -3 y = @1942 }	# 1940
+		}
+		#sub_technologies = {
+		#	subtech_panzer_ii_td_equipment_2
+		#	subtech_panzer_ii_art_equipment_2
+		#	subtech_panzer_ii_flamm_equipment_1
+		#}				
+		ai_will_do = {
+			factor = 0						# 10 By 1942 this tank is too weak to be an improvement to AI.
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+	
 	# Pz II L Leopard						# Luchs
 	tech_panzer_ii_equipment_5 = {
 		
@@ -646,7 +664,7 @@ technologies = {
 	#	}
 	#		
 	#	ai_will_do = {
-	#		factor = 10
+	#		factor = 8
 	#	}
 	#	
 	#	categories = {
@@ -843,7 +861,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15						# 10
+			factor = 13						# 10
 		}
 		
 		categories = {
@@ -881,7 +899,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15						# 10
+			factor = 13						# 10
 		}
 		
 		categories = {
@@ -950,7 +968,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15						# Increased. German AI should research until this Pz III variant then go for Pz IV / Panther / Tigers
+			factor = 13						# Increased. German AI should research until this Pz III variant then go for Pz IV / Panther / Tigers
 		}
 		
 		categories = {
@@ -1257,7 +1275,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 13						# Was 0. Value 12 means will be researched 3rd priority. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
+			factor = 11						# Was 0. Value means will be researched 3rd priority. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
 		}
 		
 		categories = {
@@ -1289,7 +1307,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13						# 0
+			factor = 11						# 0
 		}
 		
 		categories = {
@@ -1330,7 +1348,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13							# 0
+			factor = 11							# 0
 		}
 		
 		categories = {
@@ -1376,7 +1394,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 175						# 0. Now this tank is critical: prerequisite for Tiger / Panther. 
+			factor = 20						# 0. Now this tank is critical: prerequisite for Tiger / Panther. 
 		}
 		
 		categories = {
@@ -1481,7 +1499,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
 		
 		categories = {
@@ -1706,7 +1724,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 90						
+			factor = 20						
 		}
 		
 		categories = {
@@ -1812,7 +1830,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
 		
 		categories = {
@@ -1893,7 +1911,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
 	}
 	subtech_panzer_vi_ag_equipment_1 = {
@@ -1947,7 +1965,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
 		
 		categories = {
@@ -1998,7 +2016,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 8
 		}
 	}
 	##SuperHeavies##
