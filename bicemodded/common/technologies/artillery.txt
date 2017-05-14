@@ -555,6 +555,7 @@ technologies = {
 		}
 		anti_air_heavy = {
 			air_attack = 0.1
+			ap_attack = 0.15
 		}
 		
 		path = {
@@ -592,6 +593,7 @@ technologies = {
 
 		anti_air_heavy = {
 			air_attack = 0.1
+			ap_attack = 0.25
 		}
 		
 		path = {
@@ -631,6 +633,9 @@ technologies = {
 			HVanti_air_equipment_3
 		}
 		
+		anti_air_heavy = {
+			ap_attack = 0.3
+		}
 		research_cost = 1
 		start_year = 1943
 		folder = {
