@@ -765,7 +765,7 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = panzer_ii_equipment_1
+			type = panzer_i_equipment_1			# Note: Was panzer_ii but now is not researched
 			creator = "GER" 
 		}
 		requested_factories = 3
