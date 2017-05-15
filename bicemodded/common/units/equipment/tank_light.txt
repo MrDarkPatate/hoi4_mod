@@ -1570,8 +1570,8 @@ equipments = {
 		#Defensive Abilities
 		defense = 5					# 4 changed to 5 as generic sp lt arty
 		breakthrough = 5 			# 1 changed to 5 as generic sp lt arty
-		hardness = 0.57				# 0.6 plate 37mm 
-		armor_value = 44			#  38 plate 37mm 50º  SU76/50 This tank is unknown to me. Just changed stats to make sense w same year BM-8-24 but based on T50, so more expensive
+		hardness = 0.36				# 0.6 plate 13mm 
+		armor_value = 23			#  38 plate 13mm   Just changed stats to BM-8-24 but based on T40.
  
 		#Offensive Abilities
 		soft_attack = 19			# 6 just Exchanged values (arty)
@@ -1579,7 +1579,7 @@ equipments = {
 		ap_attack = 15 				# 80 Now represents 81mm HE
 		air_attack = 0
 		
-		build_cost_ic = 13.5		# Was 13, but better tank than BM-8-24, Consider increase cost to 16 if T50 corrected
+		build_cost_ic = 12.5		# 13
 	}
 	
 	light_soviet_tank_art_equipment_2 = {
@@ -1608,7 +1608,7 @@ equipments = {
 	}
 	
 
-	# OSU-76						# Renamed OSU 76 for coherence, was prototype based on T60. (I can be a Su-5 Instead, based on a T26, just a few produced)
+	# OSU-76						# 1942 Renamed OSU 76 for coherence, was prototype based on T60. (I can be a Su-5 Instead, based on a T26, just a few produced)
 	light_soviet_tank_td_1 = {
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_1

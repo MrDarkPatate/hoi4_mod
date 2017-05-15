@@ -1027,7 +1027,7 @@ equipments = {
 		
 		build_cost_ic = 38		#38 - 54 tons
 	}
-	# KV-85 TD
+	# KV-85 TD					# NOTE: this could be a KV-100 or a KV -122 
 	kv_tank_td_1 = {
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_tank_destroyer_equipment_1
