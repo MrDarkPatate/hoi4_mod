@@ -2068,8 +2068,8 @@ equipments = {
 		
 		resources = {
 			oil = 2
-			steel = 6			# 4 Adjusted heavy Weight & reduced IC time 			
-			tungsten = 5		# 4 Adjusted heavy Weight & reduced IC time 
+			steel = 6			# 4 Adjusted heavy Weight & very low IC		
+			tungsten = 5		# 4 Adjusted heavy Weight & very low IC	
 			chromium = 2		# 1
 		}
 	}
@@ -2321,8 +2321,8 @@ equipments = {
 		build_cost_ic = 38.3	# 30 - 36.6 tons
 		resources = {
 			oil = 2
+			steel = 5			#4			
 			tungsten = 3		#4
-			steel = 5			#4
 			rubber = 1
 			chromium = 1
 		}
@@ -2930,7 +2930,7 @@ equipments = {
 		hard_attack = 10
 		ap_attack = 39			# 50 37L40 
 		
-		build_cost_ic = 22.9	#22 - 11 tons
+		build_cost_ic = 22.7	#22 - 11 tons
 		resources = {
 			oil = 2
 			steel = 2			# Default. Very cheap medium tank			
@@ -3020,7 +3020,7 @@ equipments = {
 		hard_attack = 17
 		ap_attack = 53			# 80 47L40 
 		
-		build_cost_ic = 27		# 27 - 15.5 tons
+		build_cost_ic = 26		# 27 - 15.5 tons
 		resources = {
 			oil = 2
 			steel = 3			# Default. Cheap			
@@ -3050,10 +3050,10 @@ equipments = {
 		hard_attack = 21
 		ap_attack = 71			# 98 Real war Prototype had a 47L40, Changed to a 75/46  gun
 		
-		build_cost_ic = 29		# 29 - proto Was 16 tons. w 75gun improved to 19 tons
+		build_cost_ic = 28.8	# 29 - real proto Was 16 tons. w 75gun improved to 19 tons
 		resources = {
 			oil = 2
-			steel = 3			# Default. Cheap			
+			steel = 3			# Default. Still a low weight tank			
 			tungsten = 2
 			chromium = 1
 		}
@@ -3085,7 +3085,7 @@ equipments = {
 		hard_attack = 27
 		ap_attack = 64			#110 then 103  - Assumed 90mm pierce 0º 
 		
-		build_cost_ic = 22		# 22 - 13.1 tons
+		build_cost_ic = 20.5	# 22 - 13.1 tons
 		
 		resources = {
 			oil = 2

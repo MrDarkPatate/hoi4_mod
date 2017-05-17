@@ -361,7 +361,7 @@ technologies = {
 		start_year = 1936					# 1935. This tank now is not researched.
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1936 }	# 1936
+			position = { x = -3 y = @1936 }	# 1936 -3 is position in the mid of all research tree (Pz II - III - IV) 
 		}
 		
 		ai_will_do = {
@@ -395,7 +395,7 @@ technologies = {
 		start_year = 1938					# 1936
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1938 }	# 1936
+			position = { x = -9 y = @1938 }	# 1936 -3
 		}
 		sub_technologies = {
 			subtech_panzer_ii_td_equipment_1
@@ -485,7 +485,7 @@ technologies = {
 		start_year = 1940					# 1937
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1940 }	# 1937
+			position = { x = -9 y = @1940 }	# 1937 -3
 		}
 		#sub_technologies = {				# Moved to previous Pz II
 		#	subtech_panzer_ii_td_equipment_1
@@ -596,7 +596,7 @@ technologies = {
 		start_year = 1942					# 1940
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1942 }	# 1940
+			position = { x = -9 y = @1942 }	# 1940 -3
 		}
 		#sub_technologies = {
 		#	subtech_panzer_ii_td_equipment_2
@@ -633,7 +633,7 @@ technologies = {
 		start_year = 1944					# 1942
 		folder = {
 			name = german_pz_folder
-			position = { x = -3 y = @1944 }	# 1942
+			position = { x = -9 y = @1944 }	# 1942 -3
 		}
 			
 		ai_will_do = {
@@ -660,7 +660,7 @@ technologies = {
 	#	start_year = 1944
 	#	folder = {
 	#		name = german_pz_folder
-	#		position = { x = -3 y = @1944 }
+	#		position = { x = -9 y = @1944 } 	# 1944 -3
 	#	}
 	#		
 	#	ai_will_do = {
@@ -757,7 +757,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = german_pz_folder
-			position = { x = -11 y = @1944 }
+			position = { x = -11 y = @1943 }	
 		}
 		
 		ai_will_do = {
@@ -771,7 +771,7 @@ technologies = {
 		}
 	}
 	
-	## PANZER-III Tech tree##				# REWORK DONE UNTIL THIS LINE
+	## PANZER-III Tech tree##				# NOTE: Only 3 Stug III AG types and 2 stug III TD types are historical. Correct line should mix AG with TD. But as AG is the starting point... I stick to it. 
 	# Panzer III A							# Includes all variants with 15mm plate. 70 produced 
 	tech_panzer_iii_equipment_1 = {
 
@@ -844,7 +844,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
+		path = {							#NOTE: This leads to the 1st slot of the STUG main line (AG)
 			leads_to_tech = tech_panzer_iii_ag_equipment_1
 			research_cost_coeff = 1
 		}
@@ -882,7 +882,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
+		path = {							#NOTE: This must lead to the 2nd slot of the STUG main line
 			leads_to_tech = tech_panzer_iii_ag_equipment_2
 			research_cost_coeff = 1
 		}
@@ -927,7 +927,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = german_pz_folder
-			position = { x = -9 y = @1938 }
+			position = { x = -3 y = @1938 } 	# -9
 		}
 		
 		ai_will_do = {
@@ -939,6 +939,7 @@ technologies = {
 			cat_stug
 		}
 	}
+	
 	# Panzer III J 							# Late J with improved gun
 	tech_panzer_iii_equipment_4 = {
 
@@ -951,7 +952,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
+		path = {							#NOTE: This must lead to the 3rd slot of the STUG main line (TD)
 			leads_to_tech = tech_panzer_iii_ag_equipment_3
 			research_cost_coeff = 1
 		}
@@ -976,6 +977,7 @@ technologies = {
 			cat_medium_armor
 		}
 	}
+	
 	#Subtechs
     subtech_panzer_iii_td_equipment_1 = {
 
@@ -998,7 +1000,8 @@ technologies = {
 			armor
 		}
 	}
-	tech_panzer_iii_ag_equipment_2 = { #Stug D
+	
+	tech_panzer_iii_ag_equipment_2 = { 		# This tank is now a StuiG 33. Stats yet changed. Just Needs change GFX. # Was a Stug D, but this was same tank as A
 
 		enable_equipments = {
 			panzer_iii_ag_equipment_2
@@ -1018,13 +1021,13 @@ technologies = {
 		
 		folder = {
 			name = german_pz_folder
-			position = { x = -9 y = @1940 }
+			position = { x = -3 y = @1940 }			# -9
 		}
 		
 		sub_technologies = {
-			subtech_panzer_iii_td_equipment_1
-			subtech_panzer_iii_art_equipment_1
-			subtech_panzer_iii_flamm_equipment_0
+			subtech_panzer_iii_td_equipment_1			# This tank is now a correct TD (Stug III F with the 75L43) 
+		#	subtech_panzer_iii_art_equipment_1			# This tank is now the 2nd AG. No Stug SPART did exist
+		#	subtech_panzer_iii_flamm_equipment_0		# By now, skip flamm as still has not special use 
 		}
 		
 		ai_will_do = {
@@ -1036,7 +1039,8 @@ technologies = {
 			cat_stug
 		}
 	}
-	tech_panzer_iii_ag_equipment_3 = { #Stug E
+	
+	tech_panzer_iii_ag_equipment_3 = { 			# This tank is now a StuH 42. Stats yet changed. Just Needs change GFX. # Was a Stug E, but again, ingame terms this is same tank as A
 
 		enable_equipments = {
 			panzer_iii_ag_equipment_3
@@ -1050,13 +1054,13 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = german_pz_folder
-			position = { x = -9 y = @1942 }
+			position = { x = -3 y = @1942 }		# -9
 		}
 		
 		sub_technologies = {
-			subtech_panzer_iii_td_equipment_2
-		    subtech_panzer_iii_art_equipment_2
-			subtech_panzer_iii_flamm_equipment_1
+			subtech_panzer_iii_td_equipment_2			# This tank is now a correct TD (Stug III G with the 75L48) 
+		#   subtech_panzer_iii_art_equipment_2			# This tank is now the 3rd AG. No Stug SPART did exist
+		#	subtech_panzer_iii_flamm_equipment_1		# By now, skip flamm as still has not special use 
 		}
 		
 		ai_will_do = {
@@ -1068,51 +1072,54 @@ technologies = {
 			cat_stug
 		}
 	}
-	subtech_panzer_iii_art_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iii_art_equipment_1
-		}
 	
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.1
-		start_year = 1942
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-			cat_stug
-		}
-	}
-	subtech_panzer_iii_flamm_equipment_0 = {
-
-		enable_equipments = {
-			panzer_iii_flamm_equipment_0
-		}
+	#subtech_panzer_iii_art_equipment_1 = {		# This was an AG not an ART. Now correct stats in proper 2nd AG slot
+	#
+	#	enable_equipments = {
+	#		panzer_iii_art_equipment_1
+	#	}
+	#
+	#	dependencies = {
+	#		german_tech = 1
+	#	}
+	#
+	#	research_cost = 1.1
+	#	start_year = 1942
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	
+	#	categories = {
+	#		armor
+	#		cat_medium_armor
+	#		cat_stug
+	#	}
+	#}
 	
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.1
-		start_year = 1942
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
+	#subtech_panzer_iii_flamm_equipment_0 = {	# Provisionally not used
+	#
+	#	enable_equipments = {
+	#		panzer_iii_flamm_equipment_0
+	#	}
+	#
+	#	dependencies = {
+	#		german_tech = 1
+	#	}
+	#	
+	#	research_cost = 1.1
+	#	start_year = 1942
+	#	
+	#	categories = {
+	#		armor
+	#		cat_medium_armor
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+	
 	# Panzer III M 							# Includes L
 	tech_panzer_iii_equipment_5 = {
 
@@ -1146,6 +1153,7 @@ technologies = {
 			cat_medium_armor
 		}
 	}
+	
 	#Subtechs
 	subtech_panzer_iii_td_equipment_2 = {
 
@@ -1158,7 +1166,7 @@ technologies = {
 		}
 
 		research_cost = 1.1
-		start_year = 1944
+		start_year = 1942					# 1944
 		
 		ai_will_do = {
 			factor = 1
@@ -1169,51 +1177,55 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	subtech_panzer_iii_art_equipment_2 = {
-
-		enable_equipments = {
-			panzer_iii_art_equipment_2
-		}
 	
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.1
-		start_year = 1943
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	subtech_panzer_iii_flamm_equipment_1 = {
-
-		enable_equipments = {
-			panzer_iii_flamm_equipment_1
-		}
+											# This was an AG not an ART.  Now correct stats in proper 3rd AG slot
+	#subtech_panzer_iii_art_equipment_2 = {	
+	#
+	#	enable_equipments = {	
+	#		panzer_iii_art_equipment_2
+	#	}
+	#
+	#	dependencies = {
+	#		german_tech = 1
+	#	}
+	#
+	#	research_cost = 1.1
+	#	start_year = 1943
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#	
+	#	categories = {
+	#		armor
+	#		cat_medium_armor
+	#	}
+	#}
+											# Provisionally not used
+	#subtech_panzer_iii_flamm_equipment_1 = {
+	#
+	#	enable_equipments = {
+	#		panzer_iii_flamm_equipment_1
+	#	}
+	#
+	#	dependencies = {
+	#		german_tech = 1
+	#	}
+	#	
+	#	research_cost = 1.1
+	#	start_year = 1943
+	#	
+	#	categories = {
+	#		armor
+	#		cat_medium_armor
+	#	}
+	#	
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
 	
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.1
-		start_year = 1943
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	# Panzer III N 							# Note. This tank can be reintroduced for flavour. Is a 75 Inf tank. AI should not do it 
+	# Panzer III N 							# Note. This tank can be reintroduced for flavour. Was a 75 Inf tank. AI should not do it 
 	#tech_panzer_iii_equipment_6 = {
 #
 #		enable_equipments = {
