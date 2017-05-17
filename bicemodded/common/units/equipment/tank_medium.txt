@@ -238,7 +238,8 @@ equipments = {
 			tungsten = 2
 		}
 	}
-		cavalry_tank_equipment_0 = {
+		
+	cavalry_tank_equipment_0 = {
 		archetype = cavalry_tank_equipment
 		
 		build_cost_ic = 15.4		# 22- 11 tons Cheap tank pre-1936
@@ -252,7 +253,7 @@ equipments = {
 		visual_level = 0
 	}
 	######## early war Cavalry tank 1937
-		cavalry_tank_equipment_1 = {
+	cavalry_tank_equipment_1 = {
 		archetype = cavalry_tank_equipment
 		parent = cavalry_tank_equipment_0
 		#Misc Abilities
@@ -276,10 +277,10 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
-		build_cost_ic = 16.4	# 25 - 13 tons Cheap tank 
+		build_cost_ic = 16.4	# 25 - 13 tons Fast to build tank 
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 4				# Ton Increase
 			tungsten = 2			# 3 Cheap gun
 			rubber = 1
 		}
@@ -288,7 +289,7 @@ equipments = {
 		visual_level = 0
 	}
 	######## mid war Cavalry tank 1940
-		cavalry_tank_equipment_2 = {
+	cavalry_tank_equipment_2 = {
 		archetype = cavalry_tank_equipment
 		parent = cavalry_tank_equipment_1
 		#Misc Abilities
@@ -438,7 +439,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 31.1 	# 25 Tons. Cheap gun # Cost/ resources doubled for reference
+		build_cost_ic = 31.1 	# 25 Tons. Cheap gun
 		resources = {
 			oil = 2
 			steel = 4
@@ -508,7 +509,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 38.5 	# Was 30. 41 tons. expensive! # cost/ resources doubled for reference
+		build_cost_ic = 38.5 	# Was 30. 41 tons. Heavy weight to get armor so high # cost/ resources doubled for reference
 		resources = {
 			oil = 2
 			steel = 5			# 4 Extremely high armored tank 
@@ -567,7 +568,7 @@ equipments = {
 		ap_attack = 38				# 6 Now a 75 infantry gun (ie 75L24)
 		air_attack = 0 
 
-		build_cost_ic = 23.1		# Was 25. 20 tons.
+		build_cost_ic = 23.3		# Was 25. 20 tons.
 		
 		resources = {
 			oil = 2
@@ -606,7 +607,7 @@ equipments = {
 		hard_attack = 1.7
 		ap_attack = 16					# 6 Now a 105 infantry gun indirect HE
 		
-		build_cost_ic = 27.3			# Was 26 - 24 tons
+		build_cost_ic = 25.9			# Was 26 - 24 tons
 		resources = {
 			oil = 2
 			steel = 4			
@@ -616,7 +617,7 @@ equipments = {
 		
 	}
 	
-	######################################### Generic SP ART   Reduced IC (11%) compared to Generic Medium Tanks   *** PENDING REVIEW 2-4-2-1
+	######################################### Generic SP ART   Similar cost to Generic Medium Tanks   *** PENDING REVIEW 2-4-2-1
 	medium_tank_artillery_equipment = {
 		is_archetype = yes
 		is_buildable = no
@@ -662,12 +663,12 @@ equipments = {
 		ap_attack = 13				# 6 - 25pdr Artillery  indirect HE
 		air_attack = 0 
 
-		build_cost_ic = 26.1		# 25 - 19 tons
+		build_cost_ic = 29.5		# 25 - 19 tons
 		
 		resources = {
 			oil = 2
 			steel = 3				# 4			
-			tungsten = 2			# 1
+			tungsten = 1
 			chromium = 1
 		}
 	}
@@ -703,7 +704,13 @@ equipments = {
 		hard_attack = 1.7
 		ap_attack = 16				# 6 Now a 105 infantry gun indirect HE
 		
-		build_cost_ic = 27.7		# 20 tons
+		build_cost_ic = 31.1		# 20 tons
+		resources = {
+			oil = 2
+			steel = 3		
+			tungsten = 2
+			chromium = 1
+		}
 	}
 
 	medium_tank_artillery_equipment_3 = {  # 1944
@@ -727,7 +734,13 @@ equipments = {
 		hard_attack = 2
 		ap_attack = 21				# 6 Now a 150 infantry gun indirect HE
 		
-		build_cost_ic = 34.8		# 27 - 24 tons
+		build_cost_ic = 38.5		# 27 - 24 tons
+		resources = {
+			oil = 2
+			steel = 3		
+			tungsten = 2
+			chromium = 1
+		}
 	}
 	######################################### Generic SP TD # NOTE: IMPROVED WEAPON / AVERAGE SPEED / AVERAGE WEIGHT & REDUCED IC / LOW BK & SOFT 
 	medium_tank_destroyer_equipment = {
@@ -821,7 +834,7 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 4			
-			tungsten = 3			# 5 Regular 75 AT gun, costs 1 more than a med tank w same gun 
+			tungsten = 3			# 5 Regular 75 AT gun, costs 1 more than a med tank w same gun due to faster to build
 			chromium = 1
 		}		
 	}
@@ -1106,7 +1119,7 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 3
-			tungsten = 2
+			tungsten = 3			# improved gun
 			chromium = 1
 		}
 		
@@ -1135,7 +1148,7 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 4				# Armor increased
-			tungsten = 2
+			tungsten = 3
 			chromium = 1
 		}
 	}
@@ -1162,11 +1175,11 @@ equipments = {
 		hard_attack = 10			# Needs fix was 75L24 Same as Pz IV A
 		ap_attack = 38 				# 89 Needs fix was 75L24 SAme as Pz IV A 
 		
-		build_cost_ic = 30.4		# Was 34 23 tons. Cost adjusted old inf gun instead AT gun.
+		build_cost_ic = 30.4		# Was 34 23 tons. Cost same due old inf gun instead AT gun.
 		resources = {
 			oil = 2
 			steel = 4
-			tungsten = 2
+			tungsten = 2			# Cheaper old gun
 			chromium = 1
 		}
 		
@@ -1201,8 +1214,8 @@ equipments = {
 		
 		resources = {
 			oil = 2
-			steel = 4
-			tungsten = 2
+			steel = 4				# Increased cost due low IC 
+			tungsten = 2			# Cheap inf gun
 			chromium = 1
 		}
 		
@@ -1512,7 +1525,7 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 3			# Very low armor version.
-			tungsten = 1		# 3	
+			tungsten = 1		# 3	Cheap gun and low weight
 			chromium = 1
 		}
 	}
@@ -1540,7 +1553,7 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 3			# 4 
-			tungsten = 2		# 3 
+			tungsten = 2		# 3 weight
 			chromium = 1
 		}
 	}
@@ -1569,7 +1582,7 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 4			# Armor up
-			tungsten = 2		# 3 Inf 75 gun 
+			tungsten = 2		# 3 
 			chromium = 1
 		}
 	}
@@ -2819,10 +2832,10 @@ equipments = {
 		ap_attack = 72			# 61 - Type 90 75 mm Muzzle velocity 690 m/s
 		air_attack = 0
 		
-		build_cost_ic = 21.7	# 20.5 - 15.4 tons
+		build_cost_ic = 19.2	# 20.5 - 15.4 tons
 		resources = {
 			oil = 2
-			steel = 3			
+			steel = 4			
 			tungsten = 3
 			chromium = 1
 		}
@@ -2842,7 +2855,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 10
-		breakthrough = 3		# Should have better close combat def & bk due to fully enclosed 
+		breakthrough = 3		# Should have better close combat def & bk due to fully enclosed & turret
 		hardness = 0.49			# 0.7 plate 25mm
 		armor_value = 30		# 35 plate 25mm
 
@@ -2852,10 +2865,10 @@ equipments = {
 		ap_attack = 75			# 91 - Type3  Muzzle velocity 680m/s Aprox 106mm 0º
 		air_attack = 0
 		
-		build_cost_ic = 22.5	# 17 tons
+		build_cost_ic = 27.7	# 17 tons: IC same as a tank due to turret & fully enclosed 
 		resources = {
 			oil = 2
-			steel = 4			
+			steel = 3			
 			tungsten = 2
 			chromium = 1
 		}
@@ -2886,12 +2899,12 @@ equipments = {
 
 		ap_attack = 78 			# 91 75mm Type5 Muzzle velocity 850m/s Aprox 102mm 30º
 		
-		build_cost_ic = 24		# 24 - 15 tons 
+		build_cost_ic = 19		# 24 - 15 tons Non turret & open top
 		
 		resources = {
 			oil = 2
 			steel = 4			
-			tungsten = 5
+			tungsten = 3
 			chromium = 1
 		}
 	}
@@ -2917,11 +2930,11 @@ equipments = {
 		hard_attack = 10
 		ap_attack = 39			# 50 37L40 
 		
-		build_cost_ic = 22.7	#22 - 11 tons
+		build_cost_ic = 22.9	#22 - 11 tons
 		resources = {
 			oil = 2
 			steel = 2			# Default. Very cheap medium tank			
-			tungsten = 1		# Default. Very cheap medium tank	
+			tungsten = 2		# Default. Very cheap medium tank	
 			chromium = 1
 		}
 		
@@ -2948,10 +2961,10 @@ equipments = {
 		hard_attack = 13
 		ap_attack = 45			# 60 - 47/32 
 
-		build_cost_ic = 23		# 23 - 14 tons
+		build_cost_ic = 25		# 23 - 14 tons
 		resources = {
 			oil = 2
-			steel = 3			# Default. Cheap			
+			steel = 3			#			
 			tungsten = 2
 			chromium = 1
 		}
@@ -3713,16 +3726,16 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 4
-		armor_value = 60
+		armor_value = 60			#60
 
 		#Offensive Abilities
 		soft_attack = 8
 		hard_attack = 6
-		ap_attack = 58
+		ap_attack = 58				#58
 
 		air_attack = 35
 
-		build_cost_ic = 21.5
+		build_cost_ic = 21.5		#21.5
 			
 	}
 }
