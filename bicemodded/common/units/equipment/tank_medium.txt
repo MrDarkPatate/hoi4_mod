@@ -38,7 +38,7 @@ equipments = {
 
 		#Defensive Abilities
 
-		defense = 9 #5
+		defense = 9 				#5
 		breakthrough = 36
 		hardness = 0.39				# 0.8 generic tank with 15 mm plate
 		armor_value = 25			#  20 generic tank with 15 mm plate
