@@ -765,7 +765,7 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = panzer_i_equipment_1			# Note: Was panzer_ii but now is not researched
+			type = panzer_ii_equipment_1
 			creator = "GER" 
 		}
 		requested_factories = 3
@@ -1034,11 +1034,11 @@ instant_effect = {
 			amount = 400
 			producer = GER
 		}
-	#add_equipment_to_stockpile = {		# Pz II historically not built until mid 1936
-	#	type = panzer_ii_equipment_1
-	#		amount = 250
-	#		producer = GER
-	#	}
+	add_equipment_to_stockpile = {
+		type = panzer_ii_equipment_1
+			amount = 250
+			producer = GER
+		}
 		add_equipment_to_stockpile = {
 		type = horse_equipment_0
 			amount = 420

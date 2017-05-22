@@ -6,7 +6,7 @@ state={
 	
 	state_category = city
 	resources={
-		steel=295
+		steel=190
 	}
 
 	history={
@@ -49,7 +49,7 @@ state={
 				bunker = 3
 
 			}
-			anti_air_building = 5
+			anti_air_building = 3
 			air_base = 5
 
 		}

@@ -1256,10 +1256,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = escort_carrier 
-			research_cost_coeff = 0.75
-		}
 		research_cost = 2
 		start_year = 1936
 		
@@ -1301,10 +1297,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		path = {
-			leads_to_tech = escort_carrier
-			research_cost_coeff = 0.75
-		}
+
 		research_cost = 2
 
 		start_year = 1940
@@ -2746,7 +2739,7 @@ sub_visibility = -0.20
 		}
 
 		dependencies = {
-			improved_centimetric_radar = 1
+			centimetric_radar = 1
 		}
 
 		path = {

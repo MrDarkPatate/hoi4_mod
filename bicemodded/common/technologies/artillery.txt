@@ -555,7 +555,6 @@ technologies = {
 		}
 		anti_air_heavy = {
 			air_attack = 0.1
-			ap_attack = 0.15
 		}
 		
 		path = {
@@ -593,7 +592,6 @@ technologies = {
 
 		anti_air_heavy = {
 			air_attack = 0.1
-			ap_attack = 0.25
 		}
 		
 		path = {
@@ -633,9 +631,6 @@ technologies = {
 			HVanti_air_equipment_3
 		}
 		
-		anti_air_heavy = {
-			ap_attack = 0.3
-		}
 		research_cost = 1
 		start_year = 1943
 		folder = {
@@ -1856,11 +1851,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 4
 			modifier = {
-				factor = 10
-				#num_of_military_factories > 40
+				factor = 6
 				tag = SOV
+			}
+			modifier = {
+				factor = 7
+				num_of_military_factories > 70
 			}
 		}
 		
@@ -1893,7 +1891,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 4
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 7
+				num_of_military_factories > 70
+			}
 		}
 		
 		categories = {
@@ -1925,11 +1931,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 4
 			modifier = {
-				factor = 10
-				#num_of_military_factories > 40
+				factor = 6
 				tag = SOV
+			}
+			modifier = {
+				factor = 7
+				num_of_military_factories > 70
 			}
 		}
 		
@@ -1961,7 +1970,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 4
+			modifier = {
+				factor = 6
+				tag = SOV
+			}
+			modifier = {
+				factor = 7
+				num_of_military_factories > 70
+			}
 		}
 		
 		categories = {
@@ -2199,10 +2216,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			modifier = {
-				factor = 12
+				factor = 10
 				num_of_military_factories > 20
+			}
+			modifier = {
+				factor = 6
+				num_of_military_factories > 40
 			}
 		}
 		
@@ -2239,10 +2260,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 2
 			modifier = {
-				factor = 12
+				factor = 10
 				num_of_military_factories > 20
+			}
+			modifier = {
+				factor = 6
+				num_of_military_factories > 45
 			}
 		}
 		
@@ -2285,6 +2310,10 @@ technologies = {
 			modifier = {
 				factor = 12
 				num_of_military_factories > 25
+			}
+			modifier = {
+				factor = 6
+				num_of_military_factories > 50
 			}
 		}
 		
@@ -2348,12 +2377,19 @@ technologies = {
 				factor = 12
 				num_of_military_factories > 70
 			}
+			modifier = {
+				factor = 0
+				tag = GER
+			}
+			modifier = {
+				factor = 10
+				tag = SOV
+			}
 		}
 		
 		on_research_complete = {
 			if = {
 				limit = {
-				    is_major = no
 					is_ai = yes
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
@@ -2369,8 +2405,8 @@ technologies = {
 		on_research_complete = {
 			if = {
 				limit = {
-				    is_major = no
 					is_ai = yes
+					NOT = { tag = SOV }
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
 					has_tech = HVantiair2
@@ -2378,6 +2414,57 @@ technologies = {
 				hidden_effect = {
 					load_oob = "unlock_infantry40_attaa"
 					load_oob = "unlock_infantry40_attaa_M"
+				}
+			}
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					or = { 
+					and = {
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = tech_maintenance_company
+					has_tech = basic_light_tank
+					has_tech = basic_medium_tank
+					}
+					tag = SOV
+			        tag = ITA
+					tag = JAP
+					}
+				}
+				hidden_effect = {
+					load_oob = "unlock_motorized_1942"
+				}
+			}
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					or = { tag = SOV tag = ITA tag = JAP }
+					}
+				hidden_effect = {
+					load_oob = "unlock_motorized_1942"
+				}
+			}
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = tech_maintenance_company
+					has_tech = basic_light_tank
+					has_tech = basic_medium_tank
+				}
+				hidden_effect = {
+					load_oob = "unlock_motorized_1942"
 				}
 			}
 		}

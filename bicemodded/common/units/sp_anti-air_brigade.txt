@@ -11,7 +11,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor
+		group = artillery
 		
 		categories = {
 			category_all_armor
@@ -71,7 +71,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor
+		group = artillery
 		
 		categories = {
 			category_all_armor
@@ -109,10 +109,6 @@ sub_units = {
 		    attack = -0.1 
 			movement = -0.1
 		}
-		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
 		river = { 
 			attack = -0.2 
 			movement = -0.2
@@ -134,7 +130,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor
+		group = artillery
 		
 		categories = {
 			category_all_armor
@@ -194,7 +190,7 @@ sub_units = {
 			category_army
 		}
 		
-		group = armor
+		group = artillery
 		
 		type = {
 			armor
@@ -232,10 +228,6 @@ sub_units = {
 		    attack = -0.5 
 			movement = -0.2
 		}
-		urban = {
-			attack = -0.6
-			defence = -0.2
-		}
 		river = { 
 			attack = -0.5
 			movement = -0.4
@@ -256,7 +248,7 @@ sub_units = {
 			anti_air
 		}
 		
-		group = armor
+		group = artillery
 		
 		categories = {
 			category_all_armor

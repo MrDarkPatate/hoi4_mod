@@ -13,15 +13,15 @@
 default_JAP_production_lim = {
 	enable = {
 		original_tag = JAP
-		num_of_military_factories < 47
+		num_of_military_factories < 49
 	}
 	abort = {
-		num_of_military_factories > 46
+		num_of_military_factories > 48
 	}
 	
-	ai_strategy = { type = build_army id = infantry 							value = 48		}	
+	ai_strategy = { type = build_army id = infantry 							value = 39		}	
 	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 7		}	
+	ai_strategy = { type = build_army id = marines 								value = 2		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 4 		}	
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
@@ -32,16 +32,16 @@ default_JAP_production_lim = {
 default_JAP_production_lim_2 = {
 	enable = {
 		original_tag = JAP
-		num_of_military_factories > 46
-		num_of_military_factories < 65 
+		num_of_military_factories > 48
+		num_of_military_factories < 75 
 	}
 	abort = {
-		OR = { num_of_military_factories < 47  num_of_military_factories > 64  }
+		OR = { num_of_military_factories < 49  num_of_military_factories > 74  }
 	}
 	
-	ai_strategy = { type = build_army id = infantry 							value = 58		}	
+	ai_strategy = { type = build_army id = infantry 							value = 48		}	
 	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 11		}	
+	ai_strategy = { type = build_army id = marines 								value = 2		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 5 		}	
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
@@ -52,15 +52,15 @@ default_JAP_production_lim_2 = {
 default_JAP_production_lim_3 = {
 	enable = {
 		original_tag = JAP
-		num_of_military_factories > 64
+		num_of_military_factories > 74
 	}
 	abort = {
-		num_of_military_factories < 65
+		num_of_military_factories < 75
 	}
 	
 	ai_strategy = { type = build_army id = infantry 							value = 64		}	
 	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
-	ai_strategy = { type = build_army id = marines 								value = 12		}	
+	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 5 		}	
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
@@ -124,7 +124,7 @@ jap_invasions_0 = {
 	ai_strategy = { type = invade id = "USA" value = -1000 }
 	ai_strategy = { type = invade id = "INS" value = -1000 }
 	ai_strategy = { type = invade id = "MAL" value = -1000 }
-	ai_strategy = { type = invade id = "PHI" value = -1000 }
+	ai_strategy = { type = invade id = "PHL" value = -1000 }
 	ai_strategy = { type = invade id = "SOV" value = -1000 }
 	ai_strategy = { type = invade id = "RAJ" value = -1000 }
 	ai_strategy = { type = invade id = "NZL" value = -1000 }
@@ -167,7 +167,7 @@ jap_get_aussie = {
 		has_war_with = ENG
         MAL = { has_capitulated = yes } 
 		INS = { has_capitulated = yes } 
-		#PHI = { has_capitulated = yes } 
+		PHL = { has_capitulated = yes } 
 	}
 	abort = {
 		always = no
@@ -184,7 +184,7 @@ jap_get_aussie2 = {
 		has_war_with = ENG
         MAL = { has_capitulated = yes } 
 		INS = { has_capitulated = yes } 
-		#PHI = { has_capitulated = yes } 
+		PHL = { has_capitulated = yes } 
 	    AST = { has_capitulated = yes } 
 		NZL = { has_capitulated = yes } 
 	}
@@ -255,12 +255,12 @@ strike_usa = {
 	}
 	ai_strategy = {
 		type = antagonize
-		id = "PHI"			
+		id = "PHL"			
 		value = 400
 	}
 	ai_strategy = {
 		type = conquer
-		id = "PHI"			
+		id = "PHL"			
 		value = 300
 	}	
 }

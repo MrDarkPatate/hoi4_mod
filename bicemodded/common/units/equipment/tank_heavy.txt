@@ -663,7 +663,37 @@ equipments = {
 			chromium = 1
 		}
 	}
+	# 1945
+	panzer_vi_equipment_3 = {
+		archetype = heavy_tank_equipment
+		parent = panzer_vi_equipment_2
+		priority = 50
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 4.8
+		reliability = 0.75
 
+		#Defensive Abilities
+		defense = 26
+		breakthrough = 84
+		armor_value = 135
+		hardness = 0.9
+
+		#Offensive Abilities
+		soft_attack = 24 #22
+		hard_attack = 45 #30
+		ap_attack = 135
+		
+		build_cost_ic = 65 
+		resources = {
+			oil = 2
+			steel = 4
+			tungsten = 3
+			chromium = 1
+		}
+	}
+	
 		# TIGER AG
 	#Sturmtiger
 	panzer_vi_ag_equipment_1 = {
@@ -784,8 +814,109 @@ equipments = {
 			chromium = 1
 		}
 	}
+	panzer_vi_td_equipment_3 = {
+		archetype = heavy_tank_destroyer_equipment
+		parent = panzer_vi_td_equipment_2
+		family = panzer_vi_equipment_3
+		priority = 120
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5.5
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 17
+		breakthrough = 5
+		hardness = 0.9
+		armor_value = 131
+
+		#Offensive Abilities
+		soft_attack = 11
+		hard_attack = 52
+		ap_attack = 155
+		air_attack = 0
+		
+		build_cost_ic = 39
+		resources = {
+			oil = 2
+			tungsten = 6
+			steel = 4
+			chromium = 1
+		}
+	}
 	
-	############################## RUSSIAN. 
+	#Elefant
+	panzer_vi_art_equipment_1 = {
+		archetype = heavy_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_1
+		family = panzer_vi_equipment_1
+		priority = 120
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.67
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 3
+		armor_value = 58 
+
+		#Offensive Abilities 
+		soft_attack = 44 
+		hard_attack = 3
+		
+		build_cost_ic = 44
+	}
+	
+	panzer_vi_art_equipment_2 = {
+		archetype = heavy_tank_artillery_equipment
+		parent = panzer_vi_art_equipment_1
+		family = panzer_vi_equipment_2
+		priority = 120
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5.4
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 3.5
+		armor_value = 66 #90
+
+		#Offensive Abilities
+		soft_attack = 54 #117
+		hard_attack = 4
+		
+		build_cost_ic = 46
+	}
+	
+	panzer_vi_art_equipment_3 = {
+		archetype = heavy_tank_artillery_equipment
+		parent = panzer_vi_art_equipment_2
+		family = panzer_vi_equipment_3
+		priority = 120
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5.8
+		reliability = 0.82
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 4
+		armor_value = 83 #90
+
+		#Offensive Abilities
+		soft_attack = 68 #117
+		hard_attack = 5
+		
+		build_cost_ic = 47
+	}
+	
+############################## RUSSIAN. 
 	# T-28
 	t_28_equipment_1 = {
 		archetype = heavy_tank_equipment
@@ -1358,7 +1489,53 @@ equipments = {
 			chromium = 1
 		}
 	}	
+	ita_heavy_art_equipment_2 = {
+		archetype = heavy_tank_artillery_equipment
+		parent = ita_heavy_art_equipment_1
+		family = ita_heavy_armor_equipment_2
+		priority = 20
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 3.5
+		armor_value = 65 #90
+
+		#Offensive Abilities
+		soft_attack = 44 #117
+		hard_attack = 3
+		
+		build_cost_ic = 41
+	}	
 	
+	ita_heavy_td_equipment_1 = {
+		archetype = heavy_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_1
+		family = ita_heavy_armor_equipment_2
+		priority = 120
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5
+		reliability = 0.65
+
+		#Defensive Abilities
+		defense = 10 #6
+		breakthrough = 1
+		armor_value = 60 
+
+		#Offensive Abilities
+		soft_attack = 7
+		hard_attack = 28 #42
+		ap_attack = 108 #140
+		air_attack = 0
+		
+		build_cost_ic = 37
+	}
 	###################### AMERICAN
 		# M6 Heavy Tank  1941
 	american_heavy_tank_equipment_1 = {
@@ -1455,5 +1632,28 @@ equipments = {
 			steel = 4
 			chromium = 1
 		}
+	}
+	
+	american_heavy_tank_art_equipment_1 = {
+		archetype = heavy_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_1
+		family = american_heavy_tank_equipment_2
+		priority = 120
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 5.3
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 3
+		armor_value = 60 
+
+		#Offensive Abilities 
+		soft_attack = 50 
+		hard_attack = 4
+		
+		build_cost_ic = 44
 	}
 }

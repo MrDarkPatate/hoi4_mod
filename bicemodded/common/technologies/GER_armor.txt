@@ -17,6 +17,7 @@ technologies = {
 	@1943 = 16
 	@1944 = 18
 	@1945 = 20
+	@1946 = 22
 
 	german_tech = {
 
@@ -147,10 +148,10 @@ technologies = {
 		
 		
 		research_cost = 1.3
-		start_year = 1942					# 1940 Marder III is a 1942 Gun.
+		start_year = 1940
 		
 		ai_will_do = {
-			factor = 11						# 0 Best TD by 1942
+			factor = 0
 		}
 
 		dependencies = {
@@ -170,10 +171,10 @@ technologies = {
 		
 		
 		research_cost = 1.3
-		start_year = 1944					# 1943 This was a Cheap 1944 and very well designed TD 
+		start_year = 1943
 		
 		ai_will_do = {
-			factor = 11						# 0 Cheapest TD by 1944
+			factor = 0
 		}
 
 		dependencies = {
@@ -229,12 +230,7 @@ technologies = {
 	}
 	#Panzerjäger I
 	subtech_panzer_i_td_equipment_1 = {
-		
-		allow = {							# This tank should need Cz equipment to be produced. (Same as 38t). check if this works properly
-		     tag = GER
-		     owns_state = 9
-		}
-		
+
 		enable_equipments = {
 			panzer_i_td_equipment_1
 		}
@@ -322,23 +318,6 @@ technologies = {
 			panzer_ii_equipment_1
 		}
 		
-		on_research_complete = {			# Note: Moved from Pz II D as now must be researched
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-						NOT = {	has_template_containing_unit = medium_armor }
-						is_ai = no
-					}
-
-					load_oob = "GER_Leichte_Division"
-					load_oob = "GER_Panzer_Division_1937"
-				}
-				
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
 		
 		path = {
 			leads_to_tech = tech_panzer_ii_equipment_2
@@ -357,8 +336,8 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 2					# 2 Consider reducing this value and next Pz II to balance same research cost 
-		start_year = 1936					# 1935. This tank now is not researched.
+		research_cost = 2
+		start_year = 1935
 		folder = {
 			name = german_pz_folder
 			position = { x = -3 y = @1936 }	# 1936 -3 is position in the mid of all research tree (Pz II - III - IV) 
@@ -380,7 +359,23 @@ technologies = {
 			panzer_ii_equipment_2
 		}
 		
-		
+		on_research_complete = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+						NOT = {	has_template_containing_unit = medium_armor }
+						is_ai = no
+					}
+
+					load_oob = "GER_Leichte_Division"
+					load_oob = "GER_Panzer_Division_1937"
+				}
+				
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
 
 		path = {
 			leads_to_tech = tech_panzer_ii_equipment_3
@@ -1027,7 +1022,7 @@ technologies = {
 		sub_technologies = {
 			subtech_panzer_iii_td_equipment_1			# This tank is now a correct TD (Stug III F with the 75L43) 
 		#	subtech_panzer_iii_art_equipment_1			# This tank is now the 2nd AG. No Stug SPART did exist
-		#	subtech_panzer_iii_flamm_equipment_0		# By now, skip flamm as still has not special use 
+			subtech_panzer_iii_flamm_equipment_0
 		}
 		
 		ai_will_do = {
@@ -1058,9 +1053,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			subtech_panzer_iii_td_equipment_2			# This tank is now a correct TD (Stug III G with the 75L48) 
+			subtech_panzer_iii_td_equipment_2
 		#   subtech_panzer_iii_art_equipment_2			# This tank is now the 3rd AG. No Stug SPART did exist
-		#	subtech_panzer_iii_flamm_equipment_1		# By now, skip flamm as still has not special use 
+			subtech_panzer_iii_flamm_equipment_1
 		}
 		
 		ai_will_do = {
@@ -1090,37 +1085,29 @@ technologies = {
 	#		factor = 1
 	#	}
 	#	
-	#	categories = {
-	#		armor
-	#		cat_medium_armor
-	#		cat_stug
-	#	}
-	#}
+	subtech_panzer_iii_flamm_equipment_0 = {
+
+		enable_equipments = {
+			panzer_iii_flamm_equipment_0
+		}
 	
-	#subtech_panzer_iii_flamm_equipment_0 = {	# Provisionally not used
-	#
-	#	enable_equipments = {
-	#		panzer_iii_flamm_equipment_0
-	#	}
-	#
-	#	dependencies = {
-	#		german_tech = 1
-	#	}
-	#	
-	#	research_cost = 1.1
-	#	start_year = 1942
-	#	
-	#	categories = {
-	#		armor
-	#		cat_medium_armor
-	#	}
-	#	
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
-	
-	# Panzer III M 							# Includes L
+		dependencies = {
+			german_tech = 1
+		}
+		
+		research_cost = 1.1
+		start_year = 1942
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	# Panzer III M #
 	tech_panzer_iii_equipment_5 = {
 
 		enable_equipments = {
@@ -1145,7 +1132,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 1						# Was 10. Now reduced priority to help AI get Panthers as this is a dead end
+			factor = 10
 		}
 		
 		categories = {
@@ -1153,7 +1140,6 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	
 	#Subtechs
 	subtech_panzer_iii_td_equipment_2 = {
 
@@ -1166,7 +1152,7 @@ technologies = {
 		}
 
 		research_cost = 1.1
-		start_year = 1942					# 1944
+		start_year = 1944
 		
 		ai_will_do = {
 			factor = 1
@@ -1194,38 +1180,29 @@ technologies = {
 	#	
 	#	ai_will_do = {
 	#		factor = 1
-	#	}
-	#	
-	#	categories = {
-	#		armor
-	#		cat_medium_armor
-	#	}
-	#}
-											# Provisionally not used
-	#subtech_panzer_iii_flamm_equipment_1 = {
-	#
-	#	enable_equipments = {
-	#		panzer_iii_flamm_equipment_1
-	#	}
-	#
-	#	dependencies = {
-	#		german_tech = 1
-	#	}
-	#	
-	#	research_cost = 1.1
-	#	start_year = 1943
-	#	
-	#	categories = {
-	#		armor
-	#		cat_medium_armor
-	#	}
-	#	
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#}
+	subtech_panzer_iii_flamm_equipment_1 = {
+
+		enable_equipments = {
+			panzer_iii_flamm_equipment_1
+		}
 	
-	# Panzer III N 							# Note. This tank can be reintroduced for flavour. Was a 75 Inf tank. AI should not do it 
+		dependencies = {
+			german_tech = 1
+		}
+		
+		research_cost = 1.1
+		start_year = 1943
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	# Panzer III N #
 	#tech_panzer_iii_equipment_6 = {
 #
 #		enable_equipments = {
@@ -1360,7 +1337,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11							# 0
+			factor = 0
 		}
 		
 		categories = {
@@ -1385,7 +1362,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = tech_panzer_vi_equipment_1
-			research_cost_coeff = 1
+			research_cost_coeff = 0.75
 		}
 		
 		dependencies = {
@@ -1406,7 +1383,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20						# 0. Now this tank is critical: prerequisite for Tiger / Panther. 
+			factor = 0
 		}
 		
 		categories = {
@@ -1511,7 +1488,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 0
 		}
 		
 		categories = {
@@ -1609,7 +1586,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5							# 0
+			factor = 0
 		}
 		
 		categories = {
@@ -1728,15 +1705,15 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 2
-		start_year = 1943						# 1942 0 This is best overall tank available from 1943 
+		research_cost = 2.4
+		start_year = 1942
 		folder = {
 			name = german_pz_folder
-			position = { x = 3 y = @1943 }		# 1942
+			position = { x = 3 y = @1942 }
 		}
 				
 		ai_will_do = {
-			factor = 20						
+			factor = 0
 		}
 		
 		categories = {
@@ -1752,6 +1729,11 @@ technologies = {
 			panzer_v_equipment_2
 		}
 		
+		path = {
+			leads_to_tech = tech_panzer_e_equipment_1
+			research_cost_coeff = 1
+		}
+		
 		dependencies = {
 			german_tech = 1
 		}
@@ -1760,16 +1742,17 @@ technologies = {
 		start_year = 1944
 		folder = {
 			name = german_pz_folder
-			position = { x = 3 y = @1944 }		# 0 This is best overall tank available from 1944
+			position = { x = 3 y = @1944 }
 		}
 
 		sub_technologies = {
 			subtech_panzer_v_td_equipment_1
+			subtech_panzer_v_art_equipment_1
 			subtech_panzer_v_spaa_equipment_1
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 0
 		}
 		
 		categories = {
@@ -1788,8 +1771,30 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 1.1
-		start_year = 1943
+		research_cost = 1.3
+		start_year = 1944
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	subtech_panzer_v_art_equipment_1 = {
+
+		enable_equipments = {
+			panzer_v_art_equipment_1
+		}
+	
+		dependencies = {
+			german_tech = 1
+		}
+
+		research_cost = 1.2
+		start_year = 1945
 		
 		categories = {
 			armor
@@ -1810,8 +1815,62 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 1.1
-		start_year = 1943
+		research_cost = 1.2
+		start_year = 1944
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	tech_panzer_e_equipment_1 = {
+
+		enable_equipments = {
+			panzer_e_equipment_1
+		}
+		
+		
+		dependencies = {
+			german_tech = 1
+		}
+		
+		sub_technologies = {
+			subtech_panzer_e_td_equipment_1
+		}
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = german_pz_folder
+			position = { x = 3 y = @1946 }
+		}
+
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	subtech_panzer_e_td_equipment_1 = {
+
+		enable_equipments = {
+			panzer_e_td_equipment_1
+		}
+	
+		dependencies = {
+			german_tech = 1
+		}
+
+		research_cost = 1.3
+		start_year = 1946
 		
 		categories = {
 			armor
@@ -1830,6 +1889,12 @@ technologies = {
 			nbfz_equipment_1
 		}
 		
+		
+		path = {
+			leads_to_tech = tech_panzer_vi_equipment_1
+			research_cost_coeff = 1
+		}
+		
 		dependencies = {
 			german_tech = 1
 		}
@@ -1842,7 +1907,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 		}
 		
 		categories = {
@@ -1884,14 +1949,15 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1942								# 1941
+		start_year = 1941
 		folder = {
 			name = german_pz_folder
-			position = { x = 6 y = @1942 }				# 1941
+			position = { x = 6 y = @1941 }
 		}
 		
 		sub_technologies = {
 		    subtech_panzer_vi_td_equipment_1
+			subtech_panzer_vi_art_equipment_1
 			subtech_panzer_vi_ag_equipment_1
 		}
 		
@@ -1915,7 +1981,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 1942
 		
 		categories = {
 			armor
@@ -1923,7 +1989,28 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 0
+		}
+	}
+	subtech_panzer_vi_art_equipment_1 = {
+		enable_equipments = {
+			panzer_vi_art_equipment_1
+		}
+
+		dependencies = {
+			german_tech = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1943
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	subtech_panzer_vi_ag_equipment_1 = {
@@ -1960,24 +2047,30 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		path = {
+			leads_to_tech = tech_panzer_vi_equipment_3
+			research_cost_coeff = 1
+		}
+		
 		dependencies = {
 			german_tech = 1
 		}
 		
 		research_cost = 2.5
-		start_year = 1944					# 1943
+		start_year = 1943
 		folder = {
 			name = german_pz_folder
-			position = { x = 6 y = @1944 }	# 1943
+			position = { x = 6 y = @1943 }
 		}
 		
 		sub_technologies = {
 			subtech_panzer_vi_td_equipment_2
+			subtech_panzer_vi_art_equipment_2
 			subtech_panzer_vi_ag_equipment_2
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 10
 		}
 		
 		categories = {
@@ -2009,6 +2102,29 @@ technologies = {
 			factor = 0
 		}
 	}
+	subtech_panzer_vi_art_equipment_2 = {
+
+		enable_equipments = {
+			panzer_vi_art_equipment_2
+		}
+	
+
+		dependencies = {
+			german_tech = 1
+		}
+
+		research_cost = 1.4
+		start_year = 1945
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 	subtech_panzer_vi_td_equipment_2 = {
 
 		enable_equipments = {
@@ -2020,7 +2136,7 @@ technologies = {
 		}
 
 		research_cost = 1.2
-		start_year = 1943
+		start_year = 1944
 		
 		categories = {
 			armor
@@ -2028,7 +2144,84 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8
+			factor = 0
+		}
+	}
+	tech_panzer_vi_equipment_3 = {
+
+		enable_equipments = {
+			panzer_vi_equipment_3
+		}
+
+		
+		dependencies = {
+			german_tech = 1
+		}
+		
+		research_cost = 3.1
+		start_year = 1945
+		folder = {
+			name = german_pz_folder
+			position = { x = 6 y = @1945 }
+		}
+		
+		sub_technologies = {
+			subtech_panzer_vi_td_equipment_3
+			subtech_panzer_vi_art_equipment_3
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	subtech_panzer_vi_art_equipment_3 = {
+
+		enable_equipments = {
+			panzer_vi_art_equipment_3
+		}
+	
+
+		dependencies = {
+			german_tech = 1
+		}
+
+		research_cost = 1.6
+		start_year = 1947
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	subtech_panzer_vi_td_equipment_3 = {
+
+		enable_equipments = {
+			panzer_vi_td_equipment_3
+		}
+	
+		dependencies = {
+			german_tech = 1
+		}
+
+		research_cost = 1.4
+		start_year = 1946
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	##SuperHeavies##
@@ -2053,7 +2246,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = german_pz_folder
-			position = { x = 8 y = @1943 }		# 1942
+			position = { x = 9 y = @1943 }		# 1942
 		}
 		
 		ai_will_do = {
@@ -2080,7 +2273,7 @@ technologies = {
 		start_year = 1945
 		folder = {
 			name = german_pz_folder
-			position = { x = 8 y = @1945}		# 1944
+			position = { x = 9 y = @1945}		# 1944
 		}
 		
 		ai_will_do = {
