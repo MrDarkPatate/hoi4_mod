@@ -1890,10 +1890,10 @@ technologies = {
 		}
 		
 		
-		path = {
-			leads_to_tech = tech_panzer_vi_equipment_1
-			research_cost_coeff = 1
-		}
+		#path = {					# First update for test
+		#	leads_to_tech = tech_panzer_vi_equipment_1
+		#	research_cost_coeff = 1
+		#}
 		
 		dependencies = {
 			german_tech = 1
