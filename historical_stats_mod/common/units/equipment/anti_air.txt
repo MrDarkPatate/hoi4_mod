@@ -1,4 +1,4 @@
-equipments = {				# NOTE: AA GUNS are more expensive than same caliber AT and these more expensive than ART 
+equipments = {				## NOTE: AA GUNS are more expensive than same caliber AT and these more expensive than ART 
 
 	anti_air_equipment = {
 		is_archetype = yes
