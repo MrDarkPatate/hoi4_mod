@@ -1442,7 +1442,7 @@ equipments = {
 
 	################################### There were no AA guns mounted in Pz III 
 
-	#Flammpanzer III						# 9 Flammethrower tank is using AA. I skip for now. This occupies a 1943 SPAA Slot (1st Slot 3rd stug)
+	# Flakpanzer III 				# 9 Was Flammpanzer III. Really they Are SPAA medium. This occupies a 1943 SPAA Slot (1st Slot 3rd stug)
 	panzer_iii_flamm_equipment_0 = {
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
@@ -1457,16 +1457,18 @@ equipments = {
 		#Defensive Abilities
 		defense = 2
 		breakthrough = 2
-		armor_value = 33
+		hardness = 0.63				# was default plate 80mm open top 
+		armor_value = 56			# Was 33 plate 80mm
 
 		#Offensive Abilities
 		soft_attack = 5
 		hard_attack = 4
-		ap_attack = 40
+		ap_attack = 33				# 40 Now a 20mm AA
 
 		air_attack = 17
 
 		build_cost_ic = 19
+		
 	}
 	panzer_iii_flamm_equipment_1 = {
 		archetype = medium_tank_aa_equipment
@@ -1482,16 +1484,18 @@ equipments = {
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 3
-		armor_value = 38
+		hardness = 0.63				# was default plate 80mm open top 
+		armor_value = 56			# Was 38 plate 80mm
 
 		#Offensive Abilities
-		soft_attack = 18				# Was 5. increased to represent close combat flamm.
+		soft_attack = 5
 		hard_attack = 4
-		ap_attack = 10					# Was 40.. Flamethrower not worthy vs tanks
+		ap_attack = 40				# This represents a 37mm AAgun 
 
 		air_attack = 20
 
-		build_cost_ic = 25				# 19 Not completely adjusted
+		build_cost_ic = 25			# 19 Not completely adjusted
+		
 	}
 	
 	################################### German Pz IV Series. Slighlty heavier than Pz III, initially soft focused.
@@ -1808,7 +1812,7 @@ equipments = {
 			chromium = 1
 		}	
 	}
-	#Nashorn  1943				# NOTE: Was 1942, but better 1943 , too make sense.
+	#Nashorn  1943				# NOTE: Was 1942, but better 1943 to make sense.
 	panzer_iv_td_equipment_2 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = panzer_iv_td_equipment_1
@@ -2022,7 +2026,7 @@ equipments = {
 		breakthrough = 76
 		
 		hardness = 0.73			# 0.82
-		armor_value = 83		# 109
+		armor_value = 83		# 109  plate 80mm 
 
 		#Offensive Abilities
 		soft_attack = 20
@@ -2038,26 +2042,33 @@ equipments = {
 		}
 	}
 	
-	# Panzer E75
+	# Panzer E50				# Was E75. E50 was supposed to substitute Panther & Tiger 1 
 	panzer_e_equipment_1 = {
 		archetype = medium_tank_equipment
 		parent = panzer_v_equipment_2
 		priority = 50
 		visual_level = 0
 		maximum_speed = 7.5
-		reliability = 0.8
+		reliability = 0.8		# Highly Reliable
 
 		#Defensive Abilities
 		defense = 25
 		breakthrough = 78
-		armor_value = 112
+		hardness = 0.77			# 0.82
+		armor_value = 100		# 112  plate 100mm sloped 
 
 		#Offensive Abilities
 		soft_attack = 23
 		hard_attack = 34
-		ap_attack = 118
+		ap_attack = 120			# 118 - 88L71gun
 
-		build_cost_ic = 40
+		build_cost_ic = 45		# 40 50-75 tons! Assumed 55 tons & standarized
+		resources = {
+			oil = 2
+			steel = 6			# Was default 55 tons need a lot of steel
+			tungsten = 4		# Was default
+			chromium = 1
+		}
 	}
 	
 		# Panther TD
@@ -2094,7 +2105,7 @@ equipments = {
 			chromium = 2		# 1
 		}
 	}
-
+	# Panzer E25 "TD"			# E25 was supposed to substitute all medium TD classes
 	panzer_e_td_equipment_1 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = panzer_v_td_equipment_1
@@ -2102,29 +2113,29 @@ equipments = {
 		priority = 80
 		visual_level = 0
 		
-				#Misc Abilities
+		#Misc Abilities
 		maximum_speed = 7
-		reliability = 0.8
+		reliability = 0.8		# Highly Reliable
 
 		#Defensive Abilities
 		defense = 18
 		breakthrough = 4
-		hardness = 0.85
-		armor_value = 124
+		hardness = 0.77			# 0.85
+		armor_value = 100		# 124  plate 100mm sloped 
 
 		#Offensive Abilities
 		soft_attack = 15
 		hard_attack = 38
-		ap_attack = 135
+		ap_attack = 120			# 135 88L71
 		air_attack = 0
 		
-		build_cost_ic = 25
+		build_cost_ic = 33		# 25 proto 25-50 tons! Assumed 42 tons & standarized so cheaper
 		
 		resources = {
 			oil = 2
-			tungsten = 6
-			steel = 4
-			chromium = 1
+			steel = 6			
+			tungsten = 5
+			chromium = 1		# Standarized
 		}
 	}
 	############################### German Pz V SpAA Pending to adjust IC	
