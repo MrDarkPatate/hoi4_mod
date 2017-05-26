@@ -1156,7 +1156,7 @@ equipments = {
 	panzer_iii_equipment_6 = {
 		archetype = medium_tank_equipment
 		parent = panzer_iii_equipment_5
-		priority = 50				# Consider change to 0. this is an "infantry" tank. AI should not do it.
+		priority = 0				# 50 This is an "infantry" tank. AI should not do it.
 		visual_level = 0
 		
 		#Misc Abilities
