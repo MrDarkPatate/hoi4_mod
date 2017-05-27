@@ -725,7 +725,7 @@ equipments = {
 		soft_attack = 1 		#2
 		hard_attack = 0 		#1
 		ap_attack = 30 			#22 20 mm AA gun generic
-		air_attack = 20 		#15
+		air_attack = 20 		#15 - Medium-aa-1 has only 13 
 		
 		build_cost_ic = 12
 		resources = {
@@ -1241,7 +1241,7 @@ equipments = {
 		soft_attack = 11 
 		hard_attack = 5 
 		ap_attack = 30 				# 22 20mm AAgun
-		air_attack = 20 			# 4 This is an AA tank Adjusted to default
+		air_attack = 13 			# 4 This is an AA tank Adjusted to default
 		
 		build_cost_ic = 8.5			# 11 - 5,5 tons
 		resources = {
@@ -1274,7 +1274,7 @@ equipments = {
 		soft_attack = 12
 		hard_attack = 6 
 		ap_attack = 30				# 33 20mm AAgun
-		air_attack = 22				# 9 This is an AA tank Adjusted to default
+		air_attack = 15				# 9 This is an AA tank Adjusted to default
 		
 		
 		build_cost_ic = 10.6		# 10 tons
@@ -1897,7 +1897,7 @@ equipments = {
 		soft_attack = 11 
 		hard_attack = 5 
 		ap_attack = 30 				# 22 20mm AAgun
-		air_attack = 24 
+		air_attack = 17				# Same value as hypotethic Pz III AA_1 equipment
 		
 		build_cost_ic = 10.5		# 11 - 9.8 tons
 		resources = {
@@ -2333,7 +2333,7 @@ equipments = {
 		}	
 	}
 	
-	############################# USA Tanks  PIERCING / ARMOR DONE UNTIL THIS LINE
+	############################# USA Tanks  PIERCING / ARMOR DONE UNTIL THIS LINE / ONLY SOME TANKS DONE
 		# M2 Light Tank  1935
 	american_light_tank_equipment_1 = {
 		archetype = light_tank_equipment
