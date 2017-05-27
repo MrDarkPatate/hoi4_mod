@@ -6743,6 +6743,16 @@ SpriteType = {
 		name = "GFX_subtech_czech_panzer_td_2_medium"
 		texturefile = "gfx/interface/technologies/GER_Hetzer.dds"
 	}
+	#Grille
+		SpriteType = {
+		name = "GFX_subtech_czech_panzer_art_1_medium"
+		texturefile = "gfx/interface/technologies/grille.dds"
+	}
+	#Flakpanzerer 38(t)
+	SpriteType = {
+		name = "GFX_subtech_czech_panzer_spaa_1_medium"
+		texturefile = "gfx/interface/technologies/flakpanzer38.dds"
+	}
 	###### swim
 	SpriteType = {
 		name = "GFX_tech_panzer_ii_amph_equipment_1_medium"
@@ -6796,7 +6806,7 @@ SpriteType = {
 	}
 
 #Panzer II C
-
+#
 #	SpriteType = {
 #		name = "GFX_tech_panzer_ii_equipment_2_medium"
 #	texturefile = "gfx/interface/technologies/tech_panzer_ii_equipment_2.dds"
@@ -6914,11 +6924,11 @@ SpriteType = {
 #StuG F TD
 	SpriteType = {
 		name = "GFX_tech_panzer_iii_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iii_td_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/StuGIIIF.dds"
 	}
 	SpriteType = {
 		name = "GFX_panzer_iii_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iii_td_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/StuGIIIF.dds"
 	}
 #StulG 33B
 
@@ -6947,18 +6957,18 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_subtech_panzer_iii_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iii_td_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/subtech_panzer_iii_art_equipment_2.dds"
 	}
 
 #Stug III G TD
 
 	SpriteType = {
 		name = "GFX_tech_panzer_iii_td_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iii_td_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/StuGIIIG.dds"
 	}
 	SpriteType = {
 		name = "GFX_panzer_iii_td_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/subtech_panzer_iii_td_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/StuGIIIG.dds"
 	}
 #StuH 42
 
@@ -7102,7 +7112,7 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_tech_panzer_e_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/e_75.dds"
+		texturefile = "gfx/interface/technologies/e_50.dds"
 	}
 
 #Jagdpanther
@@ -7114,7 +7124,7 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_subtech_panzer_e_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/e_50.dds"
+		texturefile = "gfx/interface/technologies/GER_e_25.dds"
 	}
 	
 	SpriteType = {

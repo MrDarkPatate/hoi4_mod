@@ -4878,6 +4878,14 @@ SAF_HVanti_tank_equipment_2_desc:0 "Heavy Anti-Tank Guns specialized in defeatin
  czech_panzer_td_equipment_2_short:0 "Hetzer Light TD"
  czech_panzer_td_equipment_2_desc:0 "Light tank destroyer based on the cheap and reliable Skoda vz.38 (pz 38(t)) chassis."
  
+ czech_panzer_art_equipment_1:0 "Grille"
+ czech_panzer_art_equipment_1_short:0 "Grille SP.Art"
+ czech_panzer_art_equipment_1_desc:0 "The Grille series was based on the Czech Panzer 38(t) tank chassis and used a 15 cm sIG 33 infantry gun. \n The German word Grille means ‘Cricket’: a small insect that makes a very large noise."
+ 
+ czech_panzer_spaa_equipment_1:0 "The Flakpanzer 38(t)"
+ czech_panzer_spaa_equipment_1_short:0 "The Flakpanzer 38(t) SP.AA"
+ czech_panzer_spaa_equipment_1_desc:0 "The Flakpanzer 38(t) was designed around the chassis of the LT-38, a pre-war Czech design, which following the German occupation was produced for the Wehrmacht as the Panzer 38(t) until it was no longer effective. \n As the vehicle used the Ausf M chassis, the engine was located near the middle of the vehicle, and the armament was placed at the rear in a specially designed armoured section. The superstructure could fold down to allow 360-degree traverse at low elevation. \n Including the single prototype, 141 Flakpanzer 38(t)s were built from November 1943 to February 1944, entering service in 1944."
+ 
  #
  GER_czech_panzer_equipment_1:0 "Pz 35(t)"
  GER_czech_panzer_equipment_1_short:0 "Panzer 35(t) Light Tank"
@@ -4887,7 +4895,7 @@ SAF_HVanti_tank_equipment_2_desc:0 "Heavy Anti-Tank Guns specialized in defeatin
  GER_czech_panzer_equipment_2_short:0 "Panzer 38(t) A Light Tank"
  GER_czech_panzer_equipment_2_desc:0 "The Panzerkampfwagen 38(t) was originally a Czechoslovak tank of pre-World War II design. After Czechoslovakia was taken over by Germany, it was adopted by the German Army. Production ended in 1942, when its main armament was deemed inadequate. In all, over 1,400 Pz. 38(t)s were manufactured. The chassis of the Pz. 38(t) continued to be produced for the Marder III (1942–1944) with some of its components used in the later Jagdpanzer 38 (1944–1945) tank destroyers and its derivative vehicles. It was considered an excellent tank, especially compared to the Panzer I and Panzer II that were the Panzerwaffe's main tanks during the outset of WWII. The Panzer 38(t) performed well in the Polish Campaign in 1939 and the Battle of France in 1940. It was better armed than the Panzer I and Panzer II tanks. It was on a par with most light tank designs of the era, although it was unable to effectively engage the frontal armour of medium, heavy and infantry tank designs."
  
-  #
+ #
  GER_czech_panzer_equipment_3:0 "Pz 38(t) F"
  GER_czech_panzer_equipment_3_short:0 "Panzer 38(t) F Light Tank"
  GER_czech_panzer_equipment_3_desc:0 "Pz 38(t) with frontal armour increased to 50 mm by bolting on an additional 25 mm armour."
@@ -5279,10 +5287,10 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_i_td_equipment_1_desc:0 "The Panzerjäger I was the first of the German tank destroyers to see service in the Second World War. It mounted a Czech Škoda 4.7 cm (1.9 in) cm PaK (t) anti-tank gun on a converted Panzer I Ausf. B chassis. It was intended to counter heavy French tanks like the Char B1 that were beyond the capabilities of the 3.7 cm PaK 36 anti-tank gun and served to extend the life of obsolete Panzer I tanks. 202 Panzer I were converted to the Panzerjäger I in 1940 and 1941. They were employed in the Battle of France, in the North Africa Campaign and on the Eastern Front."
  panzer_i_art_equipment_1:0 "sIG 33 Bison"
  panzer_i_art_equipment_1_short:0 "Bison I Light SP.Art"
- panzer_i_art_equipment_1_desc:0 "A small artillery cannon mounted on a light chassis, a light SPG does not pack the firepower of its larger brethren, but they are more mobile."
+ panzer_i_art_equipment_1_desc:0 "The Invasion of Poland had shown that the towed sIG 33 guns assigned to the infantry gun companies of the motorized infantry regiments had difficulties keeping up with the tanks during combat. The easiest solution was to modify a spare tank chassis to carry it into battle. A sIG 33 was mounted on the chassis of the Panzer I Ausf. B, complete with carriage and wheels, in place of the turret and superstructure. Plates 13 millimetres (0.51 in) thick were used to form a tall, open-topped fighting compartment on the forward part of the hull. This protected little more than the gun and the gunner himself from small arms fire and shell fragments, the loaders being completely exposed. The rearmost section of armor was hinged to ease reloading."
  panzer_i_spaa_equipment_1:0 "Flakpanzer I Light SP.AA"
  panzer_i_spaa_equipment_1_short:0 "Flk.Pz I Eq."
- panzer_i_spaa_equipment_1_desc:0 "Anti-air artillery is primarily designed to shoot down hostile planes, although the rapid fire cannons can also be effective against ground targets. This model is mounted on the chassis of a light tank."
+ panzer_i_spaa_equipment_1_desc:0 "The Flakpanzer I was developed during the Battle of France when it was recognized that the motorised Flak was insufficiently armoured. The German Heereswaffenamt decided to combine light anti-aircraft guns with tank chassis. The chassis of the Panzer I was used for these conversions, simply because it was available. The conversions were done by Stoewer."
  ## Pz II A/B/C
  panzer_ii_equipment_1:0 "PzKpfw. II A/B/C"
  panzer_ii_equipment_1_short:0 "Panzer II A Light Tank"
@@ -5294,7 +5302,7 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  # Pz II D sub tech equipment
  panzer_ii_td_equipment_1:0 "Marder II Sd.Kfz.132"
  panzer_ii_td_equipment_1_short:0 "Marder II  Sd.Kfz.132 Light TD"
- panzer_ii_td_equipment_1_desc:0 "Light Tank Destroyer based on the Panzer II chassis"
+ panzer_ii_td_equipment_1_desc:0 "The Marder II came in two major versions. The first version (Sd.Kfz. 132) was based on the light Panzer II Ausf. D/E and Flammpanzer II chassis with a new torsion bar suspension featuring four large road wheels and a "slack track" with no track return rollers. It was armed with captured Soviet 7.62 cm guns that were re-chambered to accept German 7.5 cm Pak 40 ammunition. This improved its penetrative capabilities and eliminated the need for captured ammunition. These early Marder IIs had a high silhouette (2.60 m high) and relatively thin armor compared to other armored vehicles; only 30 mm (front) and 10 to 15 mm (sides). There was no armour on the top or rear, leaving the crew with very little protection. Alkett and Wegmann produced 201 Marder II (Sd. Kfz. 132) from early 1942 to early 1943."
  ## Pz II F
  panzer_ii_equipment_3:0 "PzKpfw.II F"
  panzer_ii_equipment_3_short:0 "Panzer II F Light Tank"
@@ -5302,7 +5310,7 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  # Pz II D/E sub tech equipment
  panzer_ii_art_equipment_1:0 "sIG 33 Bison II"
  panzer_ii_art_equipment_1_short:0 "Bison II Light SP.Art"
- panzer_ii_art_equipment_1_desc:0 "Self-propelled tracked howitzer based on the Panzer I chassis"
+ panzer_ii_art_equipment_1_desc:0 "The 15 cm sIG 33 (Sf) auf Panzerkampfwagen I Ausf B built in time for the Invasion of France in 1940 had proven to be too heavy for their chassis as well as enormously tall. The same gun was mated to the Panzerkampfwagen II chassis in an attempt to drastically lower its height while using a stronger chassis. The prototype used a standard Panzer II Ausf. B chassis when it was built in February 1941, but this was too cramped for use.[1] The chassis was lengthened by 60 centimetres (24 in), which required adding a sixth roadwheel, and widened by 32 centimetres (13 in) to better accommodate the gun while preserving its low silhouette. 15 millimetres (0.59 in) plates formed the front and sides of the open-topped fighting compartment,[1] which was also open at the rear. Its sides were notably lower than the front which made the crew vulnerable to small arms fire and shell fragments. Large hatches were added to the rear deck to better cool the engine."
  ## Pz II L Luchs
  panzer_ii_equipment_4:0 "PzKpfw.II L Luchs"
  panzer_ii_equipment_4_short:0 "PzKpfw.II L Luchs Light Tank"
@@ -5310,7 +5318,7 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  # Wespe
  panzer_ii_art_equipment_2:0 "Wespe"
  panzer_ii_art_equipment_2_short:0 "Wespe Light SP.Art"
- panzer_ii_art_equipment_2_desc:0 "Self-propelled tracked howitzer based on the Panzer II chassis"
+ panzer_ii_art_equipment_2_desc:0 "The Sd. Kfz. 124 Wespe was a German self-propelled artillery vehicle developed and used during the Second World War. It was based on a modified Panzer II chassis. \n In 1940, during the Battle of France, it was apparent that the intermediate tank of the German forces, the Panzer II, was unsuitable as a main battle tank.Existing chassis were converted to self-propelled artillery vehicles, just as had been done with the Marder II. Amongst other modifications to the Panzer II, the engine was moved forward and the chassis was slightly lengthened to gain sufficient space for the rear-mounted 10.5 cm leFH 18 howitzer. The superstructure was lightly armored, with 10 mm armor plate (enough to stop small arms fire) and was open at the top and to the rear. \n The Wespe was in production from February 1943 until June 1944, when Soviet forces approached the frontier. By that time, 676 had been produced."
  # Flamigo
  panzer_ii_flamm_equipment_1:0 "FlakPanzer II"
  panzer_ii_flamm_equipment_1_short:0 "FlakPanzer II Light SP.AA"
@@ -5322,7 +5330,7 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  # Pz II F sub tech equipment
  panzer_ii_td_equipment_2:0 "Marder II Sd.Kfz.131"
  panzer_ii_td_equipment_2_short:0 "Marder II  Sd.Kfz. 131 Light TD"
- panzer_ii_td_equipment_2_desc:0 "Light Tank Destroyer based on the Panzer II chassis"
+ panzer_ii_td_equipment_2_desc:0 "The second version (Sd.Kfz. 131) was originally based on Panzer II Ausf. A to C hulls removed from active service, however later newly produced Ausf. F chassis were also used. This Marder II had a redesigned (widened) fighting compartment and used the German 75 mm Pak 40 anti-tank gun. The silhouette was lowered by about 40 cm to 2.20 m, but the armor was thin and the compartment was open to the top and rear, as in Sd. Kfz. 132. FAMO, MAN and Daimler-Benz produced 576 Marder II (Sd.Kfz. 131) conversions from June 1942 to approximately mid 1943. 75 more were converted (probably by FAMO only) from mid 1943 to early 1944 when the last Panzer IIs were taken out of active service."
  ## Pz II L Leopard
  #panzer_ii_equipment_6:0 "PzKpfw.II L Leopard"
  #panzer_ii_equipment_6_short:0 "Panzer II L Leopard Light Tank"
@@ -5330,7 +5338,7 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  #Pz IIIA/D
  panzer_iii_equipment_1:0 "PzKpfw.III ausf. A-D"
  panzer_iii_equipment_1_short:0 "Panzer III A Medium Tank"
- panzer_iii_equipment_1_desc:0 "Prototype, only 35 built; some saw service in Poland.\nArmed with 3.7 cm KwK 36 L/46.5 main gun, 250 PS HL 108 engine."
+ panzer_iii_equipment_1_desc:0 "Prototype, only 35 built; some saw service in Poland.\nArmed with 3.7 cm KwK 36 L/46.5 main gun, 250 PS HL 108 engine. \n \nIt was intended as the main tank of the German Panzer divisions, capable of engaging and destroying opposing tank forces, and was to be paired with the Panzer IV, which was to fulfil the second use: dealing with anti-tank guns and infantry strong points, such as machine-gun nests, firing high-explosive shells at such soft targets. Such supportive tanks designed to operate with friendly infantry against the enemy generally were heavier and carried more armour. The direct infantry-support role was to be provided by the turret-less Sturmgeschütz assault gun, which mounted a short-barrelled gun on a Panzer III chassis."
  #Pz IIIE/F
  panzer_iii_equipment_2:0 "PzKpfw.III ausf. E/F"
  panzer_iii_equipment_2_short:0 "Panzer III E Medium Tank"
@@ -5340,16 +5348,16 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_iii_equipment_3_short:0 "Panzer III H Medium Tank"
  panzer_iii_equipment_3_desc:0 "Apart from the mantlet armor increase, there were almost no notable differences between this type and former Fs. 600 were built in all. Like the Ausf.E and F, they were all upgraded with a new 50 mm (1.97 in) KwK 38 L42 gun prior to operation Barbarossa.   \nH variant... 5 cm KwK 38 L/42 as standard gun. \nFor the first time, the Ausf.H (308 built) incorporated much-needed additional bolted armor on the frontal glacis, and the rear plates. These 30 mm (1.18 in) plates led to a total of 60 mm (2.36 in) of frontal protection. However, the sides were still 30 mm (1.18 in) thick, with the top measuring 10 mm (0.39 in) and the bottom only 5 mm (0.2 in), clearly the weakest part of these tanks."
 
- panzer_iii_td_equipment_1:0 "StuG III Ausf.F"
+ panzer_iii_td_equipment_1:0 "StuG III Ausf.F Medium Tank Destroyer"
  panzer_iii_td_equipment_1_short:0 "StuG III F Medium TD"
- panzer_iii_td_equipment_1_desc:0 "Tank Destroyer based on the StuG III. By mounting the 7.5 cm gun with armor piercing rounds on the low silhouette StuG III we get a deadly tank hunter."
+ panzer_iii_td_equipment_1_desc:0 "The first real up-gunning of the StuG, this version uses the longer 7.5 cm StuK 40 L/43 gun allowing Ausf. F to engage most Soviet armoured vehicles at normal combat ranges. \nThis change marked the StuG as being more of a tank destroyer than an infantry support vehicle."
  
- panzer_iii_td_equipment_2:0 "StuG III Ausf.G"
+ panzer_iii_td_equipment_2:0 "StuG III Ausf.G Medium Tank Destroyer"
  panzer_iii_td_equipment_2_short:0 "StuG III G Medium TD"
- panzer_iii_td_equipment_2_desc:0 "Tank Destroyer based on the StuG III, Panzer III Ausf. M chassis."
+ panzer_iii_td_equipment_2_desc:0 "The Ausführung G stood apart from the other production versions. It was, in essence, the main production run for the entire StuG series, with more than 8400 rolling of the line from December 1942 to April 1945, equivalent to the total production of all Panzer IV types combined. Tank Destroyer based on the Panzer III Ausf. M chassis. Ausf G used Ausf F/8s hull, suspension, engine and other components, while superstructure was modified. Superstructure was widened, its 30mm sides were sloped at 79 degrees, the roof was raised in the rear and its rear 30mm superstructure wall was mounted at 90 degrees. This provided more room for both the commander and loader. Also, early vehicles had 50mm frontal hull armor increased to 80mm by addition of 30mm bolted armor plate, while vehicles produced since May of 1943 by Alkett and since October of 1943 by MIAG had 80mm frontal hull armor. It was armed, from the beginning, with the 7.5 cm StuK 40 L/48 gun."
 
  panzer_iii_ag_equipment_1:0 "StuG III Ausf.A"
- panzer_iii_ag_equipment_1_short:0 "StuG III A Medium Assault Gun"
+ panzer_iii_ag_equipment_1_short:0 "StuG III A Medium AG"
  panzer_iii_ag_equipment_1_desc:0 "Medium Assault Gun. The StuG III was Germany's most produced armoured fighting vehicle during World War II. It fielded the low-velocity 7.5 cm StuK 37 L/24 gun which was ideal against soft targets and with the mobility and armor of the StuG the combination proved very successful."
  #Pz IIIJ
  panzer_iii_equipment_4:0 "PzKpfw.III ausf. J"
@@ -5368,8 +5376,8 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_iii_equipment_5_short:0 "Panzer III M Medium Tank"
  panzer_iii_equipment_5_desc:0 "L variant....Redesignated Aus. J equipped with long 5 cm  KwK 39 L60 gun, 20 mm stand-off armour plates on hull and turret front. \nM variant...Minor modifications of the ausf. L such as deep-wading exhaust and Schürzen side-armour panels."
  #
- panzer_iii_ag_equipment_3:0 "StuH 42 Assault Gun"
- panzer_iii_ag_equipment_3_short:0 "StuH 42 Medium Assault Gun"
+ panzer_iii_ag_equipment_3:0 "StuH 42 Medium Assault Gun"
+ panzer_iii_ag_equipment_3_short:0 "StuH 42 AG"
  panzer_iii_ag_equipment_3_desc:0 "Sturmhaubitze 42 Ausf. G was a self-propelled short-range howitzer based on the StuG III G. It fielded a large 10.5 cm howitzer and was designed for infantry support."
  #
  panzer_iii_ag_equipment_4:0 "StuG III Ausf.G"
@@ -5391,15 +5399,15 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  #Pz IIIN
  panzer_iii_equipment_6:0 "PzKpfw.III ausf. N"
  panzer_iii_equipment_6_short:0 "Panzer III N Medium Tank"
- panzer_iii_equipment_6_desc:0 "Infantry support tank, armed with a short-barrelled 7.5 cm KwK 37 L/24 gun."
+ panzer_iii_equipment_6_desc:0 "The last version, the Ausf.N, with a short-barrel 75 mm (2.95 in) KwK 37 L/24 gun capable of firing, for the first time, HEAT projectiles. This tank was the perfect dual-purpose, versatile model, which inspired retrofitting of earlier versions. Since new specialized tank-hunters and heavy battle tanks were available, the Panzer III was increasingly confined to an infantry support role."
  #Pz IV A
  panzer_iv_equipment_1:0 "PzKpfw.IV ausf. A"
  panzer_iv_equipment_1_short:0 "Panzer IV A Medium Tank"
- panzer_iv_equipment_1_desc:0 "The Ausf.A was a kind of pre-series, with only 35 units produced. It was powered by Maybach's HL 108TR, producing 250 PS (183.87 kW), and used the SGR 75 transmission with five forward gears and one reverse, achieving a maximum road speed of 31 kilometres per hour. As main armament, the vehicle mounted the short-barreled, howitzer-like Kampfwagenkanone 37 L/24 (KwK 37 L/24) 75 mm tank gun, which was a low-velocity gun mainly designed to fire high-explosive shells"
+ panzer_iv_equipment_1_desc:0 "The Ausf.A was a kind of pre-series, with only 35 units produced. It was powered by Maybach's HL 108TR, producing 250 PS (183.87 kW), and used the SGR 75 transmission with five forward gears and one reverse, achieving a maximum road speed of 31 kilometres per hour. As main armament, the vehicle mounted the short-barreled, howitzer-like Kampfwagenkanone 37 L/24 (KwK 37 L/24) 75 mm tank gun, which was a low-velocity gun mainly designed to fire high-explosive shells."
  #Pz IV B/C/D 
  panzer_iv_equipment_2:0 "PzKpfw.IV ausf. B/C/D"
  panzer_iv_equipment_2_short:0 "Panzer IV D Medium Tank"
- panzer_iv_equipment_2_desc:0 "The next step was the Ausf.B, with a modified commander cupola, a new Maybach HL 120TR engine, now developing 300 hp, and a new SSG75 transmission. Top speed was increased to 39 km/h (27 mph). Armor was raised to 30 mm (1.18 in) on the frontal glacis, and 15 mm (0.59 in) elsewhere. The hull machine-gun was also protected by a new port. After a 42 unit run only, the production shifted to the Ausf.C. \nAusf.C. Armor was increased to 30 mm (1.18 in) around the turret. Total weight was now 18.15 tons. After 40 units were delivered by 1938, the type was improved by the introduction of the new Maybach HL 120TRM, for the next 100. The Ausf.D followed. \nThe “Dora” was identified by the reintroduction of a hull machine gun, and the internal gun mantlet was now exteriorized. Side protection was also increased to 20 mm (0.79 in). 243 Ausf.D were built. The “D” was the last “pre-series”. Afterwards, it was decided to scale-up production."
+ panzer_iv_equipment_2_desc:0 "The next step was the Ausf.B, with a modified commander cupola, a new Maybach HL 120TR engine, now developing 300 hp, and a new SSG75 transmission. Top speed was increased to 39 km/h (27 mph). Armor was raised to 30 mm (1.18 in) on the frontal glacis, and 15 mm (0.59 in) elsewhere. The hull machine-gun was also protected by a new port. After a 42 unit run only, the production shifted to the Ausf.C. \n  Ausf.C Armor was increased to 30 mm (1.18 in) around the turret. Total weight was now 18.15 tons. After 40 units were delivered by 1938, the type was improved by the new Maybach HL 120TRM, for the next 100. The Ausf.D followed. \n  The “Dora” was identified by the reintroduction of a hull machine gun, and the internal gun mantlet was now exteriorized. Side protection was also increased to 20 mm (0.79 in). 243 Ausf.D were built. The “D” was the last “pre-series”. Afterwards, it was decided to scale-up production."
  #Pz IV E/F1 1939
  panzer_iv_equipment_3:0 "PzKpfw.IV ausf. E/F1"
  panzer_iv_equipment_3_short:0 "Panzer IV E Medium Tank"
@@ -5411,15 +5419,15 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  #Pz IV F2/G 1942
  panzer_iv_equipment_4:0 "PzKpfw.IV ausf. F2/G"
  panzer_iv_equipment_4_short:0 "Panzer IV G Medium Tank"
- panzer_iv_equipment_4_desc:0 "Even equipped with the AP Panzergranate, the low-velocity gun of the Panzer IV was inadequate against well-armored tanks. On 26 May 1941, mere weeks before Operation Barbarossa, during a conference with Hitler, it was decided to improve the Panzer IV's main armament. Krupp was awarded the contract to integrate again the 50 mm (1.97 in) Pak 38 L/60 gun into the turret. November 1941, the decision to up-gun the Panzer IV to the 50-millimetre gun was dropped, and instead Krupp was contracted in a joint development to modify Rheinmetall's pending 75 mm anti-tank gun design.  This led to 75mm KwK 40 L/43. After the first prototype was produced by Krupp, in February 1942, production of the F2 started. By July 1942, 175 had been delivered. However, in June 1942, the F2 was renamed Ausf.G, and further modifications were applied on the production line"
+ panzer_iv_equipment_4_desc:0 "Even equipped with the AP Panzergranate, the low-velocity gun of the Panzer IV was inadequate against well-armored tanks. On 26 May 1941, mere weeks before Operation Barbarossa, during a conference with Hitler, it was decided to improve the Panzer IV's main armament. Krupp was awarded the contract to integrate again the 50 mm (1.97 in) Pak 38 L/60 gun into the turret. November 1941, the decision to up-gun the Panzer IV to the 50-millimetre gun was dropped, and instead Krupp was contracted in a joint development to modify Rheinmetall's pending 75 mm anti-tank gun design.  This led to 75mm KwK 40 L/43. After the first prototype was produced by Krupp, in February 1942, production of the F2 started. By July 1942, 175 had been delivered. However, in June 1942, the F2 was renamed Ausf.G, and further modifications were applied on the production line."
  #
  panzer_iv_td_equipment_1:0 "StuG IV"
  panzer_iv_td_equipment_1_short:0 "StuG IV Medium TD"
- panzer_iv_td_equipment_1_desc:0 "Medium Tank Destroyer based on the StuG IV."
+ panzer_iv_td_equipment_1_desc:0 "Medium Tank Destroyer based on the Pz IV chassis. In November 1943, Alkett, the manufacturer of the StuG III, suffered damage due to an Allied bombing raid. A conference held from 6 to 7 December 1943, addressed possible solutions to this problem. Hitler welcomed the suggestion of taking the StuG III superstructure and mounting it on a Panzer IV chassis. The StuG IV could be more quickly manufactured than the Jagdpanzer IV at the time. This restarted the Sturmgeschütz IV project. This time, the superstructure of the StuG III Ausf. G was mounted on a Panzer IV chassis 7, with a box compartment for the driver added. Combat weight was 23000 kg, lighter than the 23900 kg for the StuG III Ausf. G. Between 16 and 17 December 1943, Hitler was shown the StuG IV and approved it."
  #
  panzer_iv_spaa_equipment_1:0 "Wirbelwind"
  panzer_iv_spaa_equipment_1_short:0 "Wirbelwind Medium SP.AA"
- panzer_iv_spaa_equipment_1_desc:0 "Medium Anti-air tracked armored vehicle based on the Pz IV chassis."
+ panzer_iv_spaa_equipment_1_desc:0 "The Flakpanzer IV "Wirbelwind" (Whirlwin) was a self-propelled anti-aircraft gun based on the Panzer IV tank. \n It was developed as a successor to the earlier Möbelwagen self-propelled anti-aircraft gun. The Panzer IV's turret was removed and replaced with an open-top, nine-sided turret which housed a quadruple 2 cm Flakvierling 38 L/112.5. A closed-top design would have been preferable, but this was not possible due to the heavy smoke generated by the four anti-aircraft guns. \n Between 87 and 105 Wirbelwinds were produced during the war."
  # Panzer IV H
  panzer_iv_equipment_5:0 "PzKpfw.IV ausf. H"
  panzer_iv_equipment_5_short:0 "Panzer IV H Medium Tank"
@@ -5427,43 +5435,43 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  #
  panzer_iv_td_equipment_2:0 "Nashorn"
  panzer_iv_td_equipment_2_short:0 "Nashorn Medium TD"
- panzer_iv_td_equipment_2_desc:0 "Medium Tank Destroyer based on a lengthened chassis of both Panzer III and IV components. It fielded the 8,8 cm Panzerjägerkanone (Pak 43/1), the same gun as the Tiger I tank."
+ panzer_iv_td_equipment_2_desc:0 "Nashorn ("rhinoceros") tank destroyer. \n It was developed as an interim solution in 1942 by equipping a light turretless chassis with the Pak 43 heavy anti-tank gun. Though only lightly armoured and displaying a high profile, it could frontally penetrate any Allied tank at long range, and its relatively low cost and superior mobility to heavier vehicles ensured it remained in production until the war's end. Total production of the Nashorn amounted to some 494 vehicles, most of which were built in 1943. In January 1944, Hitler favored production of a newer tank destroyer, the Jagdpanzer IV, which had a much lower silhouette, thicker frontal armor (60 mm frontal plate), and an effective though less powerful 7.5 cm gun. Though still primarily an ambush weapon, this vehicle was better built for armoured engagements. Production of the Nashorn continued into 1945, though at a slow pace."
  #
  panzer_iv_spaa_equipment_2:0 "Ostwind"
  panzer_iv_spaa_equipment_2_short:0 "Ostwind Medium SP.AA"
- panzer_iv_spaa_equipment_2_desc:0 "Medium Anti-air tracked armored vehicle based on the Pz IV chassis."
+ panzer_iv_spaa_equipment_2_desc:0 "The Flakpanzer IV "Ostwind" (East Wind) was a self-propelled anti-aircraft gun based on the Panzer IV tank. It was developed in 1944 as a successor to the earlier Flakpanzer IV/2 cm Vierling Wirbelwind. \n The Panzer IV's turret was removed and replaced with an open-top, hexagonal turret which housed a 3.7 cm FlaK 43. In addition to its intended role as an anti-aircraft weapon, the fast-firing gun was highly effective against light vehicles and minor fortifications. A closed-top design would have been preferable, but this was not possible due to the heavy smoke generated by the gun.\n Although an order for 100 vehicles was placed in August 1944, only 44 vehicles were completed (37 converted from existing Panzer IVs and 7 new production vehicles) from December 1944 to March 1945."
  # Panzer IV J
  panzer_iv_equipment_6:0 "PzKpfw.IV ausf. J"
  panzer_iv_equipment_6_short:0 "Panzer IV J Medium Tank"
- panzer_iv_equipment_6_desc:0 "Despite addressing the mobility problems introduced by the previous model, the final production version of the Panzer IV—the Ausf. J—was considered a retrograde from the Ausf. H. Born of German necessity to replace heavy losses, it was greatly simplified to speed production"
+ panzer_iv_equipment_6_desc:0 "Despite addressing the mobility problems introduced by the previous model, the final production version of the Panzer IV—the Ausf. J—was considered a retrograde from the Ausf. H. Born of German necessity to replace heavy losses, it was greatly simplified to speed production."
  #
  panzer_iv_td_equipment_3:0 "Jagdpanzer IV/70"
  panzer_iv_td_equipment_3_short:0 "Jagdpanzer IV/70 Medium TD"
- panzer_iv_td_equipment_3_desc:0 "Medium Tank destroyers based on the Panzer IV chassis"
+ panzer_iv_td_equipment_3_desc:0 "The Jagdpanzer IV, Sd.Kfz. 162, was a German tank destroyer based on the Panzer IV chassis and built in three main variants. As one of the casemate-style turretless Jagdpanzer (tank destroyer) designs, it was developed against the wishes of Heinz Guderian, the inspector general of the Panzertruppen, as a replacement for the Sturmgeschütz III (StuG III). Guderian objected against the needless, in his eyes, diversion of resources from Panzer IV tank production, as the Sturmgeschütz III was still more than adequate for its role. The L/70-armed vehicle was named Panzer IV/70."
  #
  panzer_iv_spaa_equipment_3:0 "Kugelblitz"
  panzer_iv_spaa_equipment_3_short:0 "Kugelblitz Medium SP.AA"
- panzer_iv_spaa_equipment_3_desc:0 "Medium Anti-air tracked armored vehicle based on the Pz IV chassis."
+ panzer_iv_spaa_equipment_3_desc:0 "The Flakpanzer IV Kugelblitz ("Ball Lightning") was a self-propelled anti-aircraft gun. \n By the end of the war, only a pilot production of five units had been completed. Unlike earlier self-propelled anti-aircraft guns, it had a fully enclosed, rotating turret. \n  The 30 mm Zwillingsflak ("twin flak") 103/38 twin gun, a twinned-mount version of the MK 103 cannon, was used, which had also been fitted in single mounts to such planes as the Henschel Hs 129 in a ventral gun pod, and to the twin-engined Dornier Do 335. The rate of fire of the twin 30 mm guns was 450 rounds a minute per gun. \n Mass production was planned, but never happened due to the disruption by Allied bombing efforts."
  
  #
- panzer_iv_ag_equipment_1:0 "Brummbär"
- panzer_iv_ag_equipment_1_short:0 "Brummbär Medium Assault Gun"
- panzer_iv_ag_equipment_1_desc:0 "Medium Assault Gun"
+ panzer_iv_ag_equipment_1:0 "Sturmpanzer"
+ panzer_iv_ag_equipment_1_short:0 "Sturmpanzer Medium AG"
+ panzer_iv_ag_equipment_1_desc:0 "The Sturmpanzer was a German armoured infantry support gun based on the Panzer IV chassis. It was known by the nickname Brummbär ("Grouch") by Allied intelligence a name which was not used by the Germans. Just over 300 vehicles were built and they were assigned to four independent battalions.\n The Sturmpanzer was a development of the Panzer IV tank designed to provide a vehicle offering direct infantry fire support, especially in urban areas. It used a Panzer IV chassis with the upper hull and turret replaced by a new casemate-style armored superstructure housing a new gun, the 15 centimetres (5.9 in) Sturmhaubitze (StuH) 43 L/12 developed by Skoda. It fired the same shells as the 15 cm sIG 33 heavy infantry gun."
  #
  panzer_iv_art_equipment_2:0 "Hummel"
  panzer_iv_art_equipment_2_short:0 "Hummel Medium SP.Art"
- panzer_iv_art_equipment_2_desc:0 "Self propelled Howitzer"
+ panzer_iv_art_equipment_2_desc:0 "Hummel ("bumblebee") was a self-propelled artillery gun based on the Geschützwagen III/IV chassis (the same chassis was also used for the Nashorn tank destroyer) and armed with a 15 cm howitzer. The Hummel was designed in 1942 out of a need for mobile artillery support for the tank forces, the lack of which had first been felt during the invasion of the USSR. There were some self-propelled artillery vehicles already in service with the Wehrmacht at the time, but most were of limited value. The Hummel had an open-topped lightly armoured fighting compartment at the back of the vehicle, which housed the howitzer and the crew.\n On February 27, 1944, Hitler ordered the name Hummel to be dropped as it was deemed inappropriate for a fighting vehicle.\n More then 700 built."
  panzer_iv_art_equipment_3:0 "Dickermax"
  panzer_iv_art_equipment_3_short:0 "Dickermax Medium SP.Art"
  panzer_iv_art_equipment_3_desc:0 "Self propelled long-range Howitzer"
  # Panzer V D
  panzer_v_equipment_1:0 "PzKpfw.V ausf. D"
  panzer_v_equipment_1_short:0 "Panther D Medium Tank"
- panzer_v_equipment_1_desc:0 "Panther is the common name of a medium tank deployed by Germany in World War II from mid-1943 to the end of the European war in 1945. It was intended as a counter to the Russian T-34, and as a replacement for the Panzer III and Panzer IV. While never replacing the latter, it served alongside it and the heavier Tiger tanks until the end of the war. The Panther's excellent combination of firepower, mobility, and protection served as a benchmark for other nations' late war and post-war tank designs, and it is regarded as one of the best tanks of World War II. The ausf.D was plagued by reliability problems"
+ panzer_v_equipment_1_desc:0 "Panther is the common name of a medium tank deployed by Germany in World War II from mid-1943 to the end of the European war in 1945. It was intended as a counter to the Russian T-34, and as a replacement for the Panzer III and Panzer IV. While never replacing the latter, it served alongside it and the heavier Tiger tanks until the end of the war. The Panther's excellent combination of firepower, mobility, and protection served as a benchmark for other nations' late war and post-war tank designs, and it is regarded as one of the best tanks of World War II. The ausf.D was plagued by reliability problems."
  #
  panzer_v_art_equipment_1:0 "Reichsbär"
  panzer_v_art_equipment_1_short:0 "Reichsbär Medium SP-Art"
- panzer_v_art_equipment_1_desc:0 "Medium self propelled long barrel howitzer based on the Panther chassis."
+ panzer_v_art_equipment_1_desc:0 "HYPOTHETICAL/FICTIONAL Medium self propelled long barrel howitzer based on the Panther chassis. THE AI WON'T USE THIS DESIGN"
  #
  panzer_v_td_equipment_1:0 "Jagdpanther"
  panzer_v_td_equipment_1_short:0 "Jagdpanther Medium TD"
@@ -5471,15 +5479,15 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  #
  panzer_v_spaa_equipment_1:0 "FlakPanzer Coelian"
  panzer_v_spaa_equipment_1_short:0 "Coelian Medium SP.AA"
- panzer_v_spaa_equipment_1_desc:0 "Medium Self-Propelled AA."
+ panzer_v_spaa_equipment_1_desc:0 "Flakpanzer Coelian was a self-propelled anti-aircraft gun design by Rheinmetall during World War II for the German armed forces. It was intended to be armed with two 3.7 cm FlaK 43 gun in a fully enclosed, rotating turret on the hull of a Panther medium tank but was not built before the end of the war in Europe."
  
  panzer_e_td_equipment_1:0 "Jagdpanzer E-25"
  panzer_e_td_equipment_1_short:0 "Jagdpanzer E-25 TD"
- panzer_e_td_equipment_1_desc:0 "The E-25 is an improved tank destroyer, using the same 7.5cm L/70 gun as the Panther tank. The E-series in general was meant to lower the costs of vehicles and allow for easier mass-production."
+ panzer_e_td_equipment_1_desc:0 "The E-series in general was meant to lower the costs of vehicles and allow for easier mass-production. The E-25 designs, in the 25-50 tonnes weight class, were to be the replacements of all Panzer III and Panzer IV based designs. As main armament a 75mm Pak 42 L/70 was planned with a possible MG in a small turret. "
  
  panzer_e_equipment_1:0 "E-50"
  panzer_e_equipment_1_short:0 "E-50"
- panzer_e_equipment_1_desc:0 "As successor to the Panther, the E-50 is meant to simplify production, thus allowing more tanks to be produced simultaneously." 
+ panzer_e_equipment_1_desc:0 "E-series is meant to simplify production, thus allowing more tanks to be produced simultaneously. The E-50 Standardpanzer was intended as a standard medium tank, replacing the Panther and Tiger I and the conversions based on these tanks. The E-50 hull was to be longer than the Panther, in fact it was practically identical to the Königstiger (Tiger II) in overall dimensions except for the glacis plate layout. Compared to these earlier designs however, the amount of drilling and machining involved in producing these Standardpanzer was reduced drastically, which would have made them quicker, easier and cheaper to produce, as would the proposed conical spring system, replacing their predecessors' torsion bar system which required a special steel alloy. As indicated by its name, the weight of the E-50 would have 50 tonnes. The engine was an improved Maybach HL234 which had 900 hp. Maximum speed was supposed to be 60 km/h." 
  
  # Panzer V G
  panzer_v_equipment_2:0 "PzKpfw.V ausf. G"
@@ -5492,13 +5500,13 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  # Panzer VI H Tiger I
  panzer_vi_equipment_1:0 "PzKpfw.VI ausf H Heavy Tank"
  panzer_vi_equipment_1_short:0 "Tiger I Heavy Tank"
- panzer_vi_equipment_1_desc:0 "The Tiger I was a German heavy tank developed in 1942 as an answer to the unexpectedly impressive Soviet armor encountered in the initial months of the Axis invasion of the Soviet Union, particularly the T-34 and the KV-1."
+ panzer_vi_equipment_1_desc:0 "The Tiger I was a German heavy tank developed in 1942 as an answer to the unexpectedly impressive Soviet armor encountered in the initial months of the Axis invasion of the Soviet Union, particularly the T-34 and the KV-1. \n The Tiger I gave the Wehrmacht its first armoured fighting vehicle that mounted the 8.8 cm KwK 36 gun. While the Tiger I has been called an outstanding design for its time, it was over-engineered, using expensive materials and labour-intensive production methods. The Tiger was prone to certain types of track failures and breakdowns, and was limited in range by its high fuel consumption. It was difficult to transport, and vulnerable to immobilisation when mud, ice and snow froze between its overlapping and interleaved road wheels, often jamming them solid. This was a problem on the Eastern Front in the muddy season and during extreme periods of cold. \n 1,347 were built between August 1942 and August 1944."
  panzer_vi_td_equipment_1:0 "Elefant"
  panzer_vi_td_equipment_1_short:0 "Elefant Heavy TD"
  panzer_vi_td_equipment_1_desc:0 "Self-propelled Heavy anti-tank gun based on a lengthened Tiger I chassis. Fielding the very long barrel 12.8 cm FlaK 40 this beast could take out any tank fielded at the time."
  panzer_vi_ag_equipment_1:0 "Sturmtiger"
- panzer_vi_ag_equipment_1_short:0 "Sturmtiger Heavy Assualt Gun"
- panzer_vi_ag_equipment_1_desc:0 "Heavy Assualt Gun based on the Tiger chassis"
+ panzer_vi_ag_equipment_1_short:0 "Sturmtiger Heavy AG"
+ panzer_vi_ag_equipment_1_desc:0 "Sturmtiger ("Assault Tiger") was a assault gun built on the Tiger I chassis and armed with a 380mm rocket-propelled round. The official German designation was Sturmmörserwagen 606/4 mit 38 cm RW 61. Its primary task was to provide heavy fire support for infantry units fighting in urban areas. The few vehicles produced fought in the Warsaw Uprising, the Battle of the Bulge and the Battle of the Reichswald. The fighting vehicle is also known under a large number of informal names, among which the Sturmtiger became the most popular."
  panzer_vi_ag_equipment_2:0 "Sturmtiger II"
  panzer_vi_ag_equipment_2_short:0 "Sturmtiger II Heavy Assualt Gun"
  panzer_vi_ag_equipment_2_desc:0 "Heavy Assualt Gun based on the Tiger II chassis"
@@ -5534,7 +5542,7 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_vii_equipment_1_short:0 "Löwe S-Heavy Tank"
  panzer_vii_equipment_1_desc:0 "The Panzerkampfwagen VII Löwe (Lion) was a design for a super-heavy tank created by Krupp for the German government during World War II. The project, initially code-named VK 70.01 (K), never left the drawing board, and was dropped in 5–6 March 1942 in favor of Porsche's heavier Panzer VIII Maus."
  # Panzer VII L Maus
- panzer_vii_equipment_2:0 "PzKpfw.VII Maus
+ panzer_vii_equipment_2:0 "PzKpfw.VIII Maus"
  panzer_vii_equipment_2_short:0 "Maus S-Heavy Tank"
  panzer_vii_equipment_2_desc:0 "Panzerkampfwagen VIII Maus (Mouse) was a German World War II super-heavy tank completed in late 1944. It is the heaviest fully enclosed armored fighting vehicle ever built. The Maus's main armament was a 128 mm KwK 44 L/55 gun with an added coaxial 75 mm gun."
  
