@@ -1185,7 +1185,7 @@ equipments = {
 			chromium = 1
 		}
 	}
-	#Wespe
+	#Wespe							# Note: Consider differences between 150 sig33 and 150 sfh  
 	panzer_ii_art_equipment_2 = {
 		archetype = light_tank_artillery_equipment
 		parent = panzer_ii_art_equipment_1
@@ -1218,7 +1218,7 @@ equipments = {
 			chromium = 1
 		}
 	}
-	##################################### German Light Tank SPAA	
+	################################# German Light Tank SPAA	
 	#Flakpanzer I
 	panzer_i_spaa_equipment_1 = {
 		archetype = light_tank_aa_equipment
@@ -1229,7 +1229,7 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.6
+		reliability = 0.5			# 0.6 Very unreliable vehicle
 
 		#Defensive Abilities
 		defense = 2
@@ -1241,7 +1241,7 @@ equipments = {
 		soft_attack = 11 
 		hard_attack = 5 
 		ap_attack = 30 				# 22 20mm AAgun
-		air_attack = 4 
+		air_attack = 20 			# 4 This is an AA tank Adjusted to default
 		
 		build_cost_ic = 8.5			# 11 - 5,5 tons
 		resources = {
@@ -1251,9 +1251,8 @@ equipments = {
 			chromium = 1
 		}
 	}
-	##################################### German Light Tank Flamm	
-	# Panzer II 
-	#Flamingo
+	################################# Even coded as flamm this is an hypothetic flak tank based on Pz II
+	# Flakpanzer II 					
 	panzer_ii_flamm_equipment_1 = {
 		archetype = light_tank_aa_equipment
 		parent = panzer_i_spaa_equipment_1
@@ -1263,25 +1262,26 @@ equipments = {
 		
 		#Misc Abilities
 		maximum_speed = 6
-		reliability = 0.5
+		reliability = 0.55			# 0.5 Better chassis than Pz I
 
 		#Defensive Abilities
 		defense = 3
 		breakthrough = 2
-		hardness = 0.56				# Was 0.4 plate 35 mm
+		hardness = 0.46				# Was 0.4 plate 35 mm open top
 		armor_value = 34			# Was 19 plate 35 mm
 
 		#Offensive Abilities
-		soft_attack = 12 			# Consider inceeasing close combat power
+		soft_attack = 12
 		hard_attack = 6 
 		ap_attack = 30				# 33 20mm AAgun
-		air_attack = 9 
+		air_attack = 22				# 9 This is an AA tank Adjusted to default
 		
-		build_cost_ic = 20			# 12 tons, special tank (flamm)
+		
+		build_cost_ic = 10.6		# 10 tons
 		resources = {
 			oil = 2
-			steel = 3
-			tungsten = 2
+			steel = 5				# 3 Very fast to do tank
+			tungsten = 3			# 2
 			chromium = 1
 		}
 	}
@@ -1774,7 +1774,7 @@ equipments = {
 			# chromium = 0			# 1
 		}
 	}
-	
+	############################# Czech TDs
 	czech_panzer_td_equipment_1 = {
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_1
@@ -1839,6 +1839,73 @@ equipments = {
 			tungsten = 4
 			chromium = 1
 		}	
+	}
+	############################# Czech SPART - Stjern: Check values in case
+	# Grille 1943
+	czech_panzer_art_equipment_1 = {	
+		archetype = light_tank_artillery_equipment
+		parent = light_tank_artillery_equipment_1
+		family = czech_panzer_equipment_3
+		priority = 20
+		visual_level = 0
+
+		#Misc Abilities
+		maximum_speed = 6.5			# 35kmh - 150hp for 12 tons
+		reliability = 0.7			# Excellent plataform for heavy IG
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 6
+		hardness = 	0.35			# 0.4 plate 20 mm open top 
+		armor_value = 27			#   5 plate 20 mm open top 
+
+		#Offensive Abilities
+		soft_attack = 26
+		hard_attack = 1
+		ap_attack = 25				# Was 4 150 Artillery HE
+		air_attack = 0
+		
+		build_cost_ic = 17.8		# 12 tons
+
+		resources = {
+			oil = 2
+			steel = 3				
+			tungsten = 1
+			chromium = 1
+		}	
+	}
+	############################# Czech SPAA
+	# Flakpanzer 38t
+	czech_panzer_spaa_equipment_1 = {
+		archetype = light_tank_aa_equipment
+		parent = light_tank_aa_equipment_1
+		family = czech_panzer_equipment_3
+		priority = 30
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 7			# 42 kmh praga AC 150hp for 10 tons
+		reliability = 0.65			# Well proven Cz chassis
+
+		#Defensive Abilities
+		defense = 2
+		breakthrough = 2
+		hardness = 	0.35			# 0.4 plate 20 mm open top 
+		armor_value = 27			#   5 plate 20 mm open top 
+
+		#Offensive Abilities
+		soft_attack = 11 
+		hard_attack = 5 
+		ap_attack = 30 				# 22 20mm AAgun
+		air_attack = 24 
+		
+		build_cost_ic = 10.5		# 11 - 9.8 tons
+		resources = {
+			oil = 2
+			steel = 4
+			tungsten = 3
+			chromium = 1
+		}
 	}
 	
 	############################# Japanese Tanks 
