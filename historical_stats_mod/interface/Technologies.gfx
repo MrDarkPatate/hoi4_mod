@@ -7112,7 +7112,7 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_tech_panzer_e_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/e_75.dds"
+		texturefile = "gfx/interface/technologies/e_50.dds"
 	}
 
 #Jagdpanther
@@ -7124,7 +7124,7 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_subtech_panzer_e_td_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/e_50.dds"
+		texturefile = "gfx/interface/technologies/e_25.dds"
 	}
 	
 	SpriteType = {
