@@ -2267,6 +2267,71 @@ equipments = {
 	}
 	
 	############################# Italian SP Tanks
+	
+		#Carro Armato L7/45 1945
+	ita_light_armor_equipment_4 = {
+		archetype = light_tank_equipment
+		parent = ita_light_armor_equipment_3
+		priority = 50
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 9
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 17
+		breakthrough = 41
+		hardness = 0.65
+		armor_value = 58
+
+		#Offensive Abilities
+		soft_attack = 15
+		hard_attack = 11
+		ap_attack = 55
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 17.4
+	}
+	
+	ita_light_art_equipment_1 = {
+		archetype = light_tank_artillery_equipment
+		parent = light_tank_artillery_equipment_1
+		family = ita_light_armor_equipment_2
+		priority = 20
+		visual_level = 0
+		maximum_speed = 7.5
+		reliability = 0.7
+		defense = 5
+		breakthrough = 5
+		armor_value = 20 #25
+		hardness = 0.35
+		soft_attack = 27 #63
+		hard_attack = 1.5
+		build_cost_ic = 15
+	}
+	
+	ita_light_art_equipment_2 = {
+		archetype = light_tank_artillery_equipment
+		parent = ita_light_art_equipment_1
+		family = ita_light_armor_equipment_3
+		priority = 20
+		visual_level = 0
+		maximum_speed = 8
+		reliability = 0.8
+		defense = 6
+		breakthrough = 6
+		armor_value = 32 #25
+		hardness = 0.4
+		soft_attack = 31 #63
+		hard_attack = 2
+		build_cost_ic = 16
+	}
+	
+	
 	#Semovente da 47/32 1942
 	ita_light_td_equipment_1 = {
 		archetype = light_tank_destroyer_equipment
@@ -2331,6 +2396,41 @@ equipments = {
 			tungsten = 4
 			chromium = 1
 		}	
+	}
+	
+	ita_light_armor_aa_equipment_1 = {
+		archetype = light_tank_aa_equipment
+		parent = light_tank_aa_equipment_1
+		family = ita_light_armor_equipment_2
+		priority = 30
+		visual_level = 0
+
+	}
+	
+		# 
+	ita_light_armor_aa_equipment_2 = {
+		archetype = light_tank_aa_equipment
+		parent = ita_light_armor_aa_equipment_1
+		family = ita_light_armor_equipment_3
+		priority = 30
+		visual_level = 1
+		
+		#Misc Abilities
+		maximum_speed = 7
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 2.5
+		breakthrough = 2.5
+		armor_value = 20
+
+		#Offensive Abilities
+		soft_attack = 2 #3
+		hard_attack = 1 #1.5
+		ap_attack = 30 #20
+		air_attack = 24 #17	
+		
+		build_cost_ic = 14
 	}
 	
 	############################# USA Tanks  PIERCING / ARMOR DONE UNTIL THIS LINE / ONLY SOME TANKS DONE
