@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Leichte-Division '1938 +'"			# Leichte done 1938. Historically 2L+4I upgraded to 2M+4L+4I (6-8 Pz Divs)
+	name = "Leichte-Division '1936 +'"			# Leichte done 1938. Historically 2L+4I upgraded to 2M+4L+4I (6-8 Pz Divs)
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
