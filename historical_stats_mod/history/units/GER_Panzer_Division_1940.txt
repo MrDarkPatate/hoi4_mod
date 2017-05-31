@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Panzer-Division '1940'"		# Leichte done 1938. 1st Historical upgrade from 2L+4I to 2M+4L+4I (6-8 Pz Divs)
+	name = "Panzer-Division '1940'"				# 3L+3M+4I+TD+HArt+SPArt This can be a second type of Barbarossa OOB (These with more tanks) 
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -7,7 +7,7 @@
 		medium_armor = { x = 0 y = 2 }
 		
 		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 1 }
 		medium_armor = { x = 1 y = 2 }
 		
 		motorized = { x = 2 y = 0 }
@@ -16,15 +16,16 @@
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
 
-		artillery_brigade_mot = { x = 4 y = 0 }	
-		light_tank_destroyer_brigade = { x = 4 y = 1 }	# Pending exchange 
-		light_sp_artillery_brigade = { x = 4 y = 2 }	# Pending exchange
+		artillery_brigade_mot = { x = 4 y = 0 }
+		light_sp_artillery_brigade =  { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+		light_tank_destroyer_brigade = { x = 4 y = 3 }	
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		recon_mot = { x = 0 y = 1 }		
+		recon_mot = { x = 0 y = 1 }						# Motorcycle
        	recon_ac = { x = 0 y = 2 }
-		# had also an extra motorcycle unit pending add... No artillery heavy
+		artillery_medium_mot = { x = 0 y = 3 }			# Most divisions used a mixed 2x 150 / 1x 105 long range battalion. 
 
        	engineer = { x = 1 y = 0}
  		maintenance_company = { x = 1 y = 1}

@@ -1,33 +1,38 @@
 ﻿division_template = {
-	name = "Panzer-Division '1940'"	# Why named 1940 Coded 1939
+	name = "Panzer-Division '1940'"				# 2L+2M+4I+TD+HArt Coded 1939. This could be upgrade for Barbarossa. Strictly by 1941 11 Pz had 2M+1L was the smallest div tho Averaged to 2M+2L+4I 
 
 	regiments = {
-		medium_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 0 }
+		# light_armor = { x = 0 y = 2 }
 		medium_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
 		
-		medium_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		# light_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 1 }
+		
 		
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+		# motorized = { x = 2 y = 2 }
 	
 		motorized = { x = 3 y = 0 }
 		motorized = { x = 3 y = 1 }
 
-		artillery_brigade_mot = { x = 4 y = 0 }	
-		light_tank_destroyer_brigade = { x = 4 y = 1 }	
-		light_sp_artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade_mot = { x = 4 y = 0 }
+		artillery_brigade_mot = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+		light_tank_destroyer_brigade = { x = 4 y = 3 }	
+		# light_sp_artillery_brigade = { x = 4 y = 4 } 	# This can be added for flavour. 
 	}
 	support = {
-        		DIV_HQ = { x = 0 y = 0 }
-	   	 engineer = { x = 0 y = 1 }
-       		 artillery_medium_mot = { x = 0 y = 2 }
-		recon_mot = { x = 0 y = 3 }
-		maintenance_company = { x = 1 y = 0 }
-		logistics_company = { x = 1 y = 1 }
+		DIV_HQ = { x = 0 y = 0 }
+		recon_mot = { x = 0 y = 1 }						# Motorcycle
+       	recon_ac = { x = 0 y = 2 }
+		artillery_medium_mot = { x = 0 y = 3 }			# Most divisions used a mixed 2x 150 / 1x 105 long range battalion. 
+
+       	engineer = { x = 1 y = 0}
+ 		maintenance_company = { x = 1 y = 1}
+		logistics_company = { x = 1 y = 2 }
 	}
 	priority = 2
 }

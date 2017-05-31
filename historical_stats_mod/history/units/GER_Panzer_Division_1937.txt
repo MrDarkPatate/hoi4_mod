@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Panzer-Division '1937'"		# Only 5 pz Div was updated like this. 2nd of 8L+3I historically upgrade: 1M+7L+3I then to 1M+7L+4I
+	name = "Panzer-Division '1937'"				# 7L+1M+4I Only 5 pz Div was updated like this. 2nd of 8L+3I historically upgrade: 1M+7L+3I then to 1M+7L+4I
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
