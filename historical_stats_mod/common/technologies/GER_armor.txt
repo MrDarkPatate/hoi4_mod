@@ -61,7 +61,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10					# 0 Value means will be researched after Pz II
+			factor = 10					# 0 Value means will be researched after Pz II. Beware: as of today AI does not gets this tank.
 		}
 	}
 	tech_czech_panzer_1 = {
@@ -88,7 +88,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10					# 0 Value means will be researched after Pz II
+			factor = 10					# 0 Value means will be researched after Pz II. Beware: as of today AI does not gets this tank.
 		}
 	}
 	tech_czech_panzer_2 = {
@@ -189,7 +189,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	subtech_czech_panzer_art_1 = {				#Grille		WILL BE DISPLAYED CORRECTLY AFTER STATS ARE MADE IN tank_light 				remember to change family Marder III ...czech_panzer_equipment_2, Hetzer...3
+	subtech_czech_panzer_art_1 = {				#Grille	
 
 		enable_equipments = {
 			czech_panzer_art_equipment_1
@@ -200,7 +200,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 0							# Revise pls
+			factor = 0							# AI can not do CZ tanks
 		}
 
 		dependencies = {
@@ -212,7 +212,7 @@ technologies = {
 			cat_light_armor
 		}
 	}	
-	subtech_czech_panzer_spaa_1 = {				#Flakpanzer 38(t)	WILL BE DISPLAYED CORRECTLY (without gfx so far) AFTER STATS ARE MADE IN tank_light
+	subtech_czech_panzer_spaa_1 = {				#Flakpanzer 38(t)
 
 		enable_equipments = {
 			czech_panzer_spaa_equipment_1
@@ -223,7 +223,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 0							# Revise pls
+			factor = 0							# AI can not do CZ tanks
 		}
 
 		dependencies = {
@@ -279,20 +279,20 @@ technologies = {
 	}
 	#Panzerjäger I
 	subtech_panzer_i_td_equipment_1 = {
-
+		
 		enable_equipments = {
 			panzer_i_td_equipment_1
 		}
 		
 		
 		research_cost = 1.3
-		start_year = 1939					# 1938 
+		start_year = 1940					# 1938
 		
-		ai_will_do = {
+		ai_will_do = {						
 			factor = 12						# changed from 0 to make AI get the OOB. Value means 2nd in priority. Best TD available until 1941
 		}
 		
-			    on_research_complete = {	# This OOB has been moved from Marder II because that one is 1941.
+			    on_research_complete = {	# WARNING: This OOB had been moved from Marder II because that one is 1941. However... AI cant get it
 		    if = {
 		         limit = {
 			     	is_ai = yes
@@ -303,12 +303,27 @@ technologies = {
 			    }
 			}
 		}
-
+		
+		# PROBA ->
+		if = {
+		         limit = {
+			     	is_ai = yes
+		    	}
 		dependencies = {
 			german_tech = 1
-			tech_czech_panzer = 1			# Available after annexation of Czechoslovakia
+			# tech_czech_panzer = 1			# Available for AI whatever
 		}
-
+		}
+		if = {
+		         limit = {
+			     	is_ai = no
+		    	}
+		# PROBA <-
+		dependencies = {
+			german_tech = 1
+			tech_czech_panzer = 1			# Available after annexation of Czechoslovakia # WARNING: Previous OOB had been moved from Marder II because that one is 1941. However... AI cant get it
+		}
+		}
 		categories = {
 			armor
 			cat_light_armor
