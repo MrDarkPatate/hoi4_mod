@@ -451,7 +451,7 @@ technologies = {
 			subtech_panzer_ii_art_equipment_1
 		}	
 		ai_will_do = {
-			factor = 12						# Was 175 Now moved to previous Pz II. Value means 2nd in priority research. However this is last Pz II for AI: will switch to 38(t)
+			factor = 12						# Was 175 Now moved to previous Pz II. Value means 2nd in priority research.
 		}
 		
 		categories = {
