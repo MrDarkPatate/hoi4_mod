@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Panzer-Division '1940'"				# 2L+2M+4I+TD+HArt Coded 1939. This could be upgrade for Barbarossa. Strictly by 1941 11 Pz had 2M+1L was the smallest div tho Averaged to 2M+2L+4I 
+	name = "Panzer-Division '1940'"				# 2L+2M+4I+TD+HArt Coded 1939. Currently this pops from PanzerJager I. This could be upgrade for Barbarossa. Strictly by 1941 11 Pz had 2M+1L was the smallest div tho Averaged to 2M+2L+4I 
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }

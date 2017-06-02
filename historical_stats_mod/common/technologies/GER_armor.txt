@@ -61,7 +61,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10					# 0 Value means will be researched after Pz II. Beware: as of today AI does not gets this tank.
+			factor = 0					# 0 Value means will be researched after Pz II. Beware: as of today AI does not gets this tank.
 		}
 	}
 	tech_czech_panzer_1 = {
@@ -88,7 +88,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10					# 0 Value means will be researched after Pz II. Beware: as of today AI does not gets this tank.
+			factor = 0					# 0 Value means will be researched after Pz II. Beware: as of today AI does not gets this tank.
 		}
 	}
 	tech_czech_panzer_2 = {
@@ -115,7 +115,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10						# 0 Value means will be researched after Pz II. 
+			factor = 0						# 0 Value means will be researched after Pz II. 
 		}
 	}
 	
@@ -140,10 +140,10 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 8						# 0 Best Light Armor for AI
+			factor = 0					# 0 Best Light Armor for AI
 		}
 	}
-	subtech_czech_panzer_td_1 = {					#Marder III
+	subtech_czech_panzer_td_1 = {		#Marder III
 
 		enable_equipments = {
 			czech_panzer_td_equipment_1
@@ -151,7 +151,7 @@ technologies = {
 		
 		
 		research_cost = 1.5				#later year as parent
-		start_year = 1940
+		start_year = 1942
 		
 		ai_will_do = {
 			factor = 0
@@ -166,7 +166,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	subtech_czech_panzer_td_2 = {				#Hetzer
+	subtech_czech_panzer_td_2 = {		#Hetzer
 
 		enable_equipments = {
 			czech_panzer_td_equipment_2
@@ -174,7 +174,7 @@ technologies = {
 		
 		
 		research_cost = 1.5				#later year as parent
-		start_year = 1943				
+		start_year = 1944				
 		
 		ai_will_do = {
 			factor = 0
@@ -189,7 +189,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	subtech_czech_panzer_art_1 = {				#Grille	
+	subtech_czech_panzer_art_1 = {		#Grille	
 
 		enable_equipments = {
 			czech_panzer_art_equipment_1
@@ -200,7 +200,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 0							# AI can not do CZ tanks
+			factor = 0					# AI can not do CZ tanks
 		}
 
 		dependencies = {
@@ -212,7 +212,7 @@ technologies = {
 			cat_light_armor
 		}
 	}	
-	subtech_czech_panzer_spaa_1 = {				#Flakpanzer 38(t)
+	subtech_czech_panzer_spaa_1 = {		#Flakpanzer 38(t)
 
 		enable_equipments = {
 			czech_panzer_spaa_equipment_1
@@ -223,7 +223,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 0							# AI can not do CZ tanks
+			factor = 0					# AI can not do CZ tanks
 		}
 
 		dependencies = {
@@ -296,6 +296,7 @@ technologies = {
 		hidden_effect = {
 		load_oob = "GER_Panzer_Division_1939"	# This OOB should include Light TDs
 			    }
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE #BEWARE this is an add and can crash
 		}
 		
 												# WARNING: This OOB had been moved from Marder II because that one is 1941 and allowed for Players
@@ -414,12 +415,12 @@ technologies = {
 				if = {
 					limit = {
 						has_tech = motorised_infantry
-						NOT = {	has_template_containing_unit = medium_armor }
-						is_ai = no
+						# NOT = {	has_template_containing_unit = medium_armor }	# Now this template is a cheap Panzer
+						is_ai = no													# Better not give this to AI
 					}
 
 					load_oob = "GER_Leichte_Division"
-					load_oob = "GER_Panzer_Division_1937"
+					# load_oob = "GER_Panzer_Division_1937"	# Light tank better not pop medium battalion
 				}
 				
 			}
@@ -962,7 +963,7 @@ technologies = {
 		
 		path = {
 			leads_to_tech = tech_panzer_iii_td_equipment_1
-			research_cost_coeff = 0.5
+			research_cost_coeff = 0.5		# 0.5 ?
 		}
 		
 		research_cost = 1.5					# later year then parent
@@ -1052,7 +1053,7 @@ technologies = {
 		
 		path = {
 			leads_to_tech = tech_panzer_iii_td_equipment_2
-			research_cost_coeff = 0.5
+			research_cost_coeff = 0.5		# 0.5 ?
 		}
 
 		research_cost = 1.7
@@ -1366,11 +1367,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
+		path = {							# NOTE: Now this tank is prerequisite for Tiger
+			leads_to_tech = tech_panzer_vi_equipment_1
+			research_cost_coeff = 1			# 0.75
+		}
+		
 		dependencies = {
 			german_tech = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.5					# Watch this, important to Tiger I too. 
 		start_year = 1940
 		folder = {
 			name = german_pz_folder
@@ -1387,7 +1393,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 11
 		}
 		
 		categories = {
@@ -1406,20 +1412,20 @@ technologies = {
 			leads_to_tech = tech_panzer_iv_equipment_5
 			research_cost_coeff = 1
 		}
-		path = {								# NOTE: Now this tank is prerequisite for Tiger / Panther. 
+		path = {								# NOTE: Now this tank is prerequisite for  Panther. 
 			leads_to_tech = tech_panzer_v_equipment_1
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = tech_panzer_vi_equipment_1
-			research_cost_coeff = 0.75
-		}
+		#path = {
+		#	leads_to_tech = tech_panzer_vi_equipment_1
+		#	research_cost_coeff = 0.75
+		#}
 		
 		dependencies = {
 			german_tech = 1
 		}
 
-		research_cost = 2				#longerbarrel, also watch this, important to Tiger I too
+		research_cost = 2						#longerbarrel, also leads to Panther
 		start_year = 1942
 		folder = {
 			name = german_pz_folder
@@ -1433,7 +1439,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 11
 		}
 		
 		categories = {

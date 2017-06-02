@@ -11,7 +11,7 @@ equipments = {
 		
 		interface_category = interface_category_land
 		
-		maximum_speed = 6
+		maximum_speed = 8			# 6 Trucks assumed now faster
 		reliability = 0.5
 		# hardness =  0.15 Now hardness is not available to early trucks, would be too powerful
 
@@ -40,7 +40,7 @@ equipments = {
 		priority = 30
 		visual_level = 1
 		
-		maximum_speed = 6.5
+		maximum_speed = 8.5			# 6.5 Trucks assumed now faster
 		reliability = 0.6
 		# hardness = 0.2  			# Now hardness is not available to trucks, no armour at all
 
@@ -58,7 +58,7 @@ equipments = {
 		priority = 30
 		visual_level = 2
 		
-		maximum_speed = 7
+		maximum_speed = 9			# 7 Trucks assumed now faster
 		reliability = 0.65
 		# hardness = 0.25 			#  Now hardness is not available to trucks,  no armour at all
 
@@ -81,7 +81,7 @@ equipments = {
 	#	priority = 30
 	#	visual_level = 0
 		
-	#	maximum_speed = 10
+	#	maximum_speed = 9.5			#10
 	#	reliability = 0.7
 	#	# hardness = 0.3 Now hardness is not available to trucks, would be too powerful
 
@@ -116,7 +116,7 @@ equipments = {
 			ac_armor_upgrade
 			ac_engine_upgrade
 		}
-		maximum_speed = 6
+		maximum_speed = 7.5			# 6 Trucks assumed now faster
 		reliability = 0.5
 		recon = 0.5
 	
@@ -129,8 +129,7 @@ equipments = {
 		hard_attack = 4
 		ap_attack = 10			# just LMG equipped 
 		air_attack = 2
-	
-		maximum_speed = 6
+
 		#Space taken in convoy
 		lend_lease_cost = 5
 
@@ -145,7 +144,7 @@ equipments = {
 	# pre armored cars 
 	motorized_AC_equipment_06 = {
 		archetype = motorized_AC_equipment
-		maximum_speed = 7
+		maximum_speed = 8			# 7 Trucks assumed now faster
 		priority = 30
 		visual_level = 0
 	}
@@ -153,7 +152,7 @@ equipments = {
 	motorized_AC_equipment_07 = {
 		archetype = motorized_AC_equipment
 		parent = motorized_AC_equipment_06
-		maximum_speed = 7.5
+		maximum_speed = 8.5			# 7.5 Trucks assumed now faster
 		priority = 30
 		visual_level = 1
 		recon = 0.6	
@@ -176,7 +175,7 @@ equipments = {
 		parent = motorized_AC_equipment_07
 		priority = 30	
 		visual_level = 2
-		maximum_speed = 8
+		maximum_speed = 9			# 8 Trucks assumed now faster
 		recon = 0.6
 		
 		hardness = 0.33			# Was 0.3 Armoured car with a plate 14mm fully enclosed & wheeled (-5)
@@ -197,7 +196,7 @@ equipments = {
 		parent = motorized_AC_equipment_08
 		priority = 30
 		visual_level = 3
-		maximum_speed = 8
+		maximum_speed = 9.5			# 8 Trucks assumed now faster
 		recon = 0.8
 		
 		hardness = 0.48			# Was 0.37 Armoured car with a plate 30mm fully enclosed & wheeled (-5)
@@ -219,7 +218,7 @@ equipments = {
 		parent = motorized_AC_equipment_09
 		priority = 30
 		visual_level = 4
-		maximum_speed = 8
+		maximum_speed = 9.5			# 8 Trucks assumed now faster
 		recon = 1
 		
 		hardness = 0.48			# Was 0.4 Armoured car with a plate 30mm fully enclosed & wheeled (-5)
@@ -248,7 +247,7 @@ equipments = {
 		
 		interface_category = interface_category_land
 		
-		maximum_speed = 6
+		maximum_speed = 7.5			# 6 Trucks assumed now faster
 		reliability = 0.5
 
 		#Space taken in convoy
@@ -268,7 +267,7 @@ equipments = {
 		
 		priority = 30
 		visual_level = 0
-		maximum_speed = 6.5
+		maximum_speed = 8			# 6.5 Trucks assumed now faster
 		reliability = 0.55
 
 		#Space taken in convoy
@@ -284,7 +283,7 @@ equipments = {
 		priority = 30
 		visual_level = 1
 		
-		maximum_speed = 7
+		maximum_speed = 8.5			# 7 Trucks assumed now faster
 		reliability = 0.6
 		initiative = 0.01
 
@@ -301,7 +300,7 @@ equipments = {
 		priority = 30	
 		visual_level = 2
 		
-		maximum_speed = 7.5
+		maximum_speed = 9			# 7.5 Trucks assumed now faster
 		reliability = 0.65
 		initiative = 0.02
 		recon = 0.2
@@ -319,7 +318,7 @@ equipments = {
 		priority = 30
 		visual_level = 3
 		
-		maximum_speed = 8
+		maximum_speed = 9.5			# 8 Trucks assumed now faster
 		reliability = 0.7
 		initiative = 0.03
 		recon = 0.2

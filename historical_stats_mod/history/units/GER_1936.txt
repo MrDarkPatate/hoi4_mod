@@ -1031,9 +1031,17 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = panzer_i_equipment_1
-			amount = 300				# 400
+			amount = 30				# 400 Note: Stock of Pz I has yet increased by 270 due to 8 bns per Pz Div 
 			producer = GER
 		}
+		
+	add_equipment_to_stockpile = {
+		type = nbfz_equipment_1
+			amount = 3					# Just for flavour :) 
+			producer = GER
+		}	
+		
+		
 	#add_equipment_to_stockpile = {		# Pz II historically not built until mid 1936
 	#	type = panzer_ii_equipment_1	
 	#		amount = 250
