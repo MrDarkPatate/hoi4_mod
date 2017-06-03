@@ -1,6 +1,6 @@
 	################################ NOTE: Adjusted research years to historical values as much as possible. However game balance takes priority.
 	################################ AI "will do factors" adjusted slighlty to priorize best tanks and change research focus as best as possible. 
-	################################ AI research priorities: Pz III (until 50L60) / PzJg I TD / Improved 30mm plate Pz II / Improved 50mm plate 38t /Pz IV (until 75L43) / Panther & Tiger 
+	################################ AI research priorities: Improved plate Pz II / Pz IV (until 75L43) / PzJg I TD / Marder II / Wespe / Panther & Tiger / JagdPz IV / Hummel
 
 
 technologies = {
@@ -269,7 +269,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 12
+			factor = 10				# Value not used as yet researched
 		}
 		
 		categories = {
@@ -289,7 +289,7 @@ technologies = {
 		start_year = 1940						# 1938
 		
 		ai_will_do = {						
-			factor = 12							# changed from 0 to make AI get the OOB. Value means 2nd in priority. Best TD available until 1941
+			factor = 11							# changed from 0 to make AI get the OOB. Value means 2nd in priority. Best TD available until 1941
 		}
 		
 		on_research_complete = {
@@ -327,7 +327,7 @@ technologies = {
 		start_year = 1939					# 1938
 		
 		ai_will_do = {
-			factor = 0
+			factor = 11						# First GER SPART for AI. COnsider adding an OOB  
 		}
 		
 		dependencies = {
@@ -387,7 +387,7 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 2.5					#was 2, thinking of raising to 300 if Pz II numbers would be too high, lowering the stock of Pz I would be needed too.
+		research_cost = 2.5					#was 2, thinking of raising to 3 if Pz II numbers would be too high, lowering the stock of Pz I would be needed too.
 		start_year = 1935
 		folder = {
 			name = german_pz_folder
@@ -475,7 +475,7 @@ technologies = {
 		start_year = 1941					# 1939. This tank should need captured Ru equipment. Option: Minsk Captured: then can be changed Research to 1941. 
 		
 		ai_will_do = {
-			factor = 20						# 90 A good TD. AI should go for it if ever researches parent.
+			factor = 0						# 90 A good TD and Best pierce for 1941 but should only be available after Russian campaign...
 		}
 		
 		categories = {
@@ -498,7 +498,7 @@ technologies = {
 		start_year = 1940					# 1938
 		
 		ai_will_do = {
-			factor = 19
+			factor = 9						# Second GER SPART for AI. COnsider adding an OOB  
 		}
 		
 		categories = {
@@ -540,7 +540,7 @@ technologies = {
 			#subtech_panzer_ii_flamm_equipment_1				#ahistorical SP.AA not needed, many other types available
 		}
 		ai_will_do = {
-			factor = 6						# 10 Tank and subtechs not so important Could be reduced to 0 to help AI go for better tanks. 
+			factor = 11						# 10 Only Light Tank for German is Pz II
 		}
 		
 		categories = {
@@ -564,7 +564,7 @@ technologies = {
 		start_year = 1942					#1940
 		
 		ai_will_do = {
-			factor = 9						# Was 10 
+			factor = 13						# Was 10. A very good and cheap TD
 		}
 		
 		categories = {
@@ -587,7 +587,7 @@ technologies = {
 		start_year = 1943					#1940
 		
 		ai_will_do = {
-			factor = 8
+			factor = 11						# 8
 		}
 		
 		categories = {
@@ -647,7 +647,7 @@ technologies = {
 		#	subtech_panzer_ii_flamm_equipment_1
 		#}				
 		ai_will_do = {
-			factor = 0						# 10 By 1942 this tank is too weak to be an improvement to AI.
+			factor = 10	
 		}
 		
 		categories = {
@@ -680,7 +680,7 @@ technologies = {
 		}
 			
 		ai_will_do = {
-			factor = 2						# 10 Could be 0
+			factor = 10
 		}
 		
 		categories = {
@@ -866,7 +866,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20						# Pz III is going to be best battle tank until 1942. Better get it now than tomorrow
+			factor = 0						# By now AI is not awarded Pz III... Although is going to be best battle tank until 1942.
 		}
 		
 		categories = {
@@ -904,7 +904,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13						# 10
+			factor = 0						# 10
 		}
 		
 		categories = {
@@ -942,7 +942,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13						# 10
+			factor = 0					# 10
 		}
 		
 		categories = {
@@ -1009,7 +1009,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 13						# Increased. German AI should research until this Pz III variant then go for Pz IV / Panther / Tigers
+			factor = 0						# Now not anymore allowable to AI In theory German AI should research this until this Pz III variant then go for Pz IV / Panther / Tigers
 		}
 		
 		categories = {
@@ -1032,7 +1032,7 @@ technologies = {
 		start_year = 1942
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -1130,7 +1130,7 @@ technologies = {
 	#	start_year = 1942
 	#	
 	#	ai_will_do = {
-	#		factor = 1
+	#		factor = 0
 	#	}
 	#	
 	subtech_panzer_iii_flamm_equipment_0 = {		#not available now CHECK IF AA PROPERLY OK
@@ -1183,7 +1183,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		
 		categories = {
@@ -1206,7 +1206,7 @@ technologies = {
 		start_year = 1943
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		categories = {
@@ -1230,7 +1230,7 @@ technologies = {
 	#	start_year = 1943
 	#	
 	#	ai_will_do = {
-	#		factor = 1
+	#		factor = 0
 	subtech_panzer_iii_flamm_equipment_1 = {				#not available now CHECK IF AA WORKS
 
 		enable_equipments = {
@@ -1315,7 +1315,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 11						# Was 0. Value means will be researched 3rd priority. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
+			factor = 15						# Was 0. Value means will be researched  1st priority. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
 		}
 		
 		categories = {
@@ -1462,7 +1462,7 @@ technologies = {
 		start_year = 1944
 		
 		ai_will_do = {
-			factor = 0
+			factor = 9							# NOTE: 1st opportunity to get Medium TD for AI
 		}
 		
 		categories = {
@@ -1490,7 +1490,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 9								# NOTE: 1st opportunity to get AG for AI
 		}
 	}
 	subtech_panzer_iv_spaa_equipment_1 = {			#Wirbelwind
@@ -1544,7 +1544,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 9
 		}
 		
 		categories = {
@@ -1594,7 +1594,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 11							# NOTE: 1st opportunity to get MediumSPArt for AI
 		}
 	}
 	subtech_panzer_iv_spaa_equipment_2 = {		#Ostwind
@@ -1771,7 +1771,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 0
+			factor = 20
 		}
 		
 		categories = {
@@ -1810,7 +1810,7 @@ technologies = {
 		}	
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
 		}
 		
 		categories = {
@@ -1838,7 +1838,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 20
 		}
 	}
 	subtech_panzer_v_art_equipment_1 = {		#GW Panther Medium SP.Art
