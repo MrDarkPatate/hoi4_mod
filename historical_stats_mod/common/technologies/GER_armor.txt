@@ -289,7 +289,7 @@ technologies = {
 		start_year = 1940						# 1938
 		
 		ai_will_do = {						
-			factor = 11							# changed from 0 to make AI get the OOB. Value means 2nd in priority. Best TD available until 1941
+			factor = 15							# changed from 0 to make AI get the OOB. Best TD AI available until 1942
 		}
 		
 		on_research_complete = {
@@ -1393,7 +1393,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11
+			factor = 15						# Tiger !
 		}
 		
 		categories = {
