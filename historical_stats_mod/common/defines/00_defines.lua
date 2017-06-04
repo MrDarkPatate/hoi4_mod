@@ -520,12 +520,12 @@ NMilitary = {
 
 	DECRYPTION_ADVANTAGE_BONUS = 0.04,				-- How much unit base damage and base defense is increased per decryption level compared to enemies average encryption level (ex: dec. level is 5 and enemy average enc. level is 3 then 5-3 = 2 which gives 10 % increase)
 	
-	LAND_EQUIPMENT_BASE_COST = 16,					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
-	LAND_EQUIPMENT_RAMP_COST = 10,					
-	NAVAL_EQUIPMENT_BASE_COST = 16,
-	NAVAL_EQUIPMENT_RAMP_COST = 10,
-	AIR_EQUIPMENT_BASE_COST = 20,
-	AIR_EQUIPMENT_RAMP_COST = 12,
+	LAND_EQUIPMENT_BASE_COST = 10,					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
+	LAND_EQUIPMENT_RAMP_COST = 4,					
+	NAVAL_EQUIPMENT_BASE_COST = 10,
+	NAVAL_EQUIPMENT_RAMP_COST = 4,
+	AIR_EQUIPMENT_BASE_COST = 10,
+	AIR_EQUIPMENT_RAMP_COST = 6,
 	
 	FASTER_ORG_REGAIN_LEVEL = 0.25,
 	FASTER_ORG_REGAIN_MULT = 1.0,
