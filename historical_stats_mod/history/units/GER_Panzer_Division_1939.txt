@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Panzer-Division '1940'"				# 3L+3M+4I+TD+HArt Coded 1939. Bison I. 1st upgrade for Barbarossa. Strictly by 1941 11 Pz had 2M+1L was the smallest div tho Averaged to 2M+2L+4I 
+	name = "Panzer-Division '1940'"				# 4L+2M+4I+TD+HArt Coded 1939. Bison I. This can be France OOB. By france, half of Panzer divisions had assigned a 6xsiG33 company 
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -7,7 +7,7 @@
 		medium_armor = { x = 0 y = 2 }
 		
 		light_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 1 }
 		medium_armor = { x = 1 y = 2 }
 		
 		motorized = { x = 2 y = 0 }

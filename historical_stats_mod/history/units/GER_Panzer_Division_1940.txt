@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Panzer-Division '1940'"				# 3L+3M+4I+TD+HArt+SPArt. PzJg I. This can be a second type of Barbarossa OOB (These with more tanks) 
+	name = "Panzer-Division '1940'"				# 2L+4M+4I+TD+HArt+SPArt. PzJg I. This can be Barbarossa OOB.
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -7,7 +7,7 @@
 		medium_armor = { x = 0 y = 2 }
 		
 		light_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 1 }
 		medium_armor = { x = 1 y = 2 }
 		
 		motorized = { x = 2 y = 0 }

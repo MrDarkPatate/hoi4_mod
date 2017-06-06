@@ -7826,24 +7826,32 @@ SpriteType = {
 	}
 	
 
-	# KV-1
+	# KV-1 1939
 	SpriteType = {
 		name = "GFX_tech_kv_tank_a_medium"
 		texturefile = "gfx/interface/technologies/kv_1_39.dds"
 	}
-
+	# KV-1 1940  needs gfx
+	SpriteType = {
+		name = "GFX_tech_kv_tank_c_medium"
+		texturefile = "gfx/interface/technologies/kv_1_39.dds"
+	}
 	# KV-2
 	SpriteType = {
 		name = "GFX_kv_2_tank_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/sov_kv_tank_b.dds"
 	}
-
+	# KV-1S
+	SpriteType = {
+		name = "GFX_tech_kv_tank_d_medium"
+		texturefile = "gfx/interface/technologies/kv_1s.dds"
+	}
 	# KV-85
 	SpriteType = {
-		name = "GFX_tech_kv_tank_c_medium"
+		name = "GFX_tech_kv_tank_e_medium"
 		texturefile = "gfx/interface/technologies/kv_1b.dds"
 	}	
-	# KV-85 TD
+	# KV-122 AG    needs gfx
 	SpriteType = {
 		name = "GFX_subtech_kv_tank_td_1_medium"
 		texturefile = "gfx/interface/technologies/kv_1s.dds"
@@ -7885,16 +7893,29 @@ SpriteType = {
 		name = "GFX_t_34_td_1_medium"
 		texturefile = "gfx/interface/technologies/sov_t_34_td_a.dds"
 	}
-
+	# SU-85	tech
+	SpriteType = {
+		name = "GFX_tech_t_34_td_1_medium"
+		texturefile = "gfx/interface/technologies/sov_t_34_td_a.dds"
+	}
 	# SU-100
 	SpriteType = {
 		name = "GFX_t_34_td_2_medium"
 		texturefile = "gfx/interface/technologies/sov_t_34_td_b.dds"
 	}
-
+	# SU-100 tech
+	SpriteType = {
+		name = "GFX_tech_t_34_td_2_medium"
+		texturefile = "gfx/interface/technologies/sov_t_34_td_b.dds"
+	}
 	# ISU-122
 	SpriteType = {
 		name = "GFX_is_tank_td_1_medium"
+		texturefile = "gfx/interface/technologies/sov_is_tank_td_a.dds"
+	}
+	# ISU-122 tech
+	SpriteType = {
+		name = "GFX_tech_is_tank_td_1_medium"
 		texturefile = "gfx/interface/technologies/sov_is_tank_td_a.dds"
 	}
 
@@ -7903,10 +7924,20 @@ SpriteType = {
 		name = "GFX_t_34_art_1_medium"
 		texturefile = "gfx/interface/technologies/sov_t_34_art_a.dds"
 	}
+	# SU-122 tech
+	SpriteType = {
+		name = "GFX_tech_t_34_art_1_medium"
+		texturefile = "gfx/interface/technologies/sov_t_34_art_a.dds"
+	}
 
 	# SU-152
 	SpriteType = {
 		name = "GFX_kv_tank_art_1_medium"
+		texturefile = "gfx/interface/technologies/sov_kv_tank_art_a.dds"
+	}
+	# SU-152 tech
+	SpriteType = {
+		name = "GFX_tech_kv_tank_art_1_medium"
 		texturefile = "gfx/interface/technologies/sov_kv_tank_art_a.dds"
 	}
 	# SU-203
@@ -7917,6 +7948,11 @@ SpriteType = {
 	# ISU-152
 	SpriteType = {
 		name = "GFX_is_tank_art_1_medium"
+		texturefile = "gfx/interface/technologies/sov_is_tank_art_a.dds"
+	}
+	# ISU-152 tech
+	SpriteType = {
+		name = "GFX_tech_is_tank_art_1_medium"
 		texturefile = "gfx/interface/technologies/sov_is_tank_art_a.dds"
 	}
 

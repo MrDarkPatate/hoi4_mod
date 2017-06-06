@@ -575,7 +575,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 3
+		maximum_speed = 4.5		# 3 25km/h
 		reliability = 0.5
 
 		#Defensive Abilities
@@ -593,11 +593,11 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 46.3	# 48 - 24 tons. 2 guns (75L24+37L45) cost/ resources doubled for reference. 
+		build_cost_ic = 46.1	# 48 - 24 tons. 2 guns (75L24+37L45) cost/ resources doubled for reference. 
 		resources = {
 			oil = 2
-			steel = 2			# 4 Really very light tank, low armor
-			tungsten = 3
+			steel = 2			# 4 Really very light tank for a heavy, low armor
+			tungsten = 2
 			chromium = 1
 		}
 	}
@@ -610,7 +610,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 3.7
+		maximum_speed = 6.5		# 3.7 45km/h
 		reliability = 0.6
 
 		#Defensive Abilities
@@ -629,7 +629,7 @@ equipments = {
 		resources = {
 			oil = 2
 			steel = 4
-			tungsten = 3
+			tungsten = 2
 			chromium = 1
 		}
 	}
@@ -641,7 +641,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.2
+		maximum_speed = 6.1		# 41km/h
 		reliability = 0.68
 
 		#Defensive Abilities
@@ -663,7 +663,7 @@ equipments = {
 			chromium = 1
 		}
 	}
-	# 1945
+	# 1945							################ This tank need adjustment
 	panzer_vi_equipment_3 = {
 		archetype = heavy_tank_equipment
 		parent = panzer_vi_equipment_2
@@ -671,30 +671,31 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.8
+		maximum_speed = 5.8		#4.8 38km/h?
 		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 26
 		breakthrough = 84
-		armor_value = 135
-		hardness = 0.9
+		hardness = 0.9		
+		armor_value = 145		# aprox plate 200mm sloped 45º
+
 
 		#Offensive Abilities
-		soft_attack = 24 #22
-		hard_attack = 45 #30
-		ap_attack = 135
+		soft_attack = 24 		#22
+		hard_attack = 45 		#30
+		ap_attack = 120			#135 88L71 Could be higher, capped 120 provisionally
 		
-		build_cost_ic = 65 
+		build_cost_ic = 75		# 65 ...Around 77 tons
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 5			#4
 			tungsten = 3
 			chromium = 1
 		}
 	}
 	
-		# TIGER AG
+	# TIGER AG
 	#Sturmtiger
 	panzer_vi_ag_equipment_1 = {
 		archetype = heavy_assault_gun_equipment
@@ -704,7 +705,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 6 		#4 40km/h
 		reliability = 0.6
 
 		#Defensive Abilities
@@ -719,10 +720,16 @@ equipments = {
 		ap_attack = 30			# 30... 38cm HE... 
 		air_attack = 0
 		
-		build_cost_ic = 58.3	# 38 - 65 tons
+		build_cost_ic = 62.4	# 38 - 65 tons
+		resources = {
+			oil = 2
+			steel = 5
+			tungsten = 2
+			chromium = 2		# 
+		}
 	}
 	
-	#Sturmtiger	II				# This tank did not exist. Adjust stats improving previous
+	#Sturmtiger	II				# This tank did not exist. Adjusted stats improving previous
 	panzer_vi_ag_equipment_2 = {
 		archetype = heavy_assault_gun_equipment
 		parent = panzer_vi_ag_equipment_1
@@ -731,7 +738,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.8
+		maximum_speed = 6 		#4.8 40km/h
 		reliability = 0.75
 
 		#Defensive Abilities
@@ -746,7 +753,13 @@ equipments = {
 		ap_attack = 30			# 30... 38cm HE... 
 		air_attack = 0
 		
-		build_cost_ic = 58.9	# 38 - 67 tons (more plate)
+		build_cost_ic = 63		# 38 - 67 tons (more plate)
+		resources = {
+			oil = 2
+			steel = 5
+			tungsten = 2
+			chromium = 2		# 
+		}
 	}
 
 	# TIGER TD
@@ -759,7 +772,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.5
+		maximum_speed = 5		# 4.5 30kmh
 		reliability = 0.62
 
 		#Defensive Abilities
@@ -777,8 +790,8 @@ equipments = {
 		build_cost_ic = 56.9	# 40 - 65 tons
 		resources = {
 			oil = 2
-			tungsten = 6
-			steel = 5			# 4 Heavy weight & Low IC 
+			steel = 5			# 4 Heavy weight & Low IC 			
+			tungsten = 4
 			chromium = 1
 		}
 	}
@@ -791,7 +804,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.7
+		maximum_speed = 5.4		# 4.7 34kmh
 		reliability = 0.67
 
 		#Defensive Abilities
@@ -806,15 +819,17 @@ equipments = {
 		ap_attack = 119			# 134 128L45 AT gun. (176mm pierce 500m) Consider raise AP.
 		air_attack = 0
 		
-		build_cost_ic = 58.5	# 38 - 70 tons
+		build_cost_ic = 63.5	# 38 - 70 tons
 		resources = {
 			oil = 2
-			tungsten = 6
-			steel = 6			# 4 Heavy weight & Low IC 
+			steel = 5			# 4 Heavy weight & Low IC 			
+			tungsten = 4
 			chromium = 1
 		}
 	}
-	panzer_vi_td_equipment_3 = {
+	
+	######################################### NEXT 4x GERMAN TANKS NEED ADJUSTMENT 
+	panzer_vi_td_equipment_3 = {	# E?
 		archetype = heavy_tank_destroyer_equipment
 		parent = panzer_vi_td_equipment_2
 		family = panzer_vi_equipment_3
@@ -840,13 +855,13 @@ equipments = {
 		build_cost_ic = 39
 		resources = {
 			oil = 2
+			steel = 4			
 			tungsten = 6
-			steel = 4
 			chromium = 1
 		}
 	}
 	
-	#Elefant
+	#Elefant?
 	panzer_vi_art_equipment_1 = {
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_tank_artillery_equipment_1
@@ -916,78 +931,44 @@ equipments = {
 		build_cost_ic = 47
 	}
 	
-############################## RUSSIAN. 
-	# T-28
-	t_28_equipment_1 = {
+############################## RUSSIAN
+	
+	# T-35
+	t_35_equipment_1 = {
 		archetype = heavy_tank_equipment
 		parent = heavy_tank_equipment_1
 		priority = 50
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 3
-		reliability = 0.52
-
-		#Defensive Abilities
-		defense = 11
-		breakthrough = 36
-		hardness = 0.53			# 0.8
-		armor_value = 34 		#70 - 30mm plate
-
-		#Offensive Abilities
-		soft_attack = 13
-		hard_attack = 12 		#12
-		ap_attack = 51			#35 then 44 - 76mm Kt28
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 14
-		
-		build_cost_ic = 44 		# 44 - 28 tons cost/ resources doubled for reference
-		resources = {
-			oil = 2
-			tungsten = 4
-			steel = 4
-			chromium = 1
-		}
-	}
-	
-	# T-35
-	t_35_equipment_1 = {
-		archetype = heavy_tank_equipment
-		parent = t_28_equipment_1
-		priority = 50
-		visual_level = 0
-		
-		#Misc Abilities
-		maximum_speed = 3
-		reliability = 0.55
+		maximum_speed = 5		# 3 30km/h
+		reliability = 0.45		# 0.55 A very unreliable tank
 
 		#Defensive Abilities
 		defense = 13
 		breakthrough = 38
-		hardness = 0.85
-		armor_value = 68 
+		hardness = 0.53			# 0.85
+		armor_value = 32 		#68 - 30mm plate
 
 		#Offensive Abilities
 		soft_attack = 20
 		hard_attack = 11 
-		ap_attack = 40
+		ap_attack = 51			#40 - 76mm M27/32
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 49 # cost/ resources doubled for reference
+		build_cost_ic = 59.3 		# 49 - 45 tons
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 4			
+			tungsten = 2
 			chromium = 1
 		}
 	}
 	
-	# KV-1
+	# KV-1 1939 (resercheable 1938 with a x3 tech research cost)
 	kv_tank_equipment_1 = {
 		archetype = heavy_tank_equipment
         parent = t_28_equipment_1		
@@ -995,8 +976,8 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.55
+		maximum_speed = 5		# 4 30km/h (or less, very unreliable)
+		reliability = 0.5		# 0.55 Reduce...
 
 		#Defensive Abilities
 		defense = 15
@@ -1007,33 +988,96 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 15 		#22
 		hard_attack = 24 		#30
-		ap_attack = 60 			#111 then 87 - 76mm F34
+		ap_attack = 51 			#111 then 87 - 76mm L11
 		
-		build_cost_ic = 54 		# 54 - 45 tons
+		build_cost_ic = 59.3 		# 54 - 45 tons
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 4			
+			tungsten = 2
 			chromium = 1
 		}
 	}
 
-	# KV-85  1943
+	# KV-1 1940 
 	kv_tank_equipment_2 = {
 		archetype = heavy_tank_equipment
-		parent = kv_tank_equipment_1
+        parent = kv_tank_equipment_1		
 		priority = 90
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.5
+		maximum_speed = 5.5		# 4 35km/h
+		reliability = 0.55
+
+		#Defensive Abilities
+		defense = 16
+		breakthrough = 58
+		hardness = 0.75			# 0.9		
+		armor_value = 67 		# 91 - 90mm 
+
+		#Offensive Abilities
+		soft_attack = 15 		#22
+		hard_attack = 24 		#30
+		ap_attack = 60 			#111 then 87 - 76mm F34
+		
+		build_cost_ic = 59.3 		# 54 - 45 tons
+		resources = {
+			oil = 2
+			steel = 4			
+			tungsten = 2
+			chromium = 1
+		}
+	}
+	
+	# KV-1S  1942
+	kv_tank_equipment_3 = {
+		archetype = heavy_tank_equipment
+		parent = kv_tank_equipment_2
+		priority = 90
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 6.5		# New tank S for Skorostnoy (Fast) 45km/h 
+		reliability = 0.65
+
+		#Defensive Abilities
+		defense = 17
+		breakthrough = 60
+		hardness = 0.67			# 0.9		
+		armor_value = 50 		# 130 - 60mm reduced plate in order to increase speed
+
+
+		#Offensive Abilities
+		soft_attack = 17		# 28
+		hard_attack = 26 		# 40
+		ap_attack = 60 			# 111 then 87 - 76mm F34
+		
+		build_cost_ic = 58		# 58 - 42.5 tons
+		resources = {
+			oil = 2
+			steel = 4			
+			tungsten = 2
+			chromium = 1
+		}
+	}
+	
+	# KV-85  1943				# This tank was abandoned soon as was no clearly better than T34/85... but expensiver.
+	kv_tank_equipment_4 = {
+		archetype = heavy_tank_equipment
+		parent = kv_tank_equipment_3
+		priority = 90
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 6		# 4.5 40km/h
 		reliability = 0.65
 
 		#Defensive Abilities
 		defense = 22
 		breakthrough = 79
 		hardness = 0.71			# 0.9		
-		armor_value = 58 		#130 - 75mm 
+		armor_value = 58 		#130 - 75mm Still low armor... 
 
 
 		#Offensive Abilities
@@ -1041,15 +1085,15 @@ equipments = {
 		hard_attack = 35 		#40
 		ap_attack = 86	 		#131 then 111 -  85mm D5T 
 		
-		build_cost_ic = 58		# 58 - 46 tons
+		build_cost_ic = 60.2	# 58 - 46 tons
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 4			
+			tungsten = 2
 			chromium = 1
 		}
 	}
-	
+
 		# IS-1 1943
 	is_tank_equipment_1 = {
 		archetype = heavy_tank_equipment
@@ -1057,7 +1101,7 @@ equipments = {
 		priority = 90
 		visual_level = 0
 		
-		maximum_speed = 4
+		maximum_speed =  5.7		# 4 37km/h
 		reliability = 0.58
 
 		#Defensive Abilities
@@ -1072,7 +1116,14 @@ equipments = {
 		hard_attack = 29 		#40
 		ap_attack = 86 			#131 then 96 -  85mm D5T 
 		
-		build_cost_ic = 56		# 56 - 43.5 tons
+		build_cost_ic = 58.9	# 56 - 43.5 tons
+		resources = {
+			oil = 2
+			steel = 4			
+			tungsten = 2
+			chromium = 1
+		}
+		
 	}
 	# IS-2  1943
 	is_tank_equipment_2 = {
@@ -1082,7 +1133,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.4
+		maximum_speed = 5.7		# 4.4 37km/h
 		reliability = 0.65
 
 		#Defensive Abilities
@@ -1097,10 +1148,16 @@ equipments = {
 		hard_attack = 30 		#40
 		ap_attack = 90 			#131 then 96 - 122mm D25T 
 		
-		build_cost_ic = 56		# 56 - 46 tons
+		build_cost_ic = 63.4	# 56 - 46 tons
+		resources = {
+			oil = 2
+			steel = 4			
+			tungsten = 2
+			chromium = 1
+		}
 	}
 
-	# IS-3  1945
+	# IS-3  1944
 	is_tank_equipment_3 = {
 		archetype = heavy_tank_equipment
 		parent = is_tank_equipment_2
@@ -1108,7 +1165,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 4.8
+		maximum_speed =  5.7		# 4.8 37km/h
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -1122,11 +1179,11 @@ equipments = {
 		hard_attack = 31 		#40
 		ap_attack = 90			#131 then 99 - 122mm D25T 
 		
-		build_cost_ic = 63		# 46.5 tons
+		build_cost_ic = 63.7	# 46.5 tons
 		resources = {
 			oil = 2
-			tungsten = 5
-			steel = 4
+			steel = 4			
+			tungsten = 2
 			chromium = 1
 		}
 	}

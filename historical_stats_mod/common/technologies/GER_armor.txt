@@ -412,16 +412,15 @@ technologies = {
 			panzer_ii_equipment_2
 		}
 		
-		on_research_complete = {
-			
+		on_research_complete = {			
 			hidden_effect = {
 				if = {
 					limit = {
 						is_ai = no			# Better not give this to AI
 					}
 				load_oob = "GER_Leichte_Division"
+				}
 			}
-
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
@@ -537,7 +536,7 @@ technologies = {
 			#subtech_panzer_ii_flamm_equipment_1				#ahistorical SP.AA not needed, many other types available
 		}
 		ai_will_do = {
-			factor = 11						# 10 Only Light Tank for German is Pz II
+			factor = 6						# 10 Only Light Tank for German is Pz II. If value too high  AI will use 60% ahead of time on it.
 		}
 		
 		categories = {
@@ -1409,7 +1408,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11
+			factor = 30						# Value very high to priorize AI 60% bonus versus Pz II
 		}
 		
 		categories = {

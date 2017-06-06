@@ -2,14 +2,16 @@ technologies = {
 	#Vertical position
 	@1933 = -2
 	@1935 = 0
+	@1938 = 2
 	@1939 = 4
 	@1940 = 6
 	@1941 = 8
 	@1942 = 10
 	@1943 = 12
-	@1944 = 14
-	@1945 = 16
-	@1947 = 18
+	@1943/4 = 14
+	@1944 = 16
+	@1945 = 18
+	@1947 = 20
 
 	soviet_tech_a = {
 		
@@ -78,11 +80,10 @@ technologies = {
 			factor = 0
 		}
 	}
-
 	soviet_tech_d = {
 	
 		path = {
-			leads_to_tech = tech_t_28_a
+			leads_to_tech = tech_t_35_a
 			research_cost_coeff = 1
 		}
 	
@@ -93,7 +94,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 5 y = @1933 }
+			position = { x = 7 y = @1933 }
 		}
 		
 		ai_will_do = {
@@ -116,7 +117,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1933
 		folder = {
 			name = soviet_folder
@@ -145,7 +146,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1940
 		folder = {
 			name = soviet_folder
@@ -183,7 +184,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1933
 		folder = {
 			name = soviet_folder
@@ -210,7 +211,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2.6
+		research_cost = 1.5
 		start_year = 1941					# 1939
 		folder = {
 			name = soviet_folder
@@ -246,7 +247,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2.7
+		research_cost = 1.5
 		start_year = 1941					# 1939
 		folder = {
 			name = soviet_folder
@@ -286,7 +287,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 			
-		research_cost = 1.8
+		research_cost = 1.5
 		start_year = 1942					#1941
 		folder = {
 			name = soviet_folder
@@ -318,7 +319,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 			
-		research_cost = 2.1
+		research_cost = 1.5
 		start_year = 1943
 		folder = {
 			name = soviet_folder
@@ -347,7 +348,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.4
+		research_cost = 1.5
 		start_year = 1942				#1941
 		
 		ai_will_do = {
@@ -371,7 +372,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.4
+		research_cost = 1.5
 		start_year = 1943
 		
 		ai_will_do = {
@@ -396,7 +397,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.4
+		research_cost = 1
 		start_year = 1941
 		
 		ai_will_do = {
@@ -421,7 +422,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.4
+		research_cost = 1.5
 		start_year = 1942
 		
 		ai_will_do = {
@@ -444,7 +445,7 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.4
+		research_cost = 1
 		start_year = 1943
 		
 		ai_will_do = {
@@ -471,12 +472,15 @@ technologies = {
 			leads_to_tech = tech_bt_tank_b
 			research_cost_coeff = 1
 		}
-		
+		path = {
+				leads_to_tech = tech_t_28_a
+				research_cost_coeff = 0.5
+			}
 		dependencies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1933
 		folder = {
 			name = soviet_folder
@@ -490,6 +494,39 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+		}
+	}
+	#T-28
+	tech_t_28_a = {
+
+		enable_equipments = {
+			t_28_equipment_1 
+		}
+	
+		path = {
+			leads_to_tech = tech_t_34_a
+			research_cost_coeff = 1
+		}
+				
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		
+		research_cost = 3
+		start_year = 1933
+		
+		folder = {
+			name = soviet_folder
+			position = { x = 3 y = @1933 }
+		}
+				
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
 		}
 	}
 	# BT-7
@@ -508,11 +545,11 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
-		start_year = 1935
+		research_cost = 1.5
+		start_year = 1937
 		folder = {
 			name = soviet_folder
-			position = { x = 0 y = @1935 }
+			position = { x = 0 y = @1937 }
 		}
 				
 		ai_will_do = {
@@ -560,7 +597,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2.7
+		research_cost = 2.5
 		start_year = 1940					#1939
 
 		folder = {
@@ -589,13 +626,16 @@ technologies = {
 		path = {
 			leads_to_tech = tech_t_34_d 
 			research_cost_coeff = 1
-		}
-		
+		}	
+		path = {
+			leads_to_tech = tech_t_34_td_1
+			research_cost_coeff = 1
+		}		
 		dependencies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2.3
+		research_cost = 1.5
 		start_year = 1942					#1941
 
 		folder = {
@@ -605,8 +645,8 @@ technologies = {
 		
 
 		sub_technologies = {
-			subtech_t_34_td_1
-			subtech_t_34_art_1
+			#subtech_t_34_td_1			#SU-85
+			subtech_t_34_art_1			#SU-122
 		}
 
 		ai_will_do = {
@@ -619,12 +659,15 @@ technologies = {
 		}
 	}
 	# SU-85
-	subtech_t_34_td_1 = {
+	tech_t_34_td_1 = {
 
 		enable_equipments = {
 			t_34_td_1
 		}
-		
+		path = {
+			leads_to_tech = tech_t_34_td_2
+			research_cost_coeff = 0.5
+		}
 		on_research_complete = {
 			limit = {
 				is_ai = yes
@@ -641,9 +684,12 @@ technologies = {
 			}
 		}
 		
-		research_cost = 1.1
+		research_cost = 1.5
 		start_year = 1943				#1941
-		
+		folder = {
+			name = soviet_folder
+			position = { x = 3 y = @1943 }	#1941
+		}
 		ai_will_do = {
 			factor = 18
 		}
@@ -681,9 +727,9 @@ technologies = {
 		}
 		
 		
-		research_cost = 1.1
+		research_cost = 1
 		start_year = 1942				#1941
-		
+				
 		ai_will_do = {
 			factor = 18
 		}
@@ -708,7 +754,10 @@ technologies = {
 			leads_to_tech = tech_t_44_a
 			research_cost_coeff = 1
 		}
-		
+		path = {
+			leads_to_tech = tech_t_34_td_2
+			research_cost_coeff = 1
+		}
 		dependencies = {
 			soviet_tech_a = 1
 		}
@@ -722,7 +771,7 @@ technologies = {
 		}
 
 		sub_technologies = {
-			subtech_t_34_td_2
+			#subtech_t_34_td_2
 		}		
 		
 		ai_will_do = {
@@ -735,16 +784,19 @@ technologies = {
 		}
 	}
 	# SU-100
-	subtech_t_34_td_2 = {
+	tech_t_34_td_2 = {
 
 		enable_equipments = {
 			t_34_td_2
 		}
 		
 				
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1944				#1943
-		
+		folder = {
+			name = soviet_folder
+			position = { x = 3 y = @1944 }	#1943
+		}
 		ai_will_do = {
 			factor = 14
 		}
@@ -774,7 +826,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 			
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1945
 
 		folder = {
@@ -802,7 +854,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 			
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1947
 
 		folder = {
@@ -819,44 +871,6 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	#T-28
-	tech_t_28_a = {
-
-		enable_equipments = {
-			t_28_equipment_1 
-		}
-	
-		path = {
-			leads_to_tech = tech_kv_tank_a
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = tech_t_35_a
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			soviet_tech_a = 1
-		}
-		
-		research_cost = 2
-		start_year = 1932
-		
-		folder = {
-			name = soviet_folder
-			position = { x = 5 y = @1933 }
-		}
-				
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_heavy_armor
-		}
-	}
 	#T-35
 	tech_t_35_a = {
 
@@ -868,12 +882,17 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 1
+		path = {
+			leads_to_tech = tech_kv_tank_a
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
 		start_year = 1933
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 7 y = @1935 }
+			position = { x = 7 y = @1933 }
 		}
 				
 		ai_will_do = {
@@ -917,18 +936,14 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
-		start_year = 1939
+		research_cost = 3				# major improvement
+		start_year = 1938
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 5 y = @1939 }
+			position = { x = 7 y = @1938 }		#should be 39, with little research bonus, mid39, will need GER/SOV agreement rework
 		}
 
-		sub_technologies = {
-			subtech_kv_tank_b
-			subtech_kv_tank_art_1		
-		}
 
 		ai_will_do = {
 			factor = 10
@@ -940,6 +955,43 @@ technologies = {
 		}
 	}
 
+
+	#KV-1-1940
+	tech_kv_tank_c = {
+
+		enable_equipments = {
+			kv_tank_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = tech_kv_tank_d
+			research_cost_coeff = 1
+		}
+		
+		sub_technologies = {
+			subtech_kv_tank_b					
+		}
+		
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940					#1940
+		
+		folder = {
+			name = soviet_folder
+			position = { x = 7 y = @1940 }	#1942
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
 	#KV-2
 	subtech_kv_tank_b = {
 
@@ -951,7 +1003,7 @@ technologies = {
 			soviet_tech_a = 1
 		}
 
-		research_cost = 2.2
+		research_cost = 1
 		start_year = 1940			#1939
 
 		ai_will_do = {
@@ -963,19 +1015,70 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	# SU-152
-	subtech_kv_tank_art_1 = {
+	#KV-1S
+	tech_kv_tank_d = {
 
 		enable_equipments = {
-			kv_tank_art_1
+			kv_tank_equipment_3
 		}
+	
+		path = {
+			leads_to_tech = tech_is_tank_a
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_kv_tank_e
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_kv_tank_art_1
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			#subtech_kv_tank_art_1				# SU-152 TD
+			#subtech_kv_tank_td_1				# KV 122 AG?  can  be added later
+		}				
 		
 		dependencies = {
 			soviet_tech_a = 1
 		}
+		
 		research_cost = 1.5
-		start_year = 1943				#1941
+		start_year = 1942					#1943
+		
+		folder = {
+			name = soviet_folder
+			position = { x = 7 y = @1942 }	#1943
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	# SU-152 AG
+	tech_kv_tank_art_1 = {
 
+		enable_equipments = {
+			kv_tank_art_1
+		}
+		path = {
+			leads_to_tech = tech_is_tank_art_1
+			research_cost_coeff = 0.5
+		}
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		research_cost = 1
+		start_year = 1942				#1943
+		
+		folder = {
+			name = soviet_folder
+			position = { x = 11 y = @1942 }	#1943
+		}
 		ai_will_do = {
 			factor = 13
 		}
@@ -986,27 +1089,20 @@ technologies = {
 		}
 	}
 	#KV-85
-	tech_kv_tank_c = {
+	tech_kv_tank_e = {
 
 		enable_equipments = {
-			kv_tank_equipment_2
+			kv_tank_equipment_4
 		}
-	
 		path = {
-			leads_to_tech = tech_is_tank_a
+			leads_to_tech = tech_is_tank_b
 			research_cost_coeff = 1
 		}
-		
-		sub_technologies = {
-			subtech_kv_tank_td_1			
-			subtech_kv_tank_art_2		
-		}
-		
 		dependencies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1943					#1942
 		
 		folder = {
@@ -1022,7 +1118,7 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	# Can be a KV-100 or KV-122
+	# Can be a KV-100 or KV-122             prefer KV-122 on KV-1S chassis
 		subtech_kv_tank_td_1 = {
 
 		enable_equipments = {
@@ -1044,7 +1140,7 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	# SU-203
+	# SU-203						#none built not available now
 	subtech_kv_tank_art_2 = {
 
 		enable_equipments = {
@@ -1083,12 +1179,12 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3
 		start_year = 1943
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1943 }
+			position = { x = 9 y = @1943 }
 		}
 
 		ai_will_do = {
@@ -1111,21 +1207,25 @@ technologies = {
 			leads_to_tech = tech_is_tank_c
 			research_cost_coeff = 1
 		}
-		
+		path = {
+			leads_to_tech = tech_is_tank_art_1
+			research_cost_coeff = 1
+		}
 		dependencies = {
 			soviet_tech_a = 1
+			tech_is_tank_a = 1				#will need IS-1
 		}
 		
-		research_cost = 1.4
-		start_year = 1944
+		research_cost = 1					#to be available earlier
+		start_year = 1943
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1944 }
+			position = { x = 7 y = @1943/4 }
 		}
 		sub_technologies = {
 		    subtech_is_tank_td_1
-			subtech_is_tank_art_1
+			#subtech_is_tank_art_1
 		}				
 		ai_will_do = {
 			factor = 10
@@ -1136,8 +1236,8 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	# ISU-152
-	subtech_is_tank_art_1 = {
+	# ISU-152 AG
+	tech_is_tank_art_1 = {
 
 		enable_equipments = {
 			is_tank_art_1
@@ -1147,8 +1247,13 @@ technologies = {
 			soviet_tech_a = 1
 		}
 
-		research_cost = 1.1
+		research_cost = 1
 		start_year = 1943
+		
+		folder = {
+			name = soviet_folder
+			position = { x = 11 y = @1943/4 }
+		}
 
 		ai_will_do = {
 			factor = 12
@@ -1159,7 +1264,7 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	# ISU-122
+	# ISU-122 TD
 	subtech_is_tank_td_1 = {
 
 		enable_equipments = {
@@ -1170,8 +1275,10 @@ technologies = {
 			soviet_tech_a = 1
 		}
 
-		research_cost = 1.1
+		research_cost = 1
 		start_year = 1943
+		
+
 
 		ai_will_do = {
 			factor = 12
@@ -1193,12 +1300,12 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 2
-		start_year = 1945
+		research_cost = 2.5
+		start_year = 1944
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1945 }
+			position = { x = 7 y = @1944 }
 		}
 				
 		ai_will_do = {
