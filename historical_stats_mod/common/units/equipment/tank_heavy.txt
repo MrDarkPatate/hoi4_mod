@@ -971,7 +971,7 @@ equipments = {
 	# KV-1 1939 (resercheable 1938 with a x3 tech research cost)
 	kv_tank_equipment_1 = {
 		archetype = heavy_tank_equipment
-        parent = t_28_equipment_1		
+        parent = t_35_equipment_1				#or heavy_tank_equipment_1 will affect production eff drop when changing from t35..
 		priority = 90
 		visual_level = 0
 		
@@ -1097,7 +1097,7 @@ equipments = {
 		# IS-1 1943
 	is_tank_equipment_1 = {
 		archetype = heavy_tank_equipment
-		parent = kv_tank_equipment_1
+		parent = kv_tank_equipment_3
 		priority = 90
 		visual_level = 0
 		

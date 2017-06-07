@@ -7813,10 +7813,22 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/t_54.dds"
 	}
 
-	# T-28
+	# T-28A
 	SpriteType = {
 		name = "GFX_tech_t_28_a_medium"
-		texturefile = "gfx/interface/technologies/sov_t_28_a.dds"
+		texturefile = "gfx/interface/technologies/T28A.dds"
+	}
+	
+	# T-28B
+	SpriteType = {
+		name = "GFX_tech_t_28_b_medium"
+		texturefile = "gfx/interface/technologies/T28B.dds"
+	}
+	
+	# T-28E
+	SpriteType = {
+		name = "GFX_tech_t_28_c_medium"
+		texturefile = "gfx/interface/technologies/T28E.dds"
 	}
 	
 	# T-35
