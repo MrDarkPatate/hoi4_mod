@@ -4,6 +4,7 @@
 	################## 2nd part: IC / Resources (Weight & Weapon & Tank Type based. Tanks with low IC compared to weight need more materials per day to balance i.e. TD)
 	################## 3rd part: Soft / Hard / Defense / Breakthrough / Reliability / Speed (Adjust these for game balance... better depending on Tank Type)
 	################## NOTE: All basic medium tank types have battalions with size 45. Other have 30 (AGs) or  24 (TD / SPART / AA) 
+	################## Speed adjusted roughly to (Max speed kmh) / 10 + 2
 	
 	################## MEDIUM TANKS # NOTE: AVERAGE ARMOR / AVERAGE SPEED / AVERAGE WEIGHT & IC
 equipments = {
@@ -1012,7 +1013,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 5			#Speed was 35-40 kmph 		# Note: Medium German tanks had speed around 40 km/h
+		maximum_speed = 5.2			#Speed was around 32kmh
 		reliability = 0.4			# 0.4 is too low. but we stick to it 
 
 		#Defensive Abilities
@@ -1045,7 +1046,7 @@ equipments = {
 		priority = 50
 		visual_level = 0
 		
-		maximum_speed = 5.8
+		maximum_speed = 6			# Speed around 40kmh
 		reliability = 0.62
 
 		defense = 13
@@ -1073,7 +1074,7 @@ equipments = {
 		parent = panzer_iii_equipment_2
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6.3
+		maximum_speed = 5.8			#6.3 
 		reliability = 0.68
 		
 		defense = 15
@@ -1101,7 +1102,7 @@ equipments = {
 		parent = panzer_iii_equipment_3
 		priority = 50				# Best tank available in 1941. consider help AI 
 		visual_level = 0
-		maximum_speed = 6.5
+		maximum_speed = 5.8			#6.5
 		reliability = 0.7
 		
 		#Defensive Abilities
@@ -1130,7 +1131,7 @@ equipments = {
 		parent = panzer_iii_equipment_4
 		priority = 50				# Best tank available in 1941. consider help AI 
 		visual_level = 0
-		maximum_speed = 6.5
+		maximum_speed = 5.6			#6.5 Speed decrease due extra weight 
 		reliability = 0.7
 		
 		#Defensive Abilities
@@ -1160,7 +1161,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6.5
+		maximum_speed = 5.6			#6.5
 		reliability = 0.7
 		#Defensive Abilities
 
@@ -1285,7 +1286,7 @@ equipments = {
 		family = panzer_iii_equipment_3
 		priority = 60
 		visual_level = 0
-		maximum_speed = 5.5
+		maximum_speed = 4			# 5.5 20kmh
 		reliability = 0.65
 		
 		defense = 7
@@ -1314,7 +1315,7 @@ equipments = {
 		priority = 80
 		visual_level = 0
 	
-		maximum_speed = 6
+		maximum_speed = 6			# 40kmh
 		reliability = 0.7
 		
 		#Defensive Abilities
@@ -1383,7 +1384,7 @@ equipments = {
 		priority = 80
 		visual_level = 0
 		
-		maximum_speed = 6.5
+		maximum_speed = 6			# 6.5
 		reliability = 0.75
 
 		#Defensive Abilities
@@ -1415,7 +1416,7 @@ equipments = {
 		priority = 80
 		visual_level = 0
 		
-		maximum_speed = 6.5
+		maximum_speed = 6			# 6.5
 		reliability = 0.75
 
 		#Defensive Abilities
@@ -1451,7 +1452,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 5.6
+		maximum_speed = 5.8
 		reliability = 0.65
 
 		#Defensive Abilities
@@ -1507,7 +1508,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 5.9		# 39kmh
 		reliability = 0.4
 
 		#Defensive Abilities
@@ -1596,7 +1597,7 @@ equipments = {
 		parent = panzer_iv_equipment_3
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6
+		maximum_speed = 5.9		#6
 		reliability = 0.6
 
 		#Defensive Abilities
@@ -1625,7 +1626,7 @@ equipments = {
 		parent = panzer_iv_equipment_4
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6
+		maximum_speed = 5.8		#6
 		reliability = 0.65
 
 		#Defensive Abilities
@@ -1686,7 +1687,7 @@ equipments = {
 		priority = 60
 		visual_level = 0
 		
-		maximum_speed = 6
+		maximum_speed = 5.4				# 6 34kmh
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -1720,7 +1721,7 @@ equipments = {
 		priority = 60
 		visual_level = 0
 		
-		maximum_speed = 6.2
+		maximum_speed = 5.8		# 6.2 38kmh
 		reliability = 0.5
 
 		#Defensive Abilities
@@ -1753,7 +1754,7 @@ equipments = {
 		priority = 60
 		visual_level = 0
 		
-		maximum_speed = 6.5
+		maximum_speed = 6		# 6.5
 		reliability = 0.78
 
 		#Defensive Abilities
@@ -1788,7 +1789,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 5.5
+		maximum_speed = 6		# 5.5
 		reliability = 0.67
 
 		#Defensive Abilities
@@ -1820,7 +1821,7 @@ equipments = {
 		priority = 80
 		visual_level = 0
 		
-		maximum_speed = 5
+		maximum_speed = 6		# 5
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -1852,7 +1853,7 @@ equipments = {
 		priority = 80
 		visual_level = 0
 		
-		maximum_speed = 5
+		maximum_speed = 5.5		#5
 		reliability = 0.75
 
 		#Defensive Abilities
@@ -1888,7 +1889,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 6.1
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -1921,7 +1922,7 @@ equipments = {
 		priority = 70
 		visual_level = 0
 		
-		maximum_speed = 6.3
+		maximum_speed = 5.9
 		reliability = 0.75
 
 		#Defensive Abilities
@@ -1953,7 +1954,7 @@ equipments = {
 		priority = 70
 		visual_level = 0
 		
-		maximum_speed = 6.5
+		maximum_speed = 6
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -1986,7 +1987,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6.7		# Note: Panther series had speed around 50 km/h
+		maximum_speed = 6.6		# 46kmh
 		reliability = 0.55
 
 		#Defensive Abilities
@@ -2018,7 +2019,7 @@ equipments = {
 		parent = panzer_v_equipment_1
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6.9
+		maximum_speed = 6.6		#46kmh
 		reliability = 0.65
 
 		#Defensive Abilities
@@ -2048,7 +2049,7 @@ equipments = {
 		parent = panzer_v_equipment_2
 		priority = 50
 		visual_level = 0
-		maximum_speed = 7.5
+		maximum_speed = 7		# 7.5
 		reliability = 0.8		# Highly Reliable
 
 		#Defensive Abilities
@@ -2080,8 +2081,8 @@ equipments = {
 		priority = 80
 		visual_level = 0
 		
-				#Misc Abilities
-		maximum_speed = 6
+		#Misc Abilities
+		maximum_speed = 6.5		# Around 45kmh
 		reliability = 0.75
 
 		#Defensive Abilities
@@ -2147,7 +2148,7 @@ equipments = {
 		priority = 70
 		visual_level = 0
 		
-		maximum_speed = 7
+		maximum_speed = 6.5		#7
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -2179,7 +2180,7 @@ equipments = {
 		priority = 60
 		visual_level = 2
 
-		maximum_speed = 6.7
+		maximum_speed = 6.5		#6.7
 		reliability = 0.8
 
 		#Defensive Abilities
@@ -2206,7 +2207,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6	# Note: Medium russian tanks had speed around 50 km/h
+		maximum_speed = 7	# 6 - 50kmh
 		reliability = 0.57	# Should be unreliable 
 
 		#Defensive Abilities
@@ -2242,7 +2243,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 7.3	# 6 - 53kmh
 		reliability = 0.6
 
 		#Defensive Abilities
@@ -2278,7 +2279,7 @@ equipments = {
 		visual_level = 0
 		
 			#Misc Abilities
-		maximum_speed = 6
+		maximum_speed = 7.3	# 6 - 53kmh
 		reliability = 0.6
 
 		#Defensive Abilities
@@ -2313,7 +2314,7 @@ equipments = {
 		priority = 50
 		visual_level = 0
 		
-		maximum_speed = 6
+		maximum_speed = 7.3	# 6 - 53kmh
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -2349,7 +2350,7 @@ equipments = {
 		priority = 50
 		visual_level = 0
 		
-		maximum_speed = 6
+		maximum_speed = 7	# 6 - 50kmh
 		reliability = 0.7
 
 		#Defensive Abilities
@@ -2384,7 +2385,7 @@ equipments = {
 		priority = 50
 		visual_level = 0
 		
-		maximum_speed = 7
+		maximum_speed = 7	# 6 - 50kmh
 		reliability = 0.75
 
 		#Defensive Abilities
@@ -2423,8 +2424,8 @@ equipments = {
 		priority = 60
 		visual_level = 0
 		
-				#Misc Abilities
-		maximum_speed = 6
+		#Misc Abilities
+		maximum_speed = 7.5		# 6 - 55kmh
 		reliability = 0.65
 
 		#Defensive Abilities
@@ -2463,7 +2464,7 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 5.5
+		maximum_speed = 7.5		#5.5 55kmh
 		reliability = 0.67
 
 		#Defensive Abilities
@@ -2496,7 +2497,7 @@ equipments = {
 		priority = 80
 		visual_level = 0
 		
-		maximum_speed = 5.4
+		maximum_speed = 6.8		# 48kmh
 		reliability = 0.7
 
 		#Defensive Abilities
