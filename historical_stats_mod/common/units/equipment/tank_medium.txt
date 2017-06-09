@@ -2250,7 +2250,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 9
 		hard_attack = 6
-		ap_attack = 45				# 45mm 20k gun 
+		ap_attack = 41				# 45mm 20k gun 
 		air_attack = 0
 
 		#Space taken in convoy
@@ -2284,7 +2284,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 10
 		hard_attack = 7
-		ap_attack = 45				# Was 47 45mm 20k gun 
+		ap_attack = 45				# Was 47 45mm 53k gun 
 		air_attack = 0
 
 		#Space taken in convoy
