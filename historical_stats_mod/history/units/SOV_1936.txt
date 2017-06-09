@@ -1,4 +1,7 @@
 ﻿##### Division Templates #####
+################################ NOTES FOR TANK HISTORIC STATS MOD: T28 is a medium tank. BT Series are  also mediums. T26 are lights. T35 are heavy. Amphibious sent to Cavalry.
+################################ By Dec 1935, Soviets had approximately: 16 T35, 88 T28s, 3900 T26s (620 old w 2xMG Turrets)   
+################################ 2600 BTs of all types (620 old BT2), around 900 T37 Amph
 division_template = {
 	name = "Strelkovaya Diviziya"			# Rifle Division
 
@@ -19,7 +22,8 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade = { x = 3 y = 3 }
-		light_armor = { x = 4 y = 0 }
+		
+		light_armor = { x = 4 y = 0 }			# Roughly 2650 T26 Tanks initial deploy w infantry 
 		
 	}
 	support = {
@@ -51,6 +55,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade = { x = 3 y = 3 }
+		
 		light_armor = { x = 4 y = 0 }
 		
 	}
@@ -59,6 +64,7 @@ division_template = {
 		recon_mot = { x = 0 y = 1 } 		
 		engineer = { x = 0 y = 2 } 	
 		artillery_medium = { x = 0 y = 3 } 	
+		
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
@@ -71,9 +77,11 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		
 		light_infantry  = { x = 1 y = 0 }
 		light_infantry  = { x = 1 y = 1 }
 		light_infantry  = { x = 1 y = 2 }
+		
 		artillery_brigade = { x = 2 y = 0 }				
 	}
 	support = {
@@ -88,15 +96,19 @@ division_template = {
 		mountaineers = { x = 0 y = 0 }	
 		mountaineers = { x = 0 y = 1 }
 		mountaineers = { x = 0 y = 2 }
+		
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
 		mountaineers = { x = 1 y = 2 }	
+		
 		mountaineers = { x = 2 y = 0 }	
 		mountaineers = { x = 2 y = 1 }	
 		mountaineers = { x = 2 y = 2 }
+		
 		mountaineers = { x = 3 y = 0 }	
 		mountaineers = { x = 3 y = 1 }	
-		mountaineers = { x = 3 y = 2 }	
+		mountaineers = { x = 3 y = 2 }
+		
 		mountain_artillery_brigade = { x = 4 y = 0 }
 		mountain_artillery_brigade = { x = 4 y = 1 }		
 	}
@@ -131,6 +143,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }		
 		anti_tank_brigade = { x = 3 y = 3 }
+		
 		light_armor = { x = 4 y = 0 }
 	}
 	support = {
@@ -160,12 +173,13 @@ division_template = {
 
 		artillery_brigade_mot = { x = 2 y = 0 }
 		artillery_brigade_mot = { x = 2 y = 1 }
+		
 		light_armor = { x = 3 y = 0 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 } 
 		Tankettes = { x = 0 y = 1 } # Recon bn had 16x L tanks, 45 ACs
-		#engineer = { x = 0 y = 2 } 	# (mot) Engineer bn
+		#engineer = { x = 0 y = 2 } # (mot) Engineer bn
 		recon_ac = { x = 0 y = 2 }	# Tank bn had 51 L tanks, 3 ACs
 		
 		anti_tank = { x = 1 y = 0 }
@@ -181,21 +195,24 @@ division_template = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
 		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }		# Were 4 regiments (battalion sized... adjusted somewhat)
 	
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
 		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
 	
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
-		cavalry = { x = 2 y = 2 }
+		mountain_artillery_brigade = { x = 2 y = 0 }	
+		mountain_artillery_brigade = { x = 2 y = 1 }
+		mountain_artillery_brigade = { x = 2 y = 2 }	
 		
-		cavalry = { x = 3 y = 0 }
-		cavalry = { x = 3 y = 1 }
-		#sov_amph_tank = { x = 3 y = 2 }
-
-		mountain_artillery_brigade = { x = 4 y = 0 }	
-		mountain_artillery_brigade = { x = 4 y = 1 }	
+		sov_amph_tank = { x = 3 y = 0 }	# Reintroduced. Around 900 T37 included
+	
+		#cavalry = { x = 2 y = 0 }
+		#cavalry = { x = 2 y = 1 }
+		#cavalry = { x = 2 y = 2 }
+		#cavalry = { x = 2 y = 3 }
+				
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 } 
@@ -206,7 +223,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Kavaleriyskaya Brigada" 	# Kavaleriyskaya Diviziya
+	name = "Kavaleriyskaya Brigada" 	# Kavaleriyskaya Diviziya # Rework Note... this was in fact sized 1 bn...
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -225,6 +242,7 @@ division_template = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
+		
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
@@ -241,6 +259,7 @@ division_template = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
+		
 		garrison = { x = 1 y = 0 }
 		garrison = { x = 1 y = 1 }
 		garrison = { x = 1 y = 2 }
@@ -259,12 +278,13 @@ division_template = {
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
 		
 		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
-		light_armor = { x = 1 y = 2 }
-		light_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }		# Adjusted to new mix: Roughly 1150 Bt and 1150 T26 in Tank divisions
 		
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
@@ -284,6 +304,7 @@ division_template = {
 		engineer = { x = 0 y = 1 } 	
 		recon_ac = { x = 0 y = 2 }	
 		recon_mot = { x = 0 y = 3 }
+		
 		maintenance_company = { x = 1 y = 0}
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }	
@@ -292,12 +313,12 @@ division_template = {
 division_template = {
 	name = "Mekhanizirovaniy Brigada"
 	regiments = {
-		heavy_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 0 }	
+		medium_armor = { x = 0 y = 1 }
 		#sov_amph_tank = { x = 0 y = 1 }
 		
 		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 1 } 		# T28 now a medium
 		
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
@@ -469,6 +490,12 @@ division_template = {
 		division_template = "Mekhanizirovaniy Korpus"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+	
+		force_equipment_variants = { 						# This is a test
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# This is a test
+		}													# This is a test
+
+		
 	}
 	##################################################################
 	### Leningraskaya Gruppa Armiya (Leningrad Army Group) -- Leningrad ###
@@ -2771,17 +2798,17 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = amph_soviet_tank_equipment_1
-			amount = 450
+			amount = 10						#450 Now there are around 900 amph tanks in Cav divisions
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = light_soviet_tank_equipment_1
-			amount = 1000
+			amount = 1000					# T26. Pending adjust to totals and variants. This reserve should be T26 w MGs
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = bt_tank_equipment_1
-			amount = 600
+			amount = 600					# BT Pending adjust to totals and variants. This reserve should be old BT2
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
