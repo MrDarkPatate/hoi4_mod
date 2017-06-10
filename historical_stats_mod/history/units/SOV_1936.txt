@@ -2636,7 +2636,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = light_soviet_tank_equipment_1
+			type = light_soviet_tank_equipment_2		# 1
 			creator = "SOV" 
 		}
 		requested_factories = 4
@@ -2645,7 +2645,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = bt_tank_equipment_1
+			type = bt_tank_equipment_3					#1
 			creator = "SOV" 
 		}
 		requested_factories = 4
