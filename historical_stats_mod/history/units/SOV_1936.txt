@@ -317,7 +317,7 @@ division_template = {
 		light_armor = { x = 0 y = 0 }	
 		cavalry_tank = { x = 0 y = 1 }
 		medium_armor = { x = 0 y = 2 } 		# T28 now a medium, so around 80 T28s initial deploy. 
-		light_armor = { x = 0 y = 3 }		# Could be reduced to 1 battalion each to make visually template a medium. However Cavalry seems weigh more...		
+		# light_armor = { x = 0 y = 3 }		# Could be reduced to 1 battalion each to make visually template a medium. However Cavalry seems weigh more...		
 		#sov_amph_tank = { x = 0 y = 1 }
 	
 		motorized = { x = 1 y = 0 }

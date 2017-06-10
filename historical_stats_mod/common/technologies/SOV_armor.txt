@@ -1,17 +1,19 @@
 technologies = {
 	#Vertical position
-	@1933 = -2
-	@1935 = 0
-	@1938 = 2
-	@1939 = 4
-	@1940 = 6
-	@1941 = 8
-	@1942 = 10
-	@1943 = 12
-	@1943/4 = 14
-	@1944 = 16
-	@1945 = 18
-	@1947 = 20
+	@1931 = -2
+	@1933 = 0
+	@1935 = 2
+	@1937 = 4
+	@1938 = 6
+	@1939 = 8
+	@1940 = 10
+	@1941 = 12
+	@1942 = 14
+	@1943 = 16
+	@1943/4 = 18
+	@1944 = 20
+	@1945 = 22
+	@1947 = 24
 
 	soviet_tech_a = {
 		
@@ -51,7 +53,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = soviet_folder
-			position = { x = -3 y = @1933 }
+			position = { x = -5 y = @1933 }
 		}
 		
 		ai_will_do = {
@@ -65,11 +67,10 @@ technologies = {
 			leads_to_tech = tech_bt_tank_a
 			research_cost_coeff = 1
 		}
-				path = {
+		path = {
 			leads_to_tech = tech_t_28_a
 			research_cost_coeff = 0.1
 		}
-	
 		research_cost = 2
 		allow = {
 			always = no
@@ -98,7 +99,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1933 }
+			position = { x = 7	y = @1933 }
 		}
 		
 		ai_will_do = {
@@ -173,12 +174,37 @@ technologies = {
 		enable_equipments = {
 			light_soviet_tank_equipment_1 
 		}
-	
 		path = {
 			leads_to_tech = tech_light_soviet_tank_b
 			research_cost_coeff = 1
 		}
-
+		
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		
+		research_cost = 3
+		start_year = 1931
+		folder = {
+			name = soviet_folder
+			position = { x = -5 y = @1931 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+		# T-26
+	tech_light_soviet_tank_b = { 
+		
+		enable_equipments = {
+			light_soviet_tank_equipment_2 
+		}
 		path = {
 			leads_to_tech = tech_light_soviet_tank_c
 			research_cost_coeff = 1
@@ -188,11 +214,48 @@ technologies = {
 			soviet_tech_a = 1
 		}
 		
-		research_cost = 3
+		research_cost = 1.5
 		start_year = 1933
 		folder = {
 			name = soviet_folder
-			position = { x = -3 y = @1933 }
+			position = { x = -5 y = @1933 }
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+		# T-26
+	tech_light_soviet_tank_c = { 
+		
+		enable_equipments = {
+			light_soviet_tank_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = tech_light_soviet_tank_d
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_light_soviet_tank_e
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = soviet_folder
+			position = { x = -5 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -205,21 +268,24 @@ technologies = {
 		}
 	}
 	# T-50
-	tech_light_soviet_tank_b = { 
+	tech_light_soviet_tank_d = { 
 		
 		enable_equipments = {
-			light_soviet_tank_equipment_2 
+			light_soviet_tank_equipment_4
 		}
-		
+		path = {
+			leads_to_tech = tech_light_soviet_tank_e
+			research_cost_coeff = 1
+		}
 		dependencies = {
 			soviet_tech_a = 1
 		}
 		
 		research_cost = 1.5
-		start_year = 1941					# 1939
+		start_year = 1940					# 1939
 		folder = {
 			name = soviet_folder
-			position = { x = -7 y = @1941 }	# 1939
+			position = { x = -6 y = @1940 }	# 1939
 		}
 		
 		sub_technologies = {
@@ -236,14 +302,14 @@ technologies = {
 		}
 	}
 	# T-60
-	tech_light_soviet_tank_c = { 
+	tech_light_soviet_tank_e = { 
 		
 		enable_equipments = {
-			light_soviet_tank_equipment_3 
+			light_soviet_tank_equipment_5 
 		}
 	
 		path = {
-			leads_to_tech = tech_light_soviet_tank_d
+			leads_to_tech = tech_light_soviet_tank_f
 			research_cost_coeff = 1
 		}
 		
@@ -255,7 +321,7 @@ technologies = {
 		start_year = 1941					# 1939
 		folder = {
 			name = soviet_folder
-			position = { x = -3 y = @1941 }	# 1939
+			position = { x = -4 y = @1941 }	# 1939
 		}
 		
 		sub_technologies = {
@@ -276,14 +342,14 @@ technologies = {
 		}
 	}
 	# T-70
-	tech_light_soviet_tank_d = { 
+	tech_light_soviet_tank_f = { 
 		
 		enable_equipments = {
-			light_soviet_tank_equipment_4 
+			light_soviet_tank_equipment_6 
 		}
 		
 		path = {
-			leads_to_tech = tech_light_soviet_tank_e
+			leads_to_tech = tech_light_soviet_tank_g
 			research_cost_coeff = 1
 		}
 		
@@ -295,7 +361,7 @@ technologies = {
 		start_year = 1942					#1941
 		folder = {
 			name = soviet_folder
-			position = { x = -3 y = @1942 }	#1941
+			position = { x = -4 y = @1942 }	#1941
 		}
 		
 		sub_technologies = {
@@ -313,10 +379,10 @@ technologies = {
 		}
 	}
 	# T-80
-	tech_light_soviet_tank_e = { 
+	tech_light_soviet_tank_g = { 
 		
 		enable_equipments = {
-			light_soviet_tank_equipment_5 
+			light_soviet_tank_equipment_7
 		}
 		
 		dependencies = {
@@ -327,7 +393,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = soviet_folder
-			position = { x = -3 y = @1943 }
+			position = { x = -4 y = @1943 }
 		}
 		
 		sub_technologies = {
@@ -465,13 +531,15 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	#BT-5
+	#BT-2 1931
 	tech_bt_tank_a = { 
 		
 		enable_equipments = {
 			bt_tank_equipment_1 
 		}
-	
+		enable_subunits = {
+			Cavalry_tank
+		}
 		path = {
 			leads_to_tech = tech_bt_tank_b
 			research_cost_coeff = 1
@@ -481,10 +549,10 @@ technologies = {
 		}
 		
 		research_cost = 3
-		start_year = 1933
+		start_year = 1931
 		folder = {
 			name = soviet_folder
-			position = { x = -1 y = @1933 }
+			position = { x = -1 y = @1931 }
 		}
 				
 		ai_will_do = {
@@ -494,6 +562,133 @@ technologies = {
 		categories = {
 			armor
 			cat_medium_armor
+			support_tech
+		}
+	}
+	# BT-5 1933
+	tech_bt_tank_b = { 
+			
+		enable_equipments = {
+			bt_tank_equipment_2
+		}
+		path = {
+			leads_to_tech = tech_bt_tank_c
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1933
+		folder = {
+			name = soviet_folder
+			position = { x = -1 y = @1933 }
+		}
+				
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+			support_tech
+		}
+	}
+	# BT-7 1935
+	tech_bt_tank_c = { 
+			
+		enable_equipments = {
+			bt_tank_equipment_3
+		}
+		path = {
+			leads_to_tech = tech_bt_tank_d
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_bt_art_1
+			research_cost_coeff = 1
+		}
+
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		research_cost = 1.5
+		start_year = 1935
+		folder = {
+			name = soviet_folder
+			position = { x = -1 y = @1935 }
+		}
+				
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+			support_tech
+		}
+	}
+	# BT-7 Arty
+	tech_bt_art_1 = {			# BT-7 Arty
+	
+		enable_equipments = {
+			bt_tank_art_1
+		}		
+		
+		research_cost = 1.5
+		start_year = 1936
+		
+		folder = {
+			name = soviet_folder
+			position = { x = -4 y = @1935 }	#1936
+		}
+		ai_will_do = {
+			factor = 10
+		}
+
+		dependencies = {
+			soviet_tech_a = 1
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	# BT-7 1937
+	tech_bt_tank_d = { 
+			
+		enable_equipments = {
+			bt_tank_equipment_4
+		}
+		path = {
+			leads_to_tech = tech_t_34_a
+			research_cost_coeff = 1
+		}
+		
+		dependencies = {
+			soviet_tech_a = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1937
+		folder = {
+			name = soviet_folder
+			position = { x = -1 y = @1937 }
+		}
+				
+		ai_will_do = {
+			factor = 10
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+			support_tech
 		}
 	}
 	#T-28 1934
@@ -502,7 +697,7 @@ technologies = {
 		enable_equipments = {
 			t_28_equipment_1 
 		}
-	
+
 		path = {
 			leads_to_tech = tech_t_28_b
 			research_cost_coeff = 1
@@ -595,38 +790,7 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	# BT-7
-	tech_bt_tank_b = { 
-			
-		enable_equipments = {
-			bt_tank_equipment_2
-		}
-	
-		path = {
-			leads_to_tech = tech_t_34_a
-			research_cost_coeff = 1
-		}
-		
-		dependencies = {
-			soviet_tech_a = 1
-		}
-		
-		research_cost = 1.5
-		start_year = 1937
-		folder = {
-			name = soviet_folder
-			position = { x = -1 y = @1937 }
-		}
-				
-		ai_will_do = {
-			factor = 10
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
+
 
 	#T-34/76 mod.40
 	tech_t_34_a = {
@@ -783,7 +947,7 @@ technologies = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = subtech_t_34_td_1
+						has_tech = tech_t_34_td_1
 					}
 
 					load_oob = "SOV_Tank_Korpus_1942"
@@ -958,7 +1122,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1933 }
+			position = { x = 7 y = @1933 }
 		}
 				
 		ai_will_do = {
@@ -1007,7 +1171,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1938 }		#should be 39, with little research bonus, mid39, will need GER/SOV agreement rework
+			position = { x = 7 y = @1938 }		#should be 39, with little research bonus, mid39, will need GER/SOV agreement rework
 		}
 
 
@@ -1047,7 +1211,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1940 }	#1942
+			position = { x = 7 y = @1940 }	#1942
 		}
 		ai_will_do = {
 			factor = 10
@@ -1114,7 +1278,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1942 }	#1943
+			position = { x = 7 y = @1942 }	#1943
 		}
 		ai_will_do = {
 			factor = 10
@@ -1143,7 +1307,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 4 y = @1942 }	#1943
+			position = { x = 3 y = @1942 }	#1943
 		}
 		ai_will_do = {
 			factor = 13
@@ -1173,7 +1337,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 6 y = @1943 }	#1942
+			position = { x = 5 y = @1943 }	#1942
 		}
 		ai_will_do = {
 			factor = 10
@@ -1250,7 +1414,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 10 y = @1943 }
+			position = { x = 9 y = @1943 }
 		}
 
 		ai_will_do = {
@@ -1287,7 +1451,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1943/4 }
+			position = { x = 7 y = @1943/4 }
 		}
 		sub_technologies = {
 		    subtech_is_tank_td_1
@@ -1318,7 +1482,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 4 y = @1943/4 }
+			position = { x = 3 y = @1943/4 }
 		}
 
 		ai_will_do = {
@@ -1371,7 +1535,7 @@ technologies = {
 		
 		folder = {
 			name = soviet_folder
-			position = { x = 8 y = @1944 }
+			position = { x = 7 y = @1944 }
 		}
 				
 		ai_will_do = {
