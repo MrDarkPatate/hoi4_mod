@@ -168,7 +168,7 @@ technologies = {
 			amp_armor
 		}
 	}
-	# T-26
+	# T-26 1931 (2 turret MG)
 	tech_light_soviet_tank_a = { 
 		
 		enable_equipments = {
@@ -199,7 +199,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-		# T-26
+		# T-26 1933
 	tech_light_soviet_tank_b = { 
 		
 		enable_equipments = {
@@ -230,7 +230,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-		# T-26
+		# T-26 1938
 	tech_light_soviet_tank_c = { 
 		
 		enable_equipments = {
@@ -259,7 +259,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		
 		categories = {
@@ -402,7 +402,7 @@ technologies = {
 		
 		
 		ai_will_do = {
-			factor = 15
+			factor = 10
 		}
 		
 		categories = {
@@ -531,6 +531,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
+	
 	#BT-2 1931
 	tech_bt_tank_a = { 
 		

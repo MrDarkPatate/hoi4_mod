@@ -23,7 +23,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade = { x = 3 y = 3 }
 		
-		light_armor = { x = 4 y = 0 }			# Roughly 2650 T26 Tanks initial deploy w infantry 
+		light_armor = { x = 4 y = 0 }			# Roughly 2650 T26 Tanks initial deploy w infantry Approximately 28 infantry divs equiped with twin turreted T26s
 		
 	}
 	support = {
@@ -491,9 +491,9 @@ division_template = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	
-		force_equipment_variants = { 						# This is a test
-		light_soviet_tank_equipment_1 = { owner = "SOV" }	# This is a test
-		}													# This is a test
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 
 		
 	}
@@ -706,6 +706,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "29aya  'Vyatskaya' Strelk. Div."
@@ -745,6 +749,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "37aya Strelk. Div. 'Novocherkassk'"
@@ -790,6 +798,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "8aya 'Minskaya' Strelk. Div."
@@ -797,6 +809,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "37aya Strelkovaya Diviziya"
@@ -804,6 +820,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	# 3ya Kavaleriyskiy Korpus
 	division= {
@@ -950,6 +970,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "84aya Strelk. Div"
@@ -989,6 +1013,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "17aya Strelk. Div. 'Gorky'"
@@ -1003,6 +1031,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "49aya Strelk. Div."
@@ -1040,6 +1072,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "19aya 'Voronezh' Strelk. Div."
@@ -1054,6 +1090,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	############################################################
 	# Subordinate to VO
@@ -1064,6 +1104,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "82aya Strelkovaya Diviziya"
@@ -1078,6 +1122,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	###############################################################################
 	################################################################################
@@ -1106,6 +1154,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "70aya Strelkovaya Diviziya"
@@ -1113,6 +1165,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "1aya Strelk. Div. 'Kazan Tatar'"
@@ -1127,6 +1183,7 @@ division_template = {
 		division_template = "Kavaleriyskaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+
 	}
 	# 13ya Strelkoviy Korpus
 	division= {
@@ -1135,6 +1192,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "86aya 'Kazanskaya' Strelk. Div."
@@ -1152,6 +1213,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "43aya Strelkovaya Diviziya"
@@ -1166,6 +1231,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	# Subordinate to VO
 	division= {
@@ -1195,6 +1264,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "46aya Strelkovaya Diviziya"
@@ -1219,6 +1292,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	#7aya 'Chernigov' Strelk. Div. 'Frunze'
 	division= {
@@ -1251,6 +1328,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	###########################################
 	# 1ya Kavaleriyskiy Korpus
@@ -1444,6 +1525,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "44aya 'Kyiv' Strelk. Div."
@@ -1482,6 +1567,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "100aya Strelkovaya Diviziya"
@@ -1530,6 +1619,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "25aya 'Chapayevskaya' Strelk. Div."
@@ -1537,6 +1630,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "30aya 'Irkutsk' Strelk. Div."
@@ -1551,6 +1648,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	# 14ya Strelkoviy Korpus
 	###########################################################
@@ -1567,6 +1668,10 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "80aya 'Donbassa' Strelk. Div."
@@ -2798,27 +2903,32 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = amph_soviet_tank_equipment_1
-			amount = 10						#450 Now there are around 900 amph tanks in Cav divisions
+			amount = 10						#Now there are around 900 amph tanks in Cav divisions
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = light_soviet_tank_equipment_1
-			amount = 1000					# T26. Pending adjust to totals and variants. This reserve should be T26 w MGs
+			amount = 1200					# T26 This reserve is T26 w MGs Around 2500 T26 yet in infantry divs, 800 of them old version
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = bt_tank_equipment_1
-			amount = 600					# BT Pending adjust to totals and variants. This reserve should be old BT2
+			amount = 620					# BT This reserve represents BT2 with 37mm
+			producer = SOV
+		}
+	add_equipment_to_stockpile = {
+		type = bt_tank_equipment_2
+			amount = 1200					# BT This reserve is BT5s
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = t_28_equipment_1 
-			amount = 80
+			amount = 10
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = t_35_equipment_1 
-			amount = 22
+			amount = 20
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
