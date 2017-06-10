@@ -1,7 +1,7 @@
 ﻿##### Division Templates #####
-################################ NOTES FOR TANK HISTORIC STATS MOD: T28 is a medium tank. BT Series are  also mediums. T26 are lights. T35 are heavy. Amphibious sent to Cavalry.
-################################ By Dec 1935, Soviets had approximately: 16 T35, 88 T28s, 3900 T26s (620 old w 2xMG Turrets)   
-################################ 2600 BTs of all types (620 old BT2), around 900 T37 Amph
+################################ NOTES FOR TANK HISTORIC STATS MOD: T28 is a medium tank. BT Cav tanks. T26 are lights. T35 are heavy. Amphibious sent to Cavalry.
+################################ By Dec 1935, Soviets had approximately: 16 T35 (stock), 90 T28s (4 mech korps 50%), 4800 T26s (2000 old w 2xMG Turrets)   
+################################ 3300 BTs of all types (600 BT2, 1900 BT5s), around 900 T37 Amph (33 cav divs 90%)  Consider lower this... only 900 really
 division_template = {
 	name = "Strelkovaya Diviziya"			# Rifle Division
 
@@ -23,7 +23,7 @@ division_template = {
 		artillery_brigade = { x = 3 y = 2 }
 		anti_tank_brigade = { x = 3 y = 3 }
 		
-		light_armor = { x = 4 y = 0 }			# Roughly 2650 T26 Tanks initial deploy w infantry Approximately 28 infantry divs equiped with twin turreted T26s
+		light_armor = { x = 4 y = 0 }			# Roughly 4400 T26 Tanks in all divisions. Approximately 27 infantry divs (41) and 3 mech korps (162) equiped with twin turreted T26s
 		
 	}
 	support = {
@@ -316,8 +316,8 @@ division_template = {
 	regiments = {
 		light_armor = { x = 0 y = 0 }	
 		cavalry_tank = { x = 0 y = 1 }
-		medium_armor = { x = 0 y = 2 } 		# T28 now a medium, so around 80 T28s initial deploy. 
-		# light_armor = { x = 0 y = 3 }		# Could be reduced to 1 battalion each to make visually template a medium. However Cavalry seems weigh more...		
+		medium_armor = { x = 0 y = 2 } 		# T28 now a medium, so around 90 T28s initial deploy 
+		# light_armor = { x = 0 y = 3 }		# HAs seen reduced to 1 Lt battalion each to make visually template a medium. Cavalry weight has been slighlty adjusted		
 		#sov_amph_tank = { x = 0 y = 1 }
 	
 		motorized = { x = 1 y = 0 }
@@ -493,6 +493,7 @@ division_template = {
 	
 		force_equipment_variants = {
 		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		bt_tank_equipment_2 = { owner = "SOV" }				# These are BT5s
 		}
 
 		
@@ -681,6 +682,12 @@ division_template = {
 		location = 6174
 		division_template = "Mekhanizirovaniy Korpus"		
 		start_experience_factor = 0.3
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		bt_tank_equipment_2 = { owner = "SOV" }				# These are BT5s
+		}
+		
 	}
 	division= {
 		name = "11aya Mekhanizirovaniy Korpus"
@@ -731,7 +738,7 @@ division_template = {
 		location = 126
 		division_template = "Mekhanizirovaniy Brigada"		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
+		start_equipment_factor = 0.5
 	}
 	###############################
 	# 16ya Strelkoviy Korpus
@@ -767,7 +774,7 @@ division_template = {
 		location = 11202
 		division_template = "Mekhanizirovaniy Brigada"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
+		start_equipment_factor = 0.5
 	}
 	# 6ya Kavaleriyskiy Korpus
 	division= {
@@ -809,10 +816,6 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
-		
-		force_equipment_variants = {
-		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
-		}
 	}
 	division= {
 		name = "37aya Strelkovaya Diviziya"
@@ -963,6 +966,9 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	division= {
 		name = "49aya Strelkovaya Diviziya"
@@ -989,6 +995,12 @@ division_template = {
 		division_template = "Mekhanizirovaniy Korpus"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		bt_tank_equipment_2 = { owner = "SOV" }				# These are BT5s
+		}
+		
 	}
 	division= {
 		name = "5iy Mekhanizirovannyy Korpus"
@@ -1516,7 +1528,7 @@ division_template = {
 		location = 525
 		division_template = "Mekhanizirovaniy Brigada"		# 1x Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
+		start_equipment_factor = 0.5
 	}
 	# 6ya Strelkoviy Korpus
 	division= {
@@ -1525,10 +1537,6 @@ division_template = {
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
-		
-		force_equipment_variants = {
-		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
-		}
 	}
 	division= {
 		name = "44aya 'Kyiv' Strelk. Div."
@@ -1550,7 +1558,7 @@ division_template = {
 		location = 11670
 		division_template = "Mekhanizirovaniy Brigada"		# 1x H Tank Bge, 2x Mekh Bge
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.9
+		start_equipment_factor = 0.5
 	}
 	######################################################
 	# 17ya Strelkoviy Korpus
@@ -2283,6 +2291,10 @@ division_template = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	#82aya Strelk. Div.
 	division= {
@@ -2301,6 +2313,10 @@ division_template = {
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
+		
+		force_equipment_variants = {
+		light_soviet_tank_equipment_1 = { owner = "SOV" }	# These are T26 with MGs.
+		}
 	}
 	#2aya Separate Strelk. Polk
 	division= {	
@@ -2903,22 +2919,22 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = amph_soviet_tank_equipment_1
-			amount = 10						#Now there are around 900 amph tanks in Cav divisions
+			amount = 10						#Now should be around 900 amph tanks in Cav divisions
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = light_soviet_tank_equipment_1
-			amount = 1200					# T26 This reserve is T26 w MGs Around 2500 T26 yet in infantry divs, 800 of them old version
+			amount = 400					# T26 This reserve is T26 w MGs Around 4400 T26 yet in divisions, 1600 of them old version.
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = bt_tank_equipment_1
-			amount = 620					# BT This reserve represents BT2 with 37mm
+			amount = 620					# BT This reserve represents old BT2s with 37mm
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
 		type = bt_tank_equipment_2
-			amount = 1200					# BT This reserve is BT5s
+			amount = 1460					# BT This reserve is BT5s Another 420 BT5s and 800 BT7s in divisions.
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
