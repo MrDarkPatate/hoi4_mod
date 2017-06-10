@@ -273,18 +273,19 @@ division_template = {
 # Represents regular mechanized corps (4 existed in 1935-38); 
 # Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge 
 # (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
+# NOTE: Shakar/Corew modifications: BT is cavalry tank now. To adjust Russian real tank stock by Dec-1935 templates have now a lot of cav tank battalions.
 division_template = {
 	name = "Mekhanizirovaniy Korpus"
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-		medium_armor = { x = 0 y = 2 }
-		medium_armor = { x = 0 y = 3 }
+		cavalry_tank = { x = 0 y = 2 }
+		cavalry_tank = { x = 0 y = 3 }
 		
 		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
-		medium_armor = { x = 1 y = 2 }
-		medium_armor = { x = 1 y = 3 }		# Adjusted to new mix: Roughly 1150 Bt and 1150 T26 in Tank divisions
+		cavalry_tank = { x = 1 y = 2 }
+		cavalry_tank = { x = 1 y = 3 }		# Adjusted to new mix: Roughly 1150 Bt and 1150 T26 in Tank divisions
 		
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
@@ -314,14 +315,13 @@ division_template = {
 	name = "Mekhanizirovaniy Brigada"
 	regiments = {
 		light_armor = { x = 0 y = 0 }	
-		medium_armor = { x = 0 y = 1 }
+		cavalry_tank = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 } 		# T28 now a medium, so around 80 T28s initial deploy. 
+		light_armor = { x = 0 y = 3 }		# Could be reduced to 1 battalion each to make visually template a medium. However Cavalry seems weigh more...		
 		#sov_amph_tank = { x = 0 y = 1 }
-		
-		light_armor = { x = 1 y = 0 }
-		medium_armor = { x = 1 y = 1 } 		# T28 now a medium
-		
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
+	
+		motorized = { x = 1 y = 0 }
+		# motorized = { x = 1 y = 1 }			# Was just 1 battalion
 	}
 	support = {
 		recon_ac = { x = 0 y = 0 }

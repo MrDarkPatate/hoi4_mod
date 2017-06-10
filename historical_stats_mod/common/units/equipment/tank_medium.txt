@@ -2211,7 +2211,7 @@ equipments = {
 		defense = 8
 		breakthrough = 36
 		hardness = 0.31				# 0.7 10mm plate
-		armor_value = 22			#  30 10 mm plate
+		armor_value = 27			#  30 10 mm plate  sloped  
 
 		#Offensive Abilities
 		soft_attack = 9
@@ -2245,12 +2245,12 @@ equipments = {
 		defense = 8
 		breakthrough = 36
 		hardness = 0.36				# 0.7 13mm plate 
-		armor_value = 24			#  30 13 mm plate
+		armor_value = 29			#  30 13 mm plate sloped
 
 		#Offensive Abilities
 		soft_attack = 9
 		hard_attack = 6
-		ap_attack = 41				# 45mm 20k gun 
+		ap_attack = 41				# 45mm 20k gun model 1932 quarter auto
 		air_attack = 0
 
 		#Space taken in convoy
@@ -2265,7 +2265,7 @@ equipments = {
 		}	
 	}
 	
-	# BT-7  1937
+	# BT-7  1935
 	bt_tank_equipment_3 = {
 		archetype = cavalry_tank_equipment
 		parent = bt_tank_equipment_2
@@ -2278,8 +2278,42 @@ equipments = {
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 36
+		hardness = 0.36				# 0.7 13mm plate 
+		armor_value = 29			#  30 13 mm plate
+
+		#Offensive Abilities
+		soft_attack = 9
+		hard_attack = 7
+		ap_attack = 41				# 45mm 20k gun model 1934 half auto
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 16.5		# 19 - 14 tons *
+		resources = {
+			oil = 2
+			steel = 4
+			tungsten = 2
+			# chromium = 0			# 1
+		}		
+	}
+	
+	# BT-7  1937
+	bt_tank_equipment_4 = {
+		archetype = cavalry_tank_equipment
+		parent = bt_tank_equipment_3
+		priority = 10
+		visual_level = 0
+		
+		maximum_speed = 8.5			# 
+		reliability = 0.64
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 36
 		hardness = 0.47				# 0.7 22mm plate 
-		armor_value = 28			#  40 22 mm plate
+		armor_value = 38			#  40 22 mm plate sloped
 
 		#Offensive Abilities
 		soft_attack = 10
@@ -2298,7 +2332,6 @@ equipments = {
 			# chromium = 0			# 1
 		}		
 	}
-	
 	################################ Russian T34 Series
 	
 	# T-34/76 mod.40			# Research data is 1939 -  Could be changed to 1940 but no need of it
