@@ -2200,6 +2200,7 @@ equipments = {
 	bt_tank_equipment_1 = {
 		archetype = cavalry_tank_equipment	# cavalry
 		parent = cavalry_tank_equipment_0			# ?
+		family = bt_tank_equipment_2
 		priority = 10
 		visual_level = 0
 		
@@ -2234,6 +2235,7 @@ equipments = {
 	bt_tank_equipment_2 = {
 		archetype = cavalry_tank_equipment
 		parent = bt_tank_equipment_1
+		family = bt_tank_equipment_2
 		priority = 10
 		visual_level = 0
 		
@@ -2269,6 +2271,7 @@ equipments = {
 	bt_tank_equipment_3 = {
 		archetype = cavalry_tank_equipment
 		parent = bt_tank_equipment_2
+		family = bt_tank_equipment_2
 		priority = 10
 		visual_level = 0
 		
@@ -2303,6 +2306,7 @@ equipments = {
 	bt_tank_equipment_4 = {
 		archetype = cavalry_tank_equipment
 		parent = bt_tank_equipment_3
+		family = bt_tank_equipment_2
 		priority = 10
 		visual_level = 0
 		
@@ -2331,6 +2335,33 @@ equipments = {
 			tungsten = 2
 			# chromium = 0			# 1
 		}		
+	}
+	######################## BT SP Series
+	# BT-A 76mm
+	bt_tank_art_1 = {
+		archetype = medium_tank_artillery_equipment
+		parent = medium_tank_artillery_equipment_1
+		family = bt_tank_equipment_2
+		priority = 30
+		visual_level = 0
+		#Misc Abilities
+		
+		maximum_speed = 7			# 7
+		reliability = 0.65
+
+		#Defensive Abilities
+		defense = 5					# 5
+		breakthrough = 5 			# 5
+		hardness = 0.36				# plate 13mm 
+		armor_value = 23			# plate 13mm   
+ 
+		#Offensive Abilities
+		soft_attack = 19			#
+		hard_attack = 6				# 
+		ap_attack = 15 				#  75mm HE
+		air_attack = 0
+		
+		build_cost_ic = 12.5		# 13
 	}
 	################################ Russian T34 Series
 	

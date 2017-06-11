@@ -6780,10 +6780,13 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  ###Soviet Union###
  amph_soviet_tank_equipment_1:0 "T-37A Amph. Tank"
  amph_soviet_tank_equipment_1_short:0 "T-37A Amph. Tank"
- amph_soviet_tank_equipment_1_desc:0 " "
- amph_soviet_tank_equipment_2:0 "T-40 Amph. Tank"
- amph_soviet_tank_equipment_2_short:0 "T-40 Amph. Tank"
- amph_soviet_tank_equipment_2_desc:0 " "
+ amph_soviet_tank_equipment_1_desc:0 "The idea of a fully amphibious tank was not new. Some attempts had been made as early as 1917. However, production of a satisfactory model first came to the Carden-Loyd team, integrated into Vickers by 1930. Largely based on the Vickers design, the T-37A was only superficially a simple machine. It had a large 1/2 length/width ratio, low rectangular hull, with rounded ends for better hydrodynamic qualities, high “mud-guards” which also served as waterwings, with the GAZ-AA engine at the rear, driver compartment on left and turret on the right. In 1935, the original 800 order was filled and by the fall of 1936 the entire series of 1200 T-37As had been honored, making this model the most produced amphibious tank of the time. It was largely eclipsed later by the thousands built for the US Marines (LVT Alligator) and Army (DUKW) during World War Two."
+ amph_soviet_tank_equipment_2:0 "T-38 Amph. Tank"
+ amph_soviet_tank_equipment_2_short:0 "T-38 Amph. Tank"
+ amph_soviet_tank_equipment_2_desc:0 " The Zavod 37 team choose not to deviate greatly from the original model and only applied a set of modifications to improve, most of all, the handling, driving and mobility characteristics on all terrains. The T-38 hull was substantially lowered, with the upper superstructure almost blended with the lower hull and widened at the same time. So were the hollow mudguards, meant to improve buoyancy as well as the handling in water. The double-drive system was unchanged, as well as the engine, transmission, gearbox, drive sprocket and idler configuration, but friction couplings were added. A small three-bladed propeller screw did the job when submerged and, in shallow water, the widened tracks provided more underwater grip and friction surface. On land, attention was focused on the sprung bogie suspension, which was substantially reworked to reduce the vibration level at high speed. The larger tracks also lowered the ground pressure. "
+ amph_soviet_tank_equipment_3:0 "T-40 Amph. Tank"
+ amph_soviet_tank_equipment_3_short:0 "T-40 Amph. Tank"
+ amph_soviet_tank_equipment_3_desc:0 " The T-40 logically followed up on the interwar T-38 and T-37A. Aside from the different shape, much taller, the hull was all-welded and watertight, but with reworked shapes for better buoyancy and hydrodynamics. The narrow tracks were supported by three return rollers per side. There was no catwalk, the hull being directly sloped to overhang over the tracks. The tank was still small overall, with a two man crew, but the fighting compartment was roomier than previous models allowing heavier armament a “Dushka” (DShK) heavy machine gun. The DShK could fire at 4000 m (2.49 mi) with HE-AP B-30 and B-32 incendiary rounds. This firepower enabled it to engage light tanks and armored cars (penetrating 16 mm/0.63 in of vertical armor from a distance of 300 m/330 yd), while the sloped frontal armor, 13 mm (0.51 in) at the thickest, could either stop or deflect heavy machine-gun rounds. "
  #T26 1931
  light_soviet_tank_equipment_1:0 "T-26 1931 Light Tank"
  light_soviet_tank_equipment_1_short:0 "T-26 1931 Light T."

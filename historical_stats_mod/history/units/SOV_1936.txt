@@ -317,6 +317,24 @@ division_template = {
 		light_armor = { x = 0 y = 0 }	
 		cavalry_tank = { x = 0 y = 1 }
 		medium_armor = { x = 0 y = 2 } 		# T28 now a medium, so around 90 T28s initial deploy 
+		# light_armor = { x = 0 y = 3 }		# Has been reduced to 1 Lt battalion each to make visually template a medium. Cavalry weight has been slighlty adjusted		
+		#sov_amph_tank = { x = 0 y = 1 }
+	
+		motorized = { x = 1 y = 0 }
+		# motorized = { x = 1 y = 1 }			# Was just 1 battalion
+	}
+	support = {
+		recon_ac = { x = 0 y = 0 }
+		maintenance_company = { x = 1 y =0}
+		logistics_company = { x = 1 y =1 }	# 
+	}
+}
+division_template = {
+	name = "Mekhanizirovaniy Brigada Hvy."
+	regiments = {
+		light_armor = { x = 0 y = 0 }	
+		cavalry_tank = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 } 		# T35 now a medium
 		# light_armor = { x = 0 y = 3 }		# HAs seen reduced to 1 Lt battalion each to make visually template a medium. Cavalry weight has been slighlty adjusted		
 		#sov_amph_tank = { x = 0 y = 1 }
 	
@@ -1003,11 +1021,11 @@ division_template = {
 		
 	}
 	division= {
-		name = "5iy Mekhanizirovannyy Korpus"
+		name = "5iy Mekhanizirovannyy Brigada Hvy."
 		location = 6380
-		division_template = "Mekhanizirovaniy Korpus"		
+		division_template = "Mekhanizirovaniy Brigada Hvy."		
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.4
 	}
 	division= {
 		name = "Moskva Proletarskaya Motostrelk. Div."
@@ -2916,15 +2934,9 @@ instant_effect = {
 			amount = 500
 			producer = SOV
 		}
-		
-	add_equipment_to_stockpile = {
-		type = amph_soviet_tank_equipment_1
-			amount = 10						#Now should be around 900 amph tanks in Cav divisions
-			producer = SOV
-		}
 	add_equipment_to_stockpile = {
 		type = light_soviet_tank_equipment_1
-			amount = 400					# T26 This reserve is T26 w MGs Around 4400 T26 yet in divisions, 1600 of them old version.
+			amount = 500					# T26 This reserve is T26 w MGs Around 4300 T26 yet in divisions, 1600 of them old version.
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {
@@ -2934,17 +2946,7 @@ instant_effect = {
 		}
 	add_equipment_to_stockpile = {
 		type = bt_tank_equipment_2
-			amount = 1460					# BT This reserve is BT5s Another 420 BT5s and 800 BT7s in divisions.
-			producer = SOV
-		}
-	add_equipment_to_stockpile = {
-		type = t_28_equipment_1 
-			amount = 10
-			producer = SOV
-		}
-	add_equipment_to_stockpile = {
-		type = t_35_equipment_1 
-			amount = 20
+			amount = 1500					# BT This reserve is BT5s Another 420 BT5s and 700 BT7s in divisions.
 			producer = SOV
 		}
 	add_equipment_to_stockpile = {

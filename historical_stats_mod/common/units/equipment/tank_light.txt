@@ -2846,7 +2846,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 29
-		hardness = 0.2			# 0.7
+		hardness = 0.2			# 0.7	STATS ARE T37 russian
 		armor_value = 25 		#10
 
 		#Offensive Abilities
@@ -2868,16 +2868,24 @@ equipments = {
 
 	}
 
-		# T-37A
+	# T-37A
 	amph_soviet_tank_equipment_1 = {
 		archetype = amph_soviet_tank_equipment
 		priority = 10
 		visual_level = 0
 	}
-	# T-40
-	amph_soviet_tank_equipment_2 = {
+	# T-38
+	amph_soviet_tank_equipment_2 = {			# By now... Same tank in stats. Will try small changes later
 		archetype = amph_soviet_tank_equipment
 		parent = amph_soviet_tank_equipment_1
+		priority = 10
+		visual_level = 0
+	}
+	
+	# T-40
+	amph_soviet_tank_equipment_3 = {
+		archetype = amph_soviet_tank_equipment
+		parent = amph_soviet_tank_equipment_2
 		priority = 10
 		visual_level = 0
 		maximum_speed = 5.5

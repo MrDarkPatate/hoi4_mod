@@ -7722,11 +7722,15 @@ SpriteType = {
 		name = "GFX_tech_amph_soviet_tank_a_medium"
 		texturefile = "gfx/interface/technologies/sov_amph_soviet_tank_a.dds"
 	}
-
+	# T-38
+	SpriteType = {
+		name = "GFX_tech_amph_soviet_tank_b_medium"
+		texturefile = "gfx/interface/technologies/sov_amph_soviet_tank_b.dds"
+	}
 	 # T-40
 	SpriteType = {
-	name = "GFX_tech_amph_soviet_tank_b_medium"
-	texturefile = "gfx/interface/technologies/sov_amph_soviet_tank_b.dds"
+		name = "GFX_tech_amph_soviet_tank_c_medium"
+		texturefile = "gfx/interface/technologies/sov_amph_soviet_tank_c.dds"
 	}
 
 	# T-26
