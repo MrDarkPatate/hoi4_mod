@@ -213,6 +213,20 @@ ideas = {
 			removal_cost = -1
 		}
 	}
+	country = {
+	
+		Defensive_ai_I = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			modifier = {
+			  ai_focus_defense_factor = 0.6
+			}
+			
+			removal_cost = -1
+		}
+	}
 	############### Blitz Strategic bonus 
 	country = {
 	
@@ -403,6 +417,26 @@ ideas = {
 				army_speed_factor = -0.05
 				army_attack_factor = -0.15
 				army_defence_factor = -0.15
+			}
+			
+			removal_cost = -1
+		}
+	}
+	country = {
+	
+		Rodina_IV = {
+		
+			allowed = {
+				always = no # Triggered via event
+			}
+			#traits = { army_chief_offensive_2 }
+			modifier = {
+				army_org_factor = -0.15
+				land_reinforce_rate = -0.04
+				army_morale_factor = -0.15
+				army_speed_factor = -0.1
+				army_attack_factor = -0.05
+				army_defence_factor = -0.1
 			}
 			
 			removal_cost = -1

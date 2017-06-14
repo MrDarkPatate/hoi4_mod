@@ -7,7 +7,7 @@ sub_units = {
 		priority = 200
 		active = yes
 		
-		support_brigade = yes
+		
 		
 		type = {
 			infantry
@@ -88,7 +88,7 @@ sub_units = {
 		priority = 200
 		active = yes
 		
-		support_brigade = yes
+		
 		
 		type = {
 			motorized
@@ -169,7 +169,9 @@ sub_units = {
 		priority = 200
 		active = yes
 		
-		support_brigade = yes
+		can_be_parachuted = yes
+		
+		
 		
 		type = {
 			infantry

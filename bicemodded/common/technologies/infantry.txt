@@ -1098,7 +1098,7 @@ technologies = {
 			research_cost_coeff = 1
 		}		
 		
-		research_cost = 0.5
+		research_cost = 0.6
 		start_year = 1918
 		folder = {
 			name = infantry_folder
@@ -1110,7 +1110,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 7
 		}
 	}
 	infantry_uniforms1 = {
@@ -1139,7 +1139,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 7
 		}
 	}
 	infantry_uniforms2 = {
@@ -1168,7 +1168,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5
+			factor = 6
 		}
 	}
 	infantry_uniforms3 = {
@@ -1192,7 +1192,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 6
 		}
 	}
 	
@@ -1238,7 +1238,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 4
+			factor = 0
 		}
 	}
 	amphibious_equipment = {
@@ -1559,7 +1559,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	paratroopers2 = {
@@ -1567,10 +1567,6 @@ technologies = {
 		paratrooper = {
 			max_organisation = 5
 			soft_attack = 0.05
-		}
-		enable_subunits = {
-			para_support
-			
 		}
 		
 		path = {
@@ -1590,7 +1586,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 	paratroopers3 = {
@@ -2099,7 +2095,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor =8
+			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 22
+			}
+			modifier = {
+				factor = 3
+				num_of_military_factories > 29
+			}
 		}
 	}
 	
@@ -2182,6 +2186,14 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 8
+			modifier = {
+				factor = 3
+				num_of_military_factories > 24
+			}
+			modifier = {
+				factor = 3
+				num_of_military_factories > 31
+			}
 		}
 	}
 	motorized_rocket_unit = {
@@ -2209,17 +2221,43 @@ technologies = {
 					has_tech = interwar_antitank
 				}
 				hidden_effect = {
-					load_oob = "unlock_mot_rocket_1943"
+					load_oob = "unlock_motorized_rocket_1943"
 				}
 			}
 		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_logistics_company
+					has_tech = interwar_antitank
+				}
+				hidden_effect = {
+					load_oob = "unlock_motorized_1943"
+				}
+			}
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					or = { has_tech = improved_heavy_tank tag = JAP tag = USA tag = ITA }
+				}
+				hidden_effect = {
+					load_oob = "unlock_heavy_tank_brigade_1943"
+				}
+			}
+		}
+		
+		
 		
 		ai_will_do = {
 			factor = 4
 			modifier = {
 				factor = 6
 				tag = SOV
-				num_of_military_factories > 85
+				num_of_military_factories > 75
 			}
 			modifier = {
 				factor = 7
@@ -2228,6 +2266,7 @@ technologies = {
 		}
 		
 		categories = {
+		    rocketry
 			mot_rockets
 		}
 	}

@@ -1328,11 +1328,12 @@ guiTypes = {
 			name = "naval_folder"
 			position = { x=0 y=130 }
 			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			margin = { top = 13 left = 13 bottom = 24 right = 5}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
 
+			
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_window_2b_border"
@@ -1343,16 +1344,55 @@ guiTypes = {
 				#position = { x=0 y=0 }
 				#size = { width = 1700 height = 1200 }
 			#}
+			
+			
+           containerWindowType = {
+				name = "techtree_stripes"
+				position = { x = 0 y= 0 }
+				size = {
+					width = 3150 height = 1900
+					min = { width=100%% height=100%% }
+				}
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_techtree_stripes"
+				}
 
 			iconType = {
 				name ="naval_techtree_bg"
 				spriteType = "GFX_naval_techtree_bg"
 				position = { x=0 y=0 }
 			}
-
+			
 			instantTextBoxType = {
-				name = "naval_year1"
-				position = { x = 224 y = 20 }
+				name = "legacy_ships_year1"
+				position = { x = 224 y = 0 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1900"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "legacy_ships_year2"
+				position = { x = 644 y = 20 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1915"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "legacy_ships_year3"
+				position = { x = 1064 y = 20 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1362,9 +1402,22 @@ guiTypes = {
 				format = left
 				Orientation = "UPPER_LEFT"
 			}
+
+			instantTextBoxType = {
+				name = "naval_year1"
+				position = { x = 1464 y = 20 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1930"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
 			instantTextBoxType = {
 				name = "naval_year2"
-				position = { x = 644 y = 20 }
+				position = { x = 1844 y = 20 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1376,7 +1429,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "naval_year3"
-				position = { x = 1064 y = 20 }
+				position = { x = 2264 y = 20 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
@@ -1388,11 +1441,23 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "naval_year4"
-				position = { x = 1484 y = 20 }
+				position = { x = 2720 y = 20 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
 				text = "1944"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "naval_year5"
+				position = { x = 3140 y = 20 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1948"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -1548,13 +1613,14 @@ guiTypes = {
 				maxHeight = 62
 				format = left
 				Orientation = "UPPER_LEFT"
-			}		
+			}	
+            }			
 			
 			containerWindowType = {
 				name = "tiled_window_transparent_transparent"
 				position = { x= 0 y= 0 }
 				size = { 
-					width=1700 height=1300 
+					width=2800 height=1300 
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -1572,22 +1638,15 @@ guiTypes = {
 				format = "LEFT"
 			}
 			gridboxtype = {
-				name = "early_destroyer_tree"
-				position = { x = 150 y = 60}
+				name = "ww1_carrier_tree"
+				position = { x = 150 y = 740 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}
 			gridboxtype = {
-				name = "early_light_cruiser_tree"
-				position = { x = 150 y = 260 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "early_heavy_cruiser_tree"
-				position = { x = 150 y = 260 }
+				name = "ww1_submarine_tree"
+				position = { x = 150 y = 990 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1595,34 +1654,6 @@ guiTypes = {
 			gridboxtype = {
 				name = "transport_tree"
 				position = { x = 150 y = 1180 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "early_battlecruiser_tree"
-				position = { x = 150 y = 540 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "early_battleship_tree"
-				position = { x = 150 y = 540 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "early_carrier_tree"
-				position = { x = 150 y = 900 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "generic_submarine_tree"
-				position = { x = 150 y = 1040 }
 				size = { width = 100 height = 140 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
@@ -1683,54 +1714,6 @@ guiTypes = {
 				position = { x=0 y=0 }
 			}
 
-			instantTextBoxType = {
-				name = "legacy_ships_year1"
-				position = { x = 224 y = 20 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1896"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "legacy_ships_year2"
-				position = { x = 644 y = 20 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1908"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			instantTextBoxType = {
-				name = "legacy_ships_year3"
-				position = { x = 1064 y = 20 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1916"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
-			#instantTextBoxType = {
-				#name = "legacy_ships_year4"
-				#position = { x = 1484 y = 20 }
-				#textureFile = ""
-				#font = "hoi_36header"
-				#borderSize = {x = 0 y = 4}
-				#text = "1924"
-				#maxWidth = 170
-				#maxHeight = 32
-				#format = left
-				#Orientation = "UPPER_LEFT"
-			#}
 			instantTextBoxType = {
 				name = "legacy_ships_subtitle_destroyer"
 				position = { x = 30 y = 55 }
@@ -1838,55 +1821,7 @@ guiTypes = {
 				}
 			}			
 			
-			gridboxtype = {
-				name = "torpedo_boat_destroyer_tree"
-				position = { x = 150 y = 60}
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "protected_cruiser_tree"
-				position = { x = 150 y = 260 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "armoured_cruiser_tree"
-				position = { x = 150 y = 260 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "early_ww1_battlecruiser_tree"
-				position = { x = 570 y = 540 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "pre_dreadnought_battleship_tree"
-				position = { x = 150 y = 540 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "ww1_carrier_tree"
-				position = { x = 990 y = 740 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
-			gridboxtype = {
-				name = "ww1_submarine_tree"
-				position = { x = 990 y = 870 }
-				size = { width = 100 height = 140 }
-				slotsize = { width = 70 height = 70 }
-				format = "LEFT"
-			}
+
 		}
 ########### DNM End legacy_ships_folder
 		# Air-folder
@@ -4820,7 +4755,7 @@ guiTypes = {
 				format = "UP"
 			}
 			gridboxtype = {
-				name = "tech_i_152_equipment_1_tree"
+				name = "tech_early_1_tree"
 				position = { x = 10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
@@ -5355,6 +5290,493 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+		}
+		# British Air-folder RAF
+		containerWindowType = {
+			name = "britishair_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+
+			containerWindowType = {
+				name = "techtree_stripes"
+				position = { x= 0 y= 0 }
+				size = {
+					width = 4200 height = 2500
+					min = { width=100%% height=100%% }
+				}
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_techtree_stripes"
+				}
+				
+				iconType = {
+					name ="britishair_techtree_bg"
+					spriteType = "GFX_air_techtree_bg"
+					position = { x=0 y=0 }
+					allwaystransparent = yes
+				}
+				
+				containerWindowType = {
+					name = "britishair_year_left"
+					position = { x=10 y=100 }
+					size = { width = 80 height = 100%% }
+					orientation = upper_left
+						
+					instantTextBoxType = {
+						name = "britishair_year1"
+						position = { x = 20 y = 2 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1930"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year2"
+						position = { x = 20 y = 140 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1933"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year3"
+						position = { x = 20 y = 278 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1936"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year4"
+						position = { x = 20 y = 416 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1937"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year5"
+						position = { x = 20 y = 554 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1938"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year6"
+						position = { x = 20 y = 692 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1939"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year7"
+						position = { x = 20 y = 830 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1940"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year8"
+						position = { x = 20 y = 968 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1941"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year9"
+						position = { x = 20 y = 1106 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1942"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year10"
+						position = { x = 20 y = 1244 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1943"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year11"
+						position = { x = 20 y = 1382 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1944"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year12"
+						position = { x = 20 y = 1520 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1945"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+				}
+			}
+			
+			gridboxtype = {
+				name = "tech_raf_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}		
+			gridboxtype = {
+				name = "tech_gauntlet_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_gladiator_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_defiant_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_martinbaker_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_demon_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_spitfire_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_fury_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_hurricane_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_monofury_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_hind_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_vickers_wellesley_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_fairey_battle_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_westland_lysander_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			
+			gridboxtype = {
+				name = "tech_bristol_beaufort_equipment_0_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_nimrod_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_blackburn_roc_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			
+			gridboxtype = {
+				name = "tech_blackburn_firebrand_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_blackburn_baffin_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_blackburn_shark_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_fairey_swordfish_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			
+			gridboxtype = {
+				name = "tech_gloster_meteor_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_dehaviland_vampire_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_heyford_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_handley_harrow_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_vickers_wellington_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_handley_hampden_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_vickers_wellingtonvi_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_avro_manchester_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hendon_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_aw_whitley_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_handley_halifax_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_short_stirling_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_avro_lincoln_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_saro_london_equipment_0_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_short_sunderland_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_short_seaford_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}			
 		}
 		# British Navy
 		containerWindowType = {
@@ -10954,6 +11376,13 @@ guiTypes = {
 				clicksound = click_default
 			}
 			## UK Air tab x=870
+			buttonType = {
+				position = { x = 610 y = 40 } #x = 1189 y = 0
+				name = "britishair_folder_tab"
+				quadTextureSprite = "GFX_britishair_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
 			# UK Naval tab
 			buttonType = {
 				position = { x = 950 y = 40 }
@@ -12420,7 +12849,7 @@ guiTypes = {
 			format = right
 		}
 	}
-	### USA ###
+
 	# British Navy
 	containerWindowType = {
 		name = "techtree_britishnaval_folder_small_item" 
@@ -12607,6 +13036,75 @@ guiTypes = {
 				name = "picture"
 				position = { x=1 y=2 }
 				spriteType = "GFX_subtech_aa"
+				allwaystransparent = yes
+			}
+		}
+	}
+	## British AIR RAF ##
+	containerWindowType = {
+		name = "techtree_britishair_folder_item"
+		position = { x=-60 y=0 }
+		size = { width = 183 height = 84 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -1 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 166
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=89 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes	
+			allwaystransparent = yes
+		}
+
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=142 y=5 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtech_carrier_plane_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=6 y=2 }
+				spriteType = "GFX_airwing_carrier_icon"
 				allwaystransparent = yes
 			}
 		}

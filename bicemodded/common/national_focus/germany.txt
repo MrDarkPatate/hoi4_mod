@@ -30,6 +30,7 @@ focus_tree = {
 		completion_reward = {
 			GER = {
 			country_event = NF_events.37
+			add_ideas = GER_four_year_plan
 		}
 		custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = goering_e
@@ -169,7 +170,7 @@ focus_tree = {
 		prerequisite = { focus = GER_Goering_Plan }
 		x = -16
 		y = 1
-		cost = 11
+		cost = 8
 		available = {
 			
 		}
@@ -738,6 +739,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = GER_four_year_plan
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -2458,8 +2460,8 @@ focus_tree = {
 		#		NOT = { country_exists = TUR }
 		#	}
 		#}
-		x = 10
-		y = 9
+		x = 9
+		y = 10
 		cost = 13
 		ai_will_do = {
 			factor = 1
@@ -3001,6 +3003,39 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_atlantikwall
+		icon = GFX_focus_generic_coastal_fort
+		prerequisite = { focus = GER_around_maginot}
+		x = 16
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		available_if_capitulated = no
+		
+		available = {
+			date > 1942.1.1
+		GER = { controls_state = 19 }
+		GER = { controls_state = 23 }
+		GER = { controls_state = 30 }
+		GER = { controls_state = 14 }
+		GER = { controls_state = 15 }
+		GER = { controls_state = 29 }
+		GER = { controls_state = 6 }
+		GER = { controls_state = 7 }
+		GER = { controls_state = 36 }
+		GER = { controls_state = 99 }
+		GER = { controls_state = 142 }
+		}
+		completion_reward = {
+			GER = {
+				country_event = { id = germany.302 days = 1 }
+			}
+		}
+	}
+		
 	
 	focus = {
 		id = GER_czech_friend
@@ -3348,7 +3383,7 @@ focus_tree = {
 
 		x = 12
 		y = 5
-		cost = 8
+		cost = 3
 		ai_will_do = {
 			factor = 15
 		}	
@@ -3359,11 +3394,44 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = GER_secure_spain
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = GER_anti_comitern_pact}
+		mutually_exclusive = { focus = GER_befriend_nationalist_spain }
+		available = {
+			SPR = { has_civil_war = no }
+			SPR = { NOT = { has_government = fascism }
+			}
+			FRA = {
+				OR = {
+					NOT = { country_exists = THIS }
+					has_capitulated = yes
+					has_government = fascism
+				}
+			}
+		}
+		x = 11
+		y = 8
+		cost = 1
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			GER = {
+				create_wargoal = {
+				type = take_state
+				target = SPR
+				generator = { 41 }
+				}
+			}
+		}
+	}
 	focus = { 
 		id = GER_befriend_nationalist_spain
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = GER_italy_ally }
+		mutually_exclusive = { focus = GER_secure_spain }
 		available = {
 			SPR = { has_civil_war = no }
 			any_other_country = {
@@ -3386,13 +3454,12 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-			
 			random_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
-				}
-		
+				}	
+			country_event = { id = germany.301 days = 1 }
 			}
 		}
 	}
@@ -3400,15 +3467,22 @@ focus_tree = {
 		id = GER_nationalist_spain_ally
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = GER_befriend_nationalist_spain }
-		prerequisite = { focus = GER_anti_comitern_pact }
 		available = {
 			SPR = { has_civil_war = no }
 			any_other_country = {
 				original_tag = SPR
 				has_government = fascism
 				NOT = { has_war_with = GER }
+				NOT = { has_idea = SPA_recovering_from_civil_war }
 			}
 			FRA = {
+				OR = {
+					NOT = { country_exists = THIS }
+					has_capitulated = yes
+					has_government = fascism
+				}
+			}
+			ENG = {
 				OR = {
 					NOT = { country_exists = THIS }
 					has_capitulated = yes
@@ -3425,32 +3499,42 @@ focus_tree = {
 		#	}
 		#}
 		x = 13
-		y = 10
+		y = 11
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}	
 		completion_reward = {
-			if = {
-				limit = {
-					OR = { 
-						SPR = { NOT = { has_government = fascism } }
-						NOT = { country_exists = SPR }
-					}
-				}
-				custom_effect_tooltip = GER_nationalist_spain_ally_tt
-			}
 			random_country = {
 				limit = {
 					original_tag = SPR
 					has_government = fascism
 				}
-				remove_ideas = SPA_recovering_from_civil_war
+				if = {
+					limit = { has_idea = neutrality_idea }
+					remove_ideas = neutrality_idea
+				}
+			
+				if = {
+				limit = {
+						D01 = {
+							is_ai = yes
+							NOT = {
+								is_in_faction = yes
+							}
+							NOT = {
+								is_puppet = yes
+							}
+						}
+						GER = { is_faction_leader = yes }
+					}
+					GER = { add_to_faction = D01 } # REVISIT Might be a better way to handle this
+				}	
 			}
 		}
 	}
 
-
+#remove_ideas = SPA_recovering_from_civil_war
 
 	focus = {
 		id = GER_danzig_vs_slovakia
@@ -3653,8 +3737,8 @@ focus_tree = {
 	focus = { 
 		id = GER_support_the_golden_square
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = GER_secure_middle_east }
-		x = 12
+		prerequisite = { focus = GER_IRQ_civil_war }
+		x = 11
 		y = 11
 		cost = 2
 		
@@ -3663,7 +3747,6 @@ focus_tree = {
 				if = {
 					limit = { has_idea = neutrality_idea }
 					remove_ideas = neutrality_idea
-					country_event = { id = germany.300 days = 1 }
 				}
 				if = {
 				limit = {
@@ -3687,8 +3770,8 @@ focus_tree = {
 		id = GER_IRQ_civil_war
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = GER_secure_middle_east }
-		x = 12
-		y = 9
+		x = 11
+		y = 10
 		cost = 6
 		available = {
 			date > 1941.4.1
@@ -3701,8 +3784,8 @@ focus_tree = {
 		id = GER_secure_middle_east
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = GER_africa_korps }
-		x = 11 
-		y = 8
+		x = 10 
+		y = 9
 		cost = 6
 		available = {
 		ITA = { controls_state = 446 }	
@@ -3936,34 +4019,24 @@ focus_tree = {
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_naval_effort_2dockyards
 			}
 			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 0.25
+				name = bb_bonus
+				bonus = 0.3
 				uses = 1
-				technology = improved_destroyer
-				technology = advanced_destroyer
-			}
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 0.25
-				uses = 1
-				technology = improved_light_cruiser
-				technology = advanced_light_cruiser
-				technology = improved_heavy_cruiser
-				technology = advanced_heavy_cruiser
-			}
+				technology = basic_battlecruiser
+				}
 		}
 	}
 
@@ -3974,7 +4047,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_u_boat_effort }
 		x = 21
 		y = 6
-		cost = 12
+		cost = 11
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -4000,23 +4073,30 @@ focus_tree = {
 				set_state_flag = GER_naval_rearmament_2dockyards
 			}
 				add_tech_bonus = {
-				name = bb_bonus
-				bonus = 0.3
-				uses = 1
-				category = bb_tech
+					name = dd_bonus
+					bonus = 0.3
+					uses = 1
+					technology = improved_destroyer
+					technology = advanced_destroyer
 				}
 				add_tech_bonus = {
-				name = cv_bonus
-				bonus = 0.3
-				uses = 1
-				category = cv_tech
-				}
-				add_tech_bonus ={
-				name = bc_bonus
-				bonus = 0.3
-				uses = 1
-				category = bc_tech
-				}
+					name = cr_bonus
+					bonus = 0.3
+					uses = 1
+					technology = improved_light_cruiser
+					technology = advanced_light_cruiser
+					technology = improved_heavy_cruiser
+					technology = advanced_heavy_cruiser
+					}
+					add_tech_bonus = {
+					name = cv_bonus
+					bonus = 0.25
+					uses = 2
+					technology = basic_carrier
+					technology = improved_carrier
+					technology = light_carrier_1
+					technology = light_carrier_2
+					}
 			}
 		}
 	
@@ -4052,15 +4132,19 @@ focus_tree = {
 			}
 				add_tech_bonus = {
 					name = cv_bonus
-					bonus = 0.3
+					bonus = 0.25
 					uses = 2
-					category = cv_tech
+					technology = improved_carrier
+					technology = advanced_carrier
+					technology = light_carrier_2
+					technology = light_carrier_3
 				}
 				add_tech_bonus = {
 				name = bb_bonus
-				bonus = 0.3
+				bonus = 0.25
 				uses = 1
-				category = bb_tech
+				ahead_reduction = 0.5
+				technology = advanced_battleship
 				}
 		}
 	}
@@ -4404,7 +4488,7 @@ focus_tree = {
 		}
 		x = 20
 		y = 8
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -5265,8 +5349,7 @@ focus_tree = {
 	focus = {
 		id = GER_Schutzstaffel_divisions
 		icon = GFX_goal_ger_totenkopf
-		prerequisite = { focus = GER_VT_Schutzstaffel }
-		prerequisite = { focus = GER_TV_Schutzstaffel }
+		prerequisite = { focus = GER_TV_Schutzstaffel focus = GER_VT_Schutzstaffel }
 		x = 25
 		y = 3
 		cost = 2

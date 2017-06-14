@@ -1,6 +1,15 @@
 ideas = {
 
 	country = {
+		GER_four_year_plan = {
+			
+				picture = ast_all_in
+			
+		modifier = {
+			production_speed_industrial_complex_factor = 0.10
+			production_speed_arms_factory_factor = 0.10
+		}
+		}
 		idea_homework = {
 	
 				picture = generic_production_bonus	
@@ -28,7 +37,7 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				industry_repair_factor = 0.05
+				industry_repair_factor = 0.10
 				consumer_goods_factor = -0.03
 				conscription = 0.010
 				}
@@ -1309,6 +1318,35 @@ ideas = {
 			}
 
 			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		kurt_zeitzler = { #42-44
+			
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				date > 1941.9.1
+			}
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		guderian_coa = { #44-45
+			
+			allowed = {
+				original_tag = GER
+				NOT = { has_country_flag = guderian_dead }
+			}
+			available = {
+				date > 1942.8.1
+			}
+			traits = { army_chief_maneuver_3 }
 			
 			ai_will_do = {
 				factor = 1

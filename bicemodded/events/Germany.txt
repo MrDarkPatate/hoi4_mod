@@ -122,6 +122,44 @@ country_event = {
 		}
 	}
 }
+#Spain_treaty( befriend spain )
+country_event = {
+	id = germany.301
+	title = germany.301.t
+	desc = germany.301.d
+	picture = GFX_report_event_german_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.301.a	#accept
+		ai_chance = {
+			factor = 100
+		}
+		diplomatic_relation = { country = GER relation = non_aggression_pact }
+		GER = {
+		diplomatic_relation = { country = D01 relation = military_access }
+		}
+		if = {
+			limit = { has_idea = SPA_recovering_from_civil_war }
+			remove_ideas = SPA_recovering_from_civil_war
+		}
+	}
+	option = {
+		name = germany.301.b
+		ai_chance = {
+			factor = 0
+		}
+		GER = {
+			create_wargoal = {
+				type = take_state
+				target = D01
+				generator = { 41 }
+			}
+		}
+	}
+}
+
 #anti_comintern_pact
 #nations are asked to join pact, agreeing = relations with GER and hit with SOV 
 country_event = {
@@ -827,7 +865,349 @@ country_event = {
 		}
 	}
 }
-
+# Fortifying the Atlantikwall
+country_event = {
+	id = germany.302
+	title = germany.302.t
+	desc = germany.302.d
+	picture = GFX_report_event_bunker_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.302.a
+		19 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9737
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11565
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6621
+				level = 1
+			}
+		}
+		23 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6657
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9597
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11600
+				level = 1
+			}
+		}
+		30 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11465
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11616
+				level = 1
+			}
+		}
+		14 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9510
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6536
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 542
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3552
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6572
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9525
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11508
+				level = 1
+			}
+		}
+		15 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9550
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6449
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3579
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11535
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6599
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9434
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 485
+				level = 1
+			}
+		}
+		29 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11420
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9500
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11548
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 575
+				level = 2
+			}
+		}
+		6 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6446
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6560
+				level = 1
+			}
+		}
+		7 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 480
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9431
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9498
+				level = 2
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3211
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 68
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3314
+				level = 1
+			}
+		}
+		36 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6336
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9335
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11318
+				level = 1
+			}
+		}
+		56 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11360
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 241
+				level = 1
+			}
+		}
+		59 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 374
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6349
+				level = 1
+			}
+		}
+		58 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3368
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3231
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11366
+				level = 1
+			}
+		}
+		99 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 332
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 399
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3206
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 316
+				level = 1
+			}
+		}
+		142 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9296
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11367
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 6176
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 53
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 9296
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 11367
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 122
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 199
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 3090
+				level = 1
+			}
+			add_building_construction = {
+				type = coastal_bunker
+				province = 188
+				level = 1
+			}
+		}
+		144 = {
+			add_building_construction = {
+				type = coastal_bunker
+				province = 192
+				level = 2
+			}
+			add_building_construction = {
+				type = bunker
+				province = 192
+				level = 2
+			}
+		}
+	}
+}
 # Fortifying the Westwall
 country_event = {
 	id = germany.27
@@ -839,7 +1219,7 @@ country_event = {
 	
 	option = {
 		name = germany.27.a
-		50 = {
+		892 = {
 			add_building_construction = {
 				type = bunker
 				province = 11640
@@ -855,6 +1235,8 @@ country_event = {
 				province = 6542
 				level = 3
 			}
+		}	
+		50 = {	
 			add_building_construction = {
 				type = bunker
 				province = 3530
@@ -3760,6 +4142,28 @@ country_event = {
 					}		
 					
 				}
+				SER = {
+					if = {
+						limit = { YUG = { owns_state = 107 } }
+						transfer_state = 107
+					}
+					if = {
+						limit = { YUG = { owns_state = 879 } }
+						transfer_state = 879
+					}
+					if = {
+						limit = { YUG = { owns_state = 108 } }
+						transfer_state = 108
+					}
+					if = {
+						limit = { YUG = { owns_state = 885 } }
+						transfer_state = 885
+					}		
+					if = {
+						limit = { YUG = { owns_state = 884 } }
+						transfer_state = 884
+					}						
+				}
 				HUN = {
 				if = {
 						limit = { YUG = { owns_state = 877 } }
@@ -3801,12 +4205,9 @@ country_event = {
 						limit = { YUG = { owns_state = 882 } }
 						transfer_state = 882
 					}
-					if = {
-						limit = { YUG = { owns_state = 884 } }
-						transfer_state = 884
-					}
 					}
 				puppet = CRO
+				puppet = SER
 				
 				annex_country = { target = YUG transfer_troops = no }
 			}
@@ -3860,6 +4261,28 @@ country_event = {
 						transfer_state = 876
 					}						
 				}
+				SER = {
+					if = {
+						limit = { YUG = { owns_state = 107 } }
+						transfer_state = 107
+					}
+					if = {
+						limit = { YUG = { owns_state = 879 } }
+						transfer_state = 879
+					}
+					if = {
+						limit = { YUG = { owns_state = 108 } }
+						transfer_state = 108
+					}
+					if = {
+						limit = { YUG = { owns_state = 885 } }
+						transfer_state = 885
+					}		
+					if = {
+						limit = { YUG = { owns_state = 884 } }
+						transfer_state = 884
+					}						
+				}
 				HUN = {
 				if = {
 						limit = { YUG = { owns_state = 877 } }
@@ -3901,12 +4324,9 @@ country_event = {
 						limit = { YUG = { owns_state = 882 } }
 						transfer_state = 882
 					}
-					if = {
-						limit = { YUG = { owns_state = 884 } }
-						transfer_state = 884
-					}
 					}
 			puppet = CRO
+			puppet = SER
 			annex_country = { target = YUG transfer_troops = no }
 
 			hidden_effect = {
@@ -3977,6 +4397,28 @@ country_event = {
 						transfer_state = 876
 					}
 				}
+				SER = {
+					if = {
+						limit = { YUG = { owns_state = 107 } }
+						transfer_state = 107
+					}
+					if = {
+						limit = { YUG = { owns_state = 879 } }
+						transfer_state = 879
+					}
+					if = {
+						limit = { YUG = { owns_state = 108 } }
+						transfer_state = 108
+					}
+					if = {
+						limit = { YUG = { owns_state = 885 } }
+						transfer_state = 885
+					}		
+					if = {
+						limit = { YUG = { owns_state = 884 } }
+						transfer_state = 884
+					}						
+				}
 				HUN = {
 				if = {
 						limit = { YUG = { owns_state = 877 } }
@@ -4018,13 +4460,10 @@ country_event = {
 						limit = { YUG = { owns_state = 882 } }
 						transfer_state = 882
 					}
-					if = {
-						limit = { YUG = { owns_state = 884 } }
-						transfer_state = 884
-					}
 					}
 				puppet = CRO
 				puppet = YUG
+				puppet = SER
 
 
 				hidden_effect = {
@@ -4082,6 +4521,28 @@ country_event = {
 						transfer_state = 876
 					}
 				}
+				SER = {
+					if = {
+						limit = { YUG = { owns_state = 107 } }
+						transfer_state = 107
+					}
+					if = {
+						limit = { YUG = { owns_state = 879 } }
+						transfer_state = 879
+					}
+					if = {
+						limit = { YUG = { owns_state = 108 } }
+						transfer_state = 108
+					}
+					if = {
+						limit = { YUG = { owns_state = 885 } }
+						transfer_state = 885
+					}		
+					if = {
+						limit = { YUG = { owns_state = 884 } }
+						transfer_state = 884
+					}						
+				}
 				HUN = {
 				if = {
 						limit = { YUG = { owns_state = 877 } }
@@ -4123,13 +4584,10 @@ country_event = {
 						limit = { YUG = { owns_state = 882 } }
 						transfer_state = 882
 					}
-					if = {
-						limit = { YUG = { owns_state = 884 } }
-						transfer_state = 884
-					}
 					}
 			puppet = CRO
 			puppet = YUG
+			puppet = SER
 
 
 			hidden_effect = {
@@ -6227,40 +6685,6 @@ country_event = {
 }
 
 
-country_event = {
-	id = germany.249
-	title = germany.249.t
-	desc = germany.249.d
-	picture = GFX_...
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen = {
-		days = 18
-	}
-
-	trigger = {
-		tag = GER
-		has_war_with = SOV
-		ROM = { has_full_control_of_state = 196 }
-
-
-	}
-
-	option = {
-		name = germany.249.a
-		GER = { transfer_state = 196 }
-	}
-	
-	option = {
-		name = germany.249.b
-	}
-}
-
-
-
-
-
 
 country_event = {
 	id = germany.253
@@ -6393,6 +6817,28 @@ country_event = {
 						transfer_state = 876
 					}						
 				}
+				SER = {
+					if = {
+						limit = { YUG = { owns_state = 107 } }
+						transfer_state = 107
+					}
+					if = {
+						limit = { YUG = { owns_state = 879 } }
+						transfer_state = 879
+					}
+					if = {
+						limit = { YUG = { owns_state = 108 } }
+						transfer_state = 108
+					}
+					if = {
+						limit = { YUG = { owns_state = 885 } }
+						transfer_state = 885
+					}		
+					if = {
+						limit = { YUG = { owns_state = 884 } }
+						transfer_state = 884
+					}						
+				}
 				HUN = {
 				if = {
 						limit = { YUG = { owns_state = 877 } }
@@ -6434,11 +6880,8 @@ country_event = {
 						limit = { YUG = { owns_state = 882 } }
 						transfer_state = 882
 					}
-					if = {
-						limit = { YUG = { owns_state = 884 } }
-						transfer_state = 884
 					}
-					}
+			puppet = SER
 			puppet = CRO
 			annex_country = { target = YUG transfer_troops = no }
 
@@ -6453,6 +6896,230 @@ country_event = {
 		ai_chance = { factor = 0 }
     }
 }
+
+country_event = {
+	id = germany.256
+	title = germany.256.t
+	desc = germany.256.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	trigger = {
+		tag = GER
+		FRA = { has_capitulated = yes }
+		OR = { D01 = { controls_state = 19 } D02 = { controls_state = 19 } 
+		D01 = { controls_state = 23 } D02 = { controls_state = 23 } 
+		D01 = { controls_state = 30 } D02 = { controls_state = 30 } 
+		D01 = { controls_state = 29 } D02 = { controls_state = 29 } 
+		D01 = { controls_state = 28 } D02 = { controls_state = 28 } 
+        D01 = { controls_state = 27 } D02 = { controls_state = 27 } 
+		D01 = { controls_state = 17 } D02 = { controls_state = 17 } 
+		D01 = { controls_state = 15 } D02 = { controls_state = 15 } 
+		D01 = { controls_state = 24 } D02 = { controls_state = 24 } 
+		D01 = { controls_state = 16 } D02 = { controls_state = 16 } 
+		D01 = { controls_state = 14 } D02 = { controls_state = 14 } 
+	    D01 = { controls_state = 844 } D02 = { controls_state = 844 } }
+	}
+
+	option = {
+		name = germany.256.a
+		19 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 19 }
+			}
+		}
+		23 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 23 }
+			}
+		}
+		14 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 14 }
+			}
+		}
+		15 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 15 }
+			}
+		}
+		30 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 30 }
+			}
+		}
+		24 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 24 }
+			}
+		}
+		16 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 16 }
+			}
+		}
+		27 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 27 }
+			}
+		}
+		17 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 17 }
+			}
+		}
+		844 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 844 }
+			}
+		}
+		28 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 28 }
+			}
+		}
+		29 = {
+			if = {
+				limit = { OR = { is_controlled_by = D01 is_controlled_by = D02 } }
+				GER = { transfer_state = 29 }
+			}
+		}
+		
+	}
+	
+	option = {
+		name = germany.256.b
+	}
+}
+
+country_event = {
+	id = germany.249
+	title = germany.249.t
+	desc = germany.249.d
+	picture = GFX_...
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	trigger = {
+	    tag = GER
+		has_war_with = SOV
+		OR = { ROM = { controls_state = 196 } HUN = { controls_state = 196 } 
+		ROM = { controls_state = 200 } HUN = { controls_state = 200 }
+		ROM = { controls_state = 137 } HUN = { controls_state = 137 } 
+		ROM = { controls_state = 221 } HUN = { controls_state = 221 } 
+		ROM = { controls_state = 227 } HUN = { controls_state = 227 } 
+        ROM = { controls_state = 259 } HUN = { controls_state = 259 } 
+		ROM = { controls_state = 218 } HUN = { controls_state = 218 }  
+		ROM = { controls_state = 197 } HUN = { controls_state = 197 } 
+		ROM = { controls_state = 203 } HUN = { controls_state = 203 }
+		ROM = { controls_state = 201 } HUN = { controls_state = 201 }
+		ROM = { controls_state = 199 } HUN = { controls_state = 199 }
+		ROM = { controls_state = 202 } HUN = { controls_state = 202 } }
+	}
+
+	option = {
+		name = germany.249.a
+		196 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 196 }
+			}
+		}
+		200 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 200 }
+			}
+		}
+		137 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 137 }
+			}
+		}
+		221 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 221 }
+			}
+		}
+		227 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 227 }
+			}
+		}
+		259 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 259 }
+			}
+		}
+		218 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 218 }
+			}
+		}
+		197 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 197 }
+			}
+		}
+		203 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 203 }
+			}
+		}
+		202 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 202 }
+			}
+		}
+		201 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 201 }
+			}
+		}
+		199 = {
+			if = {
+				limit = { OR = { is_controlled_by = ROM is_controlled_by = HUN } }
+				GER = { transfer_state = 199 }
+			}
+		}
+	}
+	
+	option = {
+		name = germany.249.b
+	}
+}
+
+
+
 country_event = {
 	id = germany.300
 	title = germany.300.t
