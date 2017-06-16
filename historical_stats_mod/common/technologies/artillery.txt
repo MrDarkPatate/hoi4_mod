@@ -1,4 +1,4 @@
-technologies = {
+technologies = {					# Some extra year slots need to be added in 1941-1942
 	#Vertical position
 	@1934 = -2
 	@1936 = 0
