@@ -50,7 +50,7 @@ equipments = {				# NOTE: AA GUNS are more expensive than same caliber AT and th
 		priority = 90
 		visual_level = 0
 	}
-	# 1940						# A Generic "low velocity" 47mm / 50mm AT gun 
+	# 1940						# A Generic  47mm / 50mm AT gun 
 	anti_tank_equipment_2 = {     
 		archetype = anti_tank_equipment
 		parent = anti_tank_equipment_1
@@ -59,7 +59,7 @@ equipments = {				# NOTE: AA GUNS are more expensive than same caliber AT and th
 		
 		soft_attack = 6			# Was default
 		hard_attack = 20 		# 21
-		ap_attack = 50 			# Was 71 Represents a gun capable of piercing 52 mm 30º at 500m
+		ap_attack = 60 			# Was 71 Represents a gun capable of piercing 70 mm 30º at 500m
 		
 		build_cost_ic = 4.8		# 5.5
 		resources = {
@@ -123,7 +123,7 @@ equipments = {				# NOTE: AA GUNS are more expensive than same caliber AT and th
 			steel = 2
 		}
 	}
-	# 1940 						# IMPORTANT As this is a 1940 gun, now is a Generic "High velocity" type 50mm / 57mm. (OPTION: Change to 1943 to represent a 85mm sized AT)
+	# 1942						# IMPORTANT As this is a 1940 gun, now is a Generic "High velocity" type 50mm / 57mm. (OPTION: Change to 1943 to represent a 85mm sized AT)
 	HVanti_tank_equipment_1 = {
 		archetype = HVanti_tank_equipment
 		
@@ -132,16 +132,16 @@ equipments = {				# NOTE: AA GUNS are more expensive than same caliber AT and th
 		
 		soft_attack = 12.5		# Was default
 		hard_attack = 26		# 24
-		ap_attack = 60  		# Gun capable of pierce 70mm 30º (similar as a 57mm / 50L60).
+		ap_attack = 100  		# Gun capable of pierce 70mm 30º (similar as a 57mm / 50L60).
 		
-		build_cost_ic = 5.4	 	# Even 50 mmm this type of gun / ammo was expensive. 
+		build_cost_ic = 9.4	 	# Even 50 mmm this type of gun / ammo was expensive. 
 		resources = {
 			tungsten = 3
 			steel = 2
 			chromium = 1		# Added to represent special ammo and gun. 
 		}
 	}
-	# 1943 						# Better change to 1944, now is a generic high caliber AT
+	# 1944 						# Better change to 1944, now is a generic high caliber AT
 	HVanti_tank_equipment_2 = {
 		archetype = HVanti_tank_equipment
 		parent = HVanti_tank_equipment_1
@@ -150,9 +150,9 @@ equipments = {				# NOTE: AA GUNS are more expensive than same caliber AT and th
 		
 		soft_attack = 21.5		# Was default
 		hard_attack = 30		# Was 28
-		ap_attack = 104  		# Represents a late war heavy gun capable of piercing 150 mm 30º (120mm / German 88)
+		ap_attack = 115  		# Represents a late war heavy gun capable of piercing 150 mm 30º (120mm / German 88)
 		
-		build_cost_ic = 9.4		# 12 This should be cheaper than 40 Hvy AA, because by 43 will have similar piercing power but not dual purpose 
+		build_cost_ic = 11.4	# 12 This should be cheaper than 40 Hvy AA, because by 43 will have similar piercing power but not dual purpose 
 		resources = {
 			tungsten = 3
 			steel = 2			# 3. If is going to be same as AA needs to be same resource consumption.
