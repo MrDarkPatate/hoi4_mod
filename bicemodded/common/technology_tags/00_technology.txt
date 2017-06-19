@@ -164,7 +164,7 @@ technology_folders = {
     }
 	frencharmor_folder = {
         available = {
-            always = no
+            original_tag = FRA
         }
     }
 	frenchair_folder = {
