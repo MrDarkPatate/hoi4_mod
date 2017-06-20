@@ -3873,6 +3873,16 @@ SpriteType = {
 		name = "GFX_streamlined_line_medium"
 		texturefile = "gfx/interface/technologies/streamlined_line.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_improved_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion2.dds"
+	}	
 	####################################################
 	#tool_maintenance
 	#worker_training
@@ -7881,6 +7891,16 @@ SpriteType = {
 		name = "GFX_tech_is_tank_c_medium"
 		texturefile = "gfx/interface/technologies/sov_is_tank_c.dds"
 	}	
+	
+	# IS-4
+    SpriteType = {
+		name = "GFX_SOV_super_heavy_tank_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/USA_superheavy_tank.dds"
+	}	
+	SpriteType = {
+		name = "GFX_tech_is_tank_d_medium"
+		texturefile = "gfx/interface/technologies/USA_superheavy_tank.dds"
+	}
 
 	# SU-76
 	SpriteType = {
@@ -9296,6 +9316,7 @@ SpriteType = {
 		name = "GFX_USA_super_heavy_tank_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/USA_superheavy_tank.dds"
 	}	
+
 	
 
 	## USA Tanks

@@ -1085,6 +1085,11 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
+		iconType = {
+			name = "creator_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x = 245 y = 53 }
+		}
 		instantTextboxType = {
 			name = "total_need"
 			position = { x=5 y=71 } #x = 70 y = 86
