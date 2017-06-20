@@ -4144,7 +4144,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 2040 height = 1960 
+					width = 2000 height = 1680 
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -4167,13 +4167,13 @@ guiTypes = {
 					size = { width = 80 height = 100%% }
 					orientation = upper_left
 						
-						instantTextBoxType = {
+					instantTextBoxType = {
 						name = "soviet_year1"
 						position = { x = 20 y = 2 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1931"
+						text = "1934"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4185,7 +4185,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1933"
+						text = "1936"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4197,7 +4197,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1935"
+						text = "1937"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4209,7 +4209,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1937"
+						text = "1939"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4221,7 +4221,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1938"
+						text = "1940"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4233,7 +4233,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1939"
+						text = "1941"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4245,7 +4245,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1940"
+						text = "1942"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4257,7 +4257,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1941"
+						text = "1943"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4269,7 +4269,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1942"
+						text = "1944"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4281,8 +4281,8 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1943 early"
-						maxWidth = 180
+						text = "1945"
+						maxWidth = 80
 						maxHeight = 32
 						format = left
 						Orientation = "UPPER_LEFT"
@@ -4293,43 +4293,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1943 late"
-						maxWidth = 180
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year13"
-						position = { x = 20 y = 1538 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1944"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year14"
-						position = { x = 20 y = 1678 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1945"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year15"
-						position = { x = 20 y = 1818 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1947"
+						text = "1946"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4344,25 +4308,13 @@ guiTypes = {
 					orientation = upper_right
 				
 					instantTextBoxType = {
-						name = "soviet_year1_left"
-						position = { x = 0 y = 2 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1931"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
 						name = "soviet_year2_left"
 						position = { x = 0 y = 140 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1933"
-						maxWidth = 180
+						text = "1935"
+						maxWidth = 80
 						maxHeight = 32
 						format = left
 						Orientation = "UPPER_LEFT"
@@ -4373,7 +4325,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1935"
+						text = "1939"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4385,7 +4337,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1937"
+						text = "1940"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4397,7 +4349,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1938"
+						text = "1941"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4409,7 +4361,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1939"
+						text = "1942"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4421,7 +4373,7 @@ guiTypes = {
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
-						text = "1940"
+						text = "1943"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4432,8 +4384,8 @@ guiTypes = {
 						position = { x = 0 y = 978 }
 						textureFile = ""
 						font = "hoi_36header"
-						borderSize = {x = 0 y = 10}
-						text = "1941"
+						borderSize = {x = 0 y = 4}
+						text = "1944"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4444,68 +4396,8 @@ guiTypes = {
 						position = { x = 0 y = 1118 }
 						textureFile = ""
 						font = "hoi_36header"
-						borderSize = {x = 0 y = 10}
-						text = "1942"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year10_left"
-						position = { x = 0 y = 1258 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1943E"
-						maxWidth = 190
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year11_left"
-						position = { x = 0 y = 1398 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1943L"
-						maxWidth = 190
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year12_left"
-						position = { x = 0 y = 1538 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1944"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year13_left"
-						position = { x = 0 y = 1678 }
-						textureFile = ""
-						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
 						text = "1945"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "soviet_year14_left"
-						position = { x = 0 y = 1818 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1947"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -4520,22 +4412,10 @@ guiTypes = {
 				size = { width = 600 height = 80% }				
 				orientation = center_up
 				origo = center_up
-				
-				instantTextBoxType = {
-					name = "soviet_subtitle_amphibious"
-					position = { x = -450 y = -50  } #55
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARMOUR_TITLE_AMPH"
-					maxWidth = 200
-					maxHeight = 62
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
+			
 				instantTextBoxType = {
 					name = "soviet_subtitle_light"
-					position = { x = 0 y = -50  } #55
+					position = { x = -100 y = -50  } #55
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -4547,7 +4427,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "soviet_subtitle_medium"
-					position = { x = 260 y = -50 }
+					position = { x = 240 y = -50 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -4559,7 +4439,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "soviet_subtitle_heavy"
-					position = { x = 760 y = -50 }
+					position = { x = 460 y = -125 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -5410,6 +5290,493 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+		}
+		# British Air-folder RAF
+		containerWindowType = {
+			name = "britishair_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+
+			containerWindowType = {
+				name = "techtree_stripes"
+				position = { x= 0 y= 0 }
+				size = {
+					width = 4200 height = 2500
+					min = { width=100%% height=100%% }
+				}
+				clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_techtree_stripes"
+				}
+				
+				iconType = {
+					name ="britishair_techtree_bg"
+					spriteType = "GFX_air_techtree_bg"
+					position = { x=0 y=0 }
+					allwaystransparent = yes
+				}
+				
+				containerWindowType = {
+					name = "britishair_year_left"
+					position = { x=10 y=100 }
+					size = { width = 80 height = 100%% }
+					orientation = upper_left
+						
+					instantTextBoxType = {
+						name = "britishair_year1"
+						position = { x = 20 y = 2 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1930"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year2"
+						position = { x = 20 y = 140 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1933"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year3"
+						position = { x = 20 y = 278 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1936"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year4"
+						position = { x = 20 y = 416 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1937"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year5"
+						position = { x = 20 y = 554 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1938"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year6"
+						position = { x = 20 y = 692 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1939"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year7"
+						position = { x = 20 y = 830 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1940"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year8"
+						position = { x = 20 y = 968 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1941"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year9"
+						position = { x = 20 y = 1106 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1942"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year10"
+						position = { x = 20 y = 1244 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1943"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year11"
+						position = { x = 20 y = 1382 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1944"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "britishair_year12"
+						position = { x = 20 y = 1520 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1945"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+				}
+			}
+			
+			gridboxtype = {
+				name = "tech_raf_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}		
+			gridboxtype = {
+				name = "tech_gauntlet_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_gladiator_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_defiant_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_martinbaker_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_demon_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_spitfire_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_fury_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_hurricane_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_monofury_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hawker_hind_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_vickers_wellesley_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_fairey_battle_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_westland_lysander_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			
+			gridboxtype = {
+				name = "tech_bristol_beaufort_equipment_0_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_nimrod_fighter_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_blackburn_roc_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			
+			gridboxtype = {
+				name = "tech_blackburn_firebrand_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_blackburn_baffin_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_blackburn_shark_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_fairey_swordfish_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			
+			gridboxtype = {
+				name = "tech_gloster_meteor_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_dehaviland_vampire_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_heyford_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_handley_harrow_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_vickers_wellington_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_handley_hampden_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_vickers_wellingtonvi_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_avro_manchester_bomber_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_hendon_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_aw_whitley_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_handley_halifax_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_short_stirling_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_avro_lincoln_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_saro_london_equipment_0_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_short_sunderland_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+			gridboxtype = {
+				name = "tech_short_seaford_equipment_1_tree"
+				position = { x = 15% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}			
 		}
 		# British Navy
 		containerWindowType = {
@@ -7682,7 +8049,7 @@ guiTypes = {
 		# France Armor-folder
 		containerWindowType = {
 			name = "frencharmor_folder"
-			position = { x=0 y=130 }
+			position = { x=0 y=83 }
 			size = { width = 100%% height = 100%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
@@ -7711,7 +8078,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = { 
-					width = 2000 height = 1680 
+					width = 2000 height = 2500 
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -7736,7 +8103,43 @@ guiTypes = {
 						
 					instantTextBoxType = {
 						name = "frencharmor_year1"
-						position = { x = 20 y = 2 }
+						position = { x = 20 y = 30 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1917"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year2"
+						position = { x = 20 y = 170 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1930"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year3"
+						position = { x = 20 y = 310 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1933"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year4"
+						position = { x = 20 y = 450 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7747,8 +8150,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year2"
-						position = { x = 20 y = 140 }
+						name = "frencharmor_year5"
+						position = { x = 20 y = 590 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7759,8 +8162,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year3"
-						position = { x = 20 y = 278 }
+						name = "frencharmor_year6"
+						position = { x = 20 y = 730 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7771,8 +8174,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year4"
-						position = { x = 20 y = 420 }
+						name = "frencharmor_year7"
+						position = { x = 20 y = 870 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7783,8 +8186,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year5"
-						position = { x = 20 y = 560 }
+						name = "frencharmor_year8"
+						position = { x = 20 y = 1010 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7795,8 +8198,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year6"
-						position = { x = 20 y = 698 }
+						name = "frencharmor_year9"
+						position = { x = 20 y = 1150 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7807,8 +8210,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year7"
-						position = { x = 20 y = 838 }
+						name = "frencharmor_year10"
+						position = { x = 20 y = 1290 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7819,8 +8222,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year8"
-						position = { x = 20 y = 978 }
+						name = "frencharmor_year11"
+						position = { x = 20 y = 1430 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7831,8 +8234,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year9"
-						position = { x = 20 y = 1118 }
+						name = "frencharmor_year12"
+						position = { x = 20 y = 1570 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7843,8 +8246,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year10"
-						position = { x = 20 y = 1258 }
+						name = "frencharmor_year13"
+						position = { x = 20 y = 1710 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7855,8 +8258,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year11"
-						position = { x = 20 y = 1398 }
+						name = "frencharmor_year14"
+						position = { x = 20 y = 1850 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7867,12 +8270,36 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year12"
-						position = { x = 20 y = 1538 }
+						name = "frencharmor_year15"
+						position = { x = 20 y = 1990 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
 						text = "1945"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year16"
+						position = { x = 20 y = 2130 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1948"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year17"
+						position = { x = 20 y = 2270 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1949"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -7888,7 +8315,43 @@ guiTypes = {
 				
 					instantTextBoxType = {
 						name = "frencharmor_year1_left"
-						position = { x = 0 y = 2 }
+						position = { x = 0 y = 30 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1917"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year2_left"
+						position = { x = 0 y = 170 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1930"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year3_left"
+						position = { x = 0 y = 310 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1933"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year4_left"
+						position = { x = 0 y = 450 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7899,8 +8362,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year2_left"
-						position = { x = 0 y = 140 }
+						name = "frencharmor_year5_left"
+						position = { x = 0 y = 590 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7911,8 +8374,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year3_left"
-						position = { x = 0 y = 278 }
+						name = "frencharmor_year6_left"
+						position = { x = 0 y = 730 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7923,8 +8386,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year4_left"
-						position = { x = 0 y = 420 }
+						name = "frencharmor_year7_left"
+						position = { x = 0 y = 870 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7935,8 +8398,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year5_left"
-						position = { x = 0 y = 560 }
+						name = "frencharmor_year8_left"
+						position = { x = 0 y = 1010 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7947,8 +8410,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year6_left"
-						position = { x = 0 y = 698 }
+						name = "frencharmor_year9_left"
+						position = { x = 0 y = 1150 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7959,8 +8422,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year7_left"
-						position = { x = 0 y = 838 }
+						name = "frencharmor_year10_left"
+						position = { x = 0 y = 1290 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7971,8 +8434,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year8_left"
-						position = { x = 0 y = 978 }
+						name = "frencharmor_year11_left"
+						position = { x = 0 y = 1430 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7983,8 +8446,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year9_left"
-						position = { x = 0 y = 1118 }
+						name = "frencharmor_year12_left"
+						position = { x = 0 y = 1570 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -7995,8 +8458,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year10_left"
-						position = { x = 0 y = 1258 }
+						name = "frencharmor_year13_left"
+						position = { x = 20 y = 1710 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -8007,8 +8470,8 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year11_left"
-						position = { x = 0 y = 1398 }
+						name = "frencharmor_year14_left"
+						position = { x = 20 y = 1850 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
@@ -8019,12 +8482,36 @@ guiTypes = {
 						Orientation = "UPPER_LEFT"
 					}
 					instantTextBoxType = {
-						name = "frencharmor_year12_left"
-						position = { x = 0 y = 1538 }
+						name = "frencharmor_year15_left"
+						position = { x = 20 y = 1990 }
 						textureFile = ""
 						font = "hoi_36header"
 						borderSize = {x = 0 y = 4}
 						text = "1945"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year16_left"
+						position = { x = 20 y = 2130 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1948"
+						maxWidth = 80
+						maxHeight = 32
+						format = left
+						Orientation = "UPPER_LEFT"
+					}
+					instantTextBoxType = {
+						name = "frencharmor_year17_left"
+						position = { x = 20 y = 2270 }
+						textureFile = ""
+						font = "hoi_36header"
+						borderSize = {x = 0 y = 4}
+						text = "1949"
 						maxWidth = 80
 						maxHeight = 32
 						format = left
@@ -8047,6 +8534,30 @@ guiTypes = {
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
 					text = "ARMOUR_TITLE_LIGHT"
+					maxWidth = 200
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "frencharmor_subtitle_cmd_tank"
+					position = { x = -260 y = 937 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4 }
+					text = "CMD TANK"
+					maxWidth = 200
+					maxHeight = 62
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "frencharmor_subtitle_recovery_tank"
+					position = { x = 20 y = 937 }
+					textureFile = ""
+					font = "hoi_33"
+					borderSize = {x = 0 y = 4 }
+					text = "AVR TANK"
 					maxWidth = 200
 					maxHeight = 62
 					format = left
@@ -8078,13 +8589,27 @@ guiTypes = {
 				}
 			}	
 
-			#gridboxtype = {
-			#	name = "french_tech_tree"
-			#	position = { x = 10% y = 172 }
-			#	size = { width = 80% height = 80% }
-			#	slotsize = { width = 70 height = 70 }
-			#	format = "UP"
-			#}
+			gridboxtype = {
+				name = "french_tech_tree"
+				position = { x = 10% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_fra_command_tanks_tree"
+				position = { x = 10% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			gridboxtype = {
+				name = "tech_fra_recovery_tanks_tree"
+				position = { x = 10% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 		}
 		# French Air folder
 		containerWindowType = {
@@ -11010,7 +11535,7 @@ guiTypes = {
 			}
 			## UK Air tab x=870
 			buttonType = {
-				position = { x = 610 y = 0 } #x = 1189 y = 0
+				position = { x = 610 y = 40 } #x = 1189 y = 0
 				name = "britishair_folder_tab"
 				quadTextureSprite = "GFX_britishair_folder_tab"
 				frame = 1
@@ -12482,646 +13007,7 @@ guiTypes = {
 			format = right
 		}
 	}
-	### USA ###
-			# British Air-folder RAF
-		containerWindowType = {
-			name = "britishair_folder"
-			position = { x=0 y=47 }
-			size = { width = 100%% height = 100%% }
-			margin = { top = 13 left = 13 bottom = 24 right = 25}
-			drag_scroll = { left middle }
-			verticalScrollbar = "right_vertical_slider"
-			horizontalScrollbar = "bottom_horizontal_slider"
 
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_window_2b_border"
-			}
-
-			containerWindowType = {
-				name = "techtree_stripes"
-				position = { x= 0 y= 0 }
-				size = {
-					width = 4200 height = 2500
-					min = { width=100%% height=100%% }
-				}
-				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_techtree_stripes"
-				}
-				
-				iconType = {
-					name ="britishair_techtree_bg"
-					spriteType = "GFX_air_techtree_bg"
-					position = { x=0 y=0 }
-					allwaystransparent = yes
-				}
-				
-				containerWindowType = {
-					name = "britishair_year_left"
-					position = { x=10 y=100 }
-					size = { width = 80 height = 100%% }
-					orientation = upper_left
-						
-					instantTextBoxType = {
-						name = "britishair_year1"
-						position = { x = 20 y = 2 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1930"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year2"
-						position = { x = 20 y = 140 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1933"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year3"
-						position = { x = 20 y = 278 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1936"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year4"
-						position = { x = 20 y = 416 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1937"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year5"
-						position = { x = 20 y = 554 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1938"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year6"
-						position = { x = 20 y = 692 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1939"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year7"
-						position = { x = 20 y = 830 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1940"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year8"
-						position = { x = 20 y = 968 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1941"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year9"
-						position = { x = 20 y = 1106 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1942"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year10"
-						position = { x = 20 y = 1244 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1943"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year11"
-						position = { x = 20 y = 1382 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1944"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-					instantTextBoxType = {
-						name = "britishair_year12"
-						position = { x = 20 y = 1520 }
-						textureFile = ""
-						font = "hoi_36header"
-						borderSize = {x = 0 y = 4}
-						text = "1945"
-						maxWidth = 80
-						maxHeight = 32
-						format = left
-						Orientation = "UPPER_LEFT"
-					}
-				}
-			}
-			
-			gridboxtype = {
-				name = "tech_raf_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_gauntlet_fighter_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_gladiator_fighter_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_defiant_fighter_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_martinbaker_fighter_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_hawker_demon_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_spitfire_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_hawker_fury_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_hawker_hurricane_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_hawker_monofury_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_hawker_hind_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_vickers_wellesley_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_battle_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_westland_lysander_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_hawker_hurricane_iic_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_mosquito_cas_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_bristol_beaufighter_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_westland_whirlwind_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_welkin_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_vickers_valentia_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			
-			gridboxtype = {
-				name = "tech_bristol_buckingham_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_bristol_brigand_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_bristol_blenheim_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_mosquito_fsb_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_bristol_beaufort_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_vickers_warwick_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_nimrod_fighter_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_blackburn_roc_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_fulmar_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_firefly_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_iiif_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_seal_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_blackburn_skua_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_barracuda_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_blackburn_firebrand_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_blackburn_baffin_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_blackburn_shark_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_swordfish_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_fairey_albacore_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_supermarine_dumbo_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_gloster_meteor_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_dehaviland_vampire_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_heyford_bomber_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_handley_harrow_bomber_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_vickers_wellington_bomber_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_handley_hampden_bomber_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_vickers_wellingtonvi_bomber_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_avro_manchester_bomber_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_hendon_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_aw_whitley_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_handley_halifax_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_short_stirling_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_avro_lincoln_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_saro_london_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_short_sunderland_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-			gridboxtype = {
-				name = "tech_short_seaford_equipment_1_tree"
-				position = { x = 15% y = 172 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
-			
-		}
 	# British Navy
 	containerWindowType = {
 		name = "techtree_britishnaval_folder_small_item" 
@@ -13308,6 +13194,75 @@ guiTypes = {
 				name = "picture"
 				position = { x=1 y=2 }
 				spriteType = "GFX_subtech_aa"
+				allwaystransparent = yes
+			}
+		}
+	}
+	## British AIR RAF ##
+	containerWindowType = {
+		name = "techtree_britishair_folder_item"
+		position = { x=-60 y=0 }
+		size = { width = 183 height = 84 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		instantTextBoxType = {
+			name = "Name"
+			position = { x = 3 y = -1 }
+			textureFile = ""
+			font = "hoi_20bs"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 166
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=89 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes	
+			allwaystransparent = yes
+		}
+
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=142 y=5 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtech_carrier_plane_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=6 y=2 }
+				spriteType = "GFX_airwing_carrier_icon"
 				allwaystransparent = yes
 			}
 		}
