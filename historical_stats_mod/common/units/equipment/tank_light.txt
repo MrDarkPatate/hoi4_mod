@@ -802,6 +802,7 @@ equipments = {
 		parent = gw_tank_equipment
 		priority = 10
 		visual_level = 0
+		is_convertable = yes
 		
 		#Misc Abilities
 		maximum_speed = 7
@@ -1030,7 +1031,10 @@ equipments = {
 		family = panzer_i_equipment_1
 		priority = 40
 		visual_level = 0
-		
+		is_convertable = yes
+		can_convert_from = { 
+			panzer_i_equipment_1 
+		}
 				#Misc Abilities
 		maximum_speed = 6
 		reliability = 0.62
@@ -1128,7 +1132,10 @@ equipments = {
 		family = panzer_i_equipment_1
 		priority = 20
 		visual_level = 0
-		
+		is_convertable = yes
+		can_convert_from = { 
+			panzer_i_equipment_1 
+		}		
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.5			# 0.5 Too heavy gun for chassis
@@ -1226,7 +1233,10 @@ equipments = {
 		family = panzer_i_equipment_1
 		priority = 30
 		visual_level = 0
-		
+		is_convertable = yes
+		can_convert_from = { 
+			panzer_i_equipment_1 
+		}
 		#Misc Abilities
 		maximum_speed = 6
 		reliability = 0.5			# 0.6 Very unreliable vehicle

@@ -1993,7 +1993,7 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
-	subtech_panzer_vi_td_equipment_1 = {
+	subtech_panzer_vi_td_equipment_1 = {			#Elefant
 
 		enable_equipments = {
 			panzer_vi_td_equipment_1
@@ -2003,8 +2003,8 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 0.9				#same year as parent
-		start_year = 1942
+		research_cost = 1.2				# year later then parent
+		start_year = 1943
 		
 		categories = {
 			armor
@@ -2036,7 +2036,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	subtech_panzer_vi_ag_equipment_1 = {
+	subtech_panzer_vi_ag_equipment_1 = {		#Sturmtiger
 		enable_equipments = {
 			panzer_vi_ag_equipment_1
 		}
@@ -2045,8 +2045,8 @@ technologies = {
 			german_tech = 1
 		}
 
-		research_cost = 0.9			#same year as parent
-		start_year = 1942
+		research_cost = 1.2			#later year then parent
+		start_year = 1944
 		
 		categories = {
 			armor

@@ -2200,7 +2200,7 @@ equipments = {
 	bt_tank_equipment_1 = {
 		archetype = cavalry_tank_equipment	# cavalry
 		parent = cavalry_tank_equipment_0			# ?
-		family = bt_tank_equipment_2
+		family = cavalry_tank_equipment_0
 		priority = 10
 		visual_level = 0
 		
