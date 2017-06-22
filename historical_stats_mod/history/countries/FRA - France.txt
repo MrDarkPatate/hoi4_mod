@@ -50,11 +50,18 @@ set_technology = {
 	#tech_inf_tanks = 1
 	tech_ac_recon = 1
 	tech_Tankettes = 1
-	tech_Gun_Carriers = 1
+	#tech_Gun_Carriers = 1
 	
 	# New armor techs
-	tech_fra_infantry_tank_equipment_1 = 1
-	
+	tech_fra_infantry_tank_equipment_1 = 1		# Ft17. 1580 tanks in stock
+	tech_fra_infantry_tank_equipment_2 = 1		# Note. This tank was only for export. Poland had some.
+	tech_fra_infantry_tank_equipment_3 = 1		# R35 On production since mid 1935. Around 100 of the 300 made by dec 1935
+	tech_fra_medium_tank_equipment_1 = 1		# D1 - 160 tanks in stock
+	tech_fra_medium_tank_equipment_2 = 1		# D2... building started mid 1936
+	tech_fra_medium_tank_equipment_3 = 1		# AMC 34. On production since oct 1935, perhaps 6 in stock.
+	tech_fra_heavy_tank_equipment_1 = 1			# 2C
+	tech_fra_heavy_tank_equipment_2 = 1			# 2C bis
+	tech_fra_heavy_tank_equipment_3 = 1			# B1. On production since mid 1935. Just a few made b4 1936
 	
 	############# aircraft ############
 	#tech_testing_4 = 1
@@ -187,7 +194,7 @@ set_technology = {
 		basic_heavy_tank = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
-		infantry_weapons2 = 1
+		infantry_weapons2 = 1	# consider change to 1
 		hmg = 1
 		hmg_2 = 1
 		mortars = 1
