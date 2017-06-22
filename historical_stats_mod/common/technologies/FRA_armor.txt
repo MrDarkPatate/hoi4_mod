@@ -551,7 +551,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = frencharmor_folder
-			position = { x = 7 y = @1918 }
+			position = { x = 9 y = @1918 }
 		}
 		
 		ai_will_do = {
@@ -582,7 +582,7 @@ technologies = {
 		start_year = 1933
 		folder = {
 			name = frencharmor_folder
-			position = { x = 7 y = @1933 }
+			position = { x = 9 y = @1933 }
 		}
 		
 		ai_will_do = {
@@ -614,7 +614,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = frencharmor_folder
-			position = { x = 7 y = @1935 }
+			position = { x = 9 y = @1935 }
 		}
 		
 		ai_will_do = {

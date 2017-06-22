@@ -249,7 +249,6 @@ units = {
 		name = "3ème Brigade de Chars de Combat"
 		location = 11502
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
-		#force_equipment_variants = { light_tank_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.2
 	}
 
@@ -304,7 +303,7 @@ units = {
 		name = "2ème Brigade de Chars de Combat"
 		location = 11516
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
-		#force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.2
 	}
 
@@ -698,7 +697,6 @@ units = {
 		name = "4ème Brigade d'Infanterie Algérienne"
 		location = 1145
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -707,7 +705,6 @@ units = {
 		name = "5ème Brigade d'Infanterie Algérienne"
 		location = 1145
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -717,7 +714,6 @@ units = {
 		name = "3ème Brigade d'Infanterie Algérienne"
 		location = 7132
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -726,7 +722,6 @@ units = {
 		name = "7ème Brigade d'Infanterie Algérienne"
 		location = 7132
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -735,7 +730,7 @@ units = {
 		name = "Groupement Cavalerie d'Algérienne"
 		location = 7132
 		division_template = "Division de Cavalerie" 	
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		force_equipment_variants = { infantry_equipment_4 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -746,7 +741,6 @@ units = {
 		name = "Division de Tunis"
 		location = 11969
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 
@@ -755,7 +749,6 @@ units = {
 		name = "Division de Sousse"
 		location = 9994
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 
@@ -766,7 +759,6 @@ units = {
 		name = "Division de Meknès"
 		location = 7069
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 
@@ -775,7 +767,6 @@ units = {
 		name = "Division de Casablanca"	
 		location = 7069
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -784,7 +775,6 @@ units = {
 		name = "Division de Fès"
 		location = 7100
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -793,7 +783,7 @@ units = {
 		name = "Division de Marrakech"	
 		location = 7069
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } } # NOTE: ALL French use now the old WW1 Rifle as it was.
 		start_experience_factor = 0.1
 		
 
@@ -802,7 +792,7 @@ units = {
 		name = "Groupement de Maroc"
 		location = 7100
 		division_template = "Division de Cavalerie" 	
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -815,7 +805,7 @@ units = {
 		name = "Troupes de Madagascar"	
 		location = 5222
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_equipment_factor = 0.15
 
 	}
@@ -826,7 +816,7 @@ units = {
 		name = "Troupes de Sénégalais"
 		location = 4948
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		
 
 	}
@@ -834,7 +824,7 @@ units = {
 		name = "Troupes de Afrique Equatoriale Française"	
 		location = 5139
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_equipment_factor = 0.15
 
 	}
