@@ -7,7 +7,7 @@
 	################## Speed adjusted roughly to (Max speed kmh) / 10 + 2
 	
 	################## MEDIUM TANKS # NOTE: AVERAGE ARMOR / AVERAGE SPEED / AVERAGE WEIGHT & IC
-equipments = {
+	equipments = {
 
 	medium_tank_equipment = {
 		is_archetype = yes
@@ -4141,70 +4141,30 @@ equipments = {
 		build_cost_ic = 21.5		#21.5
 			
 	}
-}
 
 	
-##### French tanks ###########################################
+##### French tanks 
+##### Infantry tanks: 1xBn to Infantry divs templates. 2xBns to DLMs - FT17 - Ft17w37/ R35 - 40 / H35 - 39 / FCM36 - AMX38 proto
+##### Medium tanks: 2xBns to DLMs  -  D1 - D2 / AMC 34 - AMC 35 / S35 - G1R proto
+##### Heavy Tanks: 2xBns to DCRs  - 2C - 2c bis - FCM F1 proto / B1 - B1bis - B1ter
 
-	fra_light_tank_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		type = armor
-		group_by = archetype
-		
-		interface_category = interface_category_armor
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-			
-			tank_aa_upgrade
-			#tank_at_upgrade
-			#tank_art_upgrade 
-			tank_sights_upgrade
-			tank_radio_upgrade
+##### INFANTRY French tanks
 
-			#tank_sloped_upgrade
-			#tank_anti_inf_upgrade 
-		}
-
-		#Misc Abilities
-		maximum_speed = 2
-		reliability = 0.5
-
-		#Defensive Abilities
-		defense = 3
-		breakthrough = 14
-		hardness = 0.6
-		armor_value = 20
-
-		#Offensive Abilities
-		soft_attack = 4
-		hard_attack = 4
-		ap_attack = 30
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 10
-		
-		build_cost_ic = 15
-		resources = {
-			oil = 2
-			steel = 2
-		}
-	}
-	#FT 17M 1936
-	fra_light_tank_equipment_1 = {
-		archetype = fra_light_tank_equipment
+# Renault
+	#FT 17M 1936			FT17 with MGs
+	fra_infantry_tank_equipment_1 = {
+		archetype = infantry_tank_equipment
+		parent = infantry_tank_equipment_0
+		family = fra_infantry_tank_equipment_1
 		priority = 10
 		visual_level = 1
 	}
 	
-	#FT 17C 1936
-	fra_light_tank_equipment_2 = {
-		archetype = fra_light_tank_equipment
+	#FT 17C 1936			FT17 with 37mm gun (only exported. i.e poland)
+	fra_infantry_tank_equipment_2 = {
+		archetype = infantry_tank_equipment
+		parent = fra_infantry_tank_equipment_1
+		family = fra_infantry_tank_equipment_1
 		priority = 10
 		visual_level = 0
 		
@@ -4213,8 +4173,10 @@ equipments = {
 		ap_attack = 20
 	}
 	#R35 (1936)
-	fra_light_tank_equipment_3 = {
-		archetype = fra_light_tank_equipment
+	fra_infantry_tank_equipment_3 = {
+		archetype = infantry_tank_equipment
+		parent = fra_infantry_tank_equipment_2
+		family = fra_infantry_tank_equipment_1
 		priority = 90
 		visual_level = 1
 		maximum_speed = 3
@@ -4228,7 +4190,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 8
 		hard_attack = 6
-		ap_attack = 40
+		ap_attack = 40				# 37mm SA18
 		air_attack = 0
 		
 		#Space taken in convoy
@@ -4240,9 +4202,44 @@ equipments = {
 			steel = 6
 		}
 	}
-	#H35 (1936)
-	fra_light_tank_equipment_4 = {
-		archetype = fra_light_tank_equipment
+	
+	#R40 (1939)
+	fra_infantry_tank_equipment_4 = {
+		archetype = infantry_tank_equipment
+		parent = fra_infantry_tank_equipment_3
+		family = fra_infantry_tank_equipment_1
+		priority = 90
+		visual_level = 1
+		maximum_speed = 3
+		
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 17
+		hardness = 0.7
+		armor_value = 40
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 6
+		ap_attack = 40				# 37mm SA38
+		air_attack = 0
+		
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 16
+		resources = {
+			oil = 2
+			steel = 6
+		}
+	}
+	
+# Hotchkiss
+	#H35 (1936)						# In game terms, near exact tank as R35
+	fra_infantry_tank_equipment_5 = {
+		archetype = infantry_tank_equipment
+		parent = fra_infantry_tank_equipment_2
+		family = fra_infantry_tank_equipment_5			# Another family of tanks
 		priority = 50
 		visual_level = 1
 		maximum_speed = 3
@@ -4256,7 +4253,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 8
 		hard_attack = 8
-		ap_attack = 40
+		ap_attack = 40				# 37mm SA18
 		air_attack = 0
 		
 		#Space taken in convoy
@@ -4270,9 +4267,10 @@ equipments = {
 		}
 	}
 	#H39 (1938)
-	fra_light_tank_equipment_5 = {
-		archetype = fra_light_tank_equipment
-		parent = fra_light_tank_equipment_4
+	fra_infantry_tank_equipment_6 = {
+		archetype = infantry_tank_equipment
+		parent = fra_infantry_tank_equipment_5
+		family = fra_infantry_tank_equipment_5
 		priority = 50
 		visual_level = 1
 		maximum_speed = 4
@@ -4286,7 +4284,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 8
 		hard_attack = 8
-		ap_attack = 50
+		ap_attack = 50				# 37mm SA38
 		air_attack = 0
 		
 		#Space taken in convoy
@@ -4299,39 +4297,89 @@ equipments = {
 			tungsten = 1
 		}
 	}
-#####
-	#Medium Tank
-	fra_medium_tank_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		type = armor
-		group_by = archetype
+	
+# Forges et Chantiers de la Mediterranee
+	#FCM36 (1938)					# This tank had potential to upgrade... In game terms, same stats approximately as R35 and H35, but.. with sloped armour!
+	fra_infantry_tank_equipment_7 = {
+		archetype = infantry_tank_equipment
+		parent = fra_infantry_tank_equipment_6
+		family = fra_infantry_tank_equipment_7
+		priority = 50
+		visual_level = 1
+		maximum_speed = 4
 		
-		interface_category = interface_category_armor
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-			
-			tank_aa_upgrade
-			#tank_at_upgrade
-			#tank_art_upgrade 
-			tank_sights_upgrade
-			tank_radio_upgrade
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 17
+		hardness = 0.7
+		armor_value = 40
 
-			tank_sloped_upgrade
-			tank_anti_inf_upgrade 
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 8
+		ap_attack = 50				# 37mm SA38
+		air_attack = 0
+		
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 18
+		resources = {
+			oil = 2
+			steel = 6
+			tungsten = 1
 		}
+	}
+	
+	#AMX 38 (1940?)	
+		fra_infantry_tank_equipment_8 = {
+		archetype = infantry_tank_equipment
+		parent = fra_infantry_tank_equipment_7
+		family = fra_infantry_tank_equipment_7
+		priority = 50
+		visual_level = 1
+		maximum_speed = 4
+		
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 17
+		hardness = 0.7
+		armor_value = 40
 
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 8
+		ap_attack = 50				# 47mm 
+		air_attack = 0
+		
+		#Space taken in convoy
+		lend_lease_cost = 10
+		
+		build_cost_ic = 18
+		resources = {
+			oil = 2
+			steel = 6
+			tungsten = 1
+		}
+	}
+	
+##### Medium French Tank
 
+	
+	#D1 1930 aprox					# First family of medium French tanks
+	fra_medium_tank_equipment_1 = {
+		archetype = medium_tank_equipment
+		parent = medium_tank_equipment_0
+		family = fra_medium_tank_equipment_1
+		
+		priority = 50
+		visual_level = 1
+		
 		#Misc Abilities
 		maximum_speed = 4
 		reliability = 0.5
 
 		#Defensive Abilities
-
 		defense = 7 #5
 		breakthrough = 36
 		hardness = 0.7
@@ -4353,17 +4401,15 @@ equipments = {
 			steel = 4
 		}
 	}
-	#Somua S35 1936
-	fra_medium_tank_equipment_1 = {
-		archetype = fra_medium_tank_equipment
-		priority = 50
-		visual_level = 1
-	}
+
 	
-	#Somua S40 (1940)
-	fra_med_tank_equipment_2 = {
+	#D2 
+	fra_medium_tank_equipment_2 = {
 		archetype = fra_medium_tank_equipment
 		parent = fra_medium_tank_equipment_1
+		family = fra_medium_tank_equipment_1
+		
+		priority = 50
 		visual_level = 0
 	
 		maximum_speed = 5
@@ -4373,121 +4419,82 @@ equipments = {
 		build_cost_ic = 26 
 	}
 	
-	
-#####
-	#Heavy Tank  
-	fra_heavy_tank_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		type = armor
-		group_by = archetype
+	#D2 bis
+	fra_medium_tank_equipment_3 = {
+		archetype = fra_medium_tank_equipment
+		parent = fra_medium_tank_equipment_2
+		family = fra_medium_tank_equipment_1
 		
-		interface_category = interface_category_armor
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_gun_upgrade
-			
-			tank_aa_upgrade
-			#tank_at_upgrade
-			#tank_art_upgrade 
-			tank_sights_upgrade
-			tank_radio_upgrade
-
-			tank_sloped_upgrade
-			tank_anti_inf_upgrade 
-		}
-
-
-		#Misc Abilities
-		maximum_speed = 3
-		reliability = 0.4
-
-		#Defensive Abilities
-		defense = 8
-		breakthrough = 36
-		hardness = 0.9
-		armor_value = 60 #70
-
-		#Offensive Abilities
-		soft_attack = 15
-		hard_attack = 9 #12
-		ap_attack = 40 #35
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 14
-		
-		build_cost_ic = 40 # cost/ resources doubled for reference
-		resources = {
-			oil = 3
-			tungsten = 5
-			steel = 6
-		}
-	}
-	#Char B bis 1936
-	fra_heavy_tank_equipment_1 = {
-		archetype = fra_heavy_tank_equipment
-		priority = 40
-		visual_level = 1
-	}
-	
-## VARIANTS ##
-	fra_medium_art_equipment = {
-		is_archetype = yes
-		is_buildable = no
-		type = { 
-			armor
-			artillery
-		}
-		group_by = archetype
-		
-		interface_category = interface_category_armor
-		
-		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			#tank_gun_upgrade
-			
-			tank_aa_upgrade
-			#tank_at_upgrade
-			tank_art_upgrade 
-			tank_sights_upgrade
-			tank_radio_upgrade
-
-			tank_sloped_upgrade
-			tank_anti_inf_upgrade 
-		}
-
-				#Misc Abilities
-		maximum_speed = 5.5
-		reliability = 0.6
-
-		#Defensive Abilities
-		defense = 6
-		breakthrough = 6
-		hardness = 0.55
-		armor_value = 48
-
-		#Offensive Abilities
-		soft_attack = 30 #92
-		hard_attack = 1.7
-		ap_attack = 6
-		
-		build_cost_ic = 28
-		resources = {
-			oil = 2
-			tungsten = 1
-			steel = 4
-		}
-
-	}
-	#SAu 40 (1940)
-	fra_medium_art_equipment_1 = {
-		archetype = fra_medium_art_equipment
-		priority = 20
+		priority = 50
 		visual_level = 0
+	
+		maximum_speed = 5
+		defense = 11
+	    armor_value = 57
+		ap_attack = 58
+		build_cost_ic = 26 
+	}
+	
+	# AMC34										# Second family of medium French tanks
+	fra_medium_tank_equipment_4 = {
+		archetype = fra_medium_tank_equipment
+		parent = fra_medium_tank_equipment_1
+		family = fra_medium_tank_equipment_4
+		
+		priority = 50
+		visual_level = 0
+	
+		maximum_speed = 5
+		defense = 11
+	    armor_value = 57
+		ap_attack = 58
+		build_cost_ic = 26 
+	}
+	
+	# AMC35
+	fra_medium_tank_equipment_5 = {
+		archetype = fra_medium_tank_equipment
+		parent = fra_medium_tank_equipment_4
+		family = fra_medium_tank_equipment_4
+		
+		priority = 50
+		visual_level = 0
+	
+		maximum_speed = 5
+		defense = 11
+	    armor_value = 57
+		ap_attack = 58
+		build_cost_ic = 26 
+	}
+	
+	# Somua S35								# Last family of medium French tanks
+	fra_medium_tank_equipment_6 = {
+		archetype = fra_medium_tank_equipment
+		parent = fra_medium_tank_equipment_1
+		family = fra_medium_tank_equipment_6
+		
+		priority = 50
+		visual_level = 0
+	
+		maximum_speed = 5
+		defense = 11
+	    armor_value = 57
+		ap_attack = 58
+		build_cost_ic = 26 
+	}
+	
+	# AMX 38
+	fra_medium_tank_equipment_7 = {
+		archetype = fra_medium_tank_equipment
+		parent = fra_medium_tank_equipment_6
+		family = fra_medium_tank_equipment_6
+		
+		priority = 50
+		visual_level = 0
+	
+		maximum_speed = 5
+		defense = 11
+	    armor_value = 57
+		ap_attack = 58
+		build_cost_ic = 26 
 	}
