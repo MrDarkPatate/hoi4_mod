@@ -11,11 +11,11 @@ set_technology = {
 	ww1_submarine = 1
 	########## infantry ###########
 	infantry_weapons = 1
-	#infantry_weapons1 = 1			# France used old WW1 weapons. Only 250.000 new rifles by mid 1940
+	#infantry_weapons1 = 1					# France used old WW1 weapons. Only 250.000 new rifles when war started. That is around 1200 equipment.
 	hmg = 1
 	mortars = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
+	# motorised_infantry = 1					# mmmh these were not available so soon.
 	semi_motorised_infantry = 1
 	infantry_uniforms = 1
 	tech_Garrison = 1
@@ -35,33 +35,32 @@ set_technology = {
 	interwar_artillery = 1
 	gw_med_artillery = 1
 	interwar_medartillery = 1
-	# medartillery1 = 1				# France used WW1 artillery
+	# medartillery1 = 1						# France used WW1 artillery
 	gw_heavy_artillery = 1
-	# Hvartillery1 = 1				# France used WW1 artillery
+	# Hvartillery1 = 1						# France used WW1 artillery
 	superartillery1 = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
 	############ armor ############
-	generic_armor = 1
-	#gwtank = 1			#*** all changed HS
+	# generic_armor = 1
+	gwtank = 1			#*** all changed HS
 	#basic_light_tank = 1
 	#basic_heavy_tank = 1
 	#improved_light_tank = 1
 	#tech_inf_tanks = 1
 	tech_ac_recon = 1
 	tech_Tankettes = 1
-	#tech_Gun_Carriers = 1
+	tech_Gun_Carriers = 1		# UVehicles?
 	
 	# New armor techs
 	tech_fra_infantry_tank_equipment_1 = 1		# Ft17. 1580 tanks in stock
 	tech_fra_infantry_tank_equipment_2 = 1		# Note. This tank was only for export. Poland had some.
 	tech_fra_infantry_tank_equipment_3 = 1		# R35 On production since mid 1935. Around 100 of the 300 made by dec 1935
 	tech_fra_medium_tank_equipment_1 = 1		# D1 - 160 tanks in stock. D2... building started mid 1936
-	tech_fra_medium_tank_equipment_4 = 1		# 
-	tech_fra_medium_tank_equipment_5 = 1		# AMC 34. On production since oct 1935, perhaps 6 in stock.
-	tech_fra_heavy_tank_equipment_1 = 1			# 2C
-	tech_fra_heavy_tank_equipment_2 = 1			# 2C bis
-	tech_fra_heavy_tank_equipment_3 = 1			# B1. On production since mid 1935. Just a few made b4 1936
+	tech_fra_medium_tank_equipment_4 = 1		# AMC 34 12 in stock.
+	tech_fra_heavy_tank_equipment_1 = 1			# 2C 10 in stock
+	tech_fra_heavy_tank_equipment_2 = 1			# 2C bis none in stock
+	tech_fra_heavy_tank_equipment_3 = 1			# B1. On production since mid 1935. Around 10 made b4 1936, producing 2/month 
 	
 	############# aircraft ############
 	#tech_testing_4 = 1
