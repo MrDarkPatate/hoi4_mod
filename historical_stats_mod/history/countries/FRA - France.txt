@@ -11,7 +11,7 @@ set_technology = {
 	ww1_submarine = 1
 	########## infantry ###########
 	infantry_weapons = 1
-	#infantry_weapons1 = 1					# France used old WW1 weapons. Only 250.000 new rifles when war started. That is around 1200 equipment.
+	#infantry_weapons1 = 1						# France used old WW1 weapons. Only 250.000 new rifles when war started.
 	hmg = 1
 	mortars = 1
 	tech_mountaineers = 1
@@ -42,8 +42,8 @@ set_technology = {
 	interwar_antiair = 1
 	interwar_antitank = 1
 	############ armor ############
-	# generic_armor = 1
-	gwtank = 1			#*** all changed HS
+	french_tech = 1
+	#gwtank = 1			#*** all changed HS
 	#basic_light_tank = 1
 	#basic_heavy_tank = 1
 	#improved_light_tank = 1

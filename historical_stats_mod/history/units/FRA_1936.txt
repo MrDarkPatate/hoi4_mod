@@ -97,7 +97,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division de Cavalerie" 			# Division de Cavalerie
+	name = "Division de Cavalerie" 				# Division de Cavalerie
 	# Note: Transformed to DLC, DLM divisions, 1936-39 ... Then just 2 x Cavalry / 2 x Infantry 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -106,7 +106,7 @@ division_template = {
 		semi_motorized = { x = 1 y = 0 }
 		semi_motorized = { x = 1 y = 1 }
 
-		artillery_brigade_mot = { x = 2 y = 0 }		# WW1 75. Just 1 x75 / 1x105
+		artillery_brigade_mot = { x = 2 y = 0 }	# WW1 75. Just 1 x75 / 1x105
 		anti_tank_brigade =  { x = 2 y = 1 }
 	}
 	support = {
@@ -121,25 +121,25 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Division Légère Mécanique" 		# Division Légère Mécanique
+	name = "Division Légère Mécanique" 			# Division Légère Mécanique
 
 	regiments = {
-		Infantry_tank = { x = 0 y = 0 }		# 2xBn. of Hotchkiss
+		Infantry_tank = { x = 0 y = 0 }			# 2xBn. of Hotchkiss
 		Infantry_tank = { x = 0 y = 1 } 
-		medium_armor = { x = 0 y = 2 }		# 2xBn. of Somua (initial deploy D1s)
+		medium_armor = { x = 0 y = 2 }			# 2xBn. of Somua (initial deploy D1s)
 		medium_armor = { x = 0 y = 3 }
 		
-		semi_motorized  = { x = 1 y = 0 }			# Adjusted to 1940 3x Mot Bn. Was Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
+		semi_motorized  = { x = 1 y = 0 }		# Adjusted to 1940 3x Mot Bn. Was Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
 		semi_motorized  = { x = 1 y = 1 }
 		semi_motorized  = { x = 1 y = 2 }
 		
-		artillery_brigade_mot = { x = 2 y = 0 }		# 2x WW1 75mm
+		artillery_brigade_mot = { x = 2 y = 0 }	# 2x WW1 75mm
 		artillery_brigade_mot = { x = 2 y = 1 }
 		anti_tank_brigade =  { x = 2 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		tankettes = { x = 0 y = 1 }      	# AMR (tankette) / AMD (ACs)  *** Recon Group consisted of 42 ACs + motorcycles
+		tankettes = { x = 0 y = 1 }      		# AMR (tankette) / AMD (ACs)  *** Recon Group consisted of 42 ACs + motorcycles
 		recon_ac = { x = 0 y = 2 }
 		artillery_medium_mot = { x = 0 y = 3 }	# WW1 105
 		
@@ -195,29 +195,29 @@ division_template = {
 	priority = 0
 }
 division_template = {
-	name = "Division d'Infanterie de Forteresse"			# This can represent Division d'Infanterie de Forteresse
+	name = "Regiment d'Infanterie de Forteresse"			# This can represent Regiment d'Infanterie de Forteresse
 
 	regiments = {
 		garrison = { x = 0 y = 0 }
 		garrison = { x = 0 y = 1 }
 		garrison = { x = 0 y = 2 }
 		
-		garrison = { x = 1 y = 0 }
-		garrison = { x = 1 y = 1 }
-		garrison = { x = 1 y = 2 }
+		#garrison = { x = 1 y = 0 }
+		#garrison = { x = 1 y = 1 }
+		#garrison = { x = 1 y = 2 }
 		
-		garrison = { x = 2 y = 0 }
-		garrison = { x = 2 y = 1 }
-		garrison = { x = 2 y = 2 }
+		#garrison = { x = 2 y = 0 }
+		#garrison = { x = 2 y = 1 }
+		#garrison = { x = 2 y = 2 }
 		
-		artillery_brigade = { x = 2 y = 0 }		# WW1 75mm
-		artillery_brigade = { x = 2 y = 1 }
-		artillery_brigade = { x = 2 y = 2 }
-		artillery_brigade = { x = 2 y = 3 }
+		artillery_brigade = { x = 1 y = 0 }		# WW1 75mm
+		# artillery_brigade = { x = 3 y = 1 }
+		# artillery_brigade = { x = 3 y = 2 }
+		# artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		artillery_medium = { x = 0 y = 1 } 
+		artillery_heavy = { x = 0 y = 1 } 
 	}
 	priority = 0
 }
@@ -242,14 +242,14 @@ units = {
 		location = 13011
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment  ***  2x Inf + 2x Medium 90 D1s, 90 R35
 		start_experience_factor = 0.3
-		force_equipment_variants = { medium_tank_equipment_1 = { owner = "FRA" } }		# D1s
+		force_equipment_variants = { fra_medium_tank_equipment_1 = { owner = "FRA" } }		# D1s
 	}
 	
 	division= {	
 		name = "1ère Brigade de Chars de Combat"
 		location = 6613
 		division_template = "Brigade de Chars de Combat" 			# FT-17s
-		force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.2
 	}
 	
@@ -257,7 +257,7 @@ units = {
 		name = "2ème Brigade de Chars de Combat"
 		location = 11516
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
-		force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.2
 	}
 	
@@ -265,7 +265,7 @@ units = {
 		name = "3ème Brigade de Chars de Combat"
 		location = 11502
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
-		force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.2
 	}
 
@@ -273,7 +273,7 @@ units = {
 		name = "4ème Brigade de Chars de Combat"
 		location = 11506
 		division_template = "Brigade de Chars de Combat" 		# FT-17s
-		force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.2
 
 	}
@@ -282,7 +282,7 @@ units = {
 		name = "5ème Brigade de Chars de Combat"
 		location = 11465
 		division_template = "Brigade de Chars de Combat" 		# R-35s
-		force_equipment_variants = { infantry_tank_equipment_3 = { owner = "FRA" } }
+		force_equipment_variants = { fra_infantry_tank_equipment_3 = { owner = "FRA" } }
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.4
 	}
@@ -527,41 +527,41 @@ units = {
 
 	# Maginot Line -- Divisions d'Forteresse
 	division= {	
-		name = "Longuyon Division d'Infanterie de Forteresse"
+		name = "Longuyon Regiment d'Infanterie de Forteresse"
 		location = 5291
-		division_template = "Division d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
 	}
 	division= {	
-		name = "Metz Division d'Infanterie de Forteresse"
+		name = "Metz Regiment d'Infanterie de Forteresse"
 		location = 11502
-		division_template = "Division d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.6
 
 	}
 	division= {	
-		name = "Sarreguimines Division d'Infanterie de Forteresse"
+		name = "Sarreguimines Regiment d'Infanterie de Forteresse"
 		location = 3629
-		division_template = "Division d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 
 	}
 	division= {	
-		name = "Strassbourg Division d'Infanterie de Forteresse"
+		name = "Strassbourg Regiment d'Infanterie de Forteresse"
 		location = 9503
-		division_template = "Division d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 
 	}
 	division= {	
-		name = "Mulhouse Division d'Infanterie de Forteresse"
+		name = "Mulhouse Regiment d'Infanterie de Forteresse"
 		location = 678
-		division_template = "Division d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.8
 
@@ -677,9 +677,9 @@ units = {
 
 	# Division d'Infanterie Forteresse -- Nice
 	division= {	
-		name = "Nice Division d'Infanterie de Forteresse"
+		name = "Nice Regiment d'Infanterie de Forteresse"
 		location = 9909
-		division_template = "Division d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -701,7 +701,6 @@ units = {
 		name = "1ère Brigade d'Infanterie Algérienne"
 		location = 1145
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -710,7 +709,6 @@ units = {
 		name = "2ème Brigade d'Infanterie Algérienne"
 		location = 1145
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_tank_equipment_1 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -752,7 +750,6 @@ units = {
 		name = "Groupement Cavalerie d'Algérienne"
 		location = 7132
 		division_template = "Division de Cavalerie" 	
-		force_equipment_variants = { infantry_equipment_4 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -805,7 +802,6 @@ units = {
 		name = "Division de Marrakech"	
 		location = 7069
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } } # NOTE: ALL French use now the old WW1 Rifle as it was.
 		start_experience_factor = 0.1
 		
 
@@ -814,7 +810,6 @@ units = {
 		name = "Groupement de Maroc"
 		location = 7100
 		division_template = "Division de Cavalerie" 	
-		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
 		
 
@@ -827,7 +822,6 @@ units = {
 		name = "Troupes de Madagascar"	
 		location = 5222
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_equipment_factor = 0.15
 
 	}
@@ -838,17 +832,13 @@ units = {
 		name = "Troupes de Sénégalais"
 		location = 4948
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		
-
 	}
+	
 	division= {	
 		name = "Troupes de Afrique Equatoriale Française"	
 		location = 5139
 		division_template = "Brigade Coloniale" 	# Miltia unit, reserve equipment
-		# force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_equipment_factor = 0.15
-
 	}
 
 
@@ -1177,10 +1167,10 @@ air_wings = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0				# Changed to Berthiers
 			creator = "FRA"
 		}
-		requested_factories = 4
+		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
 	}
@@ -1194,58 +1184,60 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
+	
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1				# Added
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 33
+	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_0
 			creator = "FRA" 
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
 	}
 
 	add_equipment_production = {
 		equipment = {
-			type = light_tank_equipment_2
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
+			type = motorized_equipment_0
 			creator = "FRA" 
 		}
 		requested_factories = 2
 		progress = 0.4
 		efficiency = 50
 	}
+	
 	add_equipment_production = {
 		equipment = {
 			type = garrison_equipment_0
 			creator = "FRA"
 		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = infantry_uniforms_0
-			creator = "FRA"
-		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.1
 		efficiency = 50
 	}
 	
 	add_equipment_production = {
 		equipment = {
-			type = motorized_lia_equipment_01
+			type = infantry_uniforms_0
+			creator = "FRA"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_lia_equipment_01		# added 
 			creator = "FRA" 
 		}
 		requested_factories = 1
@@ -1255,10 +1247,10 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = fra_infantry_tank_equipment_3	# R35 4/week  (Approx 1000 tanks 
+			type = fra_infantry_tank_equipment_3	# R35 4/week  (Approx 1000 tanks)
 			creator = "FRA"
 		}
-		requested_factories = 3
+		requested_factories = 4
 		progress = 0.1
 		efficiency = 50
 	}
@@ -1268,7 +1260,7 @@ instant_effect = {
 			type = fra_heavy_tank_equipment_3		# B1 2/month
 			creator = "FRA"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.1
 		efficiency = 30
 	}
@@ -1429,6 +1421,13 @@ instant_effect = {
 			amount = 3000
 			producer = FRA
 		}
+			
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_0
+			amount = 2000
+			producer = FRA
+		}
+		
 	add_equipment_to_stockpile = {
 		type = HQ_equipment_0
 			amount = 400
@@ -1457,13 +1456,13 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = fra_infantry_tank_equipment_1
-			amount = 560						# 1580 Ft17 in all
+			amount = 1000						# Roughly 1600 Ft17 in all
 			producer = FRA
 		}
 	
 	add_equipment_to_stockpile = {
 		type = fra_medium_tank_equipment_1	
-			amount = 70						#D1s. Another 90 should be in 1DLM
+			amount = 70							#D1s. Another 90 should be in 1DLM
 			producer = FRA
 		}
 		

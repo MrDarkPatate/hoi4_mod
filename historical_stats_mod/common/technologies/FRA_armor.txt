@@ -3,24 +3,21 @@
 
 technologies = {
 	#Vertical position
-	@1917 = 0
-	@1918 = 1
+	@1917 = -2
+	@1918 = 0
 	@1930 = 2
-	@1933 = 4
-	@1934 = 6
-	@1935 = 8
-	@1936 = 10
-	@1937 = 12
-	@1938 = 14
-	@1939 = 16
-	@1940 = 18
-	@1941 = 20
-	@1942 = 22
-	@1943 = 24
-	@1944 = 26
-	@1945 = 28
-	@1948 = 30
-	@1949 = 32
+	@1935 = 4
+	@1936 = 6
+	@1937 = 8
+	@1938 = 10
+	@1939 = 12
+	@1940 = 14
+	@1941 = 16
+	@1942 = 18
+	@1943 = 20
+	@1944 = 22
+	@1945 = 24
+	@1946 = 26
 	
 	french_tech = {
 
@@ -52,7 +49,7 @@ technologies = {
 			fra_infantry_tank_equipment_1
 		}
 		enable_subunits = {
-			french_infantry_tank
+			infantry_tank
 		}
 				
 		path = {
@@ -142,10 +139,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1935
+		start_year = 1936
 		folder = {
 			name = frencharmor_folder
-			position = { x = -9 y = @1935 }
+			position = { x = -9 y = @1936 }
 		}
 		
 		ai_will_do = {
@@ -167,11 +164,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
-		start_year = 1938
+		research_cost = 1.2
+		start_year = 1939
 		folder = {
 			name = frencharmor_folder
-			position = { x = -9 y = @1938 }
+			position = { x = -9 y = @1939 }
 		}
 		
 		ai_will_do = {
@@ -207,7 +204,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = frencharmor_folder
-			position = { x = -5 y = @1935 }
+			position = { x = -4 y = @1935 }
 		}
 		
 		ai_will_do = {
@@ -230,11 +227,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.2
 		start_year = 1938
 		folder = {
 			name = frencharmor_folder
-			position = { x = -5 y = @1938 }
+			position = { x = -4 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -262,11 +259,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
-		start_year = 1936
+		research_cost = 1.2
+		start_year = 1938
 		folder = {
 			name = frencharmor_folder
-			position = { x = -7 y = @1936 }
+			position = { x = -7 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -290,7 +287,7 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.2
 		start_year = 1940
 		folder = {
 			name = frencharmor_folder
@@ -309,7 +306,7 @@ technologies = {
 		
 ########### MEDIUMS D1 - D2 - Somua - ACM *** Done until here
 ############## medium tanks, alternate project to the heavy B1
-	# Renault D1						
+	# Renault D1													should be light tank					
 	tech_fra_medium_tank_equipment_1 = {
 		
 		enable_equipments = {
@@ -338,10 +335,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1933
+		start_year = 1932
 		folder = {
 			name = frencharmor_folder
-			position = { x = 1 y = @1933 }
+			position = { x = 2 y = @1930 }			#1932 ,positioning reasons
 		}
 		
 		ai_will_do = {
@@ -367,11 +364,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
+		research_cost = 2							#first true medium, D1 was considered as a light tank
 		start_year = 1936
 		folder = {
 			name = frencharmor_folder
-			position = { x = 1 y = @1936 }
+			position = { x = 1 y = @1936 }			#from 5/'35 to 2/'37
 		}
 		
 		ai_will_do = {
@@ -394,11 +391,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
-		start_year = 1939
+		research_cost = 1.2
+		start_year = 1940
 		folder = {
 			name = frencharmor_folder
-			position = { x = 1 y = @1939 }
+			position = { x = 1 y = @1940 }				# very few built
 		}
 		
 		ai_will_do = {
@@ -412,7 +409,7 @@ technologies = {
 	}
 	
 	
-	# AMC 34									# 
+	# AMC 34									# 	definitely light tank, 9 tons
 	tech_fra_medium_tank_equipment_4 = {
 		
 		enable_equipments = {
@@ -430,7 +427,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = frencharmor_folder
-			position = { x = -2 y = @1934 }
+			position = { x = -1 y = @1930 }
 		}
 		
 		ai_will_do = {
@@ -453,11 +450,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
-		start_year = 1935
+		research_cost = 2					#major improvement compared to AMC 34
+		start_year = 1938
 		folder = {
 			name = frencharmor_folder
-			position = { x = -2 y = @1935 }
+			position = { x = -1 y = @1938 }
 		}
 		
 		ai_will_do = {
@@ -485,10 +482,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1935
+		start_year = 1937
 		folder = {
 			name = frencharmor_folder
-			position = { x = 4 y = @1935 }
+			position = { x = 4 y = @1937 }				#At the end of 1937
 		}
 		
 		ai_will_do = {
@@ -513,10 +510,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1941
 		folder = {
 			name = frencharmor_folder
-			position = { x = 4 y = @1940 }
+			position = { x = 4 y = @1941 }
 		}
 		
 		ai_will_do = {
@@ -551,7 +548,7 @@ technologies = {
 		start_year = 1918
 		folder = {
 			name = frencharmor_folder
-			position = { x = 9 y = @1918 }
+			position = { x = 8 y = @1918 }
 		}
 		
 		ai_will_do = {
@@ -579,10 +576,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1933
+		start_year = 1930
 		folder = {
 			name = frencharmor_folder
-			position = { x = 9 y = @1933 }
+			position = { x = 8 y = @1930 }			#just for positioning reasons
 		}
 		
 		ai_will_do = {
@@ -614,7 +611,7 @@ technologies = {
 		start_year = 1935
 		folder = {
 			name = frencharmor_folder
-			position = { x = 9 y = @1935 }
+			position = { x = 8 y = @1935 }
 		}
 		
 		ai_will_do = {
@@ -641,11 +638,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
-		start_year = 1936
+		research_cost = 1.2
+		start_year = 1937
 		folder = {
 			name = frencharmor_folder
-			position = { x = 9 y = @1936 }
+			position = { x = 8 y = @1937 }					#april 37
 		}
 		
 		sub_technologies = {
@@ -678,11 +675,11 @@ technologies = {
 			french_tech = 1
 		}
 
-		research_cost = 2
-		start_year = 1938
+		research_cost = 2					#radical improvement, 2 prototypes
+		start_year = 1940
 		folder = {
 			name = frencharmor_folder
-			position = { x = 9 y = @1938 }
+			position = { x = 8 y = @1940 }
 		}
 		
 		sub_technologies = {
@@ -714,7 +711,7 @@ technologies = {
 		start_year = 1940
 		folder = {
 			name = frencharmor_folder
-			position = { x = 9 y = @1940 }
+			position = { x = 11 y = @1940 }		#non built before capitulation
 		}
 		
 		ai_will_do = {
