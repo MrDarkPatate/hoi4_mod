@@ -4450,7 +4450,7 @@
 	
 	#D2 
 	fra_medium_tank_equipment_2 = {
-		archetype = fra_medium_tank_equipment
+		archetype = medium_tank_equipment
 		parent = fra_medium_tank_equipment_1
 		family = fra_medium_tank_equipment_1
 		
@@ -4486,7 +4486,7 @@
 	
 	#D2 bis
 	fra_medium_tank_equipment_3 = {
-		archetype = fra_medium_tank_equipment
+		archetype = medium_tank_equipment
 		parent = fra_medium_tank_equipment_2
 		family = fra_medium_tank_equipment_1
 		
@@ -4523,7 +4523,7 @@
 	
 	# AMC34										# Second family of medium French tanks
 	fra_medium_tank_equipment_4 = {
-		archetype = fra_medium_tank_equipment
+		archetype = medium_tank_equipment
 		parent = fra_medium_tank_equipment_1
 		family = fra_medium_tank_equipment_4
 			
@@ -4560,7 +4560,7 @@
 	
 	# AMC35
 	fra_medium_tank_equipment_5 = {
-		archetype = fra_medium_tank_equipment
+		archetype = medium_tank_equipment
 		parent = fra_medium_tank_equipment_4
 		family = fra_medium_tank_equipment_4
 		
@@ -4598,7 +4598,7 @@
 	
 	# Somua S35						# Last family of medium French tanks
 	fra_medium_tank_equipment_6 = {
-		archetype = fra_medium_tank_equipment
+		archetype = medium_tank_equipment
 		parent = fra_medium_tank_equipment_1
 		family = fra_medium_tank_equipment_6
 			
@@ -4635,7 +4635,7 @@
 	
 	# G1R
 	fra_medium_tank_equipment_7 = {
-		archetype = fra_medium_tank_equipment
+		archetype = medium_tank_equipment
 		parent = fra_medium_tank_equipment_6
 		family = fra_medium_tank_equipment_6
 			
