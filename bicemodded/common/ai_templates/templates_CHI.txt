@@ -2,11 +2,12 @@
 infantry_CHI = {
 	available_for = {
 		CHI
+		PRC
 	}
 	roles = {
 		infantry
 	}
-	match_to_count = 0.7
+	match_to_count = 0.6
 infantry_default_CHI = {
 	target_width = 19.9
 	width_weight = 0.1
@@ -18,7 +19,7 @@ infantry_default_CHI = {
 	
 	target_template = {
 		weight = 1
-		match_value = 25990.0
+		match_value = 28990.0
 		
 		support = {
 			recon = 1
@@ -27,8 +28,7 @@ infantry_default_CHI = {
 		}
 		
 		regiments = {
-			infantry = 2
-			militia = 8
+			militia = 9
 			artillery_brigade = 1
 		}
 	}
@@ -37,8 +37,74 @@ infantry_default_CHI = {
 	target_min_match = 1
 }
 
+infantry_default_CHI_2 = {
+	target_width = 19.9
+	width_weight = 0.1
+	column_swap_factor = 0.5
+	
+	can_upgrade_in_field = {
+		always = no
+	}
+	
+	target_template = {
+		weight = 1
+		match_value = 13990.0
+		
+		support = {
+			recon = 1
+			field_hospital = 1
+			DIV_HQ = 1
+		}
+		
+		regiments = {
+			infantry = 8
+			light_infantry = 4
+			artillery_brigade = 1
+		}
+	}
+    replace_at_match = 0.4
+	replace_with = infantry_default_CHI
+	target_min_match = 0.4
+}
 
-light_infantry_default_CHI= {
+}
+
+L_Infantry_CHI = {
+
+	available_for = {
+		CHI
+	}
+	
+	roles = {
+		light_infantry
+	}
+
+    match_to_count = 0.65
+
+	
+	light_infantry_div_CHI = {
+		target_width = 18.5 
+	width_weight = 0.6
+	column_swap_factor = 0.6
+
+		target_template = {
+		weight = 1
+		match_value = 32990.0
+		regiments = {
+			light_infantry = 6	
+			artillery_brigade = 1
+			mountain_artillery_brigade = 1
+		}
+	
+		support = {
+			recon = 1
+			engineer = 1
+			DIV_HQ = 1
+		}	
+		}
+	}
+	
+	light_infantry_default_CHI= {
 	target_width = 18.5 
 	width_weight = 0.6
 	column_swap_factor = 0.6
@@ -56,15 +122,30 @@ light_infantry_default_CHI= {
 		}
 		
 		regiments = {
-			light_infantry = 5
-			infantry = 2
+			light_infantry = 6
 			artillery_brigade = 1
 			mountain_artillery_brigade = 1
 			anti_tank = 1
 		}
 	}
 }
+	
 
+}
+
+
+
+Garrison_CHI = {
+	available_for = {
+		CHI
+	} 
+	
+		
+	roles = {
+	garrison
+	}
+	
+	match_to_count = 0.6
 militia_default_CHI = {
 	target_width = 14.9 
 	width_weight = 0.8
@@ -90,8 +171,86 @@ militia_default_CHI = {
 		}
 	}
 }
-
 }
+
+Garrison_PRC = {
+	available_for = {
+		PRC
+	} 
+	
+		
+	roles = {
+	garrison
+	}
+	
+	match_to_count = 0.6
+militia_default_CHI = {
+	target_width = 14.9 
+	width_weight = 0.8
+	column_swap_factor = 0.5
+	
+	
+	target_template = {
+		weight = 1
+		match_value = 24990.0
+		
+
+		support = {
+						
+			military_police = 1
+			recon_cav = 1
+		}
+		
+		regiments = {
+			garrison = 6
+			#artillery_brigade = 1
+			#anti_air = 1
+
+		}
+	}
+}
+}
+
+mountain_PRC = {
+	available_for = {
+		PRC
+	} 
+	
+		
+	roles = {
+	mountaineers
+	}
+	
+	match_to_count = 0.65
+militia_default_CHI = {
+	target_width = 14.9 
+	width_weight = 0.8
+	column_swap_factor = 0.5
+	
+	
+	target_template = {
+		weight = 1
+		match_value = 24990.0
+		
+
+		support = {
+						
+			DIV_HQ = 1
+			recon_cav = 1
+		}
+		
+		regiments = {
+			mountaineers = 8
+			#artillery_brigade = 1
+			#anti_air = 1
+
+		}
+	}
+}
+}
+
+
+
 
 
 
