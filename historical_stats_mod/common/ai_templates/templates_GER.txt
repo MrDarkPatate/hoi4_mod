@@ -9,7 +9,7 @@ armored_GER = {
 		armor
 	}
 	
-	match_to_count = 0.62
+	match_to_count = 0.66
 	
 light_armor_default_GER = {
 	target_width = 21.9
@@ -18,28 +18,26 @@ light_armor_default_GER = {
 	
 	target_template = {
 		weight = 1
-		match_value = 24990.0
+		match_value = 11990.0
 		
 		support = {
 			engineer = 1
 			recon_mot = 1
-			#artillery = 1
 			maintenance_company = 1
 		    	logistics_company = 1
 				DIV_HQ = 1
 		}
 		
 		regiments = {
-			light_armor = 5
-			medium_armor = 1
+			light_armor = 8
 			motorized = 5
 			artillery_brigade_mot = 2
 			light_sp_artillery_brigade = 1
 		}
 	}
-	replace_at_match = 1
+	replace_at_match = 0.65
 	replace_with = medium_armor_default_GER
-	target_min_match = 1
+	target_min_match = 0.65
 }
 
 
@@ -50,7 +48,7 @@ medium_armor_default_GER = {
 
 	target_template = {
 		weight = 1
-		match_value = 29990.0
+		match_value = 21990.0
 		
 		support = {
 			engineer = 1
@@ -61,13 +59,44 @@ medium_armor_default_GER = {
 		}
 		
 		regiments = {
-		    light_armor = 3
-			medium_armor = 4
+		    light_armor = 4
+			medium_armor = 3
 			motorized = 5
 			artillery_brigade_mot = 1
 			medium_tank_destroyer_brigade = 1
 			light_tank_destroyer_brigade = 1
 			light_sp_artillery_brigade = 1
+		}
+	}
+	replace_at_match = 0.65
+	replace_with = medium_armor_late_GER
+	target_min_match = 0.7
+}
+
+medium_armor_late_GER = {
+	target_width = 23.9 
+	width_weight = 0.5
+	column_swap_factor = 0.3
+
+	target_template = {
+		weight = 1
+		match_value = 31990.0
+		
+		support = {
+			engineer = 1
+			recon_mot = 1
+		    maintenance_company = 1
+		    logistics_company = 1
+			DIV_HQ = 1
+		}
+		
+		regiments = {
+			medium_armor = 5
+			motorized = 5
+			medium_tank_destroyer_brigade = 1
+			light_tank_destroyer_brigade = 1
+			light_sp_artillery_brigade = 1
+			modern_sp_artillery_brigade = 1
 		}
 	}
 	replace_at_match = 1
@@ -83,7 +112,7 @@ heavy_armor_default_GER = {
 	
 	target_template = {
 		weight = 1
-		match_value = 23990.0
+		match_value = 1.0    # NOT USED 
 		support = {
 			engineer = 1
 			recon_mot = 1
