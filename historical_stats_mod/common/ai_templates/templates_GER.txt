@@ -9,7 +9,7 @@ armored_GER = {
 		armor
 	}
 	
-	match_to_count = 0.66
+	match_to_count = 0.63
 	
 light_armor_default_GER = {
 	target_width = 21.9
@@ -30,7 +30,7 @@ light_armor_default_GER = {
 		
 		regiments = {
 			light_armor = 8
-			motorized = 5
+			motorized = 3
 			artillery_brigade_mot = 2
 			light_sp_artillery_brigade = 1
 		}
@@ -61,7 +61,7 @@ medium_armor_default_GER = {
 		regiments = {
 		    light_armor = 4
 			medium_armor = 3
-			motorized = 5
+			motorized = 3
 			artillery_brigade_mot = 1
 			medium_tank_destroyer_brigade = 1
 			light_tank_destroyer_brigade = 1
@@ -92,7 +92,7 @@ medium_armor_late_GER = {
 		
 		regiments = {
 			medium_armor = 5
-			motorized = 5
+			motorized = 3
 			medium_tank_destroyer_brigade = 1
 			light_tank_destroyer_brigade = 1
 			light_sp_artillery_brigade = 1
