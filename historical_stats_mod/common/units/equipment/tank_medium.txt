@@ -4375,9 +4375,9 @@
 	}
 	
 	#AMX 40 (1942)								# What if tank
-		fra_infantry_tank_equipment_8 = {
+		fra_infantry_tank_equipment_9 = {
 		archetype = infantry_tank_equipment
-		parent = fra_infantry_tank_equipment_7
+		parent = fra_infantry_tank_equipment_8
 		family = fra_infantry_tank_equipment_7
 		priority = 50
 		visual_level = 1
