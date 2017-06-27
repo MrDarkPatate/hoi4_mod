@@ -249,6 +249,15 @@ units = {
 		force_equipment_variants = { fra_medium_tank_equipment_1 = { owner = "FRA" } }		# D1s
 	}
 	
+	division= {	
+		name = "511 Régiment de Chars de Combat"
+		location = 11506
+		division_template = "Bataillon de Chars de Combat" 			# 2C
+		force_equipment_variants = { fra_heavy_tank_equipment_1 = { owner = "FRA" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.2
+	}
+
 #	division= {	
 #		name = "1ère Brigade de Chars de Combat"
 #		location = 6613
@@ -306,7 +315,7 @@ units = {
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-				force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
+		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	
 	# Xe Corps d'Armée (Région Militaire in 1936) -- Strassbourg
@@ -1483,7 +1492,7 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = fra_infantry_tank_equipment_1
-			amount = 1000					# Roughly 1600 Ft17 in all
+			amount = 1200					# Roughly 1600 Ft17 in all 
 			producer = FRA
 		}
 	
@@ -1500,7 +1509,7 @@ instant_effect = {
 	
 	add_equipment_to_stockpile = {
 		type = fra_heavy_tank_equipment_1	
-			amount = 10						#Char 2C
+			amount = 1						#Char 2C Now this is into the 511 Rgt. Should upgrade to DCR...
 			producer = FRA
 		}
 	

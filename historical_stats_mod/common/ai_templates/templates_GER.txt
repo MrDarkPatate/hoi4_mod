@@ -336,13 +336,9 @@ cavalry_default_GER = {
 
 motorized_GER = {
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 
-	roles = {
-		motorized
-	}
+	roles = { motorized }
 	
 	match_to_count = 0.75
 semi_motorized_default_GER = {
@@ -371,7 +367,7 @@ semi_motorized_default_GER = {
 		}
 	}
 	replace_at_match = 1
-	replace_with = semi_motorized_default_GER
+	replace_with = motorized_default_GER
 	target_min_match = 1
 }
 
@@ -469,7 +465,7 @@ mechanized_default_GER = {
 		}
 		
 		regiments = {
-			motorized = 8
+			motorized = 6
 			medium_sp_artillery_brigade = 1
 			medium_tank_destroyer_brigade = 1
 			heavy_sp_artillery_brigade = 1
@@ -479,6 +475,38 @@ mechanized_default_GER = {
 		}
 	}
 }
+ss_mechanized_default_GER = {
+	target_width = 24.9
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+	target_template = {
+		weight = 1
+		match_value = 24990.0
+		
+		support = {
+			SS_DIV_HQ = 1
+			ss_engineer = 1
+			#artillery_medium = 1
+			ss_recon_mot = 1
+			ss_maintenance_company = 1
+			ss_logistics_company = 1
+		}
+		
+		regiments = {
+			ss_motorized = 6
+			ss_artillery_brigade_mot = 2
+			ss_anti_tank = 2
+			ss_medium_sp_artillery_brigade = 1
+			ss_medium_tank_destroyer_brigade = 1
+			ss_heavy_sp_artillery_brigade = 1
+			ss_heavy_tank_destroyer_brigade = 1
+			ss_heavy_armor = 1
+			ss_medium_armor = 1
+		}
+	}
+}
+
 }
 
 
