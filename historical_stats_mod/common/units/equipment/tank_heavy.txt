@@ -1721,7 +1721,8 @@ equipments = {
 		build_cost_ic = 44
 	}
 	
-	# FRENCH HEAVY TANKS (INCLUDING S-HVY)
+############################## FRENCH HEAVY TANKS (INCLUDING S-HVY)
+
 	#Char 2C 1921 aprox					# First family of hvy French tanks
 	fra_heavy_tank_equipment_1 = {
 		archetype = heavy_tank_equipment
@@ -1732,29 +1733,30 @@ equipments = {
 		visual_level = 1
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.5
+		maximum_speed = 3.5				#15kmh
+		reliability = 0.5				# so crap...
 
 		#Defensive Abilities
-		defense = 7 #5
-		breakthrough = 36
-		hardness = 0.7
-		armor_value = 23
+		defense = 3
+		breakthrough = 47
+		hardness = 0.61
+		armor_value = 40				# 45mm 1921!
 
 		#Offensive Abilities
-		soft_attack = 10 #15
-		hard_attack = 14
-		ap_attack = 50
+		soft_attack = 11
+		hard_attack = 11
+		ap_attack = 38					#75mm ... old style
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 22 
+		build_cost_ic = 69.7			# 69 tons... !
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 5
+			tungsten = 2
+			chromium = 1
 		}
 	}
 	
@@ -1768,29 +1770,30 @@ equipments = {
 		visual_level = 1
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.5
+		maximum_speed = 3.1				# 11kmh
+		reliability = 0.45				# too massive weight
 
 		#Defensive Abilities
-		defense = 7 #5
-		breakthrough = 36
-		hardness = 0.7
-		armor_value = 23
+		defense = 8
+		breakthrough = 49
+		hardness = 0.61
+		armor_value = 40				# 45mm 1921!
 
 		#Offensive Abilities
-		soft_attack = 10 #15
-		hard_attack = 14
-		ap_attack = 50
+		soft_attack = 30
+		hard_attack = 8
+		ap_attack = 20					#155mm howitzer
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 22 
+		build_cost_ic = 75.6			# 74 tons So expensive for so low return...
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 5
+			tungsten = 2
+			chromium = 1
 		}
 	}
 	
@@ -1804,33 +1807,34 @@ equipments = {
 		visual_level = 1
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.5
+		maximum_speed = 4				# 20kmh
+		reliability = 0.5				# 
 
 		#Defensive Abilities
-		defense = 7 #5
-		breakthrough = 36
-		hardness = 0.7
-		armor_value = 23
+		defense = 13
+		breakthrough = 95
+		hardness = 0.77
+		armor_value = 71				# 100mm...sloped
 
 		#Offensive Abilities
-		soft_attack = 10 #15
-		hard_attack = 14
-		ap_attack = 50
+		soft_attack = 21
+		hard_attack = 24
+		ap_attack = 90 					# 1x90mmDCA + 1x 47mmSA37
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 22 
+		build_cost_ic = 93.1			# 139 tons So expensive for so low return...
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 7
+			tungsten = 3
+			chromium = 1
 		}
 	}
 	
-	#Char B1			
+	#Char B1	1935		
 	fra_heavy_tank_equipment_3 = {
 		archetype = heavy_tank_equipment
 		parent = fra_heavy_tank_equipment_1
@@ -1840,33 +1844,34 @@ equipments = {
 		visual_level = 1
 		
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 4.8			#28kmh
 		reliability = 0.5
 
 		#Defensive Abilities
-		defense = 7 #5
-		breakthrough = 36
-		hardness = 0.7
-		armor_value = 23
+		defense = 8
+		breakthrough = 34
+		hardness = 0.59
+		armor_value = 44			#40mm sloped
 
 		#Offensive Abilities
-		soft_attack = 10 #15
-		hard_attack = 14
-		ap_attack = 50
+		soft_attack = 10
+		hard_attack = 11
+		ap_attack = 38				# 47Sa34 ... crap
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 22 
+		build_cost_ic = 49			# 28 tons 
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 3
+			tungsten = 2
+			chromium = 1
 		}
 	}	
 	
-	#Char B1 bis		
+	#Char B1 bis	1937	
 	fra_heavy_tank_equipment_4 = {
 		archetype = heavy_tank_equipment
 		parent = fra_heavy_tank_equipment_3
@@ -1876,29 +1881,30 @@ equipments = {
 		visual_level = 1
 		
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 4.5			#25kmh
 		reliability = 0.5
 
 		#Defensive Abilities
-		defense = 7 #5
-		breakthrough = 36
-		hardness = 0.7
-		armor_value = 23
+		defense = 11
+		breakthrough = 41
+		hardness = 0.67
+		armor_value = 57			# 60mm
 
 		#Offensive Abilities
-		soft_attack = 10 #15
-		hard_attack = 14
-		ap_attack = 50
+		soft_attack = 10
+		hard_attack = 13
+		ap_attack = 49					# 47sa35
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 22 
+		build_cost_ic = 51.3			# 31.5 tons 
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 3
+			tungsten = 2
+			chromium = 1
 		}
 	}	
 	
@@ -1912,33 +1918,34 @@ equipments = {
 		visual_level = 1
 		
 		#Misc Abilities
-		maximum_speed = 4
+		maximum_speed = 4.3				#23kmh
 		reliability = 0.5
 
 		#Defensive Abilities
-		defense = 7 #5
-		breakthrough = 36
+		defense = 12
+		breakthrough = 46
 		hardness = 0.7
-		armor_value = 23
+		armor_value = 64				# 70mm sloped
 
 		#Offensive Abilities
-		soft_attack = 10 #15
+		soft_attack = 11
 		hard_attack = 14
-		ap_attack = 50
+		ap_attack = 49					# 47sa35
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 22 
+		build_cost_ic = 54.4			# 36.6 tons  
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 3
+			tungsten = 2
+			chromium = 1
 		}
 	}
 	
-	fra_heavy_tank_equipment_6 = {
+	fra_heavy_tank_equipment_6 = {		# Char What if
 		archetype = heavy_tank_equipment
 		parent = fra_heavy_tank_equipment_5
 		family = fra_heavy_tank_equipment_3
@@ -1947,29 +1954,30 @@ equipments = {
 		visual_level = 1
 		
 		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.5
+		maximum_speed = 4.5				# +
+		reliability = 0.55
 
 		#Defensive Abilities
-		defense = 7 #5
-		breakthrough = 36
+		defense = 13
+		breakthrough = 48
 		hardness = 0.7
-		armor_value = 23
+		armor_value = 64				# 
 
 		#Offensive Abilities
-		soft_attack = 10 #15
-		hard_attack = 14
-		ap_attack = 50
+		soft_attack = 12
+		hard_attack = 16
+		ap_attack = 62					# +
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 22 
+		build_cost_ic = 60			# +
 		resources = {
 			oil = 2
-			tungsten = 4
-			steel = 4
+			steel = 3
+			tungsten = 2
+			chromium = 1
 		}
 	}
 }
