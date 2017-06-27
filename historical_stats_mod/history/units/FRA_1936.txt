@@ -385,7 +385,7 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
-		force_equipment_variants = { medium_artillery_equipment_0 = { owner = "FRA" } }
+		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
 	# IIIe Corps d'Armée (Région Militaire in 1936) -- Rouen
@@ -395,7 +395,7 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
-		force_equipment_variants = { medium_artillery_equipment_0 = { owner = "FRA" } }
+		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
 	# XIIe Corps d'Armée (Région Militaire in 1936) -- Reims
@@ -405,7 +405,7 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
-		force_equipment_variants = { medium_artillery_equipment_0 = { owner = "FRA" } }
+		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
 	# IVe Corps d'Armée (Région Militaire in 1936) -- Le Mans
@@ -425,7 +425,7 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
-		force_equipment_variants = { medium_artillery_equipment_0 = { owner = "FRA" } }
+		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 	division= {	
 		name = "1ère Division de Cavalerie"
@@ -534,6 +534,7 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
+		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 	division= {	
 		name = "24ème Division d'Infanterie"
@@ -610,6 +611,7 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
+		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
 	# XVIIe Corps d'Armée (Région Militaire in 1936) -- Toulouse
