@@ -481,7 +481,9 @@ technologies = {
 		dependencies = {
 			french_tech = 1
 		}
-
+		sub_technologies = {
+			subtech_somua_s35_td_equipment_1
+		}
 		research_cost = 2
 		start_year = 1937
 		folder = {
@@ -491,6 +493,29 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 20
+		}
+		
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+	subtech_somua_s35_td_equipment_1 = {
+
+		enable_equipments = {
+			somua_s35_td_equipment_1
+		}
+		
+		
+		research_cost = 1.2				#later year as parent
+		start_year = 1940					# 1940
+		
+		ai_will_do = {
+			factor = 0					
+		}
+			
+		dependencies = {
+			french_tech = 1
 		}
 		
 		categories = {
@@ -646,9 +671,6 @@ technologies = {
 			position = { x = 8 y = @1937 }					#april 37
 		}
 		
-		sub_technologies = {
-			subtech_fra_ag_equipment_1
-		}
 		
 		ai_will_do = {
 			factor = 15
@@ -684,11 +706,11 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			subtech_fra_ag_equipment_1
+			subtech_char_b1_ag_equipment_1
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 0
 		}
 		
 		categories = {
@@ -696,6 +718,31 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
+	
+	subtech_char_b1_ag_equipment_1 = {
+
+		enable_equipments = {
+			char_b1_ag_equipment_1
+		}
+		
+		
+		research_cost = 0.9				#same year as parent
+		start_year = 1940					# 1940
+		
+		ai_will_do = {
+			factor = 0					
+		}
+			
+		dependencies = {
+			french_tech = 1
+		}
+		
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+	
 	
 	# FCM F1	
 	tech_fra_heavy_tank_equipment_6 = {

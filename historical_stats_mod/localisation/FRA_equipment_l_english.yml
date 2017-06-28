@@ -50,6 +50,13 @@ fra_medium_tank_equipment_6_desc:0 "SOMUA was the first cavalry vehicle properly
 fra_medium_tank_equipment_7:0 "G1R Medium Tank"
 fra_medium_tank_equipment_7_short:0 "G1R M.Tank"
 fra_medium_tank_equipment_7_desc:0 "The Char G1 was a French replacement project for the Char D2 medium tank. Several prototypes from different companies were developed since 1936, but not a single one had been fully completed at the time of the Fall of France in 1940. Char G1R was the only one of the projects that was to be further developed, probably because the Renault company was exceptional in having reserve production capacity left. \n Schneider 47 mm antitank gun, later as an alternative option a longer (at least L/29) main 75 mm armament."
+### Subtechs
+somua_s35_td_equipment_1:"SAu 40 Tank Destroyer"
+somua_s35_td_equipment_1_short:0 "SAu 40 TD"
+somua_s35_td_equipment_1_desc:0 "From the S35, SOMUA developed in 1937 the SAu 40 self-propelled 75 mm gun. Its drivetrain featured an extra wheel to improve off-road capabilities, and the hull was wider. Only one prototype was built in this configuration; it fought in June, probably together with a small number of mass-production vehicles, fitted with the powerful 47 mm SA 37 gun: 72 units had been ordered on 1 May 1940."
+char_b1_ag_equipment_1:"ARL V39 Assault Gun"
+char_b1_ag_equipment_1_short:0 "ARL V39 AG"
+char_b1_ag_equipment_1_desc:0 "The ARL V 39, also known as the ARL 1940 V939 40, was a prototype armored fighting vehicle, designed to meet France's demands for a new self-propelled assault gun, prior to World War II. Only two complete and functional prototypes were produced, armed with a modified 75mm field gun and 7.5mm machine gun. The design project was known as ARL 40, unrelated to the ARL 44 heavy tank. Designed in 1935, two prototypes were completed by 1940. However, due to the later occupation of France, mass production to meet orders was canceled and the prototypes evacuated to Morocco, ceasing any further development in the project."
 ### Heavy Tanks
 fra_heavy_tank_equipment_1:0 "Char FCM 2C Heavy Tank"
 fra_heavy_tank_equipment_1_short:0 "Char 2C Hv.Tank"

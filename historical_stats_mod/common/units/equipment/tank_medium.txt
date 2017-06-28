@@ -4632,7 +4632,42 @@
 			chromium = 1
 		}
 	}
-	
+	# SAu 40 TD					# Last family of medium French tanks
+	somua_s35_td_equipment_1 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = medium_tank_destroyer_equipment
+		family = fra_medium_tank_equipment_6
+			
+		priority = 50
+		visual_level = 1
+		
+		#Misc Abilities
+		maximum_speed = 6.1			# 41kmh
+		reliability = 0.6			# 10 hp/ton
+		
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 48
+		hardness = 0.62
+		armor_value = 44			# 47mm 
+		
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 18
+		ap_attack = 49				# 47mm SA35
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 28.4 		# 19.5 tons
+		resources = {
+			oil = 2
+			steel = 3			
+			tungsten = 2
+			chromium = 1
+		}
+	}
 	# G1R
 	fra_medium_tank_equipment_7 = {
 		archetype = medium_tank_equipment

@@ -3873,6 +3873,16 @@ SpriteType = {
 		name = "GFX_streamlined_line_medium"
 		texturefile = "gfx/interface/technologies/streamlined_line.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_improved_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_equipment_conversion_medium"
+		texturefile = "gfx/interface/technologies/equipment_conversion2.dds"
+	}	
 	####################################################
 	#tool_maintenance
 	#worker_training
@@ -4938,11 +4948,11 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_improved_battlecruiser_medium"
-		texturefile = "gfx/interface/technologies/improved_battlecruiser.dds"
+		texturefile = "gfx/interface/technologies/GER_basic_battlecruiser.dds"
 	}	
 	SpriteType = {
 		name = "GFX_battle_cruiser_3_medium"
-		texturefile = "gfx/interface/technologies/improved_battlecruiser.dds"
+		texturefile = "gfx/interface/technologies/GER_basic_battlecruiser.dds"
 	}	
 	
 	SpriteType = {
@@ -5466,8 +5476,12 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_ENG_heavy_fighter3_medium"
 		texturefile = "gfx/interface/technologies/ENG_heavy_fighter3.dds"
-	}	
+	}
 	
+	SpriteType = {
+		name = "GFX_fairey_swordfish_medium"
+		texturefile = "gfx/interface/technologies/fairey_swordfish.dds"
+	}	
 	SpriteType = {
 		name = "GFX_ENG_naval_bomber1_medium"
 		texturefile = "gfx/interface/technologies/ENG_naval_bomber1.dds"
@@ -8442,6 +8456,10 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/S35.dds"
 	}
 	SpriteType = {
+		name = "GFX_subtech_somua_s35_td_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/sau_40_47.dds"
+	}
+	SpriteType = {
 		name = "GFX_tech_fra_medium_tank_equipment_7_medium"
 		texturefile = "gfx/interface/technologies/G1R.dds"		#needs gfx
 	}
@@ -8456,7 +8474,7 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_tech_fra_heavy_tank_equipment_3_medium"
 		texturefile = "gfx/interface/technologies/Char_B1.dds"
-	}
+	}	
 	SpriteType = {
 		name = "GFX_tech_fra_heavy_tank_equipment_4_medium"
 		texturefile = "gfx/interface/technologies/Char_B1_bis.dds"
@@ -8464,6 +8482,10 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_tech_fra_heavy_tank_equipment_5_medium"
 		texturefile = "gfx/interface/technologies/Char_B1_ter.dds"
+	}
+	SpriteType = {
+		name = "GFX_subtech_char_b1_ag_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/arl_v39.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_fra_heavy_tank_equipment_6_medium"
@@ -8857,6 +8879,10 @@ SpriteType = {
 	SpriteType = {
 		name = "GFX_consolidated_b32_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/consolidated_b_32.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_jet_strat_bomber_equipment_medium"
+		texturefile = "gfx/interface/technologies/USA_jet_strategic_bomber1.dds"
 	}
 	SpriteType = {
 		name = "GFX_consolidated_b47_equipment_1_medium"
@@ -9916,7 +9942,11 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_ENG_jet_fighter2_medium"
+		name = "GFX_tech_spiteful_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_fighter2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/ENG_jet_fighter2.dds"
 	}	
 	
@@ -9941,7 +9971,11 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_ENG_jet_fighter1_medium"
+		name = "GFX_tech_spiteful_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_fighter1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_jet_fighter_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/ENG_jet_fighter1.dds"
 	}
 	
@@ -10016,7 +10050,11 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_ENG_jet_strategic_bomber1_medium"
+		name = "GFX_tech_avro_lincoln_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_strategic_bomber1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_jet_strat_bomber_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/ENG_jet_strategic_bomber1.dds"
 	}	
 
@@ -10070,10 +10108,14 @@ SpriteType = {
 	}	
 	
 	SpriteType = {
-		name = "GFX_ENG_jet_tactical_bomber2_medium"
+		name = "GFX_ENG_jet_tac_bomber_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber2.dds"
 	}
-
+	
+    SpriteType = {
+		name = "GFX_tech_dehaviland_vampire_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber2.dds"
+	}
 	SpriteType = {
 		name = "GFX_FRA_jet_tactical_bomber2_medium"
 		texturefile = "gfx/interface/technologies/FRA_jet_tactical_bomber2.dds"
@@ -10113,7 +10155,12 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_ENG_jet_tactical_bomber1_medium"
+		name = "GFX_ENG_jet_tac_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_tech_gloster_meteor_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/ENG_jet_tactical_bomber1.dds"
 	}
 	
@@ -11276,7 +11323,14 @@ SpriteType = {
 		name = "GFX_GER_heavy_battleship_medium"
 		texturefile = "gfx/interface/technologies/GER_heavy_battleship.dds"
 	}	
-
+	SpriteType = {
+		name = "GFX_GER_SH_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_battleship2.dds"
+	}	
+	SpriteType = {	
+		name = "GFX_GER_SH_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_battleship.dds"
+	}	
 	SpriteType = {
 		name = "GFX_GER_advanced_battleship_medium"
 		texturefile = "gfx/interface/technologies/GER_advanced_battleship.dds"
@@ -11504,7 +11558,14 @@ SpriteType = {
 		name = "GFX_ITA_heavy_battleship_medium"
 		texturefile = "gfx/interface/technologies/ITA_heavy_battleship.dds"
 	}	
-
+	SpriteType = {
+		name = "GFX_ITA_SH_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_battleship2.dds"
+	}	
+	SpriteType = {	
+		name = "GFX_ITA_SH_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_battleship.dds"
+	}
 	SpriteType = {
 		name = "GFX_ITA_advanced_battleship_medium"
 		texturefile = "gfx/interface/technologies/ITA_advanced_battleship.dds"
@@ -11999,6 +12060,16 @@ SpriteType = {
 		name = "GFX_USA_heavy_battleship_medium"
 		texturefile = "gfx/interface/technologies/USA_heavy_battleship.dds"
 	}	
+	
+	SpriteType = {
+		name = "GFX_USA_SH_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_battleship2.dds"
+	}	
+	
+	SpriteType = {	
+		name = "GFX_USA_SH_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_battleship.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_USA_advanced_battleship_medium"
@@ -12118,6 +12189,14 @@ SpriteType = {
 	SpriteType = {	
 		name = "GFX_ENG_heavy_battleship_medium"
 		texturefile = "gfx/interface/technologies/ENG_heavy_battleship.dds"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_SH_battleship_2_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_battleship2.dds"
+	}	
+	SpriteType = {	
+		name = "GFX_ENG_SH_battleship_1_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_battleship.dds"
 	}	
 	SpriteType = {
 		name = "GFX_ENG_advanced_battleship_medium"
@@ -12543,35 +12622,35 @@ SpriteType = {
 	}		
 
 	SpriteType = {
-		name = "GFX_SOV_advanced_destroyer_medium"
+		name = "GFX_SOV_improved_destroyer_medium"
 		texturefile = "gfx/interface/technologies/SOV_advanced_destroyer.dds"
 	}	
 	SpriteType = {
-		name = "GFX_SOV_improved_destroyer_medium"
+		name = "GFX_SOV_basic_destroyer_medium"
 		texturefile = "gfx/interface/technologies/SOV_improved_destroyer.dds"
 	}		
 	SpriteType = {
-		name = "GFX_SOV_basic_destroyer_medium"
+		name = "GFX_SOV_early_destroyer_medium"
 		texturefile = "gfx/interface/technologies/SOV_basic_destroyer.dds"
 	}
 	SpriteType = {	
-		name = "GFX_SOV_early_destroyer_medium"
+		name = "GFX_SOV_late_ww1_destroyer_medium"
 		texturefile = "gfx/interface/technologies/SOV_early_destroyer.dds"
 	}	
 		SpriteType = {
-		name = "GFX_SOV_destroyer_4_medium"
+		name = "GFX_SOV_destroyer_3_medium"
 		texturefile = "gfx/interface/technologies/SOV_advanced_destroyer.dds"
 	}	
 	SpriteType = {
-		name = "GFX_SOV_destroyer_3_medium"
+		name = "GFX_SOV_destroyer_2_medium"
 		texturefile = "gfx/interface/technologies/SOV_improved_destroyer.dds"
 	}		
 	SpriteType = {
-		name = "GFX_SOV_destroyer_2_medium"
+		name = "GFX_SOV_destroyer_1_medium"
 		texturefile = "gfx/interface/technologies/SOV_basic_destroyer.dds"
 	}
 	SpriteType = {	
-		name = "GFX_SOV_destroyer_1_medium"
+		name = "GFX_SOV_destroyer_late_ww1_medium"
 		texturefile = "gfx/interface/technologies/SOV_early_destroyer.dds"
 	}
 
@@ -13233,15 +13312,15 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_r_5_bomber_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/R-5.dds"
+		texturefile = "gfx/interface/technologies/R_5.dds"
 	}
 	SpriteType = {
 		name = "GFX_r_5_bomber_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/R-5.dds"
+		texturefile = "gfx/interface/technologies/R_5.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_il_2_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/R-5.dds"
+		texturefile = "gfx/interface/technologies/R_5.dds"
 	}
 	SpriteType = {
 		name = "GFX_r_5_nav_bomber_equipment_1_medium"
@@ -15798,7 +15877,7 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_NEW_naval_bomber1_medium"
-		texturefile = "gfx/interface/technologies/ENG_naval_bomber1.dds"
+		texturefile = "gfx/interface/technologies/fairey_swordfish.dds"
 	}	
 		
 	SpriteType = {
