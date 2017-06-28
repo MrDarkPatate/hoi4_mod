@@ -244,8 +244,9 @@ units = {
 	division= {	
 		name = "1ère Division Légère Mécanique"
 		location = 13011
-		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment  ***  2x Inf + 2x Medium 90 D1s, 90 R35
+		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment  ***  2x Inf + 2x Medium 55 D1s, 55 R35
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_medium_tank_equipment_1 = { owner = "FRA" } }		# D1s
 	}
 	
@@ -306,7 +307,7 @@ units = {
 		location = 11502
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -314,7 +315,7 @@ units = {
 		location = 5291
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	
@@ -324,7 +325,7 @@ units = {
 		location = 9503
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -332,7 +333,7 @@ units = {
 		location = 6529
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -342,7 +343,7 @@ units = {
 		location = 3629
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -350,7 +351,7 @@ units = {
 		location = 549
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -358,7 +359,7 @@ units = {
 		location = 549
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -366,7 +367,7 @@ units = {
 		location = 11516
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 	
@@ -383,7 +384,7 @@ units = {
 		location = 575
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -393,7 +394,7 @@ units = {
 		location = 454
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
@@ -403,7 +404,7 @@ units = {
 		location = 11563
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
@@ -413,7 +414,7 @@ units = {
 		location = 9472
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
@@ -423,7 +424,7 @@ units = {
 		location = 3509
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }	
 	}
 
@@ -433,7 +434,7 @@ units = {
 		location = 3509
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 	division= {	
@@ -441,7 +442,7 @@ units = {
 		location = 3509
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
@@ -451,7 +452,7 @@ units = {
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		}
 	division= {	
@@ -459,7 +460,7 @@ units = {
 		location = 3671
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -469,7 +470,7 @@ units = {
 		location = 3552
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -477,7 +478,7 @@ units = {
 		location = 6536
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		}
 	
@@ -489,7 +490,7 @@ units = {
 		location = 11506
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -497,7 +498,7 @@ units = {
 		location = 11506
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 	division= {	
@@ -505,7 +506,7 @@ units = {
 		location = 11506
 		division_template = "Division de Cavalerie" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
@@ -516,7 +517,7 @@ units = {
 		location = 678
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -524,7 +525,7 @@ units = {
 		location = 678
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		}
 	division= {	
@@ -532,7 +533,7 @@ units = {
 		location = 9642
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		}
 
@@ -542,7 +543,7 @@ units = {
 		location = 3652
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 	division= {	
@@ -550,7 +551,7 @@ units = {
 		location = 3652
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -560,7 +561,7 @@ units = {
 		location = 5291
 		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -568,7 +569,7 @@ units = {
 		location = 11502
 		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -576,7 +577,7 @@ units = {
 		location = 3629
 		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -584,7 +585,7 @@ units = {
 		location = 9503
 		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 
 	}
 	division= {	
@@ -592,7 +593,7 @@ units = {
 		location = 678
 		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 
 	}
 
@@ -603,7 +604,7 @@ units = {
 		location = 11576
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -611,7 +612,7 @@ units = {
 		location = 11576
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -619,7 +620,7 @@ units = {
 		location = 11576
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { medartillery_equipment_0 = { owner = "FRA" } }
 	}
 
@@ -629,7 +630,7 @@ units = {
 		location = 6766
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 	division= {	
@@ -637,7 +638,7 @@ units = {
 		location = 6766
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -647,7 +648,7 @@ units = {
 		location = 9737
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 		}
 	division= {	
@@ -655,7 +656,7 @@ units = {
 		location = 6657
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -665,21 +666,21 @@ units = {
 		location = 778
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division= {	
 		name = "30ème Division d'Infanterie Alpine"
 		location = 9745
 		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3		
+		start_equipment_factor = 0.2		
 	}
 	division= {	
 		name = "1ère Division d'Infanterie Nord-Africaine"
 		location = 3764
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -690,14 +691,14 @@ units = {
 		location = 6975
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 	division= {	
 		name = "2ème Division d'Infanterie Coloniale"
 		location = 11834
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.2
 		force_equipment_variants = { fra_infantry_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -707,7 +708,7 @@ units = {
 		location = 9898
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 	# Division d'Infanterie Forteresse -- Nice
@@ -716,7 +717,7 @@ units = {
 		location = 9909
 		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
+		start_equipment_factor = 0.5
 	}
 
 
@@ -784,14 +785,14 @@ units = {
 		location = 11969
 		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 	}
 	division= {	
 		name = "Division de Sousse"
 		location = 9994
 		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 	}
 
 	### Army: Protectorat du Maroc ### -- Casablanca
@@ -800,7 +801,7 @@ units = {
 		location = 7069
 		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.8
+		start_equipment_factor = 0.5
 	}
 	division= {	
 		name = "Division de Casablanca"	
@@ -1436,31 +1437,31 @@ instant_effect = {
 			
 	add_equipment_to_stockpile = {
 		type = artillery_equipment_0
-			amount = 2400				# Around 3800 to 4500 in stock by mid 40. France should get 10700 artillery pieces in all by 1940...
+			amount = 2700				# At least 3800 in stock by mid 40. France should get 10700 artillery pieces in all by 1940...
+			producer = FRA
+		}
+	
+	add_equipment_to_stockpile = {
+		type = anti_tank_equipment_1
+			amount = 500				# Around 1300 in stock by dec 36. 
 			producer = FRA
 		}
 	
 	add_equipment_to_stockpile = {
 		type = medartillery_equipment_0
-			amount = 400				# Around 1000 in stock by mid 40.
+			amount = 450				# Around 1000 in stock by mid 40.
 			producer = FRA
 		}
 	
 	add_equipment_to_stockpile = {
 		type = medartillery_equipment_1
-			amount = 600				# Around 2000 155mm pieces by mid 40. Most divisions used 24x 155 pieces
+			amount = 1000				# Around 2000 155mm pieces by mid 40. Most divisions used 24x 155 pieces
 			producer = FRA
 		}
 	
 	add_equipment_to_stockpile = {
 		type = heavyartillery_equipment_0
-			amount = 130				# Although 400 in stock by mid 40
-			producer = FRA
-		}
-	
-	add_equipment_to_stockpile = {
-		type = anti_tank_equipment_0
-			amount = 700				# Roughly 1500 in stock by 1936.
+			amount = 300				# Although 400 in stock by mid 40
 			producer = FRA
 		}
 	
@@ -1476,29 +1477,35 @@ instant_effect = {
 		}
 	add_equipment_to_stockpile = {
 		type = infantry_uniforms_0
-			amount = 2000
+			amount = 4000
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
 		type = support_equipment_0
-			amount = 1000
+			amount = 2000
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
-		type = motorized_equipment_2
+		type = motorized_equipment_1
 			amount = 1600
 			producer = FRA
 		}
 		
 	add_equipment_to_stockpile = {
 		type = fra_infantry_tank_equipment_1
-			amount = 1200					# Roughly 1600 Ft17 in all 
+			amount = 1200					# Roughly 1600 Ft17 in all. Around 400 spread into the infantry
+			producer = FRA
+		}
+	
+	add_equipment_to_stockpile = {
+		type = fra_infantry_tank_equipment_3
+			amount = 100					# Roughly 150 R35 by Dec 1936. Another 55 should be in 1DLM
 			producer = FRA
 		}
 	
 	add_equipment_to_stockpile = {
 		type = fra_medium_tank_equipment_1	
-			amount = 70						#D1s. Another 90 should be in 1DLM
+			amount = 105					#D1s. Another 55 should be in 1DLM
 			producer = FRA
 		}
 	add_equipment_to_stockpile = {
@@ -1509,7 +1516,7 @@ instant_effect = {
 	
 	add_equipment_to_stockpile = {
 		type = fra_heavy_tank_equipment_1	
-			amount = 1						#Char 2C Now this is into the 511 Rgt. Should upgrade to DCR...
+			amount = 4						#Char 2C Now this is into the 511 Rgt. Should upgrade to DCR...
 			producer = FRA
 		}
 	
@@ -1521,7 +1528,7 @@ instant_effect = {
 	
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 600
+			amount = 1600
 			producer = FRA
 		}
 }
