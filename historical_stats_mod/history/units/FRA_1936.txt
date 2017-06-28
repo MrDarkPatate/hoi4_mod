@@ -1430,8 +1430,8 @@ instant_effect = {
 	}
 	############### Equipment stockpile
 	add_equipment_to_stockpile = {
-		type = infantry_equipment_0
-			amount = 5000
+		type = infantry_equipment_0		# Berthier rifles for 30 divisions
+			amount = 14000
 			producer = FRA
 		}
 			
@@ -1470,27 +1470,38 @@ instant_effect = {
 			amount = 400
 			producer = FRA
 		}
+		
 	add_equipment_to_stockpile = {
 		type = garrison_equipment_0
 			amount = 500
 			producer = FRA
 		}
+		
 	add_equipment_to_stockpile = {
-		type = infantry_uniforms_0
-			amount = 4000
-			producer = FRA
-		}
-	add_equipment_to_stockpile = {
-		type = support_equipment_0
-			amount = 2000
-			producer = FRA
-		}
-	add_equipment_to_stockpile = {
-		type = motorized_equipment_1
-			amount = 1600
+		type = infantry_uniforms_0			# Uniforms 
+			amount = 8000
 			producer = FRA
 		}
 		
+	add_equipment_to_stockpile = {
+		type = support_equipment_0			# Various stuff 
+			amount = 4000
+			producer = FRA
+		}
+		
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_0		# Old trucks
+			amount = 3600
+			producer = FRA
+		}
+		
+	add_equipment_to_stockpile = {
+		type = motorized_lia_equipment_01	# Old UVs
+			amount = 3600
+			producer = FRA
+		}
+
+	
 	add_equipment_to_stockpile = {
 		type = fra_infantry_tank_equipment_1
 			amount = 1200					# Roughly 1600 Ft17 in all. Around 400 spread into the infantry
@@ -1528,7 +1539,7 @@ instant_effect = {
 	
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
-			amount = 1600
+			amount = 2500
 			producer = FRA
 		}
 }
