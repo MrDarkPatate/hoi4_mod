@@ -37,7 +37,7 @@ units = {
 	division= {	
 		name = "Nice Division d'Infanterie de Forteresse"
 		location = 11015
-		division_template = "Brigade Garrison" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -47,7 +47,7 @@ units = {
 	division= {	
 		name = "Nice Division d'Infanterie de Forteresse"
 		location = 10762
-		division_template = "Brigade Garrison" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -57,7 +57,7 @@ units = {
 	division= {	
 		name = "Division d'Infanterie de Forteresse 2"
 		location = 10762
-		division_template = "Brigade Garrison" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -67,7 +67,7 @@ units = {
 	division= {	
 		name = "Division d'Infanterie de Forteresse 3"
 		location = 10762
-		division_template = "Brigade Garrison" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -77,7 +77,7 @@ units = {
 	division= {	
 		name = "Division d'Infanterie de Forteresse 4"
 		location = 10762
-		division_template = "Brigade Garrison" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -87,7 +87,7 @@ units = {
 	division= {	
 		name = "Division d'Infanterie de Forteresse 5"
 		location = 10762
-		division_template = "Brigade Garrison" 	# Garrison unit, reserve equipment
+		division_template = "Regiment d'Infanterie de Forteresse" 	# Garrison unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -96,7 +96,7 @@ units = {
 		division= {	
 		name = "1ère Brigade d'Infanterie Afrique"
 		location = 11015
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
+		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -104,7 +104,7 @@ units = {
 	division= {	
 		name = "2ème Brigade d'Infanterie Afrique"
 		location = 11015
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
+		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -112,7 +112,7 @@ units = {
 	division= {	
 		name = "4ème Brigade d'Infanterie Afrique"
 		location = 10762
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
+		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -120,7 +120,7 @@ units = {
 	division= {	
 		name = "5ème Brigade d'Infanterie Afrique"
 		location = 11015
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
+		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
@@ -129,7 +129,7 @@ units = {
 	division= {	
 		name = "6ème Brigade d'Infanterie Afrique"
 		location = 10762
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
+		division_template = "Division d'Infanterie Coloniale" 	# Colonial unit, reserve equipment
 		start_experience_factor = 0.1
 		
 
