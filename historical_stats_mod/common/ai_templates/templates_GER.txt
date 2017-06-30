@@ -1,13 +1,9 @@
 #armor
 armored_GER = {
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 	
-	roles = {
-		armor
-	}
+	roles = { armor }
 	
 	match_to_count = 0.63
 	
@@ -29,19 +25,49 @@ light_armor_default_GER = {
 		}
 		
 		regiments = {
-			light_armor = 6
-			medium_armor = 2
+			light_armor = 8
+			# medium_armor = 2
+			motorized = 3
+			artillery_brigade_mot = 2
+			anti_tank_brigade = 1
+			# light_sp_artillery_brigade = 1
+		}
+	}
+	replace_at_match = 0.5
+	replace_with = light_armor_late_GER
+	target_min_match = 0.65
+}
+
+light_armor_late_GER = {
+	target_width = 21.9
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+	target_template = {
+		weight = 1
+		match_value = 11990.0
+		
+		support = {
+			engineer = 1
+			recon_mot = 1
+			maintenance_company = 1
+		    logistics_company = 1
+			DIV_HQ = 1
+		}
+		
+		regiments = {
+			light_armor = 7
+			medium_armor = 1
 			motorized = 4
 			artillery_brigade_mot = 2
 			anti_tank_brigade = 1
-			light_sp_artillery_brigade = 1
+			# light_sp_artillery_brigade = 1
 		}
 	}
 	replace_at_match = 0.65
 	replace_with = medium_armor_default_GER
 	target_min_match = 0.65
 }
-
 
 medium_armor_default_GER = {
 	target_width = 23.9 
