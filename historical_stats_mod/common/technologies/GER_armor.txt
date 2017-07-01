@@ -1,6 +1,6 @@
 	################################ NOTE: Adjusted research years to historical values as much as possible. However game balance takes priority.
 	################################ AI "will do factors" adjusted slighlty to priorize best tanks and change research focus as best as possible. 
-	################################ AI research priorities: Improved plate Pz II / Pz IV (until 75L43) / PzJg I TD / Marder II / Wespe / Panther & Tiger / JagdPz IV / Hummel
+	################################ AI research priorities: Improved plate Pz II / *** PzIII (until 50L60) / Pz IV (until 75L43) / PzJg I TD / Marder II / Wespe / Panther & Tiger / JagdPz IV / Hummel
 
 
 technologies = {
@@ -471,7 +471,7 @@ technologies = {
 		start_year = 1941					# 1939. This tank should need captured Ru equipment. Option: Minsk Captured: then can be changed Research to 1941. 
 		
 		ai_will_do = {
-			factor = 0						# 90 A good TD and Best pierce for 1941 but should only be available after Russian campaign...
+			factor = 12						# 90 A good TD and Best pierce for 1941 but should only be available after Russian campaign...
 		}
 		
 		categories = {
@@ -835,7 +835,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0						# By now AI is not awarded Pz III... Although is going to be best battle tank until 1942.
+			factor = 18						# By now AI is not awarded Pz III... Although is going to be best battle tank until 1942.
 		}
 		
 		categories = {
@@ -873,7 +873,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0						# 10
+			factor = 18						# 10
 		}
 		
 		categories = {
@@ -911,7 +911,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0					# 10
+			factor = 18					# 10
 		}
 		
 		categories = {
@@ -978,7 +978,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0						# Now not anymore allowable to AI In theory German AI should research this until this Pz III variant then go for Pz IV / Panther / Tigers
+			factor = 18						# In theory German AI should research this until this Pz III variant then go for Pz IV / Panther / Tigers
 		}
 		
 		categories = {
@@ -1284,7 +1284,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 15						# Was 0. Value means will be researched  1st priority. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
+			factor = 5						# Was 0. Value means will be researched  last priority. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
 		}
 		
 		categories = {
@@ -1325,7 +1325,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 11						# 0
+			factor = 5						# 0
 		}
 		
 		categories = {
@@ -1362,7 +1362,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 15						# Tiger !
+			factor = 5						# Tiger !
 		}
 		
 		categories = {

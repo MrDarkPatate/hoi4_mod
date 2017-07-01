@@ -2561,11 +2561,42 @@
 	}
 
 	##################################### Russian SP T34 Series TD
-	# T-34 TD
+	# T-34/57 TD
+	t_34_td_1 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = medium_tank_destroyer_equipment_1
+		family = t_34_equipment_1 
+		priority = 80
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 7.5		#5.5 55kmh
+		reliability = 0.67
 
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 1.5
+		hardness = 0.61			# Was default plate 45 mm
+		armor_value = 50		# Was 76 45 mm plate 50º
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 25
+
+		ap_attack = 71			# Was 110 then 101 85mm can pierce 90 mm 30º
+		
+		build_cost_ic = 24.7	# 22 - 30 tons
+		
+		resources = {
+			oil = 2
+			steel = 6		# 5 Resource intensive (low IC cost)
+			tungsten = 3	# 4 Resource intensive (low IC cost)
+			chromium = 1
+		}	
+	}
 
 	# SU-85  1941
-	t_34_td_1 = {
+	t_34_td_2 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_1
 		family = t_34_equipment_3 
@@ -2599,7 +2630,7 @@
 	}
 
 	# SU-100  1943
-	t_34_td_2 = {
+	t_34_td_3 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = t_34_td_1
 		family = t_34_equipment_4
@@ -2629,6 +2660,39 @@
 			tungsten = 4	# 5 Resource intensive (low IC cost)
 			chromium = 1
 		}
+	}
+	# T-44 TD SU-102
+	t_44_td_1 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = medium_tank_destroyer_equipment_1
+		family = t_44_equipment_1 
+		priority = 80
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 7.5		#5.5 55kmh
+		reliability = 0.67
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 1.5
+		hardness = 0.61			# Was default plate 45 mm
+		armor_value = 50		# Was 76 45 mm plate 50º
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 25
+
+		ap_attack = 71			# Was 110 then 101 85mm can pierce 90 mm 30º
+		
+		build_cost_ic = 24.7	# 22 - 30 tons
+		
+		resources = {
+			oil = 2
+			steel = 6		# 5 Resource intensive (low IC cost)
+			tungsten = 3	# 4 Resource intensive (low IC cost)
+			chromium = 1
+		}	
 	}
 	
 	############## Russian T28 series

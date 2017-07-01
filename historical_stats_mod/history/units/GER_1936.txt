@@ -17,7 +17,11 @@
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		anti_tank_brigade =  { x = 3 y = 3 }
+		
+		anti_tank_brigade =  { x = 4 y = 0 }				# Should be 36 sized
+		anti_tank_brigade =  { x = 4 y = 1 }
+		mountain_artillery_brigade = { x = 4 y = 2 }		# Represents all the infantry guns ( mainly 75mm leIG 18)
+		mountain_artillery_brigade = { x = 4 y = 3 }
 		}
 	
 	support = {
@@ -25,6 +29,7 @@
 		engineer = { x = 0 y = 1 }
        	artillery_medium = { x = 0 y = 2 }
 		recon = { x = 0 y = 3 }
+		
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
@@ -55,12 +60,12 @@ division_template = {
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-       	#recon_ac = { x = 0 y = 1 }	
-		recon_mot = { x = 0 y = 1 }
-       	engineer = { x = 0 y = 2 }
+       	engineer = { x = 0 y = 1 }
+		recon_ac = { x = 0 y = 2 }	
 		
  		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
+		# anti_air_brigade = { x = 1 y = 2 }		# Well coded...? 
 	}
 	priority = 2
 }
@@ -69,17 +74,17 @@ division_template = {
 	name = "Infanterie-Div.(s-mot)" 		# This kind of division was not employed once war started. Left by now same. 
 	
 	regiments = {
-		semi_motorized = { x = 0 y = 0 }
-	   	semi_motorized = { x = 0 y = 1 }
-		semi_motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 0 }
+	 	motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
 		
 		semi_motorized = { x = 1 y = 0 }
 		semi_motorized = { x = 1 y = 1 }
 		semi_motorized = { x = 1 y = 2 }
 		
-		motorized = { x = 2 y = 0 }
-	 	motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+		semi_motorized = { x = 2 y = 0 }
+	   	semi_motorized = { x = 2 y = 1 }
+		semi_motorized = { x = 2 y = 2 }
 
 		artillery_brigade_mot = { x = 3 y = 0 }		
 		artillery_brigade_mot = { x = 3 y = 1 }
@@ -88,11 +93,12 @@ division_template = {
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-       	recon_mot = { x = 0 y = 1 }
+       	recon_ac = { x = 0 y = 1 }
 	 	engineer = { x = 0 y = 2 }
 		
  		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
+		artillery_medium = { x = 1 y = 2 }
 	}
 }
 
@@ -111,13 +117,16 @@ division_template = {
 		artillery_brigade_mot = { x = 2 y = 0 }
 		artillery_brigade_mot = { x = 2 y = 1 }
 		anti_tank_brigade =  { x = 2 y = 2 }
+		anti_tank_brigade =  { x = 2 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		recon_cav = { x = 0 y = 2 }
+		recon_ac = { x = 0 y = 2 }
+		
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
+		artillery_medium = { x = 1 y = 2 }
 	}
 }
 

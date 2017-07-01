@@ -5,54 +5,88 @@ armored_GER = {
 	
 	roles = { armor }
 	
-	match_to_count = 0.63
+	match_to_count = 0.8
 	
-light_armor_default_GER = {
+prewar_armor_default_GER = {		# 1935' (1-3 Pz Div)
 	target_width = 21.9
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
 	target_template = {
 		weight = 1
-		match_value = 11990.0
+		match_value = 14990.0
 		
 		support = {
-			engineer = 1
-			recon_mot = 1
-			maintenance_company = 1
-		    logistics_company = 1
 			DIV_HQ = 1
+			engineer = 1
+			recon_ac = 1	
+
+			maintenance_company = 1
+			logistics_company = 1
+			# anti_air = 1
 		}
 		
 		regiments = {
 			light_armor = 8
-			# medium_armor = 2
 			motorized = 3
 			artillery_brigade_mot = 2
 			anti_tank_brigade = 1
-			# light_sp_artillery_brigade = 1
 		}
 	}
 	replace_at_match = 0.5
-	replace_with = light_armor_late_GER
-	target_min_match = 0.65
+	replace_with = early_armor_late_GER
+	target_min_match = 0.60
 }
 
-light_armor_late_GER = {
+early_armor_default_GER = {			# 1936' Pz
 	target_width = 21.9
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
 	target_template = {
 		weight = 1
-		match_value = 11990.0
+		match_value = 15990.0
 		
 		support = {
-			engineer = 1
-			recon_mot = 1
-			maintenance_company = 1
-		    logistics_company = 1
 			DIV_HQ = 1
+			engineer = 1
+			recon_ac = 1	
+
+			maintenance_company = 1
+			logistics_company = 1
+			# anti_air = 1
+		}
+		
+		regiments = {
+			light_armor = 7
+			medium_armor = 1
+			motorized = 3
+			artillery_brigade_mot = 2
+			anti_tank_brigade = 1
+		}
+	}
+	replace_at_match = 0.5
+	replace_with = light_armor_late_GER
+	target_min_match = 0.60
+}
+
+light_armor_late_GER = {			# 1937' Pz
+	target_width = 21.9
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+	target_template = {
+		weight = 1
+		match_value = 19990.0
+		
+		support = {
+			DIV_HQ = 1
+			engineer = 1
+			recon_ac = 1	
+
+			maintenance_company = 1
+			logistics_company = 1
+			# anti_air = 1
 		}
 		
 		regiments = {
@@ -61,15 +95,14 @@ light_armor_late_GER = {
 			motorized = 4
 			artillery_brigade_mot = 2
 			anti_tank_brigade = 1
-			# light_sp_artillery_brigade = 1
 		}
 	}
-	replace_at_match = 0.65
+	replace_at_match = 0.6
 	replace_with = medium_armor_default_GER
 	target_min_match = 0.65
 }
 
-medium_armor_default_GER = {
+medium_armor_default_GER = {		# 1939'
 	target_width = 23.9 
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -79,11 +112,14 @@ medium_armor_default_GER = {
 		match_value = 21990.0
 		
 		support = {
-			engineer = 1
-			recon_mot = 1
-		    maintenance_company = 1
-		    logistics_company = 1
 			DIV_HQ = 1
+			engineer = 1
+			recon_ac = 1	
+
+			maintenance_company = 1
+			logistics_company = 1
+			artillery_medium_mot  = 1
+			# anti_air = 1
 		}
 		
 		regiments = {
@@ -92,8 +128,8 @@ medium_armor_default_GER = {
 			motorized = 4
 			artillery_brigade_mot = 2
 			anti_tank_brigade = 1
-			light_tank_destroyer_brigade = 1
 			light_sp_artillery_brigade = 1
+			#light_tank_destroyer_brigade = 1
 		}
 	}
 	replace_at_match = 0.65
@@ -101,7 +137,7 @@ medium_armor_default_GER = {
 	target_min_match = 0.7
 }
 
-medium_armor_late_GER = {
+medium_armor_mid_GER = {			# 1940'
 	target_width = 23.9 
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -111,77 +147,83 @@ medium_armor_late_GER = {
 		match_value = 31990.0
 		
 		support = {
-			engineer = 1
-			recon_mot = 1
-		    maintenance_company = 1
-			artillery_medium_mot  = 1
-		    logistics_company = 1
 			DIV_HQ = 1
+			engineer = 1
+			recon_ac = 1	
+
+			maintenance_company = 1
+			logistics_company = 1
+			artillery_medium_mot  = 1
+			# anti_air = 1
 		}
 		
 		regiments = {
+			light_armor = 4
+			medium_armor = 2
+			motorized = 4
+			artillery_brigade_mot = 1
+			anti_tank_brigade = 1
+			light_tank_destroyer_brigade = 1
+			light_sp_artillery_brigade = 1
+			# medium_tank_destroyer_brigade = 1
+			# modern_sp_artillery_brigade = 1
+		}
+	}
+	replace_at_match = 0.7
+	replace_with = heavy_armor_default_GER
+	target_min_match = 0.75
+}
+
+medium_armor_late_GER = {			# 1942+
+	target_width = 23.9 
+	width_weight = 0.5
+	column_swap_factor = 0.3
+
+	target_template = {
+		weight = 1
+		match_value = 32990.0
+		
+		support = {
+			DIV_HQ = 1
+			engineer = 1
+			recon_ac = 1
+			anti_tank_heavy = 1
+			anti_air_heavy = 1			
+
+			maintenance_company = 1
+			logistics_company = 1
+			artillery_medium_mot  = 1
+			# anti_air = 1
+		}
+		
+		regiments = {
+			light_armor = 1
 			medium_armor = 4
 			motorized = 4
 			artillery_brigade_mot = 2
 			anti_tank_brigade = 1
-			medium_tank_destroyer_brigade = 1
 			light_tank_destroyer_brigade = 1
 			light_sp_artillery_brigade = 1
-			modern_sp_artillery_brigade = 1
+			medium_tank_destroyer_brigade = 1
+			# modern_sp_artillery_brigade = 1
 		}
 	}
 	replace_at_match = 1
-	replace_with = heavy_armor_default_GER
+	replace_with = medium_armor_late_GER
 	target_min_match = 1
 }
 
-
-ss_medium_armor_default_GER = {
-	target_width = 23.9
-	width_weight = 0.5
-	column_swap_factor = 0.3
-	
-	target_template = {
-		weight = 1
-		match_value = 1.0    # NOT USED 
-		support = {
-			ss_artillery_medium_mot  = 1
-			ss_anti_air_heavy = 1
-			SS_DIV_HQ = 1
-			ss_engineer = 1
-			ss_recon_mot = 1
-			ss_maintenance_company = 1
-			ss_logistics_company = 1
-		}
-		
-		regiments = {
-			ss_medium_armor = 2
-			ss_light_armor = 2
-			ss_heavy_armor = 1
-			ss_motorized = 4
-			ss_light_tank_destroyer_brigade = 1
-			ss_light_sp_artillery_brigade = 1
-			ss_medium_tank_destroyer_brigade = 1
-			ss_medium_sp_artillery_brigade = 1
-		}
-	}
-}
 }
 
 
 infantry_GER = {
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 	
-	roles = {
-		infantry
-	}
+	roles = { infantry }
 	
-
+	match_to_count = 0.5
 	
-	match_to_count = 0.55
 infantry_default_GER = {
 	target_width = 23.9
 	width_weight = 0.6
@@ -194,19 +236,23 @@ infantry_default_GER = {
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			recon_cav = 1
+			recon_cav = 1	
+
+			maintenance_company = 1
 			logistics_company = 1
-			field_hospital = 1
-		    maintenance_company = 1
-			#anti_tank_heavy = 1
-			anti_air_heavy = 1
-			artillery_medium  = 1
+			artillery_medium = 1
+		
+
+			# field_hospital = 1
+			# anti_tank_heavy = 1
+			# anti_air_heavy = 1
 		}
 		
 		regiments = {
 			infantry = 9
 			artillery_brigade = 3
 			anti_tank_brigade = 2
+			mountain_artillery_brigade = 2
 		}
 	}
 	replace_at_match = 0.65
@@ -226,13 +272,16 @@ late_infantry_default_GER = {
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			recon_cav = 1
+			recon_cav = 1	
+
+			maintenance_company = 1
 			logistics_company = 1
+			artillery_medium = 1
+		
+
 			field_hospital = 1
-		    maintenance_company = 1
-			#anti_tank_heavy = 1
-			anti_air_heavy = 1
-			artillery_medium  = 1
+			# anti_tank_heavy = 1
+			# anti_air_heavy = 1
 		}
 		
 		regiments = {
@@ -241,6 +290,7 @@ late_infantry_default_GER = {
 			anti_tank_brigade = 2
 			medium_tank_destroyer_brigade = 1
 			light_tank_destroyer_brigade = 1
+			mountain_artillery_brigade = 2
 		}
 	}
 }	
@@ -260,7 +310,7 @@ marines_GER = {
 	}
 	
 	
-	match_to_count = 0.75
+	match_to_count = 0.9
 marine_default_GER = {
 	target_width = 24.9
 	width_weight = 0.1
@@ -297,7 +347,8 @@ paratroopers_GER = {
 	}
 	
 	
-	match_to_count = 0.75
+	match_to_count = 0.9
+	
 paratrooper_default_GER = {
 	target_width = 9.9
 	width_weight = 0.9
@@ -332,7 +383,7 @@ cavalry_GER = {
 		cavalry
 	}
 		
-	match_to_count = 0.75
+	match_to_count = 0.9
 cavalry_default_GER = {
 	target_width = 12.0
 	width_weight = 1.5
@@ -367,7 +418,7 @@ motorized_GER = {
 
 	roles = { motorized }
 	
-	match_to_count = 0.75
+	match_to_count = 0.9
 semi_motorized_default_GER = {
 	target_width = 22.9
 	width_weight = 0.8
@@ -376,103 +427,142 @@ semi_motorized_default_GER = {
 
 	target_template = {
 		weight = 1
-		match_value = 21990.0
+		match_value = 10990.0
 		
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			recon_mot = 1
+			recon_ac = 1	
+
 			maintenance_company = 1
 			logistics_company = 1
+			artillery_medium = 1
 		}
 		
 		regiments = {
 			semi_motorized = 6
 			motorized = 3
 			artillery_brigade_mot = 3
-			anti_tank = 2
+			anti_tank = 1
 		}
 	}
-	replace_at_match = 1
-	replace_with = motorized_default_GER
-	target_min_match = 1
+	replace_at_match = 0.5
+	replace_with = early_motorized_default_GER
+	target_min_match = 0.6
 }
 
-motorized_default_GER = {
+early_motorized_default_GER = {
 	target_width = 24.9
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
 	target_template = {
 		weight = 1
-		match_value = 22990.0
+		match_value = 11990.0
 		
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			#artillery_medium = 1
-			recon_mot = 1
-			anti_tank = 1
+			recon_ac = 1	
+
 			maintenance_company = 1
 			logistics_company = 1
+			artillery_medium = 1			
 		}
 		
 		regiments = {
 			motorized = 6
-			artillery_brigade_mot = 3
+			artillery_brigade_mot = 2
 			anti_tank = 2
-			medium_tank_destroyer_brigade = 1
-			light_tank_destroyer_brigade = 1
 		}
 	}
-    replace_at_match = 1
-	replace_with = motorized_default_GER
-	target_min_match = 1
+    replace_at_match = 0.6
+	replace_with = midwar_motorized_default_GER
+	target_min_match = 0.7
 }
 
-ss_motorized_default_GER = {
+midwar_motorized_default_GER = {
 	target_width = 24.9
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
-
-
 	target_template = {
 		weight = 1
-		match_value = 19990.0
+		match_value = 12990.0
 		
 		support = {
-			SS_DIV_HQ = 1
-			ss_engineer = 1
-			#artillery_medium = 1
-			ss_recon_mot = 1
-			ss_maintenance_company = 1
-			ss_logistics_company = 1
+			DIV_HQ = 1
+			engineer = 1
+			recon_ac = 1	
+
+			maintenance_company = 1
+			logistics_company = 1
+			artillery_medium = 1	
+			anti_air_heavy = 1
+			anti_air = 1		
+
 		}
 		
 		regiments = {
-			ss_motorized = 9
-			ss_artillery_brigade_mot = 3
-			ss_anti_tank = 2
+			motorized = 6
+			artillery_brigade_mot = 2
+			anti_tank = 1
+			# medium_tank_destroyer_brigade = 1
+			light_tank_destroyer_brigade = 1
+		}
+	}
+    replace_at_match = 0.7
+	replace_with = late_motorized_default_GER
+	target_min_match = 0.8
+}
+
+
+late_motorized_default_GER = {
+	target_width = 24.9
+	width_weight = 0.6
+	column_swap_factor = 0.6
+	
+	target_template = {
+		weight = 1
+		match_value = 13990.0
+		
+		support = {
+			DIV_HQ = 1
+			engineer = 1
+			artillery_medium = 1
+			recon_ac = 1
+			#anti_tank = 1
+			maintenance_company = 1
+			logistics_company = 1
+			#anti_tank_heavy = 1
+			anti_air_heavy = 1
+			anti_air = 1
+		}
+		
+		regiments = {
+			motorized = 6
+			artillery_brigade_mot = 2
+			anti_tank = 1
+			# medium_tank_destroyer_brigade = 1
+			light_tank_destroyer_brigade = 1
 		}
 	}
     replace_at_match = 1
-	replace_with = mechanized_default_GER
+	replace_with = late_motorized_default_GER
 	target_min_match = 1
 }
+
 }
 
 
 mechanized_GER = {
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 
-	roles = {
-		mechanized
-	}
-	match_to_count = 0.75
+	roles = { mechanized }
+	
+	match_to_count = 0.9
+	
 mechanized_default_GER = {
 	target_width = 24.9
 	width_weight = 0.5
@@ -502,53 +592,17 @@ mechanized_default_GER = {
 		}
 	}
 }
-ss_mechanized_default_GER = {
-	target_width = 24.9
-	width_weight = 0.5
-	column_swap_factor = 0.3
-	
-	target_template = {
-		weight = 1
-		match_value = 24990.0
-		
-		support = {
-			SS_DIV_HQ = 1
-			ss_engineer = 1
-			#artillery_medium = 1
-			ss_recon_mot = 1
-			ss_maintenance_company = 1
-			ss_logistics_company = 1
-		}
-		
-		regiments = {
-			ss_motorized = 6
-			ss_artillery_brigade_mot = 2
-			ss_anti_tank = 2
-			ss_medium_sp_artillery_brigade = 1
-			ss_medium_tank_destroyer_brigade = 1
-			ss_heavy_sp_artillery_brigade = 1
-			ss_heavy_tank_destroyer_brigade = 1
-			ss_heavy_armor = 1
-			ss_medium_armor = 1
-		}
-	}
-}
 
 }
-
 
 garrison_GER = {
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 	
-	roles = {
-		garrison
-	}
+	roles = { garrison }
 
 	
-	match_to_count = 0.7
+	match_to_count = 0.5
 ss_garrison_default_GER = {
 	target_width = 24.9
 	width_weight = 0.1
@@ -608,6 +662,111 @@ garrison_default_GER = {
 	replace_at_match = 1
 	replace_with = motorized_default_GER
 	target_min_match = 1
+}
+
+}
+
+
+SS_GER = {
+
+	available_for = { GER }
+	
+	roles = { SS }
+	
+	match_to_count = 0.7
+
+ss_motorized_default_GER = {
+	target_width = 24.9
+	width_weight = 0.6
+	column_swap_factor = 0.6
+	
+
+
+	target_template = {
+		weight = 1
+		match_value = 7990.0
+		
+		support = {
+			SS_DIV_HQ = 1
+			ss_engineer = 1
+			#artillery_medium = 1
+			ss_recon_mot = 1
+			ss_maintenance_company = 1
+			ss_logistics_company = 1
+		}
+		
+		regiments = {
+			ss_motorized = 9
+			ss_artillery_brigade_mot = 3
+			ss_anti_tank = 2
+		}
+	}
+    replace_at_match = 1
+	replace_with = mechanized_default_GER
+	target_min_match = 1
+}
+	
+ss_mechanized_default_GER = {
+	target_width = 24.9
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+	target_template = {
+		weight = 1
+		match_value = 10990.0
+		
+		support = {
+			SS_DIV_HQ = 1
+			ss_engineer = 1
+			#artillery_medium = 1
+			ss_recon_mot = 1
+			ss_maintenance_company = 1
+			ss_logistics_company = 1
+		}
+		
+		regiments = {
+			ss_motorized = 6
+			ss_artillery_brigade_mot = 2
+			ss_anti_tank = 2
+			ss_medium_sp_artillery_brigade = 1
+			ss_medium_tank_destroyer_brigade = 1
+			ss_heavy_sp_artillery_brigade = 1
+			ss_heavy_tank_destroyer_brigade = 1
+			ss_heavy_armor = 1
+			ss_medium_armor = 1
+		}
+	}
+}
+
+ss_medium_armor_default_GER = {
+	target_width = 23.9
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+	target_template = {
+		weight = 1
+		match_value = 12990
+		support = {
+			ss_artillery_medium_mot  = 1
+			ss_anti_air_heavy = 1
+			SS_DIV_HQ = 1
+			ss_engineer = 1
+			ss_recon_mot = 1
+			ss_maintenance_company = 1
+			ss_logistics_company = 1
+		}
+		
+		regiments = {
+			ss_medium_armor = 2
+			ss_light_armor = 2
+			ss_heavy_armor = 1
+			ss_motorized = 4
+			ss_light_tank_destroyer_brigade = 1
+			ss_light_sp_artillery_brigade = 1
+			ss_medium_tank_destroyer_brigade = 1
+			ss_medium_sp_artillery_brigade = 1
+		}
+	}
 }
 
 }

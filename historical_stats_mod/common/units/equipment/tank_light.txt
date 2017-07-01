@@ -1541,7 +1541,58 @@ equipments = {
 		}
 	}
 	
-	light_soviet_tank_aa_equipment_1 = {
+	#SU-6
+	light_soviet_tank_aa_1 = {
+		archetype = light_tank_aa_equipment
+		parent = light_tank_aa_equipment_1
+		family = light_soviet_tank_equipment_3
+		priority = 30
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 3.5
+		breakthrough = 3.5
+		armor_value = 35
+
+		#Offensive Abilities
+		soft_attack = 3 #4.5
+		hard_attack = 2 #4
+		ap_attack = 40 #35
+		air_attack = 28 #32
+		
+		build_cost_ic = 16
+	}	
+	#ZSU-37
+	light_soviet_tank_aa_2 = {
+		archetype = light_tank_aa_equipment
+		parent = light_tank_aa_equipment_1
+		family = light_soviet_tank_equipment_6
+		priority = 30
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 3.5
+		breakthrough = 3.5
+		armor_value = 35
+
+		#Offensive Abilities
+		soft_attack = 3 #4.5
+		hard_attack = 2 #4
+		ap_attack = 40 #35
+		air_attack = 28 #32
+		
+		build_cost_ic = 16
+	}
+	#T-90
+	light_soviet_tank_aa_equipment_3 = {
 		archetype = light_tank_aa_equipment
 		parent = light_tank_aa_equipment_1
 		family = light_soviet_tank_equipment_7
@@ -1567,10 +1618,43 @@ equipments = {
 	}
 	
 	############################# SOV Russian SP Tanks
-	light_soviet_tank_art_equipment_1 = {
+		# AT-1	AG					
+	light_soviet_tank_ag_1 = {
+		archetype = light_tank_destroyer_equipment
+		parent = light_tank_destroyer_equipment_1
+		family = light_soviet_tank_equipment_3 
+		priority = 40
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 1
+		hardness = 0.45				# was 0.5 plate 20mm open top
+		armor_value = 27			#  was 25 plate 20mm	
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 17
+		ap_attack = 61				# 71 Now a 76mm gun (zis3)
+		air_attack = 0
+		
+		build_cost_ic = 12.7
+		resources = {
+			oil = 2
+			steel = 4
+			tungsten = 3
+			chromium = 1
+		}
+	}
+	#SU-26
+	light_soviet_tank_art_1 = {
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_1
-		family = light_soviet_tank_equipment_5
+		family = light_soviet_tank_equipment_3
 		priority = 30
 		visual_level = 0
 		#Misc Abilities
@@ -1592,10 +1676,10 @@ equipments = {
 		
 		build_cost_ic = 12.5		# 13
 	}
-	
-	light_soviet_tank_art_equipment_2 = {
+	#T60 Katyusha
+	light_soviet_tank_art_2 = {
 		archetype = light_tank_artillery_equipment
-		parent = light_soviet_tank_art_equipment_1
+		parent = light_tank_artillery_equipment_1
 		family = light_soviet_tank_equipment_5
 		priority = 30
 		visual_level = 0
@@ -1603,7 +1687,7 @@ equipments = {
 		
 		maximum_speed = 7
 		reliability = 0.65
-
+		
 		#Defensive Abilities
 		defense = 5					# 4 changed to 5 as generic sp lt arty
 		breakthrough = 5 			# 1 changed to 5 as generic sp lt arty
@@ -1620,7 +1704,7 @@ equipments = {
 	}
 	
 
-	# OSU-76						# 1942 Renamed OSU 76 for coherence, was prototype based on T60. (I can be a Su-5 Instead, based on a T26, just a few produced)
+	# OSU-57						# 1942 Renamed OSU 76 for coherence, was prototype based on T60. (I can be a Su-5 Instead, based on a T26, just a few produced)
 	light_soviet_tank_td_1 = {
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_1
@@ -1657,7 +1741,7 @@ equipments = {
 	light_soviet_tank_td_2 = {
 		archetype = light_tank_destroyer_equipment
 		parent = light_soviet_tank_td_1
-		#family = light_soviet_tank_equipment_1
+		family = light_soviet_tank_equipment_6
 		priority = 40
 		visual_level = 0
 		
@@ -1686,7 +1770,32 @@ equipments = {
 			chromium = 1
 		}
 	}
-	
+	#T70 OSA 76
+	light_soviet_tank_art_3 = {
+		archetype = light_tank_artillery_equipment
+		parent = light_soviet_tank_art_1
+		family = light_soviet_tank_equipment_6
+		priority = 30
+		visual_level = 0
+		#Misc Abilities
+		
+		maximum_speed = 7
+		reliability = 0.65
+
+		#Defensive Abilities
+		defense = 5					# 4 changed to 5 as generic sp lt arty
+		breakthrough = 5 			# 1 changed to 5 as generic sp lt arty
+		hardness = 0.45				# 0.6 plate 20mm 
+		armor_value = 36			# 38 plate 20mm	- This tank is a BM-8-24 Katyusha based on T60 chassis
+
+		#Offensive Abilities
+		soft_attack = 19			# 6 just Exchanged values (arty)
+		hard_attack = 6				# 19 just exchanged values (arty)
+		ap_attack = 15 				# 80 Now represents 81mm HE
+		air_attack = 0
+		
+		build_cost_ic = 13
+	}
 	############################# Czech Tanks
 	#vz.35 (panzer 35 (t))
 	czech_panzer_equipment_1 = {
