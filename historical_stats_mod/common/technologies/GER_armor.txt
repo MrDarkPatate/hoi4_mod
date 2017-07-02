@@ -1325,7 +1325,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5						# 0
+			factor = 6						# 0 6 should be researched a bit earlier than III D/E
 		}
 		
 		categories = {
