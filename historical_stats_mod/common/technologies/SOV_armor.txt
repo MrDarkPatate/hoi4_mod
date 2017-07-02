@@ -1037,7 +1037,7 @@ technologies = {
 			research_cost_coeff = 1
 		}	
 		path = {
-			leads_to_tech = tech_t_34_td_1
+			leads_to_tech = tech_t_34_td_2
 			research_cost_coeff = 1
 		}		
 		dependencies = {
@@ -1074,7 +1074,7 @@ technologies = {
 			t_34_td_2
 		}
 		path = {
-			leads_to_tech = tech_t_34_td_2
+			leads_to_tech = tech_t_34_td_3
 			research_cost_coeff = 0.5
 		}
 		on_research_complete = {
@@ -1126,7 +1126,7 @@ technologies = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = tech_t_34_td_1
+						has_tech = tech_t_34_td_2
 					}
 
 					load_oob = "SOV_Tank_Korpus_1942"
@@ -1164,7 +1164,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = tech_t_34_td_2
+			leads_to_tech = tech_t_34_td_3
 			research_cost_coeff = 1
 		}
 		dependencies = {
