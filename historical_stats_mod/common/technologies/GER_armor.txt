@@ -295,7 +295,7 @@ technologies = {
 		
 		on_research_complete = {
 		hidden_effect = {
-		load_oob = "GER_Panzer_Division_1940"	# This OOB now includes Light TDs Moved from Marder II because that one is 1941 and allowed only for Players
+		load_oob = "GER_Panzer_Division_1940"	# This OOB now includes Light TDs
 			    }
 				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
@@ -1708,14 +1708,14 @@ technologies = {
 						has_tech =	mechanised_infantry
 					}
 
-					load_oob = "GER_Panzer_DivisionVII"
+					# load_oob = "GER_Panzer_DivisionVII"
 				}
 				if = {
 					limit = {
 						NOT = { has_tech = mechanised_infantry }
 					}
 
-					load_oob = "GER_Panzer_DivisionVIIb"
+					# load_oob = "GER_Panzer_DivisionVIIb"
 				}
 				
 			}
@@ -1967,7 +1967,7 @@ technologies = {
 			}
 			
 			hidden_effect = {
-				load_oob = "GER_Pz_Grandier_Division_1941"
+				# load_oob = "GER_Pz_Grandier_Division_1941"
 			}
 		}
 
