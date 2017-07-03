@@ -7176,10 +7176,10 @@ country_event = {
 	desc = germany.249.d
 	picture = GFX_...
 	
-	fire_only_once = yes
+	fire_only_once = no
 	
 	mean_time_to_happen = {
-		days = 20
+		days = 100
 	}
 
 	trigger = {
