@@ -103,7 +103,7 @@ default_GER_production_lim_0 = {
 	ai_strategy = { type = build_army id = motorized 							value = 2 		}			# 6 desired 3x templates expected
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
 	ai_strategy = { type = build_army id = armor 								value = 4 		}			# 10 desired 3x templates expected
-	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 1 		}			# SS in fact
 	ai_strategy = { type = build_army id = garrison	 							value = 12 		}
 }
 
@@ -124,7 +124,7 @@ default_GER_production_lim = {
 	ai_strategy = { type = build_army id = motorized 							value = 3 		}			# 10 desired 3x templates expected
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
 	ai_strategy = { type = build_army id = armor 								value = 6		}			# 20 desired 3x templates expected
-	ai_strategy = { type = build_army id = SS		 							value = 3 		}
+	ai_strategy = { type = build_army id = mechanized							value = 3 		}			# SS in fact
     ai_strategy = { type = build_army id = garrison	 							value = 16 		}	
 }
 
@@ -144,7 +144,7 @@ default_GER_production_lim_2 = {
 	ai_strategy = { type = build_army id = motorized 							value = 4 		}			# 12 desired 3x templates expected
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
 	ai_strategy = { type = build_army id = armor 								value = 12 		}			# 26 desired 2x templates expected	
-	ai_strategy = { type = build_army id = SS		 							value = 4 		}	
+	ai_strategy = { type = build_army id = mechanized							value = 4 		}			# SS in fact
 	ai_strategy = { type = build_army id = garrison	 							value = 19 		}
 }
 
@@ -165,7 +165,7 @@ default_GER_production_lim_3 = {
 	ai_strategy = { type = build_army id = motorized 							value = 4 		}			# 12 desired 3x templates expected
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
 	ai_strategy = { type = build_army id = armor 								value = 15 		}			# 30 desired 2x templates expected	
-	ai_strategy = { type = build_army id = SS									value = 5 		}	
+	ai_strategy = { type = build_army id = mechanized							value = 5 		}	
 	ai_strategy = { type = build_army id = garrison	 							value = 30 		}			#
 }
 
