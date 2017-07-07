@@ -730,7 +730,7 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = mountain_artillery_equipment_0
+			type = mountain_artillery_equipment_0	# Note: This must be in production since 1 year or more
 			creator = "GER" 
 		}
 		requested_factories = 1
@@ -741,12 +741,12 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = anti_tank_equipment_1
+			type = anti_tank_equipment_1		# Note: This must be in production since 1 year or more
 			creator = "GER" 
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 33
+		efficiency = 50
 	}
 	
 	add_equipment_production = {
@@ -783,7 +783,17 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
-			type = motorized_lia_equipment_01
+			type = motorized_lia_equipment_01		# Note: This must be in production since 1 year or more
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}	
+	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_AC_equipment_06		# Note: This must be in production since 1 year or more
 			creator = "GER" 
 		}
 		requested_factories = 1
@@ -812,7 +822,7 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = { #
+	add_equipment_production = { 					# check 40 eff
 		equipment = {
 			type = ju_52_bomber_equipment_1
 			creator = "GER" 
@@ -821,7 +831,7 @@ instant_effect = {
 		progress = 0.2
 		efficiency = 40
 	}
-	add_equipment_production = { #
+	add_equipment_production = { 					#
 		equipment = {
 			type = he_50_equipment_1
 			creator = "GER" 
@@ -841,7 +851,7 @@ instant_effect = {
 		efficiency = 50
 	}
 	
-	add_equipment_production = {
+	add_equipment_production = { 					# check 40 eff
 		equipment = {
 			type = he_59_bomber_equipment_1
 			creator = "GER" 

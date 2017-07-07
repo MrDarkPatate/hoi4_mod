@@ -1350,9 +1350,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			subtech_panzer_iv_td_equipment_1		#StuG IV.....now Nashorn
+			subtech_panzer_iv_td_equipment_1		#Nashorn
 			subtech_panzer_iv_art_equipment_1		#now Dickermax
-			subtech_panzer_iv_spaa_equipment_1
+			subtech_panzer_iv_spaa_equipment_1		# AA 20mm
 		}
 		
 		research_cost = 1.2					# Watch this, important to Tiger I too. 
@@ -1395,6 +1395,7 @@ technologies = {
 			cat_stug
 		}
 	}
+	
 	subtech_panzer_iv_art_equipment_1 = {		#now dickermax
 
 		enable_equipments = {
@@ -1417,6 +1418,7 @@ technologies = {
 			factor = 0								# Locked: NOTE: 1st opportunity to get AG for AI. 
 		}
 	}
+	
 	subtech_panzer_iv_spaa_equipment_1 = {			#Wirbelwind
 
 		enable_equipments = {
@@ -1453,9 +1455,9 @@ technologies = {
 			leads_to_tech = tech_panzer_v_equipment_1
 			research_cost_coeff = 1
 		}
-		path = {
+		path = {								#Tiger
 			leads_to_tech = tech_panzer_vi_equipment_1
-			research_cost_coeff = 1				#Tiger
+			research_cost_coeff = 1
 		}
 		
 		dependencies = {
@@ -1470,9 +1472,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			subtech_panzer_iv_td_equipment_2		#now Jagdpanzer
+			subtech_panzer_iv_td_equipment_2		#now Jagdpanzer IV
 			subtech_panzer_iv_ag_equipment_1		#Sturmpanzer
-			subtech_panzer_iv_spaa_equipment_2
+			subtech_panzer_iv_spaa_equipment_2		#AA 37mm
 		}
 		
 		ai_will_do = {
@@ -1576,9 +1578,9 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			subtech_panzer_iv_td_equipment_3		#StuG IV
+			subtech_panzer_iv_td_equipment_3		#StuG IV 
 			subtech_panzer_iv_art_equipment_2		#Hummel
-			subtech_panzer_iv_spaa_equipment_3
+			subtech_panzer_iv_spaa_equipment_3		# AA 30mm
 		}
 		
 		ai_will_do = {

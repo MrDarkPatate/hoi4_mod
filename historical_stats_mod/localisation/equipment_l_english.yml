@@ -1358,8 +1358,8 @@ SAF_artillery_equipment_3_desc:0 "New howitzer designs, taking advantage of new 
  mountain_artillery_equipment_0_short:0 "Pack Artillery"
  mountain_artillery_equipment_0_desc:0 "Mtn Artillery refers to Light-caliber weapons, such as cannons and howitzers that are operated by crews, which can project munitions far beyond the effective range of personal weapons. And specialized for use in hills and mountains."
  GER_mountain_artillery_equipment_0:0 "7.5 cm leichtes Infanteriegeschütz 18 / Gebirgsgeschütz 36"
- GER_mountain_artillery_equipment_0_short:0 "7.5 cm leIG 18 / GebG 36"
- GER_mountain_artillery_equipment_0_desc:0 "7.5 cm le.IG 18 was an infantry support gun of the German Wehrmacht. 7.5 cm GebG 36  was the standard light gun of the German mountain divisions specialized for use in hills and mountains."
+ GER_mountain_artillery_equipment_0_short:0 " 7.5 cm leIG 18 / GebG 36"
+ GER_mountain_artillery_equipment_0_desc:0 " 7,5 cm le.IG 18 was an infantry support gun of the German Wehrmacht. \n Mtn Artillery refers to Light-caliber weapons, such as cannons and howitzers that are operated by crews, which can project munitions far beyond the effective range of personal weapons. And specialized for use in hills and mountains."
 ENG_mountain_artillery_equipment_0:0 "Ordnance QF 3.7-inch howitzer Mountain Artillery"
 ENG_mountain_artillery_equipment_0_short:0 "QF 3.7-inch howitzer"
 ENG_mountain_artillery_equipment_0_desc:0 "Mtn Artillery refers to Light-caliber weapons, such as cannons and howitzers that are operated by crews, which can project munitions far beyond the effective range of personal weapons. And specialized for use in hills and mountains."
@@ -4571,6 +4571,12 @@ SAF_HVanti_tank_equipment_2_desc:0 "Heavy Anti-Tank Guns specialized in defeatin
  GER_infantry_uniforms2_desc:0 "Uniforms, helmets, boots and kit required by the troops"
  
  #########################################
+ infantry_at_2:0 "Infantry Anti-Tank II"
+ infantry_at_2_short:0 "Infantry Anti-Tank II"
+ infantry_at_2_desc:0 "Improved Technics for our Infantry to take out enemy Tanks."
+ RPG_weapons:0 "Rocket Propelled Grenade System"
+ RPG_weapons_short:0 "Rocket Propelled Grenade System"
+ RPG_weapons_desc:0 ""
  garrison_equipment:0 "Garrison Maintenance" 
  garrison_equipment_short:0 "Garrison Maintenance"
  garrison_equipment_desc:0 "Equipment and supplies to maintain garrisons."
@@ -5409,9 +5415,9 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_iv_equipment_4_short:0 "Panzer IV G Medium Tank"
  panzer_iv_equipment_4_desc:0 "Even equipped with the AP Panzergranate, the low-velocity gun of the Panzer IV was inadequate against well-armored tanks. On 26 May 1941, mere weeks before Operation Barbarossa, during a conference with Hitler, it was decided to improve the Panzer IV's main armament. Krupp was awarded the contract to integrate again the 50 mm (1.97 in) Pak 38 L/60 gun into the turret. November 1941, the decision to up-gun the Panzer IV to the 50-millimetre gun was dropped, and instead Krupp was contracted in a joint development to modify Rheinmetall's pending 75 mm anti-tank gun design.  This led to 75mm KwK 40 L/43. After the first prototype was produced by Krupp, in February 1942, production of the F2 started. By July 1942, 175 had been delivered. However, in June 1942, the F2 was renamed Ausf.G, and further modifications were applied on the production line."
  #
- panzer_iv_td_equipment_1:0 "StuG IV"
- panzer_iv_td_equipment_1_short:0 "StuG IV Medium TD"
- panzer_iv_td_equipment_1_desc:0 "Medium Tank Destroyer based on the Pz IV chassis. In November 1943, Alkett, the manufacturer of the StuG III, suffered damage due to an Allied bombing raid. A conference held from 6 to 7 December 1943, addressed possible solutions to this problem. Hitler welcomed the suggestion of taking the StuG III superstructure and mounting it on a Panzer IV chassis. The StuG IV could be more quickly manufactured than the Jagdpanzer IV at the time. This restarted the Sturmgeschütz IV project. This time, the superstructure of the StuG III Ausf. G was mounted on a Panzer IV chassis 7, with a box compartment for the driver added. Combat weight was 23000 kg, lighter than the 23900 kg for the StuG III Ausf. G. Between 16 and 17 December 1943, Hitler was shown the StuG IV and approved it."
+ panzer_iv_td_equipment_3:0 "StuG IV"
+ panzer_iv_td_equipment_3_short:0 "StuG IV Medium TD"
+ panzer_iv_td_equipment_3_desc:0 "Medium Tank Destroyer based on the Pz IV chassis. In November 1943, Alkett, the manufacturer of the StuG III, suffered damage due to an Allied bombing raid. A conference held from 6 to 7 December 1943, addressed possible solutions to this problem. Hitler welcomed the suggestion of taking the StuG III superstructure and mounting it on a Panzer IV chassis. The StuG IV could be more quickly manufactured than the Jagdpanzer IV at the time. This restarted the Sturmgeschütz IV project. This time, the superstructure of the StuG III Ausf. G was mounted on a Panzer IV chassis 7, with a box compartment for the driver added. Combat weight was 23000 kg, lighter than the 23900 kg for the StuG III Ausf. G. Between 16 and 17 December 1943, Hitler was shown the StuG IV and approved it."
  #
  panzer_iv_spaa_equipment_1:0 "Wirbelwind"
  panzer_iv_spaa_equipment_1_short:0 "Wirbelwind Medium SP.AA"
@@ -5421,9 +5427,9 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_iv_equipment_5_short:0 "Panzer IV H Medium Tank"
  panzer_iv_equipment_5_desc:0 "the Ausf. H, began production in June 1943 and received the designation Sd. Kfz. 161/2. The integrity of the glacis armor was improved by manufacturing it as a single 80-millimetre plate. To prevent adhesion of magnetic anti-tank mines, which the Germans feared would be used in large numbers by the Allies, Zimmerit paste was added to all the vertical surfaces of the tank's armor. The vehicle's side and turret were further protected by the addition of 5-millimetre side-skirts and 8-millimetre turret skirts."
  #
- panzer_iv_td_equipment_2:0 "Nashorn"
- panzer_iv_td_equipment_2_short:0 "Nashorn Medium TD"
- panzer_iv_td_equipment_2_desc:0 "Nashorn ("rhinoceros") tank destroyer. \n It was developed as an interim solution in 1942 by equipping a light turretless chassis with the Pak 43 heavy anti-tank gun. Though only lightly armoured and displaying a high profile, it could frontally penetrate any Allied tank at long range, and its relatively low cost and superior mobility to heavier vehicles ensured it remained in production until the war's end. Total production of the Nashorn amounted to some 494 vehicles, most of which were built in 1943. In January 1944, Hitler favored production of a newer tank destroyer, the Jagdpanzer IV, which had a much lower silhouette, thicker frontal armor (60 mm frontal plate), and an effective though less powerful 7.5 cm gun. Though still primarily an ambush weapon, this vehicle was better built for armoured engagements. Production of the Nashorn continued into 1945, though at a slow pace."
+ panzer_iv_td_equipment_1:0 "Nashorn"
+ panzer_iv_td_equipment_1_short:0 "Nashorn Medium TD"
+ panzer_iv_td_equipment_1_desc:0 "Nashorn ("rhinoceros") tank destroyer. \n It was developed as an interim solution in 1942 by equipping a light turretless chassis with the Pak 43 heavy anti-tank gun. Though only lightly armoured and displaying a high profile, it could frontally penetrate any Allied tank at long range, and its relatively low cost and superior mobility to heavier vehicles ensured it remained in production until the war's end. Total production of the Nashorn amounted to some 494 vehicles, most of which were built in 1943. In January 1944, Hitler favored production of a newer tank destroyer, the Jagdpanzer IV, which had a much lower silhouette, thicker frontal armor (60 mm frontal plate), and an effective though less powerful 7.5 cm gun. Though still primarily an ambush weapon, this vehicle was better built for armoured engagements. Production of the Nashorn continued into 1945, though at a slow pace."
  #
  panzer_iv_spaa_equipment_2:0 "Ostwind"
  panzer_iv_spaa_equipment_2_short:0 "Ostwind Medium SP.AA"
@@ -5433,9 +5439,9 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_iv_equipment_6_short:0 "Panzer IV J Medium Tank"
  panzer_iv_equipment_6_desc:0 "Despite addressing the mobility problems introduced by the previous model, the final production version of the Panzer IV—the Ausf. J—was considered a retrograde from the Ausf. H. Born of German necessity to replace heavy losses, it was greatly simplified to speed production."
  #
- panzer_iv_td_equipment_3:0 "Jagdpanzer IV/70"
- panzer_iv_td_equipment_3_short:0 "Jagdpanzer IV/70 Medium TD"
- panzer_iv_td_equipment_3_desc:0 "The Jagdpanzer IV, Sd.Kfz. 162, was a German tank destroyer based on the Panzer IV chassis and built in three main variants. As one of the casemate-style turretless Jagdpanzer (tank destroyer) designs, it was developed against the wishes of Heinz Guderian, the inspector general of the Panzertruppen, as a replacement for the Sturmgeschütz III (StuG III). Guderian objected against the needless, in his eyes, diversion of resources from Panzer IV tank production, as the Sturmgeschütz III was still more than adequate for its role. The L/70-armed vehicle was named Panzer IV/70."
+ panzer_iv_td_equipment_2:0 "Jagdpanzer IV/70"
+ panzer_iv_td_equipment_2_short:0 "Jagdpanzer IV/70 Medium TD"
+ panzer_iv_td_equipment_2_desc:0 "The Jagdpanzer IV, Sd.Kfz. 162, was a German tank destroyer based on the Panzer IV chassis and built in three main variants. As one of the casemate-style turretless Jagdpanzer (tank destroyer) designs, it was developed against the wishes of Heinz Guderian, the inspector general of the Panzertruppen, as a replacement for the Sturmgeschütz III (StuG III). Guderian objected against the needless, in his eyes, diversion of resources from Panzer IV tank production, as the Sturmgeschütz III was still more than adequate for its role. The L/70-armed vehicle was named Panzer IV/70."
  #
  panzer_iv_spaa_equipment_3:0 "Kugelblitz"
  panzer_iv_spaa_equipment_3_short:0 "Kugelblitz Medium SP.AA"
@@ -5449,9 +5455,9 @@ subtech_sea_hurricane_fighter_equipment_3_desc:0 "Modifying the Hurricane IIc fo
  panzer_iv_art_equipment_2:0 "Hummel"
  panzer_iv_art_equipment_2_short:0 "Hummel Medium SP.Art"
  panzer_iv_art_equipment_2_desc:0 "Hummel ("bumblebee") was a self-propelled artillery gun based on the Geschützwagen III/IV chassis (the same chassis was also used for the Nashorn tank destroyer) and armed with a 15 cm howitzer. The Hummel was designed in 1942 out of a need for mobile artillery support for the tank forces, the lack of which had first been felt during the invasion of the USSR. There were some self-propelled artillery vehicles already in service with the Wehrmacht at the time, but most were of limited value. The Hummel had an open-topped lightly armoured fighting compartment at the back of the vehicle, which housed the howitzer and the crew.\n On February 27, 1944, Hitler ordered the name Hummel to be dropped as it was deemed inappropriate for a fighting vehicle.\n More then 700 built."
- panzer_iv_art_equipment_3:0 "Dickermax"
- panzer_iv_art_equipment_3_short:0 "Dickermax Medium SP.Art"
- panzer_iv_art_equipment_3_desc:0 "Self propelled long-range Howitzer"
+ panzer_iv_art_equipment_1:0 "Dickermax"
+ panzer_iv_art_equipment_1_short:0 "Dickermax Medium SP.Art"
+ panzer_iv_art_equipment_1_desc:0 "Self propelled long-range Howitzer"
  # Panzer V D
  panzer_v_equipment_1:0 "PzKpfw.V ausf. D"
  panzer_v_equipment_1_short:0 "Panther D Medium Tank"
@@ -8708,4 +8714,10 @@ NZL_cavalry_tank_equipment_0_desc:0 "This is a further rework of the stopgap pro
  CAM_support_weapons2:0 "Hotchkiss M1914 & Brandt Mle 1935"
  CAM_support_weapons3:0 "FM 24/29 & Brandt Mle 27/31"
  CAM_support_weapons4:0 "Hotchkiss M1922 & Brandt Mle 1942"
+ 
+  
+ CZE_medium_tank_destroyer_equipment_1:0 "Stihac Tanku I"
+ CZE_medium_tank_destroyer_equipment_1_short:0 "ST-I"
+ YUG_super_heavy_tank_equipment_1:0 "Teski Tenk Kraljevic Marko"
+ YUG_super_heavy_tank_equipment_1_short:0 "Kraljevic Marko"
  #EOF#

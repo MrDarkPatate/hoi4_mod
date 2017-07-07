@@ -1657,7 +1657,7 @@
 	
 	################################# Panzer IV SP guns ART
 	#Dickermax					# 1941 or 1942 IMPORTANT NOTE: Hummel was researched later. Exchanged values
-	panzer_iv_art_equipment_2 = {
+	panzer_iv_art_equipment_1 = {
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_1
 		family = panzer_iv_equipment_4
@@ -1690,9 +1690,9 @@
 
 	}
 	#Hummel						# 1943
-	panzer_iv_art_equipment_3 = {
+	panzer_iv_art_equipment_2 = {
 		archetype = medium_tank_artillery_equipment
-		parent = panzer_iv_art_equipment_2
+		parent = panzer_iv_art_equipment_1
 		family = panzer_iv_equipment_5
 		priority = 60
 		visual_level = 0
@@ -1723,11 +1723,44 @@
 	}
 	
 	################################ Panzer IV TD
-	#StuG IV  1942				# Note: Could be 1943 and be interchanged with Nashorn.  However... makes more sense for game balance purposes in this order 
+	#StuG IV  1942				# 1943
 	panzer_iv_td_equipment_1 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_1
 		family = panzer_iv_equipment_4 
+		priority = 80
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 6		# 5
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 3
+		hardness = 0.43			# 0.75 plate 30mm open top
+		armor_value = 32		# 99  plate 30mm 
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 30
+		ap_attack = 120			# First option to introduce 88L71gun in tank 
+		air_attack = 0
+		
+		build_cost_ic = 24.1	# 22.5 - 24 tons Fast to build (open top)
+		
+		resources = {
+			oil = 2
+			steel = 5			# 4 Adjusted heavy weight & reduced IC time 			
+			tungsten = 6		# 5 Heavy weapon  
+			chromium = 2		# 1
+		}	
+	}
+	#Nashorn  1943				# 1943?
+	panzer_iv_td_equipment_2 = {
+		archetype = medium_tank_destroyer_equipment
+		parent = panzer_iv_td_equipment_1
+		family = panzer_iv_equipment_5
 		priority = 80
 		visual_level = 0
 		
@@ -1754,41 +1787,10 @@
 			steel = 4			
 			tungsten = 3		# 5 
 			chromium = 1
-		}	
-	}
-	#Nashorn  1943				# NOTE: Was 1942. but better 1943 to make sense.
-	panzer_iv_td_equipment_2 = {
-		archetype = medium_tank_destroyer_equipment
-		parent = panzer_iv_td_equipment_1
-		family = panzer_iv_equipment_5
-		priority = 80
-		visual_level = 0
-		
-		maximum_speed = 6		# 5
-		reliability = 0.7
-
-		#Defensive Abilities
-		defense = 12
-		breakthrough = 3
-		hardness = 0.43			# 0.75 plate 30mm open top
-		armor_value = 32		# 99  plate 30mm 
-
-		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 30
-		ap_attack = 120			# First option to introduce 88L71gun in tank 
-		air_attack = 0
-		
-		build_cost_ic = 24.1	# 22.5 - 24 tons Fast to build (open top)
-		
-		resources = {
-			oil = 2
-			steel = 5			# 4 Adjusted heavy weight & reduced IC time 			
-			tungsten = 6		# 5 Heavy weapon  
-			chromium = 2		# 1
 		}
 	}
-	#Jagdpanzer IV/70  1944
+	
+	#Jagdpanzer IV/70  1944		# 1944
 	panzer_iv_td_equipment_3 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = panzer_iv_td_equipment_2
