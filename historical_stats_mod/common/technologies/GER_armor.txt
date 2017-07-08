@@ -911,7 +911,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 18					# 10
+			factor = 25					# 10
 		}
 		
 		categories = {

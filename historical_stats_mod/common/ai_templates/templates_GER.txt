@@ -669,7 +669,7 @@ mechanized_GER = {
 	match_to_count = 0.7
 
 elite_Wachtruppen_GER = {						# With 0.7 NO roles...
-	target_width = 7
+	target_width = 20
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
@@ -678,6 +678,7 @@ elite_Wachtruppen_GER = {						# With 0.7 NO roles...
 		match_value = 5990.0
 		
 		support = {
+			DIV_HQ = 1
 			military_police = 1
 			recon_mot = 1		
 		}
@@ -771,8 +772,8 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 	}
 }
 
-ss_motorized_default_GER = {				# SS Mot Regiments pre 1940 
-	target_width = 6
+ss_motorized_default_GER = {				# SS Mot Regiments pre 1940 					# With 0.7 NO roles...
+	target_width = 20
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
