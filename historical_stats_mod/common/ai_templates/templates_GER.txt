@@ -5,9 +5,9 @@ armored_GER = {
 	
 	roles = { armor }
 	
-	match_to_count = 0.7			# With 0.5 1936-PzDiv match 3x roles. With 0.8... None?
+	match_to_count = 0.7			# With 0.5 1936-PzDiv match 3x roles. With 0.8... None? With 0.7 1xrole
 	
-prewar_armor_default_GER = {		# 1935' (1-3 Pz Div)
+prewar_armor_default_GER = {		# 1935' (1-3 Pz Div)		Initial deploy template
 	target_width = 21.5
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -28,18 +28,18 @@ prewar_armor_default_GER = {		# 1935' (1-3 Pz Div)
 		
 		regiments = {
 			light_armor = 8
-			motorized = 3
+			semi_motorized = 3
 			artillery_brigade_mot = 2
 			anti_tank_brigade = 1
 		}
 	}
 	replace_at_match = 0.5
 	replace_with = early_armor_late_GER
-	target_min_match = 0.60
+	target_min_match = 0.6
 }
 
-early_armor_default_GER = {			# 1936' Pz
-	target_width = 21.9
+early_armor_default_GER = {			# 1936' Pz		 With 0.7 2xrole?  		Template obtained with IV A
+	target_width = 22
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
@@ -55,23 +55,28 @@ early_armor_default_GER = {			# 1936' Pz
 			maintenance_company = 1
 			logistics_company = 1
 			# anti_air = 1
+			# field_hospital = 1
 		}
 		
 		regiments = {
 			light_armor = 7
+			
 			medium_armor = 1
-			motorized = 3
-			artillery_brigade_mot = 2
+			
+			semi_motorized = 3
+			
 			anti_tank_brigade = 1
+			
+			artillery_brigade_mot = 2
 		}
 	}
 	replace_at_match = 0.5
 	replace_with = light_armor_late_GER
-	target_min_match = 0.60
+	target_min_match = 0.6
 }
 
-light_armor_late_GER = {			# 1937' Pz
-	target_width = 21.9
+light_armor_late_GER = {			# 1937' Pz		 With 0.7 2xrole			Template obtained with IV D
+	target_width = 24
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
@@ -86,6 +91,7 @@ light_armor_late_GER = {			# 1937' Pz
 
 			maintenance_company = 1
 			logistics_company = 1
+			# field_hospital = 1
 			# anti_air = 1
 		}
 		
@@ -107,7 +113,7 @@ light_armor_late_GER = {			# 1937' Pz
 	target_min_match = 0.65
 }
 
-medium_armor_default_GER = {		# 1939'
+medium_armor_default_GER = {		# 1939'		Template obtained with Bison I
 	target_width = 23.9 
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -124,6 +130,7 @@ medium_armor_default_GER = {		# 1939'
 			maintenance_company = 1
 			logistics_company = 1
 			artillery_medium_mot  = 1
+			field_hospital = 1
 			# anti_air = 1
 		}
 		
@@ -136,7 +143,7 @@ medium_armor_default_GER = {		# 1939'
 			
 			anti_tank_brigade = 1
 			
-			artillery_brigade_mot = 1
+			artillery_brigade_mot = 2
 			light_sp_artillery_brigade = 1
 		}
 	}
@@ -145,7 +152,7 @@ medium_armor_default_GER = {		# 1939'
 	target_min_match = 0.7
 }
 
-medium_armor_mid_GER = {			# 1940'
+medium_armor_mid_GER = {			# 1940'			Template obtained with PzJg I
 	target_width = 23.9 
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -162,6 +169,7 @@ medium_armor_mid_GER = {			# 1940'
 			maintenance_company = 1
 			logistics_company = 1
 			artillery_medium_mot  = 1
+			field_hospital = 1
 			# anti_air = 1
 		}
 		
@@ -184,7 +192,7 @@ medium_armor_mid_GER = {			# 1940'
 	target_min_match = 0.75
 }
 
-medium_armor_late_GER = {			# 1942+
+medium_armor_late_GER = {			# 1942+  	Template obtained with Stug III F
 	target_width = 23.9 
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -197,12 +205,13 @@ medium_armor_late_GER = {			# 1942+
 			DIV_HQ = 1
 			engineer = 1
 			recon_ac = 1
-			anti_tank_heavy = 1
+			anti_tank = 1
 			anti_air_heavy = 1			
 
 			maintenance_company = 1
 			logistics_company = 1
 			artillery_medium_mot  = 1
+			field_hospital = 1
 			# anti_air = 1
 		}
 		
@@ -234,9 +243,9 @@ infantry_GER = {
 	
 	roles = { infantry }
 	
-	match_to_count = 0.8			# With 0.5.. 1936 inf divs match 2x roles
+	match_to_count = 0.8
 	
-infantry_default_GER = {
+infantry_default_GER = {			# With 0.5.. 1936 inf divs match 2x roles. With 0.8 1x roles		Initial deploy Template
 	target_width = 23.9
 	width_weight = 0.6
 	column_swap_factor = 0.6
@@ -272,7 +281,7 @@ infantry_default_GER = {
 	target_min_match = 0.7
 }
 
-late_infantry_default_GER = {
+late_infantry_default_GER = {				# Should get a template by late war. 
 	target_width = 23.9
 	width_weight = 0.6
 	column_swap_factor = 0.6
@@ -289,9 +298,8 @@ late_infantry_default_GER = {
 			maintenance_company = 1
 			logistics_company = 1
 			artillery_medium = 1
-		
-
 			field_hospital = 1
+			
 			# anti_tank_heavy = 1
 			# anti_air_heavy = 1
 		}
@@ -303,8 +311,8 @@ late_infantry_default_GER = {
 			mountain_artillery_brigade = 2
 			
 			anti_tank_brigade = 2
-			medium_tank_destroyer_brigade = 1
-			light_tank_destroyer_brigade = 1
+			medium_tank_destroyer_brigade = 1	# stug
+			light_tank_destroyer_brigade = 1	# Marder
 
 		}
 	}
@@ -461,7 +469,7 @@ semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 
 		regiments = {
 			semi_motorized = 9
 			artillery_brigade_mot = 3
-			anti_tank = 1
+			anti_tank_brigade = 1
 		}
 	}
 	replace_at_match = 0.5
@@ -469,7 +477,7 @@ semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 
 	target_min_match = 0.6
 }
 
-early_motorized_default_GER = {					# This template should be allowable after Poland. Consider removing from Initial Deploy.
+early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
 	target_width = 24.9
 	width_weight = 0.6
 	column_swap_factor = 0.6
@@ -490,8 +498,11 @@ early_motorized_default_GER = {					# This template should be allowable after Po
 		
 		regiments = {
 			motorized = 6
+			
 			artillery_brigade_mot = 2
-			anti_tank = 2
+			
+			anti_tank_brigade = 2
+			light_tank_destroyer_brigade = 1
 		}
 	}
     replace_at_match = 0.6
@@ -499,7 +510,7 @@ early_motorized_default_GER = {					# This template should be allowable after Po
 	target_min_match = 0.7
 }
 
-midwar_motorized_default_GER = {
+midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 	target_width = 24.9
 	width_weight = 0.6
 	column_swap_factor = 0.6
@@ -511,64 +522,29 @@ midwar_motorized_default_GER = {
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			recon_ac = 1	
-
+			recon_ac = 1
+			field_hospital = 1
+			# anti_air_heavy = 1
+			
 			maintenance_company = 1
 			logistics_company = 1
 			artillery_medium = 1	
-			anti_air_heavy = 1
-			anti_air = 1		
-
+			anti_air = 1	
 		}
 		
 		regiments = {
 			motorized = 6
+			
 			artillery_brigade_mot = 2
-			anti_tank = 1
-			# medium_tank_destroyer_brigade = 1
+			
+			anti_tank_brigade = 1
+			medium_tank_destroyer_brigade = 1
 			light_tank_destroyer_brigade = 1
 		}
 	}
-    replace_at_match = 0.7
-	replace_with = late_motorized_default_GER
-	target_min_match = 0.8
+
 }
 
-
-late_motorized_default_GER = {
-	target_width = 24.9
-	width_weight = 0.6
-	column_swap_factor = 0.6
-	
-	target_template = {
-		weight = 1
-		match_value = 13990.0
-		
-		support = {
-			DIV_HQ = 1
-			engineer = 1
-			artillery_medium = 1
-			recon_ac = 1
-			#anti_tank = 1
-			maintenance_company = 1
-			logistics_company = 1
-			#anti_tank_heavy = 1
-			anti_air_heavy = 1
-			anti_air = 1
-		}
-		
-		regiments = {
-			motorized = 6
-			artillery_brigade_mot = 2
-			anti_tank = 1
-			# medium_tank_destroyer_brigade = 1
-			light_tank_destroyer_brigade = 1
-		}
-	}
-    replace_at_match = 1
-	replace_with = late_motorized_default_GER
-	target_min_match = 1
-}
 
 }
 
@@ -690,10 +666,10 @@ mechanized_GER = {
 	
 	roles = { mechanized }
 	
-	match_to_count = 0.8
+	match_to_count = 0.7
 
-elite_Wachtruppen_GER = {
-	target_width = 8
+elite_Wachtruppen_GER = {						# With 0.7 NO roles...
+	target_width = 7
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
@@ -707,16 +683,16 @@ elite_Wachtruppen_GER = {
 		}
 		
 		regiments = {
-		semi_motorized = 3
-		artillery_brigade_mot = 1			
+			semi_motorized = 3
+			artillery_brigade_mot = 1			
 		}
 	}
-    replace_at_match = 0.8
+    replace_at_match = 0.2
 	replace_with = elite_motorized_default_GER 
-	target_min_match = 0.8
+	target_min_match = 0.2
 }	
 
-elite_motorized_default_GER = {					# Elite Wehrmacht Divisions 1941+
+elite_motorized_default_GER = {					# Panzer Grenadier Elite Wehrmacht Divisions 1941+
 	target_width = 20.9
 	width_weight = 0.6
 	column_swap_factor = 0.6
@@ -728,14 +704,13 @@ elite_motorized_default_GER = {					# Elite Wehrmacht Divisions 1941+
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			artillery_medium = 1
-			recon_mot = 1
-			
+			recon_ac = 1
+			field_hospital = 1
 
 			maintenance_company = 1
 			logistics_company = 1
+			artillery_medium = 1
 			anti_air_heavy = 1
-
 		}
 		
 		regiments = {
@@ -744,10 +719,11 @@ elite_motorized_default_GER = {					# Elite Wehrmacht Divisions 1941+
 			motorized = 6
 			
 			artillery_brigade_mot = 2
-			
-			anti_tank = 1			
-			medium_tank_destroyer_brigade = 1
+			light_sp_artillery_brigade = 1
+	
+			anti_tank_brigade = 1			
 			light_tank_destroyer_brigade = 1
+			medium_tank_destroyer_brigade = 1
 		}
 	}
     replace_at_match = 0.7
@@ -775,6 +751,7 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 			artillery_medium_mot  = 1
 			anti_air_heavy = 1
 			anti_tank_heavy = 1
+			# field_hospital = 1
 		}
 		
 		regiments = {
@@ -783,7 +760,7 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 			
 			motorized = 6
 			
-			anti_tank = 2			
+			anti_tank_brigade = 2			
 			heavy_tank_destroyer_brigade = 1
 			medium_tank_destroyer_brigade = 1
 			
@@ -804,7 +781,7 @@ ss_motorized_default_GER = {				# SS Mot Regiments pre 1940
 		match_value = 6990.0
 		
 		support = {		
-			ss_recon_ac = 1
+			ss_recon_mot = 1
 			ss_maintenance_company = 1
 			ss_logistics_company = 1
 			military_police = 1
@@ -830,17 +807,23 @@ ss_motorized2_default_GER = {				#SS Mot divisions post 1940
 		match_value = 7990.0
 		
 		support = {
-			SS_DIV_HQ = 1
-			ss_engineer = 1
+			SS_DIV_HQ = 1		
 			ss_recon_mot = 1
+			ss_engineer = 1
+			ss_artillery_medium_mot = 1
+			
 			ss_maintenance_company = 1
 			ss_logistics_company = 1
-			military_police = 1
+			ss_field_hospital = 1
+			military_police = 1				# Eliminate
 		}
 		
 		regiments = {
 			ss_motorized = 9
+			
 			ss_artillery_brigade_mot = 3
+			
+			ss_anti_tank_brigade = 2
 		}
 	}
     replace_at_match = 0.6
@@ -848,7 +831,7 @@ ss_motorized2_default_GER = {				#SS Mot divisions post 1940
 	target_min_match = 0.6
 }
 
-ss_medium_armor_default_GER = {				# SS Panzer Divisions post 1941
+ss_medium_armor_default_GER = {				# SS Panzer Grenadier Division 1942-1943
 	target_width = 23.9
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -857,30 +840,28 @@ ss_medium_armor_default_GER = {				# SS Panzer Divisions post 1941
 		weight = 1
 		match_value = 12990
 		support = {
-			SS_DIV_HQ = 1
+			SS_DIV_HQ = 1		
 			ss_engineer = 1
-			ss_recon_mot = 1
-			ss_maintenance_company = 1
+			ss_recon_ac = 1
+			ss_field_hospital = 1
 			
+			ss_maintenance_company = 1
 			ss_logistics_company = 1
-			ss_artillery_medium_mot  = 1
-			ss_anti_air_heavy = 1
-			ss_anti_tank = 1
+			ss_artillery_medium_mot = 1
+			ss_anti_air_heavy = 1							
 		}
 		
 		regiments = {
-			ss_medium_armor = 3
-			ss_light_armor = 1
+			ss_medium_armor = 1
 		
 			ss_motorized = 6
 			
-			ss_anti_tank = 2			
+			ss_anti_tank_brigade = 1			
 			ss_light_tank_destroyer_brigade = 1
 			ss_medium_tank_destroyer_brigade = 1	
 			
 			ss_artillery_brigade_mot = 2			
 			ss_light_sp_artillery_brigade = 1
-			ss_medium_sp_artillery_brigade = 1
 		}
 	}
 	replace_at_match = 0.6
@@ -899,15 +880,17 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 		match_value = 13990.0
 		
 		support = {
-			SS_DIV_HQ = 1
-			ss_engineer = 1
+			SS_DIV_HQ = 1		
 			ss_recon_mot = 1
-			ss_maintenance_company = 1
+			ss_engineer = 1
+			ss_artillery_medium_mot = 1
+			ss_anti_air_heavy = 1		
 			
+			ss_maintenance_company = 1
 			ss_logistics_company = 1
-			ss_artillery_medium_mot  = 1
-			ss_anti_air_heavy = 1
-			ss_anti_tank = 1
+			ss_field_hospital = 1
+			military_police = 1			# Eliminate
+			ss_anti_tank = 1	
 		}
 		
 		regiments = {
@@ -916,7 +899,7 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 			
 			ss_motorized = 6
 			
-			ss_anti_tank = 2			
+			ss_anti_tank_brigade = 2			
 			ss_heavy_tank_destroyer_brigade = 1
 			ss_medium_tank_destroyer_brigade = 1
 			

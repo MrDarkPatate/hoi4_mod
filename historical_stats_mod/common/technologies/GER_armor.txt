@@ -447,7 +447,7 @@ technologies = {
 			subtech_panzer_ii_art_equipment_1
 		}	
 		ai_will_do = {
-			factor = 12						# Was 175 Now moved to previous Pz II. Value means 2nd in priority research.
+			factor = 8						# Now moved to previous Pz II. Should be researched AFTER IV A but B4 III A
 		}
 		
 		categories = {
@@ -835,7 +835,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 3						# Pz III with the 50mm is the objective... This is going to be best battle tank until 1942.
+			factor = 4						# Pz III with the 50mm is the objective... This is going to be best battle tank until 1942.
 		}
 		
 		categories = {
@@ -873,7 +873,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 5						# 10
+			factor = 3						# 10
 		}
 		
 		categories = {
@@ -1010,7 +1010,7 @@ technologies = {
 		}
 	}
 	
-	tech_panzer_iii_td_equipment_1 = { 		#  This tank is now a correct TD (Stug III F with the 75L43), but this was same tank as A
+	tech_panzer_iii_td_equipment_1 = { 		#  This tank is now a correct TD (Stug III F with the 75L43)
 
 		enable_equipments = {
 			panzer_iii_td_equipment_1
@@ -1033,10 +1033,19 @@ technologies = {
 			position = { x = 0 y = @1942 }			# -9 1940
 		}
 		
+		on_research_complete = {					# CHANGED FROM TIGER. This is first Panzer upgrade. Upgrades both SS and Regular Wehrmacht divisions
+		
+		    limit = {
+				is_ai = yes
+			}
+			
+			hidden_effect = {
+				load_oob = "GER_Pz_Grandier_Division_1941"
+			}
+		}
+		
 		sub_technologies = {
-			subtech_panzer_iii_ag_equipment_2			# This tank is now a StuiG 33. Stats yet changed. Just Needs change GFX. # Was a Stug D
-		#	subtech_panzer_iii_art_equipment_1			# This tank is now the 2nd AG. No Stug SPART did exist
-		#	subtech_panzer_iii_flamm_equipment_0		# removed not needed since Flakpanzer 38 added, ahistorical and no gfx either
+			subtech_panzer_iii_ag_equipment_2			# This tank is now a StuiG 33.
 		}
 		
 		ai_will_do = {
@@ -1283,7 +1292,7 @@ technologies = {
 		}
 				
 		ai_will_do = {
-			factor = 15						# Was 0. Value means will be researched 1st priority to get medium template. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
+			factor = 20						# Was 0. Value means will be researched 1st priority to get medium template. Now GER AI should focus on Pz IVs after Pz IIIs dead end 
 		}
 		
 		categories = {
@@ -1324,7 +1333,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 6						# 0 6 should be researched a bit earlier than III D/E
+			factor = 10						# should be researched b4 III D/E to help AI build some IVs
 		}
 		
 		categories = {

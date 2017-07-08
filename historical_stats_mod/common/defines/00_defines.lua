@@ -230,7 +230,7 @@ NProduction = {
 	MAX_LINE_RESOURCE_PENALTY = 80,		-- Max penalty factor for production lines lacking strategic resources in %.
 	RESOURCE_PENALTY_WARNING_CRITICAL_RATIO = 0.75, -- Switch to red progress bar if penalty is over threshold 
 	BASE_FACTORY_SPEED = 3.0, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
-	BASE_FACTORY_SPEED_MIL = 5.1, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+	BASE_FACTORY_SPEED_MIL = 4.8, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	BASE_FACTORY_SPEED_NAV = 3.0, 				-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 	BASE_FACTORY_START_EFFICIENCY_FACTOR = 15,	-- Base start efficiency for factories expressed in %. 25
 	BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 60,	-- Base max efficiency for factories expressed in %.
@@ -258,7 +258,7 @@ NProduction = {
 	LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.05,		-- MIC speed modifier for licensed equipment for each year of difference between actual and latest equipment
 	LICENSE_EQUIPMENT_TECH_SPEED_MAX_YEARS = 4,			-- Maximum years for MIC speed modifier
 	LICENSE_EQUIPMENT_SPEED_NOT_FACTION = -0.10,		-- MIC speed modifier for licensed equipment for not being in faction
-	LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 2.0,			-- XP cost for upgrading licensed equipment
+	LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1.7,			-- XP cost for upgrading licensed equipment
 	LICENSE_EQUIPMENT_SPEED_NO_LICENSE = -0.30,			-- Penalty for producing non licensed equipment
 	CONVERSION_SPEED_BONUS = 2.0,						-- Modifier to the production speed when converting equipment
 },
@@ -830,9 +830,9 @@ NAI = {
 	DIPLOMACY_FACTION_NEUTRALITY_PENALTY = 50,	-- Neutral nations have a separate penalty, not wanting to get involved at all, rather than caring much about the difference in ideology
 	DIPLOMACY_FACTION_GLOBAL_TENSION_FACTOR = 0.2,-- How much the AI takes global tension into account when considering faction actions
 	DIPLOMACY_LEAVE_FACTION_OPINION_FACTOR = 0.75,-- How much the opinion of countries being targeted by faction leader matters when deciding to leave a faction (democratic only)
-	DIPLOMACY_FACTION_WAR_RELUCTANCE = -50,		-- Penalty to desire to enter a faction with a country that we are not fighting wars together with.
-	DIPLOMACY_SCARED_MINOR_EXTRA_RELUCTANCE = -50, -- extra reluctance to join stuff as scared minor
-	DIPLOMACY_FACTION_PLAYER_JOIN = 20,			-- Bonus for human players asking to join a faction.
+	DIPLOMACY_FACTION_WAR_RELUCTANCE = -60,		-- Penalty to desire to enter a faction with a country that we are not fighting wars together with.
+	DIPLOMACY_SCARED_MINOR_EXTRA_RELUCTANCE = -60, -- extra reluctance to join stuff as scared minor
+	DIPLOMACY_FACTION_PLAYER_JOIN = 25,			-- Bonus for human players asking to join a faction.
 	DIPLOMACY_BOOST_PARTY_COST_FACTOR = 100.0,	-- Desire to boost party popularity subtracts the daily cost multiplied by this
 	DIPLOMACY_STAGE_COUP_COST_FACTOR = 100.0,	-- Desire to stage a coup subtracts the cost multiplied by this
 	DIPLOMACY_IMPROVE_RELATION_COST_FACTOR = 5.0,-- Desire to boost relations subtracts the cost multiplied by this
@@ -1085,7 +1085,7 @@ NAI = {
 		0.0,  -- build_cost_ic
 		1.0,   -- maximum_speed
 		1.0,   -- armor_value
-		0.0,   -- ap_attack
+		0.5,   -- ap_attack
 		0.5,   -- reliability
 		0.0,   -- reliability_factor
 		0.0, -- weight
