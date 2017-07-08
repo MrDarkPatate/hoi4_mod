@@ -816,7 +816,6 @@ ss_motorized2_default_GER = {				#SS Mot divisions post 1940
 			ss_maintenance_company = 1
 			ss_logistics_company = 1
 			ss_field_hospital = 1
-			military_police = 1				# Eliminate
 		}
 		
 		regiments = {

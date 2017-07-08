@@ -19,8 +19,8 @@ division_template = {
 		ss_artillery_brigade_mot = { x = 3 y = 1 }
 		ss_artillery_brigade_mot = { x = 3 y = 2 }
 		
-		ss_anti_tank =  { x = 4 y = 0 }
-		ss_anti_tank =  { x = 4 y = 1 }
+		ss_anti_tank_brigade =  { x = 4 y = 0 }
+		ss_anti_tank_brigade =  { x = 4 y = 1 }
 	}
 	support = {
         SS_DIV_HQ = { x = 0 y = 0 }
@@ -31,7 +31,6 @@ division_template = {
 		ss_maintenance_company = { x = 1 y = 0 }
 		ss_logistics_company = { x = 1 y = 1 }
 		ss_field_hospital = { x = 1 y = 2 }
-		military_police = { x = 1 y = 3 }
 	}
 	priority = 2
 }
