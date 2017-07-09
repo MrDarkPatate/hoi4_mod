@@ -912,12 +912,12 @@ ss_medium_armor_default_GER = {				# SS Panzer Grenadier Division 1942-1943
 		}
 		
 		regiments = {
-			ss_panzer_iV = 1				# Hope this works?
+			ss_panzer_iii = 1				# Hope this works?
 		
 			ss_motorized = 6
 			
 			ss_artillery_brigade_mot = 2			
-			ss_light_sp_artillery_brigade = 1
+			ss_panzer_ii_art = 1
 			
 			ss_anti_tank_brigade = 1			
 			ss_panzer_ii_td = 1				# Hope this works?
@@ -953,7 +953,7 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 		}
 		
 		regiments = {
-			ss_panzer_iv = 3				# Hope this works? Would prefer Panzer Vs...
+			ss_panzer_iii = 3				# Hope this works? Would prefer Panzer Vs...
 			ss_panzer_vi = 1				# Hope this works?
 			
 			ss_motorized = 6
@@ -963,8 +963,8 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 			ss_panzer_iii_td = 1			# Hope this works?	
 			
 			ss_artillery_brigade_mot = 2			
-			ss_light_sp_artillery_brigade = 1
-			ss_medium_sp_artillery_brigade = 1
+			ss_panzer_ii_art = 1
+			ss_panzer_iii_art = 1
 		}
 	}
 }

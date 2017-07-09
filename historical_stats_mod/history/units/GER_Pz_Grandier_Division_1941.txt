@@ -118,14 +118,14 @@ division_template = {								# SS
 		ss_motorized = { x = 1 y = 2 }	
 		
 		ss_anti_tank_brigade = { x = 2 y = 0 }
-		ss_light_tank_destroyer_brigade =  { x = 2 y = 1 }
-		ss_medium_tank_destroyer_brigade = { x = 2 y = 2 }	
+		ss_panzer_ii_td =  { x = 2 y = 1 }
+		ss_panzer_iii_td = { x = 2 y = 2 }	
 		
 		ss_artillery_brigade_mot = { x = 3 y = 0 }
 		ss_artillery_brigade_mot = { x = 3 y = 1 }
-		ss_light_sp_artillery_brigade =  { x = 3 y = 2 }
+		ss_panzer_ii_art =  { x = 3 y = 2 }
 		
-		ss_panzer_iv = { x = 4 y = 0 }			# Hope this works
+		ss_panzer_iii = { x = 4 y = 0 }			# Hope this works
 	}
 	support = {
         ss_DIV_HQ = { x = 0 y = 0 }
