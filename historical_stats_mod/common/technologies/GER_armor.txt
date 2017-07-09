@@ -1033,7 +1033,7 @@ technologies = {
 			position = { x = 0 y = @1942 }			# -9 1940
 		}
 		
-		on_research_complete = {					# CHANGED FROM TIGER. This is first Panzer upgrade. Upgrades both SS and Regular Wehrmacht divisions
+		on_research_complete = {					# CHANGED FROM TIGER. This is first Panzer upgrade. Upgrades several SS and Regular Wehrmacht divisions
 		
 		    limit = {
 				is_ai = yes
@@ -1042,6 +1042,7 @@ technologies = {
 			hidden_effect = {
 				load_oob = "GER_Pz_Grandier_Division_1941"
 			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		
 		sub_technologies = {

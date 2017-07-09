@@ -76,7 +76,7 @@ early_armor_default_GER = {			# 1936' Pz		 With 0.7 2xrole?  		Template obtained
 }
 
 light_armor_late_GER = {			# 1937' Pz		 With 0.7 2xrole			Template obtained with IV D
-	target_width = 24
+	target_width = 30
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
@@ -108,13 +108,13 @@ light_armor_late_GER = {			# 1937' Pz		 With 0.7 2xrole			Template obtained with
 
 		}
 	}
-	replace_at_match = 0.6
+	replace_at_match = 0.4
 	replace_with = medium_armor_default_GER
-	target_min_match = 0.65
+	target_min_match = 0.5
 }
 
 medium_armor_default_GER = {		# 1939'		Template obtained with Bison I
-	target_width = 23.9 
+	target_width = 26 
 	width_weight = 0.5
 	column_swap_factor = 0.3
 
@@ -147,19 +147,19 @@ medium_armor_default_GER = {		# 1939'		Template obtained with Bison I
 			light_sp_artillery_brigade = 1
 		}
 	}
-	replace_at_match = 0.65
-	replace_with = medium_armor_late_GER
-	target_min_match = 0.7
+	replace_at_match = 0.4
+	replace_with = medium_armor_mid_GER
+	target_min_match = 0.5
 }
 
 medium_armor_mid_GER = {			# 1940'			Template obtained with PzJg I
-	target_width = 23.9 
+	target_width = 28
 	width_weight = 0.5
 	column_swap_factor = 0.3
 
 	target_template = {
 		weight = 1
-		match_value = 31990.0
+		match_value = 22990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -187,19 +187,19 @@ medium_armor_mid_GER = {			# 1940'			Template obtained with PzJg I
 			light_sp_artillery_brigade = 1
 		}
 	}
-	replace_at_match = 0.7
-	replace_with = heavy_armor_default_GER
-	target_min_match = 0.75
+	replace_at_match = 0.4
+	replace_with = medium_armor_late_GER
+	target_min_match = 0.5
 }
 
 medium_armor_late_GER = {			# 1942+  	Template obtained with Stug III F
-	target_width = 23.9 
+	target_width = 28
 	width_weight = 0.5
-	column_swap_factor = 0.3
+	column_swap_factor = 0.6
 
 	target_template = {
 		weight = 1
-		match_value = 32990.0
+		match_value = 23990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -320,7 +320,62 @@ late_infantry_default_GER = {				# Should get a template by late war.
 	
 }
 
+mountaineers_GER = {
 
+	roles = {
+		mountaineers
+	}
+	
+	
+	match_to_count = 0.6
+	
+	mountaineers_default_early = {
+	target_width = 21.9 
+	width_weight = 0.3
+	column_swap_factor = 0.5
+	
+
+	target_template = {
+		weight = 1
+		match_value = 5990.0
+		
+		support = {
+			engineer = 1
+			recon = 1
+		}
+		
+		regiments = {
+			mountaineers = 3
+			mountain_artillery_brigade = 1
+		}
+	}
+	replace_at_match = 0.3
+	replace_with = mountaineers_default_late
+	target_min_match = 0.6
+}	
+	
+	mountaineers_default_late = {
+	target_width = 22 
+	width_weight = 0.3
+	column_swap_factor = 0.5
+	
+
+	target_template = {
+		weight = 1
+		match_value = 12990.0
+		
+		support = {
+			engineer = 1
+			recon = 1
+			DIV_HQ = 1
+		}
+		
+		regiments = {
+			mountaineers = 9
+			mountain_artillery_brigade = 2
+		}
+	}
+}
 
 marines_GER = {
 
@@ -359,6 +414,7 @@ marine_default_GER = {
 	}
 }
 }
+
 paratroopers_GER = {
 
 	available_for = {
@@ -528,7 +584,7 @@ midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 			
 			maintenance_company = 1
 			logistics_company = 1
-			artillery_medium = 1	
+			artillery_medium_mot = 1	
 			anti_air = 1	
 		}
 		
@@ -539,8 +595,8 @@ midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 			light_sp_artillery_brigade = 1
 			
 			anti_tank_brigade = 1
-			medium_tank_destroyer_brigade = 1
 			light_tank_destroyer_brigade = 1
+			medium_tank_destroyer_brigade = 1			
 		}
 	}
 
@@ -560,28 +616,6 @@ garrison_GER = {
 	
 	match_to_count = 0.7
 	
-ss_garrison_default_GER = {		# Wih 0.5 Ok... With 0.8 Fails
-	target_width = 24.9
-	width_weight = 0.1
-	column_swap_factor = 0.5
-	
-	
-	target_template = {
-		weight = 1
-		match_value = 6000.0
-		
-		support = {
-			military_police = 1
-		}
-		
-		regiments = {
-			ss_garrison = 2		# NOTE: SS-Totenkopfverbände has 2 
-		}
-	}
-	replace_at_match = 1
-	replace_with = garrison_late_GER
-	target_min_match = 1
-}
 
 garrison_cheap_GER = {			# With 0.5 2x match roles. 
 	target_width = 24.9
@@ -600,9 +634,9 @@ garrison_cheap_GER = {			# With 0.5 2x match roles.
 			garrison = 3
 		}
 	}
-	replace_at_match = 0.5
-	replace_with = garrison_late_GER
-	target_min_match = 0.6
+	replace_at_match = 0.3
+	replace_with = garrison_heavy_GER
+	target_min_match = 0.2
 }
 
 garrison_heavy_GER = {				# With 0.5 2x match roles
@@ -621,12 +655,13 @@ garrison_heavy_GER = {				# With 0.5 2x match roles
 		
 		regiments = {
 			garrison = 3
+			engineer = 1
 			artillery_brigade = 1
 		}
 	}
-	replace_at_match = 0.5
+	replace_at_match = 0.1
 	replace_with = garrison_late_GER
-	target_min_match = 0.6
+	target_min_match = 0.2
 }
 
 garrison_late_GER = {
@@ -694,8 +729,8 @@ elite_Wachtruppen_GER = {						# With 0.7 NO roles...
 	target_min_match = 0.2
 }	
 
-elite_motorized_default_GER = {					# Panzer Grenadier Elite Wehrmacht Divisions 1941+
-	target_width = 20.9
+elite_motorized_default_GER = {					# 1942 Panzer Grenadier Elite Wehrmacht Divisions 1942 Comes with Stug III F
+	target_width = 26
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
@@ -728,13 +763,13 @@ elite_motorized_default_GER = {					# Panzer Grenadier Elite Wehrmacht Divisions
 			medium_tank_destroyer_brigade = 1
 		}
 	}
-    replace_at_match = 0.7
+    replace_at_match = 0.5
 	replace_with = elite_panzer_default_GER
-	target_min_match = 0.8
+	target_min_match = 0.6
 }
 
 elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
-	target_width = 24.9
+	target_width = 36
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
@@ -745,7 +780,7 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			recon_mot = 1
+			# recon_mot = 1
 			recon_ac = 1		
 			maintenance_company = 1
 			
@@ -753,7 +788,7 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 			artillery_medium_mot  = 1
 			anti_air_heavy = 1
 			anti_tank_heavy = 1
-			# field_hospital = 1
+			field_hospital = 1
 		}
 		
 		regiments = {
@@ -772,6 +807,30 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 		}
 	}
 }
+
+ss_garrison_default_GER = {		# Wih 0.5 Ok... With 0.8 Fails
+	target_width = 24.9
+	width_weight = 0.1
+	column_swap_factor = 0.5
+	
+	
+	target_template = {
+		weight = 1
+		match_value = 6000.0
+		
+		support = {
+			military_police = 1
+		}
+		
+		regiments = {
+			ss_garrison = 2		# NOTE: SS-Totenkopfverbände has 2 
+		}
+	}
+	replace_at_match = 0.1
+	replace_with = ss_motorized_default_GER
+	target_min_match = 0.1
+}
+
 
 ss_motorized_default_GER = {				# SS Mot Regiments pre 1940 					# With 0.7 NO roles...
 	target_width = 20
@@ -800,7 +859,7 @@ ss_motorized_default_GER = {				# SS Mot Regiments pre 1940 					# With 0.7 NO r
 }
 	
 ss_motorized2_default_GER = {				#SS Mot divisions post 1940 
-	target_width = 24.9
+	target_width = 28
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
@@ -833,7 +892,7 @@ ss_motorized2_default_GER = {				#SS Mot divisions post 1940
 }
 
 ss_medium_armor_default_GER = {				# SS Panzer Grenadier Division 1942-1943
-	target_width = 23.9
+	target_width = 26
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
@@ -853,16 +912,16 @@ ss_medium_armor_default_GER = {				# SS Panzer Grenadier Division 1942-1943
 		}
 		
 		regiments = {
-			ss_medium_armor = 1
+			ss_panzer_iV = 1				# Hope this works?
 		
 			ss_motorized = 6
 			
-			ss_anti_tank_brigade = 1			
-			ss_light_tank_destroyer_brigade = 1
-			ss_medium_tank_destroyer_brigade = 1	
-			
 			ss_artillery_brigade_mot = 2			
 			ss_light_sp_artillery_brigade = 1
+			
+			ss_anti_tank_brigade = 1			
+			ss_panzer_ii_td = 1				# Hope this works?
+			ss_panzer_iii_td = 1			# Hope this works?		
 		}
 	}
 	replace_at_match = 0.6
@@ -872,7 +931,7 @@ ss_medium_armor_default_GER = {				# SS Panzer Grenadier Division 1942-1943
 }
 
 ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
-	target_width = 24.9
+	target_width = 36
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
@@ -890,19 +949,18 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 			ss_maintenance_company = 1
 			ss_logistics_company = 1
 			ss_field_hospital = 1
-			military_police = 1			# Eliminate
 			ss_anti_tank = 1	
 		}
 		
 		regiments = {
-			ss_medium_armor = 3
-			ss_heavy_armor = 1
+			ss_panzer_iv = 3				# Hope this works? Would prefer Panzer Vs...
+			ss_panzer_vi = 1				# Hope this works?
 			
 			ss_motorized = 6
 			
 			ss_anti_tank_brigade = 2			
-			ss_heavy_tank_destroyer_brigade = 1
-			ss_medium_tank_destroyer_brigade = 1
+			ss_panzer_vi_td = 1				# Hope this works?
+			ss_panzer_iii_td = 1			# Hope this works?	
 			
 			ss_artillery_brigade_mot = 2			
 			ss_light_sp_artillery_brigade = 1

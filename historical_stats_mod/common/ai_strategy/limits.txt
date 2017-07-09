@@ -97,7 +97,7 @@ default_GER_production_lim_0 = {
 	}
 	
 	ai_strategy = { type = build_army id = infantry 							value = 124		}			# 124 
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 1 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 6		}			# 6 desired 2x ? templates expected
@@ -118,7 +118,7 @@ default_GER_production_lim = {
 	}
 	
 	ai_strategy = { type = build_army id = infantry 							value = 160		}			# 158 Probably needs to be halved
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 1 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 9 		}			# 10 desired 2-3x ? templates expected
@@ -138,7 +138,7 @@ default_GER_production_lim_2 = {
 	}
 	
 	ai_strategy = { type = build_army id = infantry 							value = 160		}			# 159 Probably needs to be halved
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 4 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 12 		}			# 12 desired 3x templates expected
@@ -159,7 +159,7 @@ default_GER_production_lim_3 = {
 	}
 		
 	ai_strategy = { type = build_army id = infantry 							value = 180		}			# 180 Probably needs to be halved
-	ai_strategy = { type = build_army id = mountaineers 						value = 0 		}	
+	ai_strategy = { type = build_army id = mountaineers 						value = 4 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 12 		}			# 12 desired 3x templates expected
