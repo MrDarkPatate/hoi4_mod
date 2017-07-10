@@ -251,7 +251,7 @@ units = {
 	}
 	
 	division= {	
-		name = "511 Régiment de Chars de Combat"
+		name = "1ère Division Cuirasée de Réserve"
 		location = 11506
 		division_template = "Bataillon de Chars de Combat" 			# 2C
 		force_equipment_variants = { fra_heavy_tank_equipment_1 = { owner = "FRA" } }

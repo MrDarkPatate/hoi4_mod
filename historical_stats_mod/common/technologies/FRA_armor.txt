@@ -641,7 +641,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		
 		categories = {
@@ -656,6 +656,16 @@ technologies = {
 		enable_equipments = {
 			fra_heavy_tank_equipment_4
 		}
+		
+		on_research_complete = {
+			
+			hidden_effect = {
+				load_oob = "FRA_DCR_1940"	# 7L+1M+3I
+			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
 		path = {
 			leads_to_tech = tech_fra_heavy_tank_equipment_5		# B1 ter
 			research_cost_coeff = 1 

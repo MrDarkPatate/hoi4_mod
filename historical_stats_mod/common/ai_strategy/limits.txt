@@ -222,13 +222,13 @@ default_FRA_production_lim = {
 	}
 	
 	ai_strategy = { type = build_army id = infantry 						    value = 48		}	
-	ai_strategy = { type = build_army id = mountaineers 					    value = 3 		}	
+	ai_strategy = { type = build_army id = mountaineers 					    value = 0 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
-	ai_strategy = { type = build_army id = motorized 							value = 6 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 3 		}	
-	ai_strategy = { type = build_army id = armor 								value = 1 		}	
-	ai_strategy = { type = build_army id = mechanized 							value = 1		}	
+	ai_strategy = { type = build_army id = motorized 							value = 0		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 6 		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0		}	
 	ai_strategy = { type = build_army id = garrison	 							value = 12 		}
 }
 
@@ -241,15 +241,15 @@ default_FRA_production_lim_2 = {
 		has_army_size = { type = infantry size < 45 } 
 	}
 	
-	ai_strategy = { type = build_army id = infantry 						    value = 64		}	
-	ai_strategy = { type = build_army id = mountaineers 					    value = 6 		}	
+	ai_strategy = { type = build_army id = infantry 						    value = 74		}	
+	ai_strategy = { type = build_army id = mountaineers 					    value = 0 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
-	ai_strategy = { type = build_army id = motorized 							value = 12 		}	
-	ai_strategy = { type = build_army id = cavalry 								value = 3 		}	
-	ai_strategy = { type = build_army id = armor 								value = 3 		}	
-	ai_strategy = { type = build_army id = mechanized 							value = 3 		}	
-	ai_strategy = { type = build_army id = garrison	 							value = 16 		}
+	ai_strategy = { type = build_army id = motorized 							value = 0 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = armor 								value = 9		}	
+	ai_strategy = { type = build_army id = mechanized 							value = 0 		}	
+	ai_strategy = { type = build_army id = garrison	 							value = 24 		}
 }
 
 default_ENG_production_lim = {
