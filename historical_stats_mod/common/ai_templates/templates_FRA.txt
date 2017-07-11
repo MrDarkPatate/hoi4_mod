@@ -106,9 +106,9 @@ Battalion_DCR_FRA = {				# With 0.7 ?
 			heavy_armor = 1			
 		}
 	}
-    replace_at_match = 0.2
+    replace_at_match = 0.4
 	replace_with = DCR_default_FRA 
-	target_min_match = 0.2
+	target_min_match = 0.4
 }	
 
 DCR_default_FRA = {					# Division Cuirasée de Réserve

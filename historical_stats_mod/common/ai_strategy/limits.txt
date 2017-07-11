@@ -215,33 +215,33 @@ default_CHI_production_lim_2 = {
 default_FRA_production_lim = {
 	enable = {
 		original_tag = FRA
-		has_army_size = { type = infantry size < 30 } 
+		num_of_military_factories < 27
 	}
 	abort = {
-		NOT = { has_army_size = { type = infantry size < 30 } } 
+		num_of_military_factories > 26
 	}
 	
-	ai_strategy = { type = build_army id = infantry 						    value = 32		}	
+	ai_strategy = { type = build_army id = infantry 						    value = 28		}	
 	ai_strategy = { type = build_army id = mountaineers 					    value = 0 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 0		}	
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
-	ai_strategy = { type = build_army id = armor 								value = 1 		}	
+	ai_strategy = { type = build_army id = armor 								value = 3 		}	
 	ai_strategy = { type = build_army id = mechanized 							value = 1		}	
-	ai_strategy = { type = build_army id = garrison	 							value = 8 		}
+	ai_strategy = { type = build_army id = garrison	 							value = 0 		}
 }
 
 default_FRA_production_lim_2 = {					# NOTE: As of July 2017 upload, France desires 27 Mountain and has 34 other colonial division stuff
 	enable = {
 		original_tag = FRA
-		NOT = { has_army_size = { type = infantry size < 30 } }
+		num_of_military_factories > 26
 	}
 	abort = {
-		has_army_size = { type = infantry size < 30 } 
+		num_of_military_factories < 27
 	}
 	
-	ai_strategy = { type = build_army id = infantry 						    value = 38		}	
+	ai_strategy = { type = build_army id = infantry 						    value = 32		}	
 	ai_strategy = { type = build_army id = mountaineers 					    value = 0 		}	
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
@@ -249,7 +249,7 @@ default_FRA_production_lim_2 = {					# NOTE: As of July 2017 upload, France desi
 	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
 	ai_strategy = { type = build_army id = armor 								value = 4		}	
 	ai_strategy = { type = build_army id = mechanized 							value = 4 		}	
-	ai_strategy = { type = build_army id = garrison	 							value = 8 		}
+	ai_strategy = { type = build_army id = garrison	 							value = 0 		}
 }
 
 default_ENG_production_lim = {
