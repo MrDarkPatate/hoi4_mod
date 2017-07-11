@@ -1485,13 +1485,13 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = support_equipment_0			# Various stuff 
-			amount = 4000
+			amount = 5000
 			producer = FRA
 		}
 		
 	add_equipment_to_stockpile = {
 		type = motorized_equipment_0		# Old trucks
-			amount = 3600
+			amount = 7000
 			producer = FRA
 		}
 		

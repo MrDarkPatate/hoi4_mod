@@ -2,8 +2,8 @@
 	name = "Division Cuirasée de Réserve" 			# DCR
 
 	regiments = {
-		Infantry_tank = { x = 0 y = 0 }			# 2xBn. of Hotchkiss
-		Infantry_tank = { x = 0 y = 1 } 
+		infantry_tank = { x = 0 y = 0 }			# 2xBn. of Hotchkiss
+		infantry_tank = { x = 0 y = 1 } 
 		heavy_armor = { x = 0 y = 2 }			# 2xBn. of B1s
 		heavy_armor = { x = 0 y = 3 }
 		
