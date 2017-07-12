@@ -707,6 +707,7 @@ equipments = {
 		is_archetype = yes
 		type = { 
 			artillery
+			motorized
 			rocket
 		}
 		group_by = archetype
