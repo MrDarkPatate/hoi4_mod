@@ -101,9 +101,9 @@ default_GER_production_lim_0 = {
 	ai_strategy = { type = build_army id = marines 								value = 0		}	
 	ai_strategy = { type = build_army id = paratroopers							value = 0 		}	
 	ai_strategy = { type = build_army id = motorized 							value = 6		}			# 6 desired 2x ? templates expected
-	ai_strategy = { type = build_army id = cavalry 								value = 0 		}	
+	ai_strategy = { type = build_army id = cavalry 								value = 1		}	
 	ai_strategy = { type = build_army id = armor 								value = 12 		}			# 12 desired 2x templates expected... 1,1,1... ok!
-	ai_strategy = { type = build_army id = mechanized 							value = 0 		}			# mostly SS & elites 2x templates expected
+	ai_strategy = { type = build_army id = mechanized 							value = 1 		}			# mostly SS & elites 2x templates expected
 	ai_strategy = { type = build_army id = garrison	 							value = 12 		}
 }
 

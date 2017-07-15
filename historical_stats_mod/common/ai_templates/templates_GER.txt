@@ -14,7 +14,7 @@ prewar_armor_default_GER = {		# 1935' (1-3 Pz Div)		Initial deploy template
 	
 	target_template = {
 		weight = 1
-		match_value = 14990.0
+		match_value = 18990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -45,7 +45,7 @@ early_armor_default_GER = {			# 1936' Pz		 With 0.7 2xrole?  		Template obtained
 	
 	target_template = {
 		weight = 1
-		match_value = 15990.0
+		match_value = 19990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -82,7 +82,7 @@ light_armor_late_GER = {			# 1937' Pz		 With 0.7 2xrole			Template obtained with
 	
 	target_template = {
 		weight = 1
-		match_value = 19990.0
+		match_value = 20990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -252,7 +252,7 @@ infantry_default_GER = {			# With 0.5.. 1936 inf divs match 2x roles. With 0.8 1
 	
 	target_template = {
 		weight = 1
-		match_value = 37990.0
+		match_value = 27990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -329,7 +329,7 @@ mountaineers_GER = {
 	
 	match_to_count = 0.6
 	
-	mountaineers_default_early = {
+	mountaineers_default_early = {				# This does not work with 0.6
 	target_width = 21.9 
 	width_weight = 0.3
 	column_swap_factor = 0.5
@@ -465,8 +465,8 @@ cavalry_GER = {
 		
 	match_to_count = 0.8
 	
-cavalry_default_GER = {				# This template should just change to motorized
-	target_width = 12.0
+cavalry_default_GER = {				# This template should just change to motorized, but not works with 0.8 and 12 width
+	target_width = 10.0
 	width_weight = 1.5
 	column_swap_factor = 1.0
 	
@@ -500,11 +500,11 @@ motorized_GER = {
 
 	roles = { motorized }
 	
-	match_to_count = 0.8			
+	match_to_count = 0.5			
 	
-semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 1x role; mot matches 3x roles
-	target_width = 22.9
-	width_weight = 0.8
+semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 1x role; mot matches 3x roles. with 0.8 not working? Try 0.7 and adjust width to2x+1y
+	target_width = 22.5
+	width_weight = 0.6
 	column_swap_factor = 0.6
 	
 
@@ -514,17 +514,19 @@ semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 
 		
 		support = {
 			DIV_HQ = 1
-			engineer = 1
-			recon_ac = 1	
-
+			recon_ac = 1
+			artillery_medium_mot = 1
+		
 			maintenance_company = 1
-			logistics_company = 1
-			artillery_medium = 1
+			logistics_company = 1	
+			engineer = 1
 		}
 		
 		regiments = {
 			semi_motorized = 9
+			
 			artillery_brigade_mot = 3
+			
 			anti_tank_brigade = 1
 		}
 	}
@@ -534,7 +536,7 @@ semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 
 }
 
 early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
-	target_width = 24.9
+	target_width = 17
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
@@ -567,7 +569,7 @@ early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
 }
 
 midwar_motorized_default_GER = {				# Gets a template with Stug III TD
-	target_width = 24.9
+	target_width = 18
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
@@ -704,8 +706,8 @@ mechanized_GER = {
 	
 	match_to_count = 0.7
 
-elite_Wachtruppen_GER = {						# With 0.7 NO roles...
-	target_width = 20
+elite_Wachtruppen_GER = {						# With 0.7 and 20 width NO roles...
+	target_width = 9
 	width_weight = 0.6
 	column_swap_factor = 0.6
 	
@@ -968,7 +970,5 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 		}
 	}
 }
-
-
 }
 ## EOF ##
