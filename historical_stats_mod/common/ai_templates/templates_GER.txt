@@ -129,7 +129,7 @@ medium_armor_default_GER = {		# 1939'		Template obtained with Bison I
 
 			maintenance_company = 1
 			logistics_company = 1
-			artillery_medium_mot  = 1
+			artillery_medium_mot = 1
 			field_hospital = 1
 			# anti_air = 1
 		}
@@ -195,7 +195,7 @@ medium_armor_mid_GER = {			# 1940'			Template obtained with PzJg I
 medium_armor_late_GER = {			# 1942+  	Template obtained with Stug III F
 	target_width = 28
 	width_weight = 0.5
-	column_swap_factor = 0.6
+	column_swap_factor = 0.3
 
 	target_template = {
 		weight = 1
@@ -236,7 +236,7 @@ medium_armor_late_GER = {			# 1942+  	Template obtained with Stug III F
 
 }
 
-
+# infantry
 infantry_GER = {
 
 	available_for = { GER }
@@ -320,17 +320,18 @@ late_infantry_default_GER = {				# Should get a template by late war.
 	
 }
 
+# mountain
 mountaineers_GER = {
 
-	roles = {
-		mountaineers
-	}
+	available_for = { GER }
+	
+	roles = { mountaineers }
 	
 	
 	match_to_count = 0.6
 	
 	mountaineers_default_early = {				# This does not work with 0.6
-	target_width = 21.9 
+	target_width = 10.5 
 	width_weight = 0.3
 	column_swap_factor = 0.5
 	
@@ -377,6 +378,7 @@ mountaineers_GER = {
 	}
 }
 
+# special forces. not used 
 marines_GER = {
 
 	available_for = {
@@ -453,6 +455,7 @@ paratrooper_default_GER = {
 }
 }
 
+# cavalry. supposedly should upgrade to mot.
 cavalry_GER = {
 
 	available_for = {
@@ -467,8 +470,8 @@ cavalry_GER = {
 	
 cavalry_default_GER = {				# This template should just change to motorized, but not works with 0.8 and 12 width
 	target_width = 10.0
-	width_weight = 1.5
-	column_swap_factor = 1.0
+	width_weight = 0.5
+	column_swap_factor = 0.3
 	
 
 	target_template = {
@@ -492,20 +495,19 @@ cavalry_default_GER = {				# This template should just change to motorized, but 
 }
 }
 
-
-
+# motorized
 motorized_GER = {
 
 	available_for = { GER }
 
 	roles = { motorized }
 	
-	match_to_count = 0.5			
-	
+	match_to_count = 0.5
+
 semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 1x role; mot matches 3x roles. with 0.8 not working? Try 0.7 and adjust width to2x+1y
 	target_width = 22.5
-	width_weight = 0.6
-	column_swap_factor = 0.6
+	width_weight = 0.5
+	column_swap_factor = 0.3
 	
 
 	target_template = {
@@ -537,8 +539,8 @@ semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 
 
 early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
 	target_width = 17
-	width_weight = 0.6
-	column_swap_factor = 0.6
+	width_weight = 0.5
+	column_swap_factor = 0.3
 	
 	target_template = {
 		weight = 1
@@ -551,7 +553,7 @@ early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
 
 			maintenance_company = 1
 			logistics_company = 1
-			artillery_medium = 1			
+			artillery_medium_mot = 1			
 		}
 		
 		regiments = {
@@ -570,8 +572,8 @@ early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
 
 midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 	target_width = 18
-	width_weight = 0.6
-	column_swap_factor = 0.6
+	width_weight = 0.5
+	column_swap_factor = 0.3
 	
 	target_template = {
 		weight = 1
@@ -608,7 +610,7 @@ midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 }
 
 
-
+# garrison
 garrison_GER = {
 
 	available_for = { GER }
@@ -697,7 +699,7 @@ garrison_late_GER = {
 }
 }
 
-
+# elites & ss
 mechanized_GER = {
 
 	available_for = { GER }
@@ -706,7 +708,7 @@ mechanized_GER = {
 	
 	match_to_count = 0.7
 
-elite_Wachtruppen_GER = {						# With 0.7 and 20 width NO roles...
+elite_Wachtruppen_GER = {						# With 0.7 and 20 or 9 width NO roles...
 	target_width = 9
 	width_weight = 0.6
 	column_swap_factor = 0.6

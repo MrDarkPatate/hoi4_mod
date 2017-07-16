@@ -1,6 +1,8 @@
 
 infantry_FRA = {
+
 	available_for = { FRA }
+	
 	roles = { infantry }
 	
 	match_to_count = 0.6
@@ -33,6 +35,84 @@ infantry_default_FRA = {
 			anti_tank_brigade = 2
 			
 			Infantry_tank = 1
+		}
+	}
+}
+}
+
+
+mountaineers_FRA = {
+
+	available_for = { FRA }
+	
+	roles = { mountaineers }
+		
+	match_to_count = 0.9
+	
+	mountaineers_default_early = {				# This does not work with 0.6
+	target_width = 20 
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+
+	target_template = {
+		weight = 1
+		match_value = 9990.0
+		
+		support = {
+			DIV_HQ = 1
+			recon_mot = 1
+		
+			maintenance_company = 1
+			logistics_company = 1
+			field_hospital = 1
+		}
+		
+		regiments = {
+			mountaineers = 9
+			mountain_artillery_brigade = 2
+		}
+	}
+}
+}
+
+# motorized
+motorized_FRA = {
+
+	available_for = { FRA }
+
+	roles = { motorized }
+	
+	match_to_count = 0.9
+
+semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 1x role; mot matches 3x roles. with 0.8 not working? Try 0.7 and adjust width to2x+1y
+	target_width = 22
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+
+	target_template = {
+		weight = 1
+		match_value = 10990.0
+		
+		support = {
+			DIV_HQ = 1
+			recon_ac = 1
+			recon_mot = 1
+			artillery_medium_mot = 1
+		
+			maintenance_company = 1
+			logistics_company = 1	
+			field_hospital = 1
+			artillery_heavy = 1
+		}
+		
+		regiments = {
+			semi_motorized = 9
+			
+			artillery_brigade_mot = 3
+			
+			anti_tank_brigade = 1
 		}
 	}
 }
@@ -88,7 +168,7 @@ mechanized_FRA = {
 	
 	match_to_count = 0.7
 
-Battalion_DCR_FRA = {				# With 0.7 ?
+Battalion_DCR_FRA = {				# With 0.7 seems to work
 	target_width = 2
 	width_weight = 0.6
 	column_swap_factor = 0.6

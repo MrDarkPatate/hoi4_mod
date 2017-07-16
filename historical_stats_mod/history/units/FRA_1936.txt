@@ -242,7 +242,7 @@ units = {
 	########### Armoured Forces Reworked ***
 
 	division= {	
-		name = "1ère Division Légère Mécanique"
+		name = "4ème Division Légère Mécanique"				# Until names solved, named 4th
 		location = 13011
 		division_template = "Division Légère Mécanique" 	# DLM is frontline, best equipment  ***  2x Inf + 2x Medium 55 D1s, 55 R35
 		start_experience_factor = 0.3
@@ -251,7 +251,7 @@ units = {
 	}
 	
 	division= {	
-		name = "1ère Division Cuirasée de Réserve"
+		name = "4ème Division Cuirasée de Réserve"			# Until names solved, named 4th
 		location = 11506
 		division_template = "Bataillon de Chars de Combat" 			# 2C
 		force_equipment_variants = { fra_heavy_tank_equipment_1 = { owner = "FRA" } }
@@ -1260,6 +1260,17 @@ instant_effect = {
 	
 	add_equipment_production = {
 		equipment = {
+			type = tankette_equipment_0			# added 
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	
+	add_equipment_production = {
+		equipment = {
 			type = fra_infantry_tank_equipment_3	# R35 4/week  (Approx 1000 tanks)
 			creator = "FRA"
 		}
@@ -1431,7 +1442,7 @@ instant_effect = {
 	############### Equipment stockpile
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0		# Berthier rifles for 30 divisions
-			amount = 14000
+			amount = 16000
 			producer = FRA
 		}
 			
@@ -1479,19 +1490,19 @@ instant_effect = {
 		
 	add_equipment_to_stockpile = {
 		type = infantry_uniforms_0			# Uniforms 
-			amount = 8000
+			amount = 10000
 			producer = FRA
 		}
 		
 	add_equipment_to_stockpile = {
 		type = support_equipment_0			# Various stuff 
-			amount = 5000
+			amount = 9000
 			producer = FRA
 		}
 		
 	add_equipment_to_stockpile = {
 		type = motorized_equipment_1		# Old trucks
-			amount = 4000
+			amount = 6000
 			producer = FRA
 		}
 		
@@ -1501,6 +1512,11 @@ instant_effect = {
 			producer = FRA
 		}
 
+	add_equipment_to_stockpile = {
+		type = tankette_equipment_0			# tankettes
+			amount = 200
+			producer = FRA
+		}
 	
 	add_equipment_to_stockpile = {
 		type = fra_infantry_tank_equipment_1
