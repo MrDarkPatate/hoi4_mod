@@ -330,7 +330,7 @@ mountaineers_GER = {
 	
 	match_to_count = 0.6
 	
-	mountaineers_default_early = {				# This does not work with 0.6
+mountaineers_default_early = {				# This does not work with 0.6
 	target_width = 10.5 
 	width_weight = 0.3
 	column_swap_factor = 0.5
@@ -355,7 +355,7 @@ mountaineers_GER = {
 	target_min_match = 0.6
 }	
 	
-	mountaineers_default_late = {
+mountaineers_default_late = {
 	target_width = 22 
 	width_weight = 0.3
 	column_swap_factor = 0.5
@@ -377,18 +377,14 @@ mountaineers_GER = {
 		}
 	}
 }
+}
 
 # special forces. not used 
-marines_GER = {
+marines_GER = {								# Error.log since this role until last one?
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 	
-	roles = {
-		marines
-	}
-	
+	roles = { marines }
 	
 	match_to_count = 0.9
 marine_default_GER = {
@@ -396,7 +392,6 @@ marine_default_GER = {
 	width_weight = 0.1
 	column_swap_factor = 0.5
 	
-
 	target_template = {
 		weight = 1
 		match_value = 25990.0
@@ -417,16 +412,11 @@ marine_default_GER = {
 }
 }
 
-paratroopers_GER = {
+paratroopers_GER = {								# Error.log ?
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 	
-	roles = {
-		paratrooper
-	}
-	
+	roles = { paratrooper }
 	
 	match_to_count = 0.9
 	
@@ -456,15 +446,11 @@ paratrooper_default_GER = {
 }
 
 # cavalry. supposedly should upgrade to mot.
-cavalry_GER = {
+cavalry_GER = {								# Error.log ?
 
-	available_for = {
-		GER
-	}
+	available_for = { GER }
 
-	roles = {
-		cavalry
-	}
+	roles = { cavalry }
 		
 	match_to_count = 0.8
 	
@@ -496,7 +482,7 @@ cavalry_default_GER = {				# This template should just change to motorized, but 
 }
 
 # motorized
-motorized_GER = {
+motorized_GER = {								# Error.log ?
 
 	available_for = { GER }
 
@@ -611,7 +597,7 @@ midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 
 
 # garrison
-garrison_GER = {
+garrison_GER = {								# Error.log ?
 
 	available_for = { GER }
 	
@@ -700,7 +686,7 @@ garrison_late_GER = {
 }
 
 # elites & ss
-mechanized_GER = {
+mechanized_GER = {								# Error.log ?
 
 	available_for = { GER }
 	

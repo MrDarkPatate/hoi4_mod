@@ -143,14 +143,15 @@ division_template = {
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
-		tankettes = { x = 0 y = 1 }      		# AMR (tankette) / AMD (ACs)  *** Recon Group consisted of 42 ACs + motorcycles
-		recon_ac = { x = 0 y = 2 }
+		recon_ac = { x = 0 y = 1 }      		# AMR (tankette) / AMD (ACs)  *** Recon Group consisted of 42 ACs + motorcycles
+		tankettes = { x = 0 y = 2 }
 		artillery_medium_mot = { x = 0 y = 3 }	# WW1 105
 		
 		maintenance_company = { x = 1 y = 0 }
 		logistics_company = { x = 1 y = 1 }
 		field_hospital = { x = 1 y = 2 }
 	}
+	priority = 2
 }
 # division_template = {
 #	name = "Brigade de Chars de Combat" 		# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
@@ -167,6 +168,7 @@ division_template = {
 #		recon_mot = { x = 0 y = 2 }
 #	}
 #}
+
 division_template = {
 	name = "Bataillon de Chars de Combat"		# Represents: 1xChar 2C, supporting units
 

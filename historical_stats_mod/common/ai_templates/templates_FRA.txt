@@ -222,3 +222,34 @@ DCR_default_FRA = {					# Division Cuirasée de Réserve
 	}
 
 }
+}
+
+# garrison
+garrison_FRA = {
+
+	available_for = { FRA }
+	
+	roles = { garrison }
+
+	match_to_count = 0.8
+	
+colonial_cheap_FRA = {			#
+	target_width = 24
+	width_weight = 0.5
+	column_swap_factor = 0.3
+	
+	target_template = {
+		weight = 1
+		match_value = 9000.0
+		
+		support = {
+			recon_cav =  1
+		}		
+		regiments = {
+			light_infantry = 8
+			militia = 4
+			artillery_brigade = 2		
+		}
+	}
+}
+}
