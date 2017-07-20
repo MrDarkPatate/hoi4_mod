@@ -5,7 +5,7 @@ armored_GER = {
 	
 	roles = { armor }
 	
-	match_to_count = 0.7			# With 0.5 1936-PzDiv match 3x roles. With 0.8... None? With 0.7 1xrole
+	match_to_count = 0.7			#   Test w 0.9  Previous with 0.7 > PRE TEST: 0.7 -> With 0.5 1936-PzDiv match 3x roles. With 0.8... None? With 0.7 1xrole
 	
 prewar_armor_default_GER = {		# 1935' (1-3 Pz Div)		Initial deploy template
 	target_width = 21.5
@@ -488,9 +488,9 @@ motorized_GER = {								# Error.log ?
 
 	roles = { motorized }
 	
-	match_to_count = 0.5
+	match_to_count = 0.7
 
-semi_motorized_default_GER = {			# Pre-1939 formations. With 0.5, s-mot matches 1x role; mot matches 3x roles. with 0.8 not working? Try 0.7 and adjust width to2x+1y
+semi_motorized_default_GER = {			# Pre-1939 formations.  Test w 0.9 SOLVED PRE ) error with 0.5: 0.5s-mot matches 1x role; mot matches 3x roles. with 0.8 not working? Try 0.7 and adjust width to2x+1y
 	target_width = 22.5
 	width_weight = 0.5
 	column_swap_factor = 0.3
@@ -694,7 +694,7 @@ mechanized_GER = {								# Error.log ?
 	
 	match_to_count = 0.7
 
-elite_Wachtruppen_GER = {						# With 0.7 and 20 or 9 width NO roles...
+elite_Wachtruppen_GER = {						#  Test w 0.9  Previous with 0.7 > PRE TEST: With 0.7 and 20 or 9 width NO roles...
 	target_width = 9
 	width_weight = 0.6
 	column_swap_factor = 0.6

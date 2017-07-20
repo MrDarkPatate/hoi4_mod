@@ -966,10 +966,10 @@ NAI = {
 	MIN_FORCE_RATIO_TO_PROTECT = 0.5,			-- Tiny countries should not feel protective or really large ones
 	
 	ORG_UNIT_STRONG = 0.9,						-- Organization % for unit to be considered strong
-	ORG_UNIT_WEAK = 0.18,						-- Organization % for unit to be considered weak
-	STR_UNIT_STRONG = 0.75,						-- Strength (equipment) % for unit to be considered strong
-	STR_UNIT_WEAK = 0.25,						-- Strength (equipment) % for unit to be considered weak
-	PLAN_FACTION_STRONG_TO_EXECUTE = 0.50,		-- % or more of units in an order to consider ececuting the plan
+	ORG_UNIT_WEAK = 0.5,						-- Organization % for unit to be considered weak
+	STR_UNIT_STRONG = 0.9,						-- Strength (equipment) % for unit to be considered strong
+	STR_UNIT_WEAK = 0.5,						-- Strength (equipment) % for unit to be considered weak
+	PLAN_FACTION_STRONG_TO_EXECUTE = 0.70,		-- % or more of units in an order to consider ececuting the plan
 	PLAN_FACTION_WEAK_TO_ABORT = 0.65,			-- % or more of units in an order to consider ececuting the plan
 	PLAN_AVG_PREPARATION_TO_EXECUTE = 0.6,		-- % or more average plan preparation before executing
 	STATE_GARRISON_MAX_UNITS = 1,				-- Max units to guard a garrison under normal circumstances (isolated core areas like England has is excempt)
