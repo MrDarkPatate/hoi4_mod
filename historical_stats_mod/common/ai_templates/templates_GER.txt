@@ -199,7 +199,7 @@ medium_armor_late_GER = {			# 1942+  	Template obtained with Stug III F
 
 	target_template = {
 		weight = 1
-		match_value = 23990.0
+		match_value = 28990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -498,7 +498,7 @@ semi_motorized_default_GER = {			# Pre-1939 formations.  Test w 0.9 SOLVED PRE )
 
 	target_template = {
 		weight = 1
-		match_value = 10990.0
+		match_value = 5990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -530,7 +530,7 @@ early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
 	
 	target_template = {
 		weight = 1
-		match_value = 11990.0
+		match_value = 6990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -563,7 +563,7 @@ midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 	
 	target_template = {
 		weight = 1
-		match_value = 12990.0
+		match_value = 7990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -765,7 +765,7 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 	
 	target_template = {
 		weight = 1
-		match_value = 16990.0
+		match_value = 26990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -888,7 +888,7 @@ ss_medium_armor_default_GER = {				# SS Panzer Grenadier Division 1942-1943
 	
 	target_template = {
 		weight = 1
-		match_value = 12990
+		match_value = 27990
 		support = {
 			SS_DIV_HQ = 1		
 			ss_engineer = 1
@@ -927,7 +927,7 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 	
 	target_template = {
 		weight = 1
-		match_value = 13990.0
+		match_value = 29990.0
 		
 		support = {
 			SS_DIV_HQ = 1		

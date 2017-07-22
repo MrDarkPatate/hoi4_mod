@@ -2,7 +2,7 @@
 
 oob = "SOV_1936"
 
-set_research_slots = 7
+set_research_slots = 6
 
 # Starting tech
 set_technology = {
@@ -83,7 +83,6 @@ set_technology = {
 	#transport = 1
 	mass_assault = 1
 	fleet_in_being = 1
-	basic_destroyer = 1 #DNM
 	############## WW1Naval############
 	torpedo_boat_destroyer = 1
 	early_ww1_destroyer = 1
@@ -228,8 +227,8 @@ set_technology = {
 	set_technology = {
 		CAS1 = 1
 		improved_light_tank = 1 
-		basic_heavy_tank = 1    # available (T-35)
-		basic_medium_tank = 1 	# available (T-28)
+		basic_heavy_tank = 1    # Should be available in 1936 (T-35)
+		basic_medium_tank = 1 # Should be available in 1936 (T-28)
 		tactical_bomber1 = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
@@ -368,7 +367,7 @@ create_field_marshal = {
 	name = "Georgy Zhukov"
 	id = 410
 		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-	traits = { SOV_tag logistics_wizard_FM panzer_leader  Awesome_General  winter_specialist_FM}
+	traits = { SOV_tag logistics_wizard_FM panzer_leader  Competent_General  winter_specialist_FM}
 	skill = 4
 
 	
@@ -414,7 +413,7 @@ create_corps_commander = {
 	id = 408
 		picture = "Portrait_Soviet_Ivan_Konev.dds"
 	traits = { SOV_tag panzer_leader Awesome_General offensive_doctrine_CC }
-	skill = 5
+	skill = 4
 #
 
 
@@ -694,7 +693,7 @@ create_navy_leader = {
 	id = 409
 		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
 	traits = { SOV_tag spotter }
-	skill = 4
+	skill = 3
 }
 
 create_navy_leader = {
@@ -722,38 +721,6 @@ create_equipment_variant = {
 }
 create_equipment_variant = {
 	name = "Leningrad Class"
-	type = destroyer_2
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Minsk Class"
-	type = destroyer_2
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 2
-	}
-}
-create_equipment_variant = {
-	name = "Fidonisy Class"
-	type = destroyer_1
-	upgrades = {
-		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 1
-		ship_ASW_upgrade = 0
-		ship_anti_air_upgrade = 2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Izyaslav Class"
 	type = destroyer_1
 	upgrades = {
 		ship_torpedo_upgrade = 1
@@ -764,11 +731,43 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Orfey Class"
+	name = "Minsk Class"
 	type = destroyer_1
 	upgrades = {
 		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 2
+		destroyer_engine_upgrade = 0
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+	}
+}
+create_equipment_variant = {
+	name = "Fidonisy Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 1
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Izyaslav Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
+		ship_ASW_upgrade = 0
+		ship_anti_air_upgrade = 0
+	}
+	obsolete = yes
+}
+create_equipment_variant = {
+	name = "Orfey Class"
+	type = destroyer_late_ww1
+	upgrades = {
+		ship_torpedo_upgrade = 1
+		destroyer_engine_upgrade = 1
 		ship_ASW_upgrade = 0
 		ship_anti_air_upgrade = 1
 	}
@@ -776,10 +775,10 @@ create_equipment_variant = {
 }
 create_equipment_variant = {
 	name = "Kapitan Izylmetyev Class"
-	type = destroyer_1
+	type = destroyer_late_ww1
 	upgrades = {
 		ship_torpedo_upgrade = 1
-		destroyer_engine_upgrade = 2
+		destroyer_engine_upgrade = 0
 		ship_ASW_upgrade = 0
 		ship_anti_air_upgrade = 1
 	}
@@ -787,7 +786,7 @@ create_equipment_variant = {
 }
 create_equipment_variant = {
 	name = "Schastlivyy Class"
-	type = destroyer_1
+	type = destroyer_early_ww1
 	upgrades = {
 		ship_torpedo_upgrade = 1
 		destroyer_engine_upgrade = 2
