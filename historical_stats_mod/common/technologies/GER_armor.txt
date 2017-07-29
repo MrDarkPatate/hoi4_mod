@@ -290,7 +290,7 @@ technologies = {
 		start_year = 1940						# 1938
 		
 		ai_will_do = {						
-			factor = 15							# changed from 0 to make AI get the OOB. Best TD AI available until 1942
+			factor = 25							# changed from 0 to make AI get the OOB. Best TD AI available until 1942 *** w 15 after Stug III a w 10
 		}
 		
 		on_research_complete = {
@@ -911,7 +911,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 25					# 10
+			factor = 25					# 10			***
 		}
 		
 		categories = {
@@ -943,7 +943,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 10
+			factor = 5						# *** with 10 before PzJg I with 15
 		}
 		
 		categories = {
@@ -1969,17 +1969,6 @@ technologies = {
 		
 		dependencies = {
 			german_tech = 1
-		}
-		
-		on_research_complete = {
-		
-		    limit = {
-				is_ai = yes
-			}
-			
-			hidden_effect = {
-				load_oob = "GER_Pz_Grandier_Division_1941"
-			}
 		}
 
 		research_cost = 1.4								#new branch, needs to be watched together with Pz IV G to have it on time

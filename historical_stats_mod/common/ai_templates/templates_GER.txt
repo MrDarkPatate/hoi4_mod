@@ -199,7 +199,7 @@ medium_armor_late_GER = {			# 1942+  	Template obtained with Stug III F
 
 	target_template = {
 		weight = 1
-		match_value = 28990.0
+		match_value = 58990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -293,11 +293,11 @@ late_infantry_default_GER = {				# Should get a template by late war.
 		support = {
 			DIV_HQ = 1
 			engineer = 1
+			artillery_medium = 1			
 			recon_cav = 1	
 
 			maintenance_company = 1
 			logistics_company = 1
-			artillery_medium = 1
 			field_hospital = 1
 			
 			# anti_tank_heavy = 1
@@ -502,8 +502,8 @@ semi_motorized_default_GER = {			# Pre-1939 formations.  Test w 0.9 SOLVED PRE )
 		
 		support = {
 			DIV_HQ = 1
-			recon_ac = 1
-			artillery_medium_mot = 1
+			recon_mot = 1	# recon_ac = 1	
+			# artillery_medium_mot = 1	
 		
 			maintenance_company = 1
 			logistics_company = 1	
@@ -523,23 +523,23 @@ semi_motorized_default_GER = {			# Pre-1939 formations.  Test w 0.9 SOLVED PRE )
 	target_min_match = 0.6
 }
 
-early_motorized_default_GER = {					# 1940		Template obtained with PzJg I
+early_motorized_default_GER = {					# 1940		Template obtained with Bison (PzJg I ?)
 	target_width = 17
 	width_weight = 0.5
 	column_swap_factor = 0.3
 	
 	target_template = {
 		weight = 1
-		match_value = 6990.0
+		match_value = 26990.0
 		
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			recon_ac = 1	
+			recon_mot = 1	# recon_ac = 1	
 
 			maintenance_company = 1
 			logistics_company = 1
-			artillery_medium_mot = 1			
+			# artillery_medium_mot = 1			
 		}
 		
 		regiments = {
@@ -563,18 +563,18 @@ midwar_motorized_default_GER = {				# Gets a template with Stug III TD
 	
 	target_template = {
 		weight = 1
-		match_value = 7990.0
+		match_value = 57990.0
 		
 		support = {
 			DIV_HQ = 1
 			engineer = 1
-			recon_ac = 1
+			recon_mot = 1	# recon_ac = 1	
 			field_hospital = 1
 			# anti_air_heavy = 1
 			
 			maintenance_company = 1
 			logistics_company = 1
-			artillery_medium_mot = 1	
+			# artillery_medium_mot = 1	
 			anti_air = 1	
 		}
 		
@@ -679,9 +679,6 @@ garrison_late_GER = {
 			artillery_brigade = 1
 		}
 	}
-	replace_at_match = 1
-	replace_with = motorized_default_GER
-	target_min_match = 1
 }
 }
 
@@ -726,7 +723,7 @@ elite_motorized_default_GER = {					# 1942 Panzer Grenadier Elite Wehrmacht Divi
 	
 	target_template = {
 		weight = 1
-		match_value = 13990.0
+		match_value = 57990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -765,7 +762,7 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 	
 	target_template = {
 		weight = 1
-		match_value = 26990.0
+		match_value = 69990.0
 		
 		support = {
 			DIV_HQ = 1
@@ -798,7 +795,7 @@ elite_panzer_default_GER = {					# Elite Wehrmacht Divisions 1943+
 	}
 }
 
-ss_garrison_default_GER = {		# Wih 0.5 Ok... With 0.8 Fails
+ss_garrison_default_GER = {		# With 0.5 Ok... With 0.8 Fails Beware: with 0.7 both SS regiments work ok, but later in 1937 or so...
 	target_width = 24.9
 	width_weight = 0.1
 	column_swap_factor = 0.5
@@ -817,12 +814,12 @@ ss_garrison_default_GER = {		# Wih 0.5 Ok... With 0.8 Fails
 		}
 	}
 	replace_at_match = 0.1
-	replace_with = ss_motorized_default_GER
+	replace_with = ss_motorized2_default_GER
 	target_min_match = 0.1
 }
 
 
-ss_motorized_default_GER = {				# SS Mot Regiments pre 1940 					# With 0.7 NO roles...
+ss_motorized_default_GER = {				# SS Mot Regiments pre 1940 Beware: with 0.7 both SS regiments work ok, but later in 1937 or so...
 	target_width = 20
 	width_weight = 0.6
 	column_swap_factor = 0.6
@@ -888,7 +885,7 @@ ss_medium_armor_default_GER = {				# SS Panzer Grenadier Division 1942-1943
 	
 	target_template = {
 		weight = 1
-		match_value = 27990
+		match_value = 57990
 		support = {
 			SS_DIV_HQ = 1		
 			ss_engineer = 1
@@ -927,7 +924,7 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 	
 	target_template = {
 		weight = 1
-		match_value = 29990.0
+		match_value = 69990.0
 		
 		support = {
 			SS_DIV_HQ = 1		
@@ -943,7 +940,7 @@ ss_mechanized_default_GER = {				# SS Panzer divisions 1943+
 		}
 		
 		regiments = {
-			ss_panzer_iii = 3				# Hope this works? Would prefer Panzer Vs...
+			ss_panzer_iii = 3				# Hope this works? 
 			ss_panzer_vi = 1				# Hope this works?
 			
 			ss_motorized = 6
