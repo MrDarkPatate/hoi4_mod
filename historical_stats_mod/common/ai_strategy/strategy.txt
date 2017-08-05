@@ -274,12 +274,12 @@ ITA_area_priorities = {
 		always = no
 	}
 
-	ai_strategy = { type = area_priority id = europe 			value = 100 }
-	ai_strategy = { type = area_priority id = north_america 	value = 10 }
-	ai_strategy = { type = area_priority id = south_america 	value = 15 }
+	ai_strategy = { type = area_priority id = europe 			value = 100 }	#
+	ai_strategy = { type = area_priority id = north_america 	value = 1 }		#
+	ai_strategy = { type = area_priority id = south_america 	value = 1 }		#
 	
-	ai_strategy = { type = area_priority id = middle_east 		value = 70 }		# 
-	ai_strategy = { type = area_priority id = africa 			value = 30 }		#
+	ai_strategy = { type = area_priority id = middle_east 		value = 40 }	# 
+	ai_strategy = { type = area_priority id = africa 			value = 10 }	#
 	
 	ai_strategy = { type = area_priority id = asia 				value = -1 }
 	ai_strategy = { type = area_priority id = pacific 			value = -1 }
@@ -324,8 +324,8 @@ JAP_area_priorities = {
 	}
 
 	ai_strategy = { type = area_priority id = europe 			value = 1 }
-	ai_strategy = { type = area_priority id = north_america 	value = 50 }
-	ai_strategy = { type = area_priority id = south_america 	value = 50 }
+	ai_strategy = { type = area_priority id = north_america 	value = 1 }
+	ai_strategy = { type = area_priority id = south_america 	value = 1 }
 	
 	ai_strategy = { type = area_priority id = middle_east 		value = 1 }
 	ai_strategy = { type = area_priority id = africa 			value = -25 }

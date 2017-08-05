@@ -658,7 +658,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 
 		anti_air_heavy = {
 			air_attack = 0.1
-			ap_attack = 0.25
+			ap_attack = 0.25				# NOTE: HS changes. 88 has low piercing in 36 for game balance. It improves to be same as 88AT in 43 
 		}
 		
 		path = {
@@ -698,7 +698,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			HVanti_air_equipment_3
 		}
 		
-		anti_air_heavy = {
+		anti_air_heavy = {					# NOTE: HS changes. 88 has low piercing in 36 for game balance
 			ap_attack = 0.3
 		}
 		research_cost = 1
@@ -770,10 +770,10 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 
 
 		mountain_artillery_brigade = {
-			soft_attack = 0.07
+			soft_attack = 0.08
 		}
 		ss_mountain_artillery_brigade = {
-			soft_attack = 0.07
+			soft_attack = 0.08
 		}
 		
 		path = {
@@ -822,19 +822,47 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 		
 		path = {
-			leads_to_tech = artillery3
+			leads_to_tech = artillery4
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.1
-		start_year = 1939
+		research_cost = 1.2
+		start_year = 1938
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = @1939 }
+			position = { x = -3 y = @1938 }
 		}
 		
 		categories = {
 			artillery
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					NOT = { has_Country_flag = division_size }
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry39_art_Brigade"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_Country_flag = division_size
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry39_art"
+					load_oob = "unlock_infantry39_art_M"
+				}
+			}
 		}
 		
 		ai_will_do = {
@@ -842,70 +870,24 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 	}
 	########### Gun barrel
-	artillery3 = {
+	artillery4 = {
 		
-#		artillery = {
-#			soft_attack = 0.1
-#		}
-#		artillery_mot = {
-#			soft_attack = 0.1
-#		}
-#		mountain_artillery = {
-#			soft_attack = 0.07
-#		}
-		artillery_brigade = {
-			soft_attack = 0.07
-		}
-		artillery_brigade_mot = {
-			soft_attack = 0.07
-		}
-		mountain_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		ss_artillery_brigade = {
-			soft_attack = 0.07
-		}
-		ss_artillery_brigade_mot = {
-			soft_attack = 0.07
-		}
-		ss_mountain_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		
-		light_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade = {
-		   soft_attack = 0.05
-		}
-		modern_tank_destroyer_brigade = {
-		   soft_attack = 0.05
-		}
-		ss_panzer_ii_art = {
-		   soft_attack = 0.05
-		}
-		ss_panzer_iii_art = {
-		   soft_attack = 0.05
-		}
-		ss_panzer_vi_art = {
-		   soft_attack = 0.05
+		enable_equipments = {
+			artillery_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = artillery4
+			leads_to_tech = artillery3
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.1
+		research_cost = 1.2
 
-		start_year = 1941
+		start_year = 1940
 		
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = @1941 }
+			position = { x = -3 y = @1940 }
 		}
 		
 		categories = {
@@ -917,10 +899,47 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 	}
 	
-	artillery4 = {
+	artillery3 = {
 		
-		enable_equipments = {
-			artillery_equipment_2
+		artillery_brigade = {
+			soft_attack = 0.08
+		}
+		artillery_brigade_mot = {
+			soft_attack = 0.08
+		}
+		mountain_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		ss_artillery_brigade = {
+			soft_attack = 0.08
+		}
+		ss_artillery_brigade_mot = {
+			soft_attack = 0.08
+		}
+		ss_mountain_artillery_brigade = {
+			soft_attack = 0.05
+		}
+		
+		light_sp_artillery_brigade = {
+		   soft_attack = 0.08
+		}
+		medium_sp_artillery_brigade = {
+		   soft_attack = 0.08
+		}
+		modern_sp_artillery_brigade = {
+		   soft_attack = 0.05
+		}
+		modern_tank_destroyer_brigade = {
+		   soft_attack = 0.05
+		}
+		ss_panzer_ii_art = {
+		   soft_attack = 0.08
+		}
+		ss_panzer_iii_art = {
+		   soft_attack = 0.08
+		}
+		ss_panzer_vi_art = {
+		   soft_attack = 0.08
 		}
 		
 		path = {
@@ -928,7 +947,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.1
+		research_cost = 1.2
 		start_year = 1942
 		folder = {
 			name = artillery_folder
@@ -950,16 +969,16 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 		
 		light_sp_artillery_brigade = {
-		   soft_attack = 0.05
+		   soft_attack = 0.07
 		}
 		medium_sp_artillery_brigade = {
-		   soft_attack = 0.05
+		   soft_attack = 0.07
 		}
 		modern_sp_artillery_brigade = {
-		   soft_attack = 0.05
+		   soft_attack = 0.07
 		}
 		modern_tank_destroyer_brigade = {
-		   soft_attack = 0.05
+		   soft_attack = 0.07
 		}
 		
 		research_cost = 1.3
@@ -1011,10 +1030,18 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 4
 			modifier = {
-				factor = 12
-				num_of_military_factories > 60
+				factor = 5
+				num_of_military_factories > 30
+			}
+			modifier = {
+				factor = 5
+				num_of_military_factories > 50
+			}
+			modifier = {
+				factor = 7
+				has_tech = superior_firepower
 			}
 		}
 	}
@@ -1043,10 +1070,18 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 4
 			modifier = {
-				factor = 12
-				num_of_military_factories > 60
+				factor = 5
+				num_of_military_factories > 30
+			}
+			modifier = {
+				factor = 5
+				num_of_military_factories > 50
+			}
+			modifier = {
+				factor = 7
+				has_tech = superior_firepower
 			}
 		}
 	}
@@ -1054,16 +1089,16 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 	medartillery0 = {
 		
 		artillery_medium = {
-			soft_attack = 0.03
+			soft_attack = 0.04
 		}
 		artillery_medium_mot = {
-			soft_attack = 0.03
+			soft_attack = 0.04
 		}
 		ss_artillery_medium = {
-			soft_attack = 0.03
+			soft_attack = 0.04
 		}
 		ss_artillery_medium_mot = {
-			soft_attack = 0.03
+			soft_attack = 0.04
 		}
 		
 		path = {
@@ -1087,11 +1122,84 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			artillery
 		}
 		
+	   on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					NOT = { has_Country_flag = division_size }
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry39_art_Brigade"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_Country_flag = division_size
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry39_art"
+					load_oob = "unlock_infantry39_art_M"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = interwar_antitank
+					NOT = { has_Country_flag = division_size }
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry39_at_art_Brigade"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = interwar_antitank
+					has_Country_flag = division_size
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry39_at_art"
+					load_oob = "unlock_infantry39_at_art_M"
+				}
+			}
+		}
+		
 		ai_will_do = {
-			factor = 1
+			factor = 3
 			modifier = {
-				factor = 12
-				num_of_military_factories > 60
+				factor = 4
+				num_of_military_factories > 25
+			}
+			modifier = {
+				factor = 3
+				num_of_military_factories > 45
+			}
+			modifier = {
+				factor = 6
+				has_tech = superior_firepower
+			}
+			modifier = {
+				factor = 6
+				tag = USA
+			}
+			modifier = {
+				factor = 5
+				has_tech = tech_logistics_company
 			}
 		}
 	}
@@ -1127,6 +1235,10 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			modifier = {
 				factor = 12
 				num_of_military_factories > 60
+			}
+			modifier = {
+				factor = 7
+				tag = USA
 			}
 		}
 	}
@@ -1183,11 +1295,84 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			artillery
 		}
 		
+	   on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = tech_maintenance_company
+					NOT = { has_Country_flag = division_size }
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry40_art_Brigade"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = tech_maintenance_company
+					has_Country_flag = division_size
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry40_art"
+					load_oob = "unlock_infantry40_art_M"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = tech_maintenance_company
+					has_tech = interwar_antitank
+					NOT = { has_Country_flag = division_size }
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry40_at_art_Brigade"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
+					has_tech = tech_maintenance_company
+					has_tech = interwar_antitank
+					has_Country_flag = division_size
+				}
+				hidden_effect = {
+					load_oob = "unlock_infantry40_at_art"
+					load_oob = "unlock_infantry40_at_art_M"
+				}
+			}
+		}
+		
 		ai_will_do = {
-			factor = 5
+			factor = 3
 			modifier = {
-				factor = 7
+				factor = 4
 				num_of_military_factories > 30
+			}
+			modifier = {
+				factor = 6
+				has_tech = superior_firepower
+			}
+			modifier = {
+				factor = 5
+				has_tech = tech_logistics_company
+			}
+			modifier = {
+				factor = 5
+				has_tech = tech_maintenance_company
 			}
 		}
 	}
@@ -2079,6 +2264,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			if = {
 				limit = {
 					is_ai = yes
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry37_at"
@@ -2090,6 +2276,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			if = {
 				limit = {
 					is_ai = yes
+					NOT = { has_Country_flag = division_size }
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry37_at_Brigade"
@@ -2113,6 +2300,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 				limit = {
 					is_ai = yes
 					has_tech = tech_field_hospital
+					NOT = { has_Country_flag = division_size }
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry38_at_Brigade"
@@ -2125,6 +2313,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					is_ai = yes
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry39_at"
@@ -2139,6 +2328,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
 					has_tech = tech_maintenance_company
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry40_at"
@@ -2210,6 +2400,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
 					has_tech = gw_med_artillery
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry40_MA_AT"
@@ -2223,6 +2414,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					has_tech = tech_logistics_company
 					has_tech = gw_med_artillery
 					has_tech = interwar_antiair
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry40_MA_AA_AT"
@@ -2235,6 +2427,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					is_ai = yes
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry39_at"
@@ -2248,7 +2441,31 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					is_ai = yes
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
+					has_tech = tech_mountaineers
+				}
+				hidden_effect = {
+					load_oob = "unlock_mountain39_at"
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					NOT = { has_tech = tech_logistics_company }
+					has_tech = tech_mountaineers
+				}
+				hidden_effect = {
+					load_oob = "unlock_mountain38_at"
+				}
+			}
+		}
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+					has_tech = tech_field_hospital
+					has_tech = tech_logistics_company
 					has_tech = tech_maintenance_company
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry40_at"
@@ -2305,7 +2522,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 	antitank3 = {
 
 		anti_tank = {
-			hard_attack = 0.1
+			hard_attack = 0.1			# NOTE: HS changes for game balance. 88s AP too OP too early. 
 			#ap_attack = 0.05
 		}
 		ss_anti_tank = {
@@ -2398,7 +2615,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			anti_tank_equipment_3
 		}	
 		
-		path = {								# Now 75 AT leads to 88AT
+		path = {								# HS: Now 75 AT leads to 88AT
 			leads_to_tech = HVantitank1
 			research_cost_coeff = 1
 		}
@@ -2424,7 +2641,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 	}
 	###################### HV AT
-	HVantitank1 = {									# Now this is delayed to (1942)
+	HVantitank1 = {									# HS: Now this is delayed to (1942)
 		
 		enable_equipments = {
 			HVanti_tank_equipment_1
@@ -2469,6 +2686,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
 					#has_tech = tech_maintenance_company
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry40_att"
@@ -2485,6 +2703,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
 					has_tech = HVantiair2
+					has_Country_flag = division_size
 				}
 				hidden_effect = {
 					load_oob = "unlock_infantry40_attaa"
@@ -2497,18 +2716,11 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			if = {
 				limit = {
 					is_ai = yes
-					or = { 
-					and = {
 					has_tech = tech_field_hospital
 					has_tech = tech_logistics_company
 					has_tech = tech_maintenance_company
 					has_tech = basic_light_tank
 					has_tech = basic_medium_tank
-					}
-					tag = SOV
-			        tag = ITA
-					tag = JAP
-					}
 				}
 				hidden_effect = {
 					load_oob = "unlock_motorized_1942"
@@ -2552,7 +2764,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 	HVantitank2 = {
 
 		anti_tank_heavy = {
-			hard_attack = 0.1
+			hard_attack = 0.1					# Again.... HS 88AP too OP
 			#ap_attack = 0.05
 		}
 		

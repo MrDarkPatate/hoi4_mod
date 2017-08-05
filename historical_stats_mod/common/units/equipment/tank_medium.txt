@@ -4150,8 +4150,140 @@
 		build_cost_ic = 21.5		#21.5
 			
 	}
+######### ADDED FROM TW NEEDS CHECK AND STATS ######
+	# M26 Pershing
+	m26_pershing_equipment = {
+		archetype = medium_tank_equipment
+		parent = m4a3_equipment
+		priority = 50
+		visual_level = 3
+		
+		maximum_speed = 5.5
+		reliability = 0.7
 
-	
+		#Defensive Abilities
+
+		defense = 12
+		breakthrough = 76
+		hardness = 0.8
+		armor_value = 110
+
+		#Offensive Abilities
+		soft_attack = 17
+		hard_attack = 20
+		ap_attack = 87
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 34.3
+	}	
+		# M46 Patton
+	american_mbt_equipment_1 = {
+		archetype = medium_tank_equipment
+		parent = m26_pershing_equipment
+		priority = 170
+		visual_level = 0
+		
+		maximum_speed = 6.4
+		reliability = 0.75
+
+		#Defensive Abilities
+
+		defense = 12
+		breakthrough = 76
+		hardness = 0.8
+		armor_value = 115
+
+		#Offensive Abilities
+		soft_attack = 18
+		hard_attack = 21
+		ap_attack = 93
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 34.7
+	}
+
+	# M47 Patton
+	american_mbt_equipment_2 = {
+		archetype = medium_tank_equipment
+		parent = american_mbt_equipment_1
+		priority = 170
+		visual_level = 1
+		
+		maximum_speed = 6.8
+		reliability = 0.8
+
+		#Defensive Abilities
+
+		defense = 13
+		breakthrough = 77
+		hardness = 0.8
+		armor_value = 119
+
+		#Offensive Abilities
+		soft_attack = 21
+		hard_attack = 24
+		ap_attack = 100
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 35.2
+	}
+
+	# M48 Patton (dat 'Nam tank)
+	american_mbt_equipment_3 = {
+		archetype = medium_tank_equipment
+		parent = american_mbt_equipment_2
+		priority = 170
+		visual_level = 2
+		
+		defense = 13
+		breakthrough = 77
+		hardness = 0.8
+		armor_value = 119
+
+		#Offensive Abilities
+		soft_attack = 23
+		hard_attack = 28
+		ap_attack = 100
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 35.2
+	}
+
+	# M60 Patton
+	american_mbt_equipment_4 = {
+		archetype = medium_tank_equipment
+		parent = american_mbt_equipment_3
+		priority = 170
+		visual_level = 3
+		
+		defense = 14
+		breakthrough = 77
+		hardness = 0.8
+		armor_value = 122
+
+		#Offensive Abilities
+		soft_attack = 25
+		hard_attack = 32
+		ap_attack = 108
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 35.6
+	}
 ##### French tanks 
 ##### Infantry tanks: 1xBn to Infantry divs templates. 2xBns to DLMs - FT17 - Ft17w37/ R35 - 40 / H35 - 39 / FCM36 - AMX38 proto
 ##### Medium tanks: 2xBns to DLMs  -  D1 - D2 / AMC 34 - AMC 35 / S35 - G1R proto
