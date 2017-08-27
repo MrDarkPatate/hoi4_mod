@@ -23,6 +23,9 @@ set_technology = {
 	SMG_team = 1
 	tech_Garrison = 1
 	tech_Headquarters = 1
+	electronic_mechanical_engineering = 1
+	HQ_communications = 1
+ 	radio = 1
 	########### Support ########
 	tech_recon = 1
 	subtech_recon_mot_1 = 1
@@ -113,17 +116,18 @@ set_technology = {
 	heavy_industry = 1
 	defence_works = 1
 	civ_works = 1
-	housing_work = 1
 	hospital_work = 1
 	schools_work = 1
 	infra_works = 1
-	rail_infra = 1
 	road_infra = 1
-	air_infra = 1
 	construction0 = 1
 	construction1 = 1
 	defence_works0 = 1
 	infra_works0 = 1
+	rail_infra0 = 1
+	road_infra0 = 1
+	air_infra0 = 1
+	port_infra0 = 1
 	################ Armor ###########
 	tech_nbfz_equipment_1 = 1
 	tech_panzer_i_equipment_1 = 1
@@ -138,7 +142,7 @@ set_technology = {
 }
 
 set_research_slots = 8
-set_convoys = 230
+set_convoys = 220
 set_national_unity = 0.9
 
 #Trade
@@ -1211,7 +1215,6 @@ create_equipment_variant = {
 
 		#electronics
 		electronic_mechanical_engineering = 1
-		HQ_communications = 1
 		radio_detection = 1
 		decimetric_radar = 1
 		mechanical_computing = 1

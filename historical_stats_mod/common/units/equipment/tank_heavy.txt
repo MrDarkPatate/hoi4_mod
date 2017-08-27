@@ -1632,10 +1632,10 @@ equipments = {
 		}
 	}
 
-	# M26 Pershing  1943
-	american_heavy_tank_equipment_2 = {
+	# M26 Pershing
+	m26_pershing_equipment = {
 		archetype = heavy_tank_equipment
-		parent = american_heavy_tank_equipment_1		
+		parent = american_heavy_tank_equipment_1
 		priority = 90
 		visual_level = 0
 		
@@ -1662,45 +1662,10 @@ equipments = {
 			chromium = 1
 		}
 	}	
- 
-	# M103  1945
-	american_heavy_tank_equipment_3 = {
+ 	# M26 Super Pershing  1944             STATS CHECK, now same as m26
+	m26_superpershing_equipment = {
 		archetype = heavy_tank_equipment
-		parent = american_heavy_tank_equipment_2		
-		priority = 90
-		visual_level = 0
-		
-		#Misc Abilities
-		maximum_speed = 4.8
-		reliability = 0.6
-
-		
-	    #Misc Abilities
-		maximum_speed = 4.8
-
-		#Defensive Abilities
-		defense = 22
-		breakthrough = 82
-		armor_value = 123
-		hardness = 0.9
-
-		#Offensive Abilities
-		soft_attack = 20 
-		hard_attack = 38 
-		ap_attack = 123
-		
-		build_cost_ic = 59
-		resources = {
-			oil = 2
-			tungsten = 5
-			steel = 4
-			chromium = 1
-		}
-	}
-		# M26 Super Pershing  1944             STATS CHECK
-	m26_superpershing_equipment_2 = {
-		archetype = heavy_tank_equipment
-		parent = american_heavy_tank_equipment_1		
+		parent = m26_pershing_equipment		
 		priority = 90
 		visual_level = 0
 		
@@ -1727,11 +1692,10 @@ equipments = {
 			chromium = 1
 		}
 	}	
- 
-	# M103  1945                             STATS CHECK
-	american_heavy_tank_equipment_3 = {
+	# M103  1945
+	american_heavy_tank_equipment_2 = {
 		archetype = heavy_tank_equipment
-		parent = m26_superpershing_equipment_2		
+		parent = m26_superpershing_equipment		
 		priority = 90
 		visual_level = 0
 		
@@ -1762,10 +1726,12 @@ equipments = {
 			chromium = 1
 		}
 	}
-	american_heavy_tank_art_equipment_1 = {
+
+ 
+	american_heavy_tank_art_equipment_1 = {			#T92 HMC
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_tank_artillery_equipment_1
-		family = american_heavy_tank_equipment_2
+		family = m26_pershing_equipment
 		priority = 120
 		visual_level = 0
 		

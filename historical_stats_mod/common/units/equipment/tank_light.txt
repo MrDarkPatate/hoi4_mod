@@ -2565,8 +2565,8 @@ equipments = {
 	}
 	
 	############################# USA Tanks  PIERCING / ARMOR DONE UNTIL THIS LINE / ONLY SOME TANKS DONE
-		# M2 Light Tank  			# 1935  twin turrets
-	american_light_tank_equipment_1 = {
+		# M1917 Light Tank  			# 1918  revise pls
+	american_light_tank_equipment_0 = {
 		archetype = light_tank_equipment
 		parent = gw_tank_equipment 
 		priority = 10
@@ -2590,11 +2590,36 @@ equipments = {
 		
 		build_cost_ic = 16		#16
 	}
+	
+	# M2A1 Light Tank  			# 1936  single turret, revise pls
+	american_light_tank_equipment_1 = {
+		archetype = light_tank_equipment
+		parent = american_light_tank_equipment_0
+		priority = 10
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 7		#7
+		reliability = 0.55
 
-	# M2A3 Light Tank 
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 28
+		hardness = 0.39			# 0.55
+		armor_value = 25		# 10 then 15 plate 15mm 
+		
+		#Offensive Abilities
+		soft_attack = 8 		#14
+		hard_attack = 6
+		ap_attack = 28			# 30 - .50 cal
+		air_attack = 0		
+		
+		build_cost_ic = 16		#16
+	}	
+	# M1 Light Tank Combat Car		#1937  revise stats pls
 	american_light_tank_equipment_2 = {
 		archetype = light_tank_equipment
-		parent = american_light_tank_equipment_1
+		parent = american_light_tank_equipment_0
 		priority = 10
 		visual_level = 1
 		maximum_speed = 7		#7
@@ -2614,10 +2639,37 @@ equipments = {
 
 	}
 
-	# M2A4 Light Tank  1938
+	# M2A2 Light Tank  			# 1937  twin turrets
 	american_light_tank_equipment_3 = {
 		archetype = light_tank_equipment
-		parent = american_light_tank_equipment_2
+		parent = american_light_tank_equipment_1 
+		priority = 10
+		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 7		#7
+		reliability = 0.55
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 28
+		hardness = 0.39			# 0.55
+		armor_value = 25		# 10 then 15 plate 15mm 
+		
+		#Offensive Abilities
+		soft_attack = 8 		#14
+		hard_attack = 6
+		ap_attack = 28			# 30 - .50 cal
+		air_attack = 0		
+		
+		build_cost_ic = 16		#16
+	}
+
+
+	# M2A4 Light Tank  1938
+	american_light_tank_equipment_4 = {
+		archetype = light_tank_equipment
+		parent = american_light_tank_equipment_3
 		priority = 10
 		visual_level = 2
 		maximum_speed = 7
@@ -2636,10 +2688,10 @@ equipments = {
 		build_cost_ic = 17
 	}
 
-	# M3 Stuart  1940
-	american_light_tank_equipment_4 = {
+	# M3 Stuart  1941
+	american_light_tank_equipment_5 = {
 		archetype = light_tank_equipment
-		parent = american_light_tank_equipment_3
+		parent = american_light_tank_equipment_4
 		priority = 10
 		visual_level = 3
 		#Misc Abilities
@@ -2660,11 +2712,58 @@ equipments = {
 
 		build_cost_ic = 18 
 	}
-
-	# M5 Stuart  1942
-	american_light_tank_equipment_5 = {
+	# M3A1 Stuart  1942					revise stats pls
+	american_light_tank_equipment_6 = {
 		archetype = light_tank_equipment
-		parent = american_light_tank_equipment_4
+		parent = american_light_tank_equipment_5
+		priority = 10
+		visual_level = 3
+		#Misc Abilities
+		maximum_speed = 7.8		#  58kmh
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 11
+		breakthrough = 37
+		hardness = 0.61			# def
+		armor_value = 40		# 28 then 15 plate 44mm
+
+		#Offensive Abilities
+		soft_attack = 10 		#18
+		hard_attack = 9
+		ap_attack = 40			# 50 - 37mm M5
+		air_attack = 0 
+
+		build_cost_ic = 18 
+	}
+	# M3A3 Stuart  1943			revise stats pls
+	american_light_tank_equipment_7 = {
+		archetype = light_tank_equipment
+		parent = american_light_tank_equipment_6
+		priority = 10
+		visual_level = 3
+		#Misc Abilities
+		maximum_speed = 7.8		#  58kmh
+		reliability = 0.6
+
+		#Defensive Abilities
+		defense = 11
+		breakthrough = 37
+		hardness = 0.61			# def
+		armor_value = 40		# 28 then 15 plate 44mm
+
+		#Offensive Abilities
+		soft_attack = 10 		#18
+		hard_attack = 9
+		ap_attack = 40			# 50 - 37mm M5
+		air_attack = 0 
+
+		build_cost_ic = 18 
+	}
+	# M5 Stuart  1942
+	american_light_tank_equipment_8 = {
+		archetype = light_tank_equipment
+		parent = american_light_tank_equipment_7		#M3A3
 		priority = 10
 		visual_level = 4
 		maximum_speed = 8
@@ -2684,9 +2783,9 @@ equipments = {
 	}
 
 	# M24 Chaffee  1944
-	american_light_tank_equipment_6 = {
+	american_light_tank_equipment_9 = {
 		archetype = light_tank_equipment
-		parent = american_light_tank_equipment_5
+		parent = american_light_tank_equipment_8
 		priority = 10
 		visual_level = 5
 		maximum_speed = 7.4
@@ -2704,9 +2803,9 @@ equipments = {
 	}
 
 	# M41 Walker Bulldog  1946
-	american_light_tank_equipment_7 = {
+	american_light_tank_equipment_10 = {
 		archetype = light_tank_equipment
-		parent = american_light_tank_equipment_6
+		parent = american_light_tank_equipment_9
 		priority = 10
 		visual_level = 6
 		
@@ -2725,10 +2824,63 @@ equipments = {
 
 		build_cost_ic = 21
 	}
-	
+	#M42 Duster
+		american_light_tank_aa_equipment_3 = {
+		archetype = light_tank_aa_equipment
+		parent = american_light_tank_aa_equipment_2
+		family = american_light_tank_equipment_7
+		priority = 30
+		visual_level = 1
+		
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 3.5
+		breakthrough = 3.5
+		armor_value = 35
+
+		#Offensive Abilities
+		soft_attack = 3 #4.5
+		hard_attack = 2 #4
+		ap_attack = 40 #35
+		air_attack = 28 #32
+		
+		build_cost_ic = 16
+	}
 	############################# USA SP Tanks
-	# placeholder
-	hellcat_equipment_0 = {
+		
+	blank_equipment = {
+		archetype = light_tank_destroyer_equipment
+		parent = light_tank_destroyer_equipment_1
+		priority = 10
+		visual_level = 0
+		maximum_speed = 0
+		reliability = 0
+
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		
+		build_cost_ic = 0
+		resources = {
+			oil = 0
+			steel = 0
+			tungsten = 0
+			chromium = 0
+		}
+		
+	}
+	M8A1_75mm_td = {
 		archetype = light_tank_destroyer_equipment
 		parent = light_tank_destroyer_equipment_1
 		priority = 10
@@ -2757,10 +2909,10 @@ equipments = {
 		}
 	}
 	
-	# M18 Hellcat
+	# M18 Hellcat											Stats Check
 	hellcat_equipment_1 = {
 		archetype = light_tank_destroyer_equipment
-		parent = hellcat_equipment_0
+		parent = light_tank_destroyer_equipment_1
 		priority = 10
 		visual_level = 0
 		maximum_speed = 7
@@ -2787,41 +2939,12 @@ equipments = {
 		}
 	}
 	
-	# placeholder
-	hellcat_equipment_2 = {
-		archetype = light_tank_destroyer_equipment
-		parent = hellcat_equipment_1
-		priority = 10
-		visual_level = 0
-		maximum_speed = 8
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 5
-		breakthrough = 2
-		hardness = 0.6
-		armor_value = 44
-
-		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 31
-		ap_attack = 93
-		air_attack = 0
-		
-		build_cost_ic = 13.8
-		resources = {
-			oil = 2
-			steel = 3
-			tungsten = 4
-			chromium = 1
-		}
-	}
 	
-	# placeholder
+	# M8 HMC     											NEEDS STATS
 	american_light_tank_artillery_equipment_0 = {
 		archetype = light_tank_artillery_equipment
 		parent = light_tank_artillery_equipment_1
-		family = american_light_tank_equipment_4
+		family = american_light_tank_equipment_8
 		priority = 20
 		visual_level = 0
 		maximum_speed = 7.5
@@ -2835,11 +2958,11 @@ equipments = {
 		build_cost_ic = 19
 	}
 	
-	# M41 HMC
+	# M41 HMC												Check pls
 	american_light_tank_artillery_equipment_1 = {
 		archetype = light_tank_artillery_equipment
 		parent = american_light_tank_artillery_equipment_0
-		family = american_light_tank_equipment_6
+		family = american_light_tank_equipment_9
 		priority = 20
 		visual_level = 0
 		maximum_speed = 7.5
@@ -2857,7 +2980,7 @@ equipments = {
 	american_light_tank_artillery_equipment_2 = {
 		archetype = light_tank_artillery_equipment
 		parent = american_light_tank_artillery_equipment_1
-		family = american_light_tank_equipment_7
+		family = american_light_tank_equipment_10
 		priority = 20
 		visual_level = 0
 		maximum_speed = 7.5
@@ -2871,21 +2994,37 @@ equipments = {
 		build_cost_ic = 19
 	}
 	
-	# M19 GMC
+	# M19 GMC											NEEDS STATS
 	american_light_tank_aa_equipment_1 = {
 		archetype = light_tank_aa_equipment
 		parent = light_tank_aa_equipment_1
-		family = american_light_tank_equipment_4
+		family = american_light_tank_equipment_9
 		priority = 30
 		visual_level = 0
+		
+		#Misc Abilities
+		maximum_speed = 7
+		reliability = 0.7
 
+		#Defensive Abilities
+		defense = 2.5
+		breakthrough = 2.5
+		armor_value = 20
+
+		#Offensive Abilities
+		soft_attack = 2 #3
+		hard_attack = 1 #1.5
+		ap_attack = 30 #20
+		air_attack = 24 #17	
+		
+		build_cost_ic = 14
 	}
 
 	# M42 Duster
 	american_light_tank_aa_equipment_2 = {
 		archetype = light_tank_aa_equipment
 		parent = american_light_tank_aa_equipment_1
-		family = american_light_tank_equipment_6
+		family = american_light_tank_equipment_10
 		priority = 30
 		visual_level = 1
 		
@@ -2907,30 +3046,6 @@ equipments = {
 		build_cost_ic = 14
 	}
 	
-	american_light_tank_aa_equipment_3 = {
-		archetype = light_tank_aa_equipment
-		parent = american_light_tank_aa_equipment_2
-		family = american_light_tank_equipment_7
-		priority = 30
-		visual_level = 1
-		
-		#Misc Abilities
-		maximum_speed = 8
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 3.5
-		breakthrough = 3.5
-		armor_value = 35
-
-		#Offensive Abilities
-		soft_attack = 3 #4.5
-		hard_attack = 2 #4
-		ap_attack = 40 #35
-		air_attack = 28 #32
-		
-		build_cost_ic = 16
-	}
 	
 	
 	

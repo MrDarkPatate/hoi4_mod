@@ -1,8 +1,8 @@
-﻿capital = 16
+﻿capital = 844
 
 oob = "FRA_1936"
 
-set_research_slots = 6
+set_research_slots = 7
 
 # Starting tech
 set_technology = {
@@ -20,6 +20,9 @@ set_technology = {
 	infantry_uniforms = 1
 	tech_Garrison = 1
 	tech_Headquarters = 1
+	electronic_mechanical_engineering = 1
+	HQ_communications = 1
+	radio = 1									# Fr Tanks used no radio revise
 	############ support #########
 	tech_support = 1
 	tech_recon = 1
@@ -131,6 +134,7 @@ set_technology = {
 	construction1 = 1
 	defence_works0 = 1
 	infra_works0 = 1
+	road_infra0 = 1
 	pre_fab = 1
 	on_site = 1
 	defence_works = 1

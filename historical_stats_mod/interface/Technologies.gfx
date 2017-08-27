@@ -287,6 +287,10 @@ spriteTypes = {
 		name = "GFX_hmg_4_medium"
 		texturefile = "gfx/interface/technologies/hmg_team4.dds"
 	}
+	SpriteType = {
+		name = "GFX_hmg_5_medium"
+		texturefile = "gfx/interface/technologies/hmg_team5.dds"
+	}
 	####################### Mortars #######################
 	SpriteType = {
 		name = "GFX_mortars_medium"
@@ -303,6 +307,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_mortars_4_medium"
 		texturefile = "gfx/interface/technologies/mortar_team4.dds"
+	}
+	SpriteType = {
+		name = "GFX_mortars_5_medium"
+		texturefile = "gfx/interface/technologies/mortar_team5.dds"
 	}
 	#################### Specialised Infantry Equipment ##########
 	SpriteType = {
@@ -3796,8 +3804,12 @@ SpriteType = {
 	
 		SpriteType = {
 		name = "GFX_tank_radio_medium"
-		texturefile = "gfx/interface/technologies/tank_radio.dds"
+		texturefile = "gfx/interface/technologies/tank_radio1.dds"
 	}	
+		SpriteType = {
+		name = "GFX_tank_radio2_medium"
+		texturefile = "gfx/interface/technologies/tank_radio2.dds"
+	}
 		SpriteType = {
 		name = "GFX_vehicle_radio_medium"
 		texturefile = "gfx/interface/technologies/vehicle_radio.dds"
@@ -4193,7 +4205,7 @@ SpriteType = {
 	
 	SpriteType = {
 		name = "GFX_construction0_medium"
-		texturefile = "gfx/interface/technologies/construction1.dds"
+		texturefile = "gfx/interface/technologies/construction0.dds"
 	}
 	SpriteType = {
 		name = "GFX_construction1_medium"
@@ -4222,7 +4234,7 @@ SpriteType = {
 ################# infra works GFX #######################################
 	spriteType = {
 		name = "GFX_defence_works0_medium"
-		texturefile = "gfx/interface/technologies/defence_works1.dds"
+		texturefile = "gfx/interface/technologies/defence_works0.dds"
 	}
 	spriteType = {
 		name = "GFX_defence_works_medium"
@@ -4246,7 +4258,7 @@ SpriteType = {
 	}
 	spriteType = {
 		name = "GFX_infra_works0_medium"
-		texturefile = "gfx/interface/technologies/infra_works1.dds"
+		texturefile = "gfx/interface/technologies/infra_works0.dds"
 	}
 	spriteType = {
 		name = "GFX_infra_works_medium"
@@ -4289,6 +4301,10 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/on_site5.dds"
 	}
 	spriteType = {
+		name = "GFX_port_infra0_medium"
+		texturefile = "gfx/interface/technologies/port_infra0.dds"
+	}
+	spriteType = {
 		name = "GFX_port_infra_medium"
 		texturefile = "gfx/interface/technologies/port_infra1.dds"
 	}
@@ -4329,6 +4345,10 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/prefab5.dds"
 	}
 	spriteType = {
+		name = "GFX_rail_infra0_medium"
+		texturefile = "gfx/interface/technologies/rail_infra0.dds"
+	}
+	spriteType = {
 		name = "GFX_rail_infra_medium"
 		texturefile = "gfx/interface/technologies/rail_infra1.dds"
 	}
@@ -4349,6 +4369,10 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/rail_infra5.dds"
 	}
 	spriteType = {
+		name = "GFX_air_infra0_medium"
+		texturefile = "gfx/interface/technologies/air_infra0.dds"
+	}
+	spriteType = {
 		name = "GFX_air_infra_medium"
 		texturefile = "gfx/interface/technologies/air_infra.dds"
 	}
@@ -4367,6 +4391,11 @@ SpriteType = {
 	spriteType = {
 		name = "GFX_air_infra5_medium"
 		texturefile = "gfx/interface/technologies/air_infra5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_road_infra0_medium"
+		texturefile = "gfx/interface/technologies/road_infra0.dds"
 	}
 	spriteType = {
 		name = "GFX_road_infra_medium"
@@ -8637,10 +8666,27 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/arm_JAP_motorized_rocket_equipment_Tarenso.dds"
 	}	
 	
-		SpriteType = {
+    SpriteType = {
+        name = "GFX_CHI_gwtank_medium"
+        texturefile = "gfx/interface/technologies/CHI_gwtank.dds"
+    } 
+	SpriteType = {
 		name = "GFX_CHI_basic_light_tank_medium"	### 1934 light tank
 		texturefile = "gfx/interface/technologies/CHI_basic_light_tank.dds"
 	}
+	SpriteType = {
+        name = "GFX_CHI_improved_light_tank_medium"
+        texturefile = "gfx/interface/technologies/CHI_imp_light_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_CHI_advanced_light_tank_medium"
+        texturefile = "gfx/interface/technologies/CHI_adv_light_tank.dds"
+    }
+	
+	SpriteType = {
+        name = "GFX_CHI_basic_medium_tank_medium"
+        texturefile = "gfx/interface/technologies/CHI_basic_main_tank.dds"
+    }
 	SpriteType = {
 		name = "GFX_CHI_improved_medium_tank_medium"	### 1941 medium tank
 		texturefile = "gfx/interface/technologies/CHI_imp_main_tank.dds"
@@ -8650,9 +8696,128 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/CHI_adv_main_tank.dds"
 	}
 	SpriteType = {
+        name = "GFX_CHI_late_medium_tank_medium"
+        texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds"
+    }
+
+	
+	
+	SpriteType = {
+        name = "GFX_CHI_basic_heavy_tank_medium"
+        texturefile = "gfx/interface/technologies/CHI_basic_heavy_tank.dds"
+    }
+    SpriteType = {
+        name = "GFX_CHI_improved_heavy_tank_medium"
+        texturefile = "gfx/interface/technologies/CHI_imp_heavy_tank.dds"
+    }
+	SpriteType = {
 		name = "GFX_CHI_advanced_heavy_tank_medium"	### 1943 heavy tank
 		texturefile = "gfx/interface/technologies/CHI_adv_heavy_tank.dds"
 	}
+	
+	SpriteType = {
+        name = "GFX_CHI_super_heavy_tank_medium"
+        texturefile = "gfx/interface/technologies/CHI_superheavy_tank.dds"
+    }
+	
+	
+	SpriteType = {
+name = "GFX_PRC_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/prc_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/prc_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/prc_mechanized_equipment_3.dds"
+}
+
+
+
+#¹²¾üÒ»Õ½Ì¹¿Ë_PRC great war tank#
+SpriteType = {
+name = "GFX_PRC_gwtank_medium"
+texturefile = "gfx/interface/technologies/PRC_gwtank.dds"
+} 
+
+
+#¹²¾üÇáÌ¹¿Ë_PRC light tank#
+SpriteType = {
+name = "GFX_PRC_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_adv_light_tank.dds"
+}
+
+
+#¹²¾üÖÐÐÍÌ¹¿Ë_PRC medium tank#
+SpriteType = {
+name = "GFX_PRC_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_adv_main_tank.dds"
+}
+
+
+#¹²¾üÖØÐÍÌ¹¿Ë_PRC heavy tank#
+SpriteType = {
+name = "GFX_PRC_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_adv_heavy_tank.dds"
+}
+
+
+#¹²¾üÖ÷Õ½Ì¹¿Ë_PRC main battle tank#
+SpriteType = {
+name = "GFX_PRC_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_main_battle_tank.dds"
+}
+
+
+#¹²¾ü³¬ÖØÌ¹¿Ë_PRC super heavy tank#
+SpriteType = {
+name = "GFX_PRC_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/PRC_superheavy_tank.dds"
+}
 
 		
 		### USA equipment ###	
@@ -9580,7 +9745,7 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_heavy_tank_art_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/SWE_BKAN_super_heavy_tank.dds"
+		texturefile = "gfx/interface/technologies/T92_cut.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_american_heavy_tank_equipment_3_medium"
@@ -9612,11 +9777,7 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_light_tank_artillery_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/improved_light_art.dds"
-	}
-	SpriteType = {
-		name = "GFX_subtech_american_light_tank_artillery_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/USA_M41_HMC.dds"
+		texturefile = "gfx/interface/technologies/M8_scott.dds"
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_light_tank_artillery_equipment_1_medium"
@@ -9655,8 +9816,16 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/basic_light_td.dds"
 	}
 	SpriteType = {
-		name = "GFX_subtech_hellcat_equipment_1_medium"
+		name = "GFX_tech_hellcat_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/tech_hellcat_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_subtech_blank_equipment_medium"
+		texturefile = "gfx/interface/technologies/not_available.dds"
+	}
+	SpriteType = {
+		name = "GFX_subtech_M8A1_75mm_td_medium"
+		texturefile = "gfx/interface/technologies/M8A1.dds"
 	}
 	SpriteType = {
 		name = "GFX_subtech_hellcat_equipment_2_medium"
@@ -9682,45 +9851,70 @@ SpriteType = {
 		name = "GFX_tech_american_medium_tank_equipment_2_medium"
 		texturefile = "gfx/interface/technologies/tech_american_medium_tank_equipment_2.dds"
 	}			
+	### USA Light Tanks
+	SpriteType = {
+		name = "GFX_tech_american_light_tank_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/M1917.dds"
+	}
 	SpriteType = {
 		name = "GFX_tech_american_light_tank_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/tech_american_light_tank_equipment_1.dds"
+		texturefile = "gfx/interface/technologies/M2A1.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_american_light_tank_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/tech_american_light_tank_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/M1_Combat_car.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_american_light_tank_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/tech_american_light_tank_equipment_3.dds"
+		texturefile = "gfx/interface/technologies/M2A2.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_american_light_tank_equipment_4_medium"
-		texturefile = "gfx/interface/technologies/tech_american_light_tank_equipment_4.dds"
+		texturefile = "gfx/interface/technologies/M2A4.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_american_light_tank_equipment_5_medium"
-		texturefile = "gfx/interface/technologies/tech_american_light_tank_equipment_5.dds"
+		texturefile = "gfx/interface/technologies/M3_Stuart.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_american_light_tank_equipment_6_medium"
-		texturefile = "gfx/interface/technologies/tech_american_light_tank_equipment_6.dds"
+		texturefile = "gfx/interface/technologies/M3A1_Stuart.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_american_light_tank_equipment_7_medium"
-		texturefile = "gfx/interface/technologies/tech_american_light_tank_equipment_7.dds"
+		texturefile = "gfx/interface/technologies/M3A3_Stuart.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_american_light_tank_equipment_8_medium"
+		texturefile = "gfx/interface/technologies/M5_Stuart.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_american_light_tank_equipment_9_medium"
+		texturefile = "gfx/interface/technologies/M24_Chafee.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_american_light_tank_equipment_10_medium"
+		texturefile = "gfx/interface/technologies/M41_Walker_Bulldog.dds"
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_medium_tank_artillery_equipment_1_medium"
-		texturefile = "gfx/interface/technologies/USA_M4a3_calliope.dds"
+		texturefile = "gfx/interface/technologies/M7_Priest.dds"
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_medium_tank_artillery_equipment_2_medium"
-		texturefile = "gfx/interface/technologies/tech_american_medium_tank_artillery_equipment_2.dds"
+		texturefile = "gfx/interface/technologies/M4_Sherman_calliope.dds"
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_medium_tank_artillery_equipment_3_medium"
-		texturefile = "gfx/interface/technologies/SWE_BKAN_super_heavy_tank.dds"
+		texturefile = "gfx/interface/technologies/M7B1_Priest.dds"
+	}
+	SpriteType = {
+		name = "GFX_subtech_american_medium_tank_artillery_equipment_4_medium"
+		texturefile = "gfx/interface/technologies/M40.dds"
+	}
+	SpriteType = {
+		name = "GFX_subtech_american_medium_tank_artillery_equipment_5_medium"
+		texturefile = "gfx/interface/technologies/M43.dds"
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_medium_tank_aa_equipment_1_medium"
@@ -9728,7 +9922,7 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_medium_tank_destroyer_equipment_0_medium"
-		texturefile = "gfx/interface/technologies/basic_medium_td.dds"
+		texturefile = "gfx/interface/technologies/M9.dds"
 	}
 	SpriteType = {
 		name = "GFX_subtech_american_medium_tank_destroyer_equipment_1_medium"
@@ -9744,7 +9938,7 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_tech_m4_equipment_medium"
-		texturefile = "gfx/interface/technologies/tech_m4_equipment.dds"
+		texturefile = "gfx/interface/technologies/M4_Sherman.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_m4_105_equipment_medium"
@@ -9763,12 +9957,12 @@ SpriteType = {
 		texturefile = "gfx/interface/technologies/tech_m4a1_76_w_equipment.dds"
 	}
 	SpriteType = {
-		name = "GFX_tech_m4a1_76_w_hvss_equipment_medium"
+		name = "GFX_tech_m4_76_w_hvss_equipment_medium"
 		texturefile = "gfx/interface/technologies/tech_m4a1_76_w_hvss_equipment.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_m4a3_equipment_medium"
-		texturefile = "gfx/interface/technologies/tech_m4a3_equipment.dds"
+		texturefile = "gfx/interface/technologies/M4A3_Sherman.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_m4a3_76_w_equipment_medium"
@@ -9784,7 +9978,7 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_tech_m4a3_105_hvss_equipment_medium"
-		texturefile = "gfx/interface/technologies/tech_m4a3_105_hvss_equipment.dds"
+		texturefile = "gfx/interface/technologies/M4A3_105_HVSS.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_m4a3_jumbo_equipment_medium"
@@ -9794,7 +9988,14 @@ SpriteType = {
 		name = "GFX_tech_m4a3_jumbo_76_w_equipment_medium"
 		texturefile = "gfx/interface/technologies/tech_m4a3_jumbo_76_w_equipment.dds"
 	}
-	
+	SpriteType = {
+		name = "GFX_tech_m26_pershing_equipment_medium"
+		texturefile = "gfx/interface/technologies/M26_Pershing.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_m26_superpershing_equipment_medium"
+		texturefile = "gfx/interface/technologies/T26A4_SuperPershing.dds"
+	}
 	### Generic Aircrafts ###	
 
 	SpriteType = {
@@ -12808,7 +13009,7 @@ SpriteType = {
 	}
 	SpriteType = {	
  		name = "GFX_dreadnought_battleship_medium"
- 		texturefile = "gfx/interface/technologies/GER_bb_predreadnought_Deutschland_class.tga"
+ 		texturefile = "gfx/interface/technologies/naval/Kriegsmarine/ger_bb_predreadnought_Deutschland_class.tga"
 	}
 	SpriteType = {	
  		name = "GFX_advanced_dreadnought_battleship_medium"

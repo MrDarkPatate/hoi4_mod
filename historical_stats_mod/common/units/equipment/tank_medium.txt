@@ -3591,7 +3591,7 @@
 	}
 	
 	##################################### American Series
-		# M2 Medium  1938		# 1939 ?
+		# M2 Medium  1939		
 	american_medium_tank_equipment_1 = {
 		archetype = medium_tank_equipment
 		parent = medium_tank_equipment_0
@@ -3627,7 +3627,7 @@
 		}
 	}
 
-	# M3 Lee  1940 				# 1941 ?
+	# M3 Lee  1941 				
 	american_medium_tank_equipment_2 = {
 		archetype = medium_tank_equipment
 		parent = american_medium_tank_equipment_1
@@ -3660,10 +3660,10 @@
 		}
 	}
 
-	# M4 Sherman 1942				#1942 ?
+	# M4 Sherman 1941				#1/1942 so 41
 	m4_equipment = {
 		archetype = medium_tank_equipment
-		parent = medium_tank_equipment_0
+		parent = american_medium_tank_equipment_2
 		priority = 50
 		visual_level = 0
 		
@@ -3696,50 +3696,16 @@
 		}
 	}
 
-	# M4A1 Sherman 1943			# Dead end This tank ingame is exactly same as previous. better skip
-	m4a1_equipment = {
+
+	
+	# M4A3 Sherman				# Both M4 and M4A3 are needed for use of subtechs
+	m4a3_equipment = {
 		archetype = medium_tank_equipment
 		parent = m4_equipment
 		priority = 50
-		visual_level = 1
-
-		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.7
-
-		#Defensive Abilities
-
-		defense = 10
-		breakthrough = 51
-		hardness = 0.64			# 0.8
-		armor_value = 60		# 82 51mm 56º 
-
-		#Offensive Abilities
-		soft_attack = 16
-		hard_attack = 16
-		ap_attack = 67			# 79 - 75L40 M3 (muzzle vel 620 m/s)
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 12
-		
-		build_cost_ic = 34.2	# 24 - 30 tons
-		resources = {
-			oil = 2
-			steel = 4			
-			tungsten = 2
-			chromium = 1
-		}
-	}
-
-
-	# M4A3 Sherman				# Again... This tank ingame is exactly same as previous. better skip
-	m4a3_equipment = {
-		archetype = medium_tank_equipment
-		parent = m4a1_equipment
-		priority = 50
 		visual_level = 2
 
+		#Misc Abilities
 		maximum_speed = 6
 		reliability = 0.7
 
@@ -3748,7 +3714,7 @@
 		defense = 12
 		breakthrough = 58
 		hardness = 0.64			#  0.8
-		armor_value = 60		# 82 51mm 56º
+		armor_value = 60		# 82 51mm 56º   found...60-degree hull glacis (89 mm/3.5 in)
 
 		#Offensive Abilities
 		soft_attack = 14
@@ -3768,8 +3734,42 @@
 		}
 	}
 	
-	# M4A3E2 Jumbo Sherman 1944	# produced May 44
+	# M4A3E2(76)W Jumbo Sherman 1944	# produced May 44 pls check AP stats
 	m4a3_jumbo_equipment = {
+		archetype = medium_tank_equipment
+		parent = m4a3_equipment
+		priority = 50
+		visual_level = 3
+		
+		maximum_speed = 6
+		reliability = 0.7
+
+		#Defensive Abilities
+
+		defense = 12
+		breakthrough = 76
+		hardness = 0.77			# 0.8
+		armor_value = 88		# 110 - 101mm 47º
+
+		#Offensive Abilities
+		soft_attack = 16
+		hard_attack = 19
+		ap_attack = 67			# 81 - 75L40 M3 (muzzle vel 620 m/s)  76version! 
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 38.9	# 34 - 42 tons
+		resources = {
+			oil = 2
+			steel = 5			
+			tungsten = 3
+			chromium = 1
+		}
+	}
+	# M4A3(76)W HVSS Sherman 1944	# pls check
+	m4a3_76_w_hvss_equipment = {
 		archetype = medium_tank_equipment
 		parent = m4a3_equipment
 		priority = 50
@@ -3803,7 +3803,41 @@
 		}
 		
 	}
-	
+	# M4A3(105) Sherman 1944			# changed pls check
+	m4a3_105_hvss_equipment = {
+		archetype = medium_tank_equipment
+		parent = m4a3_equipment
+		priority = 50
+		visual_level = 1
+
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.7
+
+		#Defensive Abilities
+
+		defense = 10
+		breakthrough = 51
+		hardness = 0.64			# 
+		armor_value = 60		# 
+
+		#Offensive Abilities
+		soft_attack = 16
+		hard_attack = 16
+		ap_attack = 67			# 
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 34.2	# 
+		resources = {
+			oil = 2
+			steel = 4			
+			tungsten = 2
+			chromium = 1
+		}
+	}
 	# M4A4 Sherman firefly 			# produced Jan 44 This game is not used ? Could be added in 1943 slot
 	m4a4_equipment = {			
 		archetype = medium_tank_equipment
@@ -3876,8 +3910,8 @@
 
 	##################################### American SP Series		NOTE: MOD PENDING SOME REWORK UNDER THIS LINE. SPART 
 	########################## SP ART
-	# M7 Priest  1941			# Lee Based. Wrong GFX			
-	american_medium_tank_artillery_equipment_2 = {
+	# T32 M7 Priest  1941			# Lee Based. 			
+	american_medium_tank_artillery_equipment_1 = {
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_1
 		family = american_medium_tank_equipment_2
@@ -3908,11 +3942,11 @@
 		}
 	}
 
-	# M4A1 Calliope  1942		# Could be based on M4 instead M4A1
-	american_medium_tank_artillery_equipment_1 = {
+	# M4 Calliope  1944		#based on M4
+	american_medium_tank_artillery_equipment_2 = {
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_1
-		family = m4a1_equipment
+		family = m4_equipment
 		priority = 60
 		visual_level = 0
 		
@@ -3938,11 +3972,11 @@
 			chromium = 1
 		}
 	}
-
-	american_medium_tank_artillery_equipment_3 = {
+	#HMC M7B1 Priest M4A3 based
+	american_medium_tank_artillery_equipment_3 = {		#upgraded version of M7... based on M4A3 chassis, just add some minor bonuses
 		archetype = medium_tank_artillery_equipment
-		parent = medium_tank_artillery_equipment_2
-		family = m4a1_equipment
+		parent = medium_tank_artillery_equipment_1
+		family = m4a3_equipment
 		priority = 60
 		visual_level = 0
 		
@@ -3961,11 +3995,56 @@
 		build_cost_ic = 27
 		
 	}
-	
-	# M9 T40 1941				# Lee based Should be better 1942. Wrong GFX
-	american_medium_tank_destroyer_equipment_0 = {
+	#HMC M40 Cardinal												STATS NEEDED
+	american_medium_tank_artillery_equipment_4 = {		
+		archetype = medium_tank_artillery_equipment
+		parent = medium_tank_artillery_equipment_3
+		family = m4a3_76_w_hvss_equipment
+		priority = 60
+		visual_level = 0
+		
+		maximum_speed = 6.6
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 6
+		armor_value = 60
+
+		#Offensive Abilities
+		soft_attack = 40 
+		hard_attack = 2
+		
+		build_cost_ic = 27
+		
+	}
+	#HMC M43													STATS NEEDED
+	american_medium_tank_artillery_equipment_5 = {		
+		archetype = medium_tank_artillery_equipment
+		parent = medium_tank_artillery_equipment_3
+		family = m4a3_76_w_hvss_equipment
+		priority = 60
+		visual_level = 0
+		
+		maximum_speed = 6.6
+		reliability = 0.75
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 6
+		armor_value = 60
+
+		#Offensive Abilities
+		soft_attack = 40 
+		hard_attack = 2
+		
+		build_cost_ic = 27
+		
+	}
+	# M9 T40 1941				# Lee based.
+		american_medium_tank_destroyer_equipment_0 = {
 	    archetype = medium_tank_destroyer_equipment
-		parent = medium_tank_equipment_1
+		parent = medium_tank_destroyer_equipment_1
 		family = american_medium_tank_equipment_2
 
 		priority = 80
@@ -3997,11 +4076,11 @@
 		}
 	}
 	
-	# M10 Wolverine				# Could be based on M4 instead M4A1
+	# M10 Wolverine				# based on M4
 	american_medium_tank_destroyer_equipment_1 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = american_medium_tank_destroyer_equipment_0
-		family = m4a3_equipment
+		family = m4_equipment
 
 		priority = 80
 		visual_level = 0
@@ -4032,11 +4111,11 @@
 		}
 	}
 
-	# M10 Achilles (BRITISH ONLY)
+	# M10 Achilles (BRITISH ONLY)						#prbbly should be ENG_medium....
 	american_medium_tank_destroyer_equipment_2 = {
 		archetype = medium_tank_destroyer_equipment
 		parent = american_medium_tank_destroyer_equipment_1
-		family = m4a3_equipment
+		family = m4_equipment
 		priority = 80
 		visual_level = 1
 		
@@ -4069,7 +4148,7 @@
 	# M36 Jackson
 	american_medium_tank_destroyer_equipment_3 = {
 		archetype = medium_tank_destroyer_equipment
-		parent = american_medium_tank_destroyer_equipment_2
+		parent = american_medium_tank_destroyer_equipment_1
 		family = m4a3_equipment
 		priority = 80
 		visual_level = 2
@@ -4151,34 +4230,7 @@
 			
 	}
 ######### ADDED FROM TW NEEDS CHECK AND STATS ######
-	# M26 Pershing
-	m26_pershing_equipment = {
-		archetype = medium_tank_equipment
-		parent = m4a3_equipment
-		priority = 50
-		visual_level = 3
-		
-		maximum_speed = 5.5
-		reliability = 0.7
 
-		#Defensive Abilities
-
-		defense = 12
-		breakthrough = 76
-		hardness = 0.8
-		armor_value = 110
-
-		#Offensive Abilities
-		soft_attack = 17
-		hard_attack = 20
-		ap_attack = 87
-		air_attack = 0
-
-		#Space taken in convoy
-		lend_lease_cost = 12
-		
-		build_cost_ic = 34.3
-	}	
 		# M46 Patton
 	american_mbt_equipment_1 = {
 		archetype = medium_tank_equipment
