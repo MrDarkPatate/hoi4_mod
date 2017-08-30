@@ -130,7 +130,7 @@ equipments = {				## NOTE: AA GUNS are more expensive than same caliber AT and t
 		 
 		soft_attack = 8.5		# Was 4
 		hard_attack = 14 		# Was 14
-		ap_attack = 60 			# Was 82 Now represents a 85mm AAgun (Piercing % is reduced. Can be adjusted aprox to 104 (same as 43 Hvy AT) with 70% bonus until 43 HvAA techs)
+		ap_attack = 45 			# Was 82 Now represents a 85mm AAgun (Piercing % is reduced. Can be adjusted aprox to 104 (same as 43 Hvy AT) with 70% bonus until 43 HvAA techs)
 		air_attack = 30
 
 		build_cost_ic = 10.5	# Was 10

@@ -48,7 +48,7 @@ set_technology = {
 	superartillery1 = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
-	# HVantiair2 = 1					# should be included in case 88 desired researched
+	HVantiair2 = 1					# Included in case 88 desired researched
 	############# aircraft #######
 	mobile_warfare = 1
 	trade_interdiction = 1
