@@ -619,8 +619,8 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 			air_attack = 0.05
 		}
 		anti_air_heavy = {
-			air_attack = 0.5
-			ap_attack = 0.15
+			air_attack = 0.1
+			ap_attack = 0.55
 		}
 		
 		path = {
@@ -658,7 +658,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 
 		anti_air_heavy = {
 			air_attack = 0.1
-			ap_attack = 0.4				# NOTE: HS changes. 88 has low piercing in 36 for game balance. It improves to be same as 88AT in 43 
+			ap_attack = 0.35				# NOTE: HS changes. 88 has low piercing in 36 for game balance. It improves to be same as 88AT in 43 
 		}
 		
 		path = {
@@ -699,7 +699,7 @@ technologies = {					# Some extra year slots need to be added in 1941-1942
 		}
 		
 		anti_air_heavy = {					# NOTE: HS changes. 88 has low piercing in 36 for game balance
-			ap_attack = 0.3
+			ap_attack = 0.4
 		}
 		research_cost = 1
 		start_year = 1943
