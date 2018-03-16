@@ -1,4 +1,4 @@
-# All equipment based on medium tank chassis
+﻿# All equipment based on medium tank chassis
 equipments = {
 
 	medium_tank_equipment = {
@@ -40,7 +40,7 @@ equipments = {
 		soft_attack = 10
 		hard_attack = 16
 		ap_attack = 47
-		air_attack = 1
+		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
@@ -60,12 +60,37 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 		
-		hardness = 0.75
-		maximum_speed = 6
+		#Misc Abilities
+		maximum_speed = 5.2
+		reliability = 0.62
+
+		#Defensive Abilities
+
+		defense = 11.5
+		breakthrough = 38
+		hardness = 0.8
+		armor_value = 40
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 18
+		ap_attack = 52
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 12
+		
+		build_cost_ic = 29.2
+		resources = {
+			oil = 2
+			tungsten = 3
+			steel = 4
+			chromium = 1
+		}
 		
 	}
 
-	# 1939
+	# 1939 (why year 1937)
 	medium_tank_equipment_1 = {
 		year = 1937
 		archetype = medium_tank_equipment
@@ -74,14 +99,11 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 		
-		armor_value = 50
-		ap_attack = 62
 		#Misc Abilities
 		maximum_speed = 5.6
 		reliability = 0.66
 
 		#Defensive Abilities
-
 		defense = 14.5
 		breakthrough = 46
 		hardness = 0.8
@@ -91,7 +113,7 @@ equipments = {
 		soft_attack = 16
 		hard_attack = 22
 		ap_attack = 62
-		air_attack = 1
+		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
@@ -116,7 +138,7 @@ equipments = {
 
 		defense = 17.5
 		breakthrough = 54
-		armor_value = 50
+		armor_value = 60
 
 		#Offensive Abilities
 		soft_attack = 20
@@ -149,13 +171,13 @@ equipments = {
 
 		defense = 20.5
 		breakthrough = 62
-		armor_value = 90
+		armor_value = 70
 
 		#Offensive Abilities
 
 		soft_attack = 24
 		hard_attack = 30
-		ap_attack = 91
+		ap_attack = 82
 		
 		build_cost_ic = 31.6
 		resources = {
@@ -194,7 +216,7 @@ equipments = {
 		build_cost_ic = 32.8
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 5
 			tungsten = 3
 			chromium = 1
 		}
@@ -375,7 +397,7 @@ equipments = {
 		soft_attack = 12
 		hard_attack = 10
 		ap_attack = 32
-		air_attack = 1
+		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
@@ -388,10 +410,11 @@ equipments = {
 			chromium = 1
 		}
 	}
+		#1936
 		infantry_tank_equipment_0 = {
 		archetype = infantry_tank_equipment
 		}
-	######## early war Infantry tank
+	######## early war Infantry tank 1938
 		infantry_tank_equipment_1 = {
 		archetype = infantry_tank_equipment
 		parent = infantry_tank_equipment_0
@@ -399,26 +422,26 @@ equipments = {
 		visual_level = 0
 		armor_value = 64
 		ap_attack = 47
-		maximum_speed = 4.5
-		reliability = 0.5
+		maximum_speed = 4.2
+		reliability = 0.59
 
 		#Defensive Abilities
 
-		defense = 15.5
-		breakthrough = 50
-		hardness = 0.8
-		armor_value = 64
+		defense = 14
+		breakthrough = 46
+		hardness = 0.82
+		armor_value = 59
 
 		#Offensive Abilities
-		soft_attack = 18
-		hard_attack = 12
-		ap_attack = 47
+		soft_attack = 16
+		hard_attack = 11
+		ap_attack = 42
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 37.5 
+		build_cost_ic = 37
 		resources = {
 			oil = 2
 			tungsten = 2
@@ -427,30 +450,30 @@ equipments = {
 		}
 	}
 
-	######## mid war Infantry tank
+	######## mid war Infantry tank 1940
 		infantry_tank_equipment_2 = {
 		archetype = infantry_tank_equipment
 		parent = infantry_tank_equipment_1
 		#Misc Abilities
-		maximum_speed = 4.5
-		reliability = 0.65
+		maximum_speed = 4.4
+		reliability = 0.63
 
 		#Defensive Abilities
-		defense = 19
-		breakthrough = 58
+		defense = 17.5
+		breakthrough = 54
 		hardness = 0.82
-		armor_value = 74
+		armor_value = 69
 
 		#Offensive Abilities
-		soft_attack = 22
-		hard_attack = 14
-		ap_attack = 57
-		air_attack = 1
+		soft_attack = 20
+		hard_attack = 13
+		ap_attack = 52
+		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 38.5 # cost/ resources doubled for reference
+		build_cost_ic = 38
 		resources = {
 			oil = 2
 			steel = 5
@@ -461,30 +484,30 @@ equipments = {
 		priority = 50
 		visual_level = 0
 	}
-	######## late war Infantry tank
+	######## late war Infantry tank 1942
 		infantry_tank_equipment_3 = {
 		archetype = infantry_tank_equipment
 		parent = infantry_tank_equipment_2
 		#Misc Abilities
-		maximum_speed = 5
-		reliability = 0.69
+		maximum_speed = 4.8
+		reliability = 0.67
 
 		#Defensive Abilities
-		defense = 22.5
-		breakthrough = 66
+		defense = 21
+		breakthrough = 62
 		hardness = 0.82
-		armor_value = 78
+		armor_value = 76
 
 		#Offensive Abilities
-		soft_attack = 26
-		hard_attack = 19
-		ap_attack = 67
+		soft_attack = 24
+		hard_attack = 18
+		ap_attack = 62
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 14
 		
-		build_cost_ic = 38.7 # cost/ resources doubled for reference
+		build_cost_ic = 38.6
 		resources = {
 			oil = 2
 			steel = 5
@@ -495,7 +518,7 @@ equipments = {
 		priority = 50
 		visual_level = 0
 	}
-	######## advanced war Infantry tank
+	######## advanced war Infantry tank 1944
 		infantry_tank_equipment_4 = {
 		archetype = infantry_tank_equipment
 		parent = infantry_tank_equipment_3
@@ -670,7 +693,7 @@ equipments = {
 		}
 	}
 
-	medium_tank_artillery_equipment_1 = {   # 1939
+	medium_tank_artillery_equipment_1 = {   # 1939 have to be 41!
 		year = 1939
 		archetype = medium_tank_artillery_equipment
 		family = medium_tank_equipment_1
@@ -681,23 +704,23 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 5.6
-		reliability = 0.6
+		maximum_speed = 6
+		reliability = 0.65
 
 		#Defensive Abilities
 
 		defense = 8
 		breakthrough = 6
 		hardness = 0.55
-		armor_value = 40
+		armor_value = 47
 
 		#Offensive Abilities
-		soft_attack = 28
-		hard_attack = 1.5
+		soft_attack = 30
+		hard_attack = 1.6
 		ap_attack = 6
 		air_attack = 0 
 
-		build_cost_ic = 24
+		build_cost_ic = 24.5
 		
 		resources = {
 			oil = 2
@@ -707,7 +730,7 @@ equipments = {
 		}
 	}
 
-	medium_tank_artillery_equipment_2 = {   # 1942
+	medium_tank_artillery_equipment_2 = {   # 1942 have to be 43!
 		year = 1942
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_1
@@ -719,22 +742,23 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 6.1
-		reliability = 0.61
+		maximum_speed = 6.2
+		reliability = 0.69
 
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 6
-		armor_value = 50
+		hardness = 0.58
+		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 31 
-		hard_attack = 1.7
+		soft_attack = 32 
+		hard_attack = 1.8
 		
-		build_cost_ic = 25
+		build_cost_ic = 25.5
 	}
 
-	medium_tank_artillery_equipment_3 = {  # 1944
+	medium_tank_artillery_equipment_3 = {  # 1944 have to be 45!
 		year = 1944
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_2
@@ -745,19 +769,20 @@ equipments = {
 			medium_tank_equipment_2
 		}
 
-		maximum_speed = 6.3
-		reliability = 0.72
+		maximum_speed = 6.5
+		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 6
-		armor_value = 60
+		hardness = 0.6
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 34
+		soft_attack = 35
 		hard_attack = 2
 		
-		build_cost_ic = 26
+		build_cost_ic = 27
 	}
 
 	medium_tank_destroyer_equipment = {
@@ -795,26 +820,26 @@ equipments = {
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 6
-		hardness = 0.7
+		hardness = 0.6
 		armor_value = 30
 
 		#Offensive Abilities
 		soft_attack = 1.5
 		hard_attack = 30
-		ap_attack = 57
+		ap_attack = 61
 		air_attack = 0
 		
 		build_cost_ic = 21
 		
 		resources = {
 			oil = 2
-			tungsten = 4
+			tungsten = 5
 			steel = 4
 			chromium = 1
 		}
 	}
 
-	# 1939
+	# 1939 --> 41
 	medium_tank_destroyer_equipment_1 = {
 		year = 1939
 		archetype = medium_tank_destroyer_equipment
@@ -825,32 +850,32 @@ equipments = {
 			medium_tank_equipment_0
 
 		#Misc Abilities
-		maximum_speed = 5.6
-		reliability = 0.6
+		maximum_speed = 6
+		reliability = 0.65
 
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 6
-		hardness = 0.7
-		armor_value = 45
+		hardness = 0.62
+		armor_value = 50
 
 		#Offensive Abilities
 		soft_attack = 2
-		hard_attack = 34
-		ap_attack = 72
+		hard_attack = 36
+		ap_attack = 86
 		air_attack = 0
 		
-		build_cost_ic = 21
+		build_cost_ic = 21.5
 		
 		resources = {
 			oil = 2
-			tungsten = 4
+			tungsten = 5
 			steel = 4
 			chromium = 1
 		}
 	}
 
-	# 1942
+	# 1942 --> 43
 	medium_tank_destroyer_equipment_2 = {
 		year = 1942
 		archetype = medium_tank_destroyer_equipment
@@ -863,31 +888,32 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 6.1
-		reliability = 0.67
+		maximum_speed = 6.2
+		reliability = 0.69
 
 		#Defensive Abilities
-		defense = 6
-		breakthrough = 2
-		armor_value = 55
+		defense = 8.5
+		breakthrough = 6
+		hardness = 0.68
+		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 38
-		ap_attack = 87
+		soft_attack = 2
+		hard_attack = 40
+		ap_attack = 96
 		air_attack = 0
 		
-		build_cost_ic = 22
+		build_cost_ic = 23
 		
 		resources = {
 			oil = 2
-			tungsten = 4
+			tungsten = 5
 			steel = 4
 			chromium = 1
 		}		
 	}
 
-	# 1944
+	# 1944 --> 45
 	medium_tank_destroyer_equipment_3 = {
 		year = 1944
 		archetype = medium_tank_destroyer_equipment
@@ -900,25 +926,26 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 6.3 
+		maximum_speed = 6.5 
 		reliability = 0.75
 
 		#Defensive Abilities
 		defense = 9
 		breakthrough = 6
-		armor_value = 65
+		hardness = 0.7
+		armor_value = 70
 
 		#Offensive Abilities
 		soft_attack = 2.5
-		hard_attack = 42
+		hard_attack = 44
 
-		ap_attack = 97
+		ap_attack = 106
 		
-		build_cost_ic = 24
+		build_cost_ic = 25
 		
 		resources = {
 			oil = 2
-			tungsten = 4
+			tungsten = 5
 			steel = 4
 			chromium = 1
 		}
@@ -981,7 +1008,7 @@ equipments = {
 		}
 	}
 
-	medium_tank_aa_equipment_1 = {   # 1940
+	medium_tank_aa_equipment_1 = {   # 1940 have to be 1941!
 		year = 1940
 		archetype = medium_tank_aa_equipment
 		family = medium_tank_equipment_1
@@ -992,24 +1019,24 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 5.6
-		reliability = 0.6
+		maximum_speed = 6
+		reliability = 0.65
 
 		#Defensive Abilities
-		defense = 6
+		defense = 6.5
 		breakthrough = 6
 		hardness = 0.55
-		armor_value = 40
+		armor_value = 45
 
 		#Offensive Abilities
-		soft_attack = 9
+		soft_attack = 10
 
-		hard_attack = 5
-		ap_attack = 43
+		hard_attack = 5.5
+		ap_attack = 46
 
-		air_attack = 28
+		air_attack = 30
 
-		build_cost_ic = 23
+		build_cost_ic = 23.5
 		
 		resources = {
 			oil = 2
@@ -1019,7 +1046,7 @@ equipments = {
 		}
 	}
 
-	medium_tank_aa_equipment_2 = {   # 1942
+	medium_tank_aa_equipment_2 = {   # 1942 have to be 1943!
 		year = 1942
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
@@ -1031,26 +1058,27 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 6.1
-		reliability = 0.7
+		maximum_speed = 6.2
+		reliability = 0.69
 		
 		#Defensive Abilities
-		defense = 7
+		defense = 7.5
 		breakthrough = 6
-		armor_value = 50
+		hardness = 0.58
+		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 11
+		soft_attack = 12
 
-		hard_attack = 6
-		ap_attack = 49
-		air_attack = 32
+		hard_attack = 6.5
+		ap_attack = 53
+		air_attack = 34
 		
-		build_cost_ic = 24
+		build_cost_ic = 24.5
 		
 	}
 
-	medium_tank_aa_equipment_3 = {   # 1944
+	medium_tank_aa_equipment_3 = {   # 1944 have to be 1945!
 		year = 1944
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_2
@@ -1062,22 +1090,23 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 6.3 
-		reliability = 0.8
+		maximum_speed = 6.5 
+		reliability = 0.75
 		
 		#Defensive Abilities
 		defense = 8
 		breakthrough = 6
-		armor_value = 57
+		hardness = 0.6
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 13
-		hard_attack = 7
-		ap_attack = 57
+		soft_attack = 14
+		hard_attack = 7.5
+		ap_attack = 62
 
-		air_attack = 36
+		air_attack = 38
 		
-		build_cost_ic = 25
+		build_cost_ic = 25.5
 		
 		resources = {
 			oil = 2
@@ -1099,6 +1128,7 @@ equipments = {
 		reliability = 0.6
 
 		#Defensive Abilities
+
 		defense = 10
 		breakthrough = 34
 		hardness = 0.8
@@ -1116,8 +1146,8 @@ equipments = {
 		build_cost_ic = 28.8
 		resources = {
 			oil = 2
+			tungsten = 3
 			steel = 4
-			tungsten = 3	
 			chromium = 1
 		}
 	}
@@ -1141,7 +1171,7 @@ equipments = {
 		hard_attack = 20
 		ap_attack = 57
 
-		build_cost_ic = 29
+		build_cost_ic = 29.6
 	}
 	# Panzer III Ausf. F/J  1940
 	panzer_iii_equipment_3 = {
@@ -1172,16 +1202,16 @@ equipments = {
 		parent = panzer_iii_equipment_3
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6.2
-		reliability = 0.74
+		maximum_speed = 6.1
+		reliability = 0.72
 		
 		defense = 19
-		breakthrough = 62
+		breakthrough = 58
 		hardness = 0.8
 		armor_value = 65
 
-		soft_attack = 24
-		hard_attack = 30
+		soft_attack = 22
+		hard_attack = 28
 		ap_attack = 77
 	    build_cost_ic = 31.2
 	}
@@ -1196,16 +1226,16 @@ equipments = {
 		#Defensive Abilities
 
 		defense = 20.5
-		breakthrough = 66
-		armor_value = 92
+		breakthrough = 62
+		armor_value = 82
 
 		#Offensive Abilities
 
-		soft_attack = 16 #26
-		hard_attack = 25
-		ap_attack = 75
+		soft_attack = 24
+		hard_attack = 30
+		ap_attack = 82
 		
-		build_cost_ic = 34
+		build_cost_ic = 31.6
 		
 
 	}
@@ -1217,21 +1247,21 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6.5
-		reliability = 0.7
+		maximum_speed = 6.2
+		reliability = 0.74
 		#Defensive Abilities
 
-		defense = 16 #9
-		breakthrough = 66
-		armor_value = 92
+		defense = 20.5
+		breakthrough = 62
+		armor_value = 82
 
 		#Offensive Abilities
 
-		soft_attack = 16 #26
-		hard_attack = 25
-		ap_attack = 89 #Needs fix
+		soft_attack = 24
+		hard_attack = 30
+		ap_attack = 82
 		
-		build_cost_ic = 34
+		build_cost_ic = 31.6
 	}
 	
 		# Panzer III ART  
@@ -1247,18 +1277,30 @@ equipments = {
 			panzer_iii_ag_equipment_1 
 		}
 		
-		maximum_speed = 6.5 
-		reliability = 0.6
-		defense = 7
-		breakthrough = 7
-		hardness = 0.6
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.65
+
+		#Defensive Abilities
+
+		defense = 8
+		breakthrough = 6
+		hardness = 0.55
 		armor_value = 47
-		soft_attack = 31 #92
-		hard_attack = 1.4
-		ap_attack = 7
-		air_attack = 0
+
+		#Offensive Abilities
+		soft_attack = 30
+		hard_attack = 1.6
+		ap_attack = 6
+		air_attack = 0 
+
+		build_cost_ic = 24.5
 		
-		build_cost_ic = 24
+		resources = {
+			oil = 2
+			tungsten = 1
+			steel = 4
+			chromium = 1
 	}
 	#StuH 42  1942
 	panzer_iii_art_equipment_2 = {
@@ -1272,22 +1314,22 @@ equipments = {
 			panzer_iii_ag_equipment_2 
 		}
 	
-		maximum_speed = 7
-		reliability = 0.6
-        hardness = 0.6
+		maximum_speed = 6.1
+		reliability = 0.67
+        	hardness = 0.55
 		
 		#Defensive Abilities
 		defense = 8
-		breakthrough = 8
-		armor_value = 56
+		breakthrough = 6
+		armor_value = 50
 
 		#Offensive Abilities
-		soft_attack = 34 #70
-		hard_attack = 1.5
-		ap_attack = 7
+		soft_attack = 31
+		hard_attack = 1.7
+		ap_attack = 6
 		air_attack = 0
 
-		build_cost_ic = 26
+		build_cost_ic = 25
 	}
 	
 	#StuG III Ausf.A  1939
@@ -1440,27 +1482,27 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 6.5
+		maximum_speed = 6
 		reliability = 0.65
 
 		#Defensive Abilities
-		defense = 12
-		breakthrough = 5
-		hardness = 0.8
-		armor_value = 56
+		defense = 8
+		breakthrough = 6
+		hardness = 0.62
+		armor_value = 50
 
 		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 21
-		ap_attack = 81
+		soft_attack = 2
+		hard_attack = 36
+		ap_attack = 86
 		air_attack = 0
 		
-		build_cost_ic = 20
+		build_cost_ic = 21.5
 		
 		resources = {
 			oil = 2
+			tungsten = 5
 			steel = 4
-			tungsten = 4
 			chromium = 1
 		}
 		
@@ -1478,27 +1520,27 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 7
-		reliability = 0.65
+		maximum_speed = 6.2
+		reliability = 0.69
 
 		#Defensive Abilities
-		defense = 13
+		defense = 8.5
 		breakthrough = 6
-		hardness = 0.8
-		armor_value = 74
+		hardness = 0.68
+		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 8
-		hard_attack = 28
+		soft_attack = 2
+		hard_attack = 40
 		ap_attack = 96
 		air_attack = 0
 		
-		build_cost_ic = 20
+		build_cost_ic = 23
 		
 		resources = {
 			oil = 2
-			steel = 4
 			tungsten = 5
+			steel = 4
 			chromium = 1
 		}
 		
@@ -1519,22 +1561,30 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 6.5 
+		maximum_speed = 6
 		reliability = 0.65
 
 		#Defensive Abilities
-		defense = 2
-		breakthrough = 2
-		armor_value = 33
+		defense = 6.5
+		breakthrough = 6
+		hardness = 0.55
+		armor_value = 45
 
 		#Offensive Abilities
-		soft_attack = 5
-		hard_attack = 4
-		ap_attack = 40
+		soft_attack = 10
 
-		air_attack = 17
+		hard_attack = 5.5
+		ap_attack = 46
 
-		build_cost_ic = 19
+		air_attack = 30
+
+		build_cost_ic = 23.5
+		
+		resources = {
+			oil = 2
+			tungsten = 2
+			steel = 4
+			chromium = 1
 	}
 	panzer_iii_flamm_equipment_1 = {
 		year = 1943
@@ -1548,26 +1598,27 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 7
-		reliability = 0.75
-
+		maximum_speed = 6.2
+		reliability = 0.69
+		
 		#Defensive Abilities
-		defense = 3
-		breakthrough = 3
-		armor_value = 38
+		defense = 7.5
+		breakthrough = 6
+		hardness = 0.58
+		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 5
-		hard_attack = 4
-		ap_attack = 40
+		soft_attack = 12
 
-		air_attack = 21
-
-		build_cost_ic = 19
+		hard_attack = 6.5
+		ap_attack = 53
+		air_attack = 34
+		
+		build_cost_ic = 24.5
 	}
 	
 
-	# Panzer IV A-D
+	# Panzer IV A-D 1936 or 37? atm stats for 37
 	panzer_iv_equipment_1 = {
 		archetype = medium_tank_equipment
 		parent = medium_tank_equipment_0
@@ -1575,25 +1626,25 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.45
+		maximum_speed = 5.2
+		reliability = 0.62
 
 		#Defensive Abilities
-		defense = 10
-		breakthrough = 36
-		hardness = 0.82
-		armor_value = 35
+		defense = 11.5
+		breakthrough = 38
+		hardness = 0.8
+		armor_value = 40
 
 		#Offensive Abilities
-		soft_attack = 14
-		hard_attack = 10
+		soft_attack = 12
+		hard_attack = 18
 		ap_attack = 52
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 12
 		
-		build_cost_ic = 35.5
+		build_cost_ic = 29.2
 		resources = {
 			oil = 2
 			steel = 4
@@ -1607,26 +1658,27 @@ equipments = {
 		parent = panzer_iv_equipment_1
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6
-		reliability = 0.5
 		
+		#Misc Abilities
+		maximum_speed = 5.6
+		reliability = 0.66
+
 		#Defensive Abilities
-		defense = 13
-		breakthrough = 42
-		hardness = 0.82
-		armor_value = 58
+		defense = 14.5
+		breakthrough = 46
+		hardness = 0.8
+		armor_value = 50
 
-		soft_attack = 18
-		hard_attack = 12
-		ap_attack = 52
+		#Offensive Abilities
+		soft_attack = 16
+		hard_attack = 22
+		ap_attack = 62
+		air_attack = 0
 
-		build_cost_ic = 37
+		#Space taken in convoy
+		lend_lease_cost = 12
 		
-		resources = {
-			oil = 2
-			steel = 4
-			tungsten = 3	
-			chromium = 1
+		build_cost_ic = 30 
 		}
 	}
 	# Panzer IV f  1940
@@ -1636,23 +1688,25 @@ equipments = {
 		parent = panzer_iv_equipment_2
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6
-		reliability = 0.58
+
+		#Misc Abilities
+		maximum_speed = 5.8
+		reliability = 0.68
 		is_convertable = yes
 
 		#Defensive Abilities
 		defense = 16
-		breakthrough = 51
-		hardness = 0.82
-		armor_value = 72
+		breakthrough = 50
+		hardness = 0.8
+		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 20
-		hard_attack = 14
-		ap_attack = 52
+		soft_attack = 18
+		hard_attack = 24
+		ap_attack = 67
 		
 
-		build_cost_ic = 38.7
+		build_cost_ic = 30
 	}
 	# Panzer IV G  1942
 	panzer_iv_equipment_4 = {
@@ -1661,23 +1715,25 @@ equipments = {
 		parent = panzer_iv_equipment_3
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6
-		reliability = 0.6
+
+		#Misc Abilities
+		maximum_speed = 6.1
+		reliability = 0.72
 		is_convertable = yes
 
 		#Defensive Abilities
-		defense = 18
-		breakthrough = 51
-		armor_value = 89
-		hardness = 0.82
+		defense = 19
+		breakthrough = 58
+		armor_value = 77
+		hardness = 0.8
 
 		#Offensive Abilities
-		soft_attack = 24
-		hard_attack = 21
-		ap_attack = 80
+		soft_attack = 22
+		hard_attack = 28
+		ap_attack = 77
 
 			
-		build_cost_ic = 40
+		build_cost_ic = 31.2
 	}
 	# Panzer IV H  1943
 	panzer_iv_equipment_5 = {
@@ -1686,25 +1742,28 @@ equipments = {
 		parent = panzer_iv_equipment_4
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6
-		reliability = 0.65
 		is_convertable = yes
 
+		#Misc Abilities
+		maximum_speed = 6.2
+		reliability = 0.74
+
 		#Defensive Abilities
-		defense = 19
-		breakthrough = 66
-		armor_value = 103
-		hardness = 0.82
+
+		defense = 20.5
+		breakthrough = 62
+		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 26
-		hard_attack = 28
-		ap_attack = 91
 
-		build_cost_ic = 40
+		soft_attack = 24
+		hard_attack = 30
+		ap_attack = 82
+		
+		build_cost_ic = 31.6
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 5
 			tungsten = 3
 			chromium = 1
 		}
@@ -1718,24 +1777,25 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 
-		maximum_speed = 6
-		reliability = 0.7				# less complex = at least same reliability
+		#Misc Abilities
+		maximum_speed = 6.3
+		reliability = 0.76				# less complex = at least same reliability
 
 		#Defensive Abilities
-		defense = 21
+		defense = 22
 		breakthrough = 66
-		armor_value = 111
-		hardness = 0.82
+		armor_value = 75
+		hardness = 0.8
 
 		#Offensive Abilities
-		soft_attack = 28
-		hard_attack = 31
-		ap_attack = 98
+		soft_attack = 26
+		hard_attack = 32
+		ap_attack = 87
 
-		build_cost_ic = 40
+		build_cost_ic = 32
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 5
 			tungsten = 3
 			chromium = 1
 		}
@@ -1780,7 +1840,7 @@ equipments = {
 	}
 	
 	# Panzer IV ART
-	#Hummel
+	#Heuschrecke
 	panzer_iv_art_equipment_2 = {
 		year = 1943
 		archetype = medium_tank_artillery_equipment
@@ -1792,31 +1852,24 @@ equipments = {
 			panzer_iv_equipment_4
 		}
 		
-		maximum_speed = 6
-		reliability = 0.74
+		#Misc Abilities
+		maximum_speed = 6.2
+		reliability = 0.69
 
 		#Defensive Abilities
-		defense = 19
-		breakthrough = 9
-		hardness = 0.6
-		armor_value = 58
+		defense = 8
+		breakthrough = 6
+		hardness = 0.58
+		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 34
-		hard_attack = 3
-		ap_attack = 14
-		air_attack = 0
+		soft_attack = 32 
+		hard_attack = 1.8
 		
-		build_cost_ic = 24
-		
-		resources = {
-			oil = 2
-			tungsten = 1
-			steel = 4
-			chromium = 1
+		build_cost_ic = 25.5
 		}
 	}
-	#Dickermax
+	#Dickermax --> change to Hummel 1945
 	panzer_iv_art_equipment_3 = {
 		year = 1944
 		archetype = medium_tank_artillery_equipment
@@ -1829,32 +1882,24 @@ equipments = {
 		}
 		
 		maximum_speed = 6.5
-		reliability = 0.78
+		reliability = 0.75
 
 		#Defensive Abilities
-		defense = 24
-		breakthrough = 13
+		defense = 9
+		breakthrough = 6
 		hardness = 0.6
-		armor_value = 60
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 39
-		hard_attack = 4
-		ap_attack = 16
-		air_attack = 0
+		soft_attack = 35
+		hard_attack = 2
 		
-		build_cost_ic = 24
-		
-		resources = {
-			oil = 2
-			tungsten = 1
-			steel = 4
-			chromium = 1
+		build_cost_ic = 27
 		}
 	}
 	
 		# Panzer IV TD
-	#StuG IV  1942
+	#StuG IV  1942 --> 43
 	panzer_iv_td_equipment_1 = {
 		year = 1942
 		archetype = medium_tank_destroyer_equipment
@@ -1867,21 +1912,22 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 5.5
-		reliability = 0.67
+		maximum_speed = 6.2
+		reliability = 0.69
 
 		#Defensive Abilities
-		defense = 10
-		breakthrough = 2
-		armor_value = 80
+		defense = 8.5
+		breakthrough = 6
+		hardness = 0.68
+		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 28
-
-		ap_attack = 101 #110
+		soft_attack = 2
+		hard_attack = 40
+		ap_attack = 96
+		air_attack = 0
 		
-		build_cost_ic = 22
+		build_cost_ic = 23
 		
 		resources = {
 			oil = 2
@@ -1890,7 +1936,7 @@ equipments = {
 			chromium = 1
 		}	
 	}
-	#Nashorn  1943
+	#Nashorn  1943 --> 44
 	panzer_iv_td_equipment_2 = {
 		year = 1943
 		archetype = medium_tank_destroyer_equipment
@@ -1902,22 +1948,22 @@ equipments = {
 			panzer_iv_equipment_4
 		}
 		
-		maximum_speed = 5
-		reliability = 0.7
+		maximum_speed = 6.3
+		reliability = 0.72
 
 		#Defensive Abilities
-		defense = 12
-		breakthrough = 3
-		hardness = 0.75
-		armor_value = 99
+		defense = 9
+		breakthrough = 6
+		hardness = 0.72
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 30
-		ap_attack = 113
+		soft_attack = 2.5
+		hard_attack = 42
+		ap_attack = 101
 		air_attack = 0
 		
-		build_cost_ic = 22.5
+		build_cost_ic = 24
 		
 		resources = {
 			oil = 2
@@ -1926,7 +1972,7 @@ equipments = {
 			chromium = 1
 		}
 	}
-	#Jagdpanzer IV/70  1944
+	#Jagdpanzer IV/70  1944 --> 45
 	panzer_iv_td_equipment_3 = {
 		year = 1944
 		archetype = medium_tank_destroyer_equipment
@@ -1938,22 +1984,23 @@ equipments = {
 			panzer_iv_equipment_5
 		}
 		
-		maximum_speed = 5
+		#Misc Abilities
+		maximum_speed = 6.5 
 		reliability = 0.75
 
 		#Defensive Abilities
-		defense = 13
-		breakthrough = 3
-		hardness = 0.8
-		armor_value = 113
+		defense = 9
+		breakthrough = 6
+		hardness = 0.7
+		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 7
-		hard_attack = 34
-		ap_attack = 118
-		air_attack = 0
+		soft_attack = 2.5
+		hard_attack = 44
+
+		ap_attack = 106
 		
-		build_cost_ic = 23.1
+		build_cost_ic = 25
 		
 		resources = {
 			oil = 2
@@ -1964,7 +2011,7 @@ equipments = {
 	}
 	
 	# Panzer IV SPAA
-	#Wirbelwind
+	#Wirbelwind --> have to be 1943!
 	panzer_iv_spaa_equipment_1 = {
 		year = 1942
 		archetype = medium_tank_aa_equipment
@@ -1977,25 +2024,26 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.7
-
+		maximum_speed = 6.2
+		reliability = 0.69
+		
 		#Defensive Abilities
-		defense = 3
-		breakthrough = 3
-		armor_value = 45
+		defense = 7.5
+		breakthrough = 6
+		hardness = 0.58
+		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 5
-		hard_attack = 4
-		ap_attack = 42
+		soft_attack = 12
 
-		air_attack = 20
-
-		build_cost_ic = 20
+		hard_attack = 6.5
+		ap_attack = 53
+		air_attack = 34
+		
+		build_cost_ic = 24.5
 			
 	}
-	#Ostwind
+	#Ostwind --> have to be 1944!
 	panzer_iv_spaa_equipment_2 = {
 		year = 1943
 		archetype = medium_tank_aa_equipment
@@ -2007,24 +2055,32 @@ equipments = {
 			panzer_iv_equipment_4
 		}
 		
+		#Misc Abilities
 		maximum_speed = 6.3
-		reliability = 0.75
-
+		reliability = 0.72
+		
 		#Defensive Abilities
-		defense = 3.5
-		breakthrough = 3.5
-		armor_value = 50
+		defense = 8
+		breakthrough = 6
+		hardness = 0.6
+		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 6
-		hard_attack = 5
-		ap_attack = 50
+		soft_attack = 13
+		hard_attack = 7
+		ap_attack = 57
 
-		air_attack = 28
-
-		build_cost_ic = 21
+		air_attack = 36
+		
+		build_cost_ic = 25
+		
+		resources = {
+			oil = 2
+			tungsten = 2
+			steel = 4
+			chromium = 1
 	}
-	#Kugelblitz
+	#Kugelblitz --> have to be 1945
 	panzer_iv_spaa_equipment_3 = {
 		year = 1944
 		archetype = medium_tank_aa_equipment
@@ -2036,22 +2092,30 @@ equipments = {
 			panzer_iv_equipment_5
 		}
 		
-		maximum_speed = 6.5
-		reliability = 0.8
-
+		#Misc Abilities
+		maximum_speed = 6.5 
+		reliability = 0.75
+		
 		#Defensive Abilities
-		defense = 4
-		breakthrough = 4
-		armor_value = 60
+		defense = 8
+		breakthrough = 6
+		hardness = 0.6
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 8
-		hard_attack = 6
-		ap_attack = 58
+		soft_attack = 14
+		hard_attack = 7.5
+		ap_attack = 62
 
-		air_attack = 35
-
-		build_cost_ic = 21.5
+		air_attack = 38
+		
+		build_cost_ic = 25.5
+		
+		resources = {
+			oil = 2
+			tungsten = 2
+			steel = 4
+			chromium = 1
 	}
 	
 	# Panzer V Panther D  1942
@@ -2065,28 +2129,25 @@ equipments = {
 		
 		
 		#Misc Abilities
-		maximum_speed = 6.7
-		reliability = 0.65
+		maximum_speed = 6.1
+		reliability = 0.72
 
 		#Defensive Abilities
-		defense = 20
-		breakthrough = 76
-		hardness = 0.85
-		armor_value = 101
+
+		defense = 19
+		breakthrough = 58
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 20
-		hard_attack = 30
-		ap_attack = 116
+		soft_attack = 22
+		hard_attack = 28
+		ap_attack = 77
 
-		#Space taken in convoy
-		lend_lease_cost = 12
-		
-		build_cost_ic = 40
+		build_cost_ic = 31.2
 		resources = {
 			oil = 2
-			steel = 4
 			tungsten = 3
+			steel = 4
 			chromium = 1
 		}
 	}
@@ -2097,47 +2158,62 @@ equipments = {
 		parent = panzer_v_equipment_1
 		priority = 50
 		visual_level = 0
-		maximum_speed = 6.9
-		reliability = 0.75
 		is_convertable = yes
 
+		#Misc Abilities
+		maximum_speed = 6.3
+		reliability = 0.76
+
 		#Defensive Abilities
-		defense = 23
-		breakthrough = 76
-		armor_value = 109
+		defense = 22
+		breakthrough = 66
+		armor_value = 75
 
 		#Offensive Abilities
-		soft_attack = 20
+		soft_attack = 26
 		hard_attack = 32
-		ap_attack = 116
-
-		build_cost_ic = 42
+		ap_attack = 87
+		
+		build_cost_ic = 32
+		resources = {
+			oil = 2
+			steel = 5
+			tungsten = 3
+			chromium = 1
 	}
 	
-	# Panzer E75
+	# Panzer E50    1945
 	panzer_e_equipment_1 = {
 		archetype = medium_tank_equipment
 		parent = panzer_v_equipment_2
 		priority = 50
 		visual_level = 0
-		maximum_speed = 7.5
-		reliability = 0.8
+
+		#Misc Abilities
+		maximum_speed = 6.5
+		reliability = 0.78
 
 		#Defensive Abilities
-		defense = 25
-		breakthrough = 78
-		armor_value = 112
+		defense = 23.5
+		breakthrough = 70
+		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 23
+		soft_attack = 28
 		hard_attack = 34
-		ap_attack = 118
-
-		build_cost_ic = 40
+		ap_attack = 92
+		
+		build_cost_ic = 32.8
+		resources = {
+			oil = 2
+			steel = 5
+			tungsten = 3
+			chromium = 1
+		}
 	}
 	
 		# Panther TD
-	#Jagdpanther
+	#Jagdpanther --> have to be 1945
 	panzer_v_td_equipment_1 = {
 		year = 1944
 		archetype = medium_tank_destroyer_equipment
@@ -2149,27 +2225,27 @@ equipments = {
 			panzer_v_equipment_1
 		}
 		
-				#Misc Abilities
-		maximum_speed = 6.2
+		#Misc Abilities
+		maximum_speed = 6.5 
 		reliability = 0.75
 
 		#Defensive Abilities
-		defense = 15
-		breakthrough = 3
-		hardness = 0.85
-		armor_value = 120
+		defense = 9
+		breakthrough = 6
+		hardness = 0.7
+		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 15
-		hard_attack = 37
-		ap_attack = 130
-		air_attack = 0
+		soft_attack = 2.5
+		hard_attack = 44
+
+		ap_attack = 106
 		
-		build_cost_ic = 26
+		build_cost_ic = 25
 		
 		resources = {
 			oil = 2
-			tungsten = 6
+			tungsten = 5
 			steel = 4
 			chromium = 1
 		}
@@ -2213,7 +2289,7 @@ equipments = {
 		}
 	}
 	
-	#Coelian
+	#Coelian --> have to be 1945
 	panzer_v_spaa_equipment_1 = {
 		year = 1944
 		archetype = medium_tank_aa_equipment
@@ -2225,22 +2301,31 @@ equipments = {
 			panzer_v_equipment_1
 		}
 		
-		maximum_speed = 7
-		reliability = 0.8
-
+		#Misc Abilities
+		maximum_speed = 6.5 
+		reliability = 0.75
+		
 		#Defensive Abilities
-		defense = 4
-		breakthrough = 4
-		armor_value = 63
+		defense = 8
+		breakthrough = 6
+		hardness = 0.6
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 9
-		hard_attack = 6
-		ap_attack = 58
+		soft_attack = 14
+		hard_attack = 7.5
+		ap_attack = 62
 
 		air_attack = 38
-
-		build_cost_ic = 21.5
+		
+		build_cost_ic = 25.5
+		
+		resources = {
+			oil = 2
+			tungsten = 2
+			steel = 4
+			chromium = 1
+		}		
 	}
 	panzer_v_art_equipment_1 = {
 		year = 1944
@@ -3472,7 +3557,7 @@ equipments = {
 		build_cost_ic = 27
 	}
 		# USA
-		# M2 Medium  1939
+		# M2 Medium  1939 --> 37
 	american_medium_tank_equipment_1 = {
 		year = 1937
 		archetype = medium_tank_equipment
@@ -3780,19 +3865,30 @@ equipments = {
 		}
 		
 		#Misc Abilities
-		maximum_speed = 5.5
-		reliability = 0.6
+		maximum_speed = 6
+		reliability = 0.65
 
 		#Defensive Abilities
-		defense = 6
+
+		defense = 8
 		breakthrough = 6
-		armor_value = 46
+		hardness = 0.55
+		armor_value = 47
 
 		#Offensive Abilities
-		soft_attack = 32 
-		hard_attack = 1.7
+		soft_attack = 30
+		hard_attack = 1.6
+		ap_attack = 6
+		air_attack = 0 
+
+		build_cost_ic = 24.5
 		
-		build_cost_ic = 26
+		resources = {
+			oil = 2
+			tungsten = 1
+			steel = 4
+			chromium = 1
+		}
 	}
 	
 	# M4A1 Calliope  1943
@@ -3807,21 +3903,23 @@ equipments = {
 			american_medium_tank_equipment_2 
 		}
 		
-		maximum_speed = 6.5 
-		reliability = 0.65
+		#Misc Abilities
+		maximum_speed = 6.2
+		reliability = 0.69
 
 		#Defensive Abilities
-		defense = 6
+		defense = 8
 		breakthrough = 6
-		armor_value = 54
+		hardness = 0.58
+		armor_value = 55
 
 		#Offensive Abilities
-		soft_attack = 37 
-		hard_attack = 2
+		soft_attack = 32 
+		hard_attack = 1.8
 		
-		build_cost_ic = 27
+		build_cost_ic = 25.5
 	}
-	
+	# have to be 1945
 	american_medium_tank_artillery_equipment_3 = {
 		year = 1944
 		archetype = medium_tank_artillery_equipment
@@ -3837,12 +3935,13 @@ equipments = {
 		reliability = 0.75
 
 		#Defensive Abilities
-		defense = 6
+		defense = 9
 		breakthrough = 6
-		armor_value = 60
+		hardness = 0.6
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 40 
+		soft_attack = 35
 		hard_attack = 2
 		
 		build_cost_ic = 27
