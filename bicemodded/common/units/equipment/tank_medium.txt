@@ -1,4 +1,4 @@
-﻿# All equipment based on medium tank chassis
+# All equipment based on medium tank chassis
 equipments = {
 
 	medium_tank_equipment = {
@@ -1072,7 +1072,7 @@ equipments = {
 		}
 	}
 	
-	# 1940 have to be 1941!
+	# 1941
 	medium_tank_aa_equipment_1 = {
 		year = 1941
 		archetype = medium_tank_aa_equipment
@@ -1110,9 +1110,9 @@ equipments = {
 			chromium = 1
 		}
 	}
-	# 1942 have to be 1943!
+	# 1943
 	medium_tank_aa_equipment_2 = {
-		year = 1942
+		year = 1943
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
 		family = medium_tank_equipment_2
@@ -1142,7 +1142,7 @@ equipments = {
 		build_cost_ic = 24.5
 		
 	}
-	# 1944 have to be 1945!
+	#1945
 	medium_tank_aa_equipment_3 = {
 		year = 1945
 		archetype = medium_tank_aa_equipment
@@ -1909,7 +1909,7 @@ equipments = {
 
 	#Dickermax --> change to Hummel 1945
 	panzer_iv_art_equipment_3 = {
-		year = 1944
+		year = 1945
 		archetype = medium_tank_artillery_equipment
 		parent = panzer_iv_art_equipment_2
 		family = panzer_iv_equipment_5
@@ -2048,9 +2048,9 @@ equipments = {
 	}
 	
 	# Panzer IV SPAA
-	#Wirbelwind --> have to be 1943!
+	#Wirbelwind 1942
 	panzer_iv_spaa_equipment_1 = {
-		year = 1943
+		year = 1942
 		archetype = medium_tank_aa_equipment
 		parent = medium_tank_aa_equipment_1
 		family = panzer_iv_equipment_4
@@ -2058,6 +2058,38 @@ equipments = {
 		visual_level = 0
 		can_convert_from = { 
 			panzer_iv_equipment_3
+		}
+		
+		#Misc Abilities
+		maximum_speed = 6.1
+		reliability = 0.67
+		
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 6
+		hardness = 0.55
+		armor_value = 50
+
+		#Offensive Abilities
+		soft_attack = 11
+
+		hard_attack = 6
+		ap_attack = 49
+		air_attack = 32
+		
+		build_cost_ic = 24
+			
+	}
+	#Ostwind 1943
+	panzer_iv_spaa_equipment_2 = {
+		year = 1943
+		archetype = medium_tank_aa_equipment
+		parent = panzer_iv_spaa_equipment_1
+		family = panzer_iv_equipment_5
+		priority = 70
+		visual_level = 0
+		can_convert_from = { 
+			panzer_iv_equipment_4
 		}
 		
 		#Misc Abilities
@@ -2078,18 +2110,18 @@ equipments = {
 		air_attack = 34
 		
 		build_cost_ic = 24.5
-			
+
 	}
-	#Ostwind --> have to be 1944!
-	panzer_iv_spaa_equipment_2 = {
-		year = 1943
+	#Kugelblitz 1944
+	panzer_iv_spaa_equipment_3 = {
+		year = 1944
 		archetype = medium_tank_aa_equipment
-		parent = panzer_iv_spaa_equipment_1
-		family = panzer_iv_equipment_5
+		parent = panzer_iv_spaa_equipment_2
+		family = panzer_iv_equipment_6
 		priority = 70
 		visual_level = 0
 		can_convert_from = { 
-			panzer_iv_equipment_4
+			panzer_iv_equipment_5
 		}
 		
 		#Misc Abilities
@@ -2110,44 +2142,6 @@ equipments = {
 		air_attack = 36
 		
 		build_cost_ic = 25
-		
-		resources = {
-			oil = 2
-			tungsten = 2
-			steel = 4
-			chromium = 1
-		}
-	}
-	#Kugelblitz --> have to be 1945
-	panzer_iv_spaa_equipment_3 = {
-		year = 1944
-		archetype = medium_tank_aa_equipment
-		parent = panzer_iv_spaa_equipment_2
-		family = panzer_iv_equipment_6
-		priority = 70
-		visual_level = 0
-		can_convert_from = { 
-			panzer_iv_equipment_5
-		}
-		
-		#Misc Abilities
-		maximum_speed = 6.5 
-		reliability = 0.75
-		
-		#Defensive Abilities
-		defense = 8
-		breakthrough = 6
-		hardness = 0.6
-		armor_value = 65
-
-		#Offensive Abilities
-		soft_attack = 14
-		hard_attack = 7.5
-		ap_attack = 62
-
-		air_attack = 38
-		
-		build_cost_ic = 25.5
 		
 		resources = {
 			oil = 2
@@ -2329,9 +2323,9 @@ equipments = {
 		}
 	}
 	
-	#Coelian --> have to be 1945
+	#Coelian 1945
 	panzer_v_spaa_equipment_1 = {
-		year = 1944
+		year = 1945
 		archetype = medium_tank_aa_equipment
 		parent = panzer_iv_spaa_equipment_3
 		family = panzer_v_equipment_2
@@ -2367,31 +2361,32 @@ equipments = {
 			chromium = 1
 		}		
 	}
-	panzer_v_art_equipment_1 = {
-		year = 1944
-		archetype = medium_tank_artillery_equipment
-		parent = medium_tank_artillery_equipment_1
-		family = panzer_v_equipment_2
-		priority = 60
-		visual_level = 2
-		can_convert_from = { 
-			panzer_v_equipment_1
-		}
-
-		maximum_speed = 6.7
-		reliability = 0.8
-
-		#Defensive Abilities
-		defense = 7
-		breakthrough = 7
-		armor_value = 60
-
-		#Offensive Abilities
-		soft_attack = 43 
-		hard_attack = 3
-		
-		build_cost_ic = 27.5
-	}
+	#Reichsbär --> deleted (never existed)
+#	panzer_v_art_equipment_1 = {
+#		year = 1944
+#		archetype = medium_tank_artillery_equipment
+#		parent = medium_tank_artillery_equipment_1
+#		family = panzer_v_equipment_2
+#		priority = 60
+#		visual_level = 2
+#		can_convert_from = { 
+#			panzer_v_equipment_1
+#		}
+#
+#		maximum_speed = 6.7
+#		reliability = 0.8
+#
+#		#Defensive Abilities
+#		defense = 7
+#		breakthrough = 7
+#		armor_value = 60
+#
+#		#Offensive Abilities
+#		soft_attack = 43 
+#		hard_attack = 3
+#		
+#		build_cost_ic = 27.5
+#	}
 	
 	# BT-5  1933
 	bt_tank_equipment_1 = {
@@ -3764,7 +3759,7 @@ equipments = {
 			chromium = 1
 		}
 	}
-	# M26 Pershing --> 1945
+	# M26 Pershing 1945
 	m26_pershing_equipment = {
 		archetype = medium_tank_equipment
 		parent = m4a3_equipment
@@ -3968,9 +3963,9 @@ equipments = {
 		
 		build_cost_ic = 25.5
 	}
-	# have to be 1945
+	# 1945
 	american_medium_tank_artillery_equipment_3 = {
-		year = 1944
+		year = 1945
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_2
 		family = m4a3_equipment

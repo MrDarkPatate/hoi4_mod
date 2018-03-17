@@ -1146,7 +1146,6 @@ technologies = {
 		sub_technologies = {
 			subtech_panzer_iii_td_equipment_1
 			subtech_panzer_iii_art_equipment_1
-			subtech_panzer_iii_flamm_equipment_0
 		}
 		
 		ai_will_do = {
@@ -1177,8 +1176,7 @@ technologies = {
 		
 		sub_technologies = {
 			subtech_panzer_iii_td_equipment_2
-		    subtech_panzer_iii_art_equipment_2
-			subtech_panzer_iii_flamm_equipment_1
+			subtech_panzer_iii_art_equipment_2
 		}
 		
 		ai_will_do = {
@@ -1213,28 +1211,7 @@ technologies = {
 			cat_stug
 		}
 	}
-	subtech_panzer_iii_flamm_equipment_0 = {
 
-		enable_equipments = {
-			panzer_iii_flamm_equipment_0
-		}
-	
-		dependencies = {
-			antiair2 = 1
-		}
-		
-		research_cost = 1.2
-		start_year = 1941
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	# Panzer III M #
 	tech_panzer_iii_equipment_5 = {
 
@@ -1318,28 +1295,7 @@ technologies = {
 			cat_medium_armor
 		}
 	}
-	subtech_panzer_iii_flamm_equipment_1 = {
 
-		enable_equipments = {
-			panzer_iii_flamm_equipment_1
-		}
-	
-		dependencies = {
-			antiair3 = 1
-		}
-		
-		research_cost = 1.1
-		start_year = 1943
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	# Panzer III N #
 	#tech_panzer_iii_equipment_6 = {
 #
@@ -1762,7 +1718,7 @@ technologies = {
 		}
 
 		research_cost = 1.1
-		start_year = 1944
+		start_year = 1945
 		
 		categories = {
 			armor
@@ -1882,7 +1838,6 @@ technologies = {
 
 		sub_technologies = {
 			subtech_panzer_v_td_equipment_1
-			subtech_panzer_v_art_equipment_1
 			subtech_panzer_v_spaa_equipment_1
 		}
 		
@@ -1918,28 +1873,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	subtech_panzer_v_art_equipment_1 = {
 
-		enable_equipments = {
-			panzer_v_art_equipment_1
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-
-		research_cost = 1.2
-		start_year = 1945
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
 	subtech_panzer_v_spaa_equipment_1 = {
 
 		enable_equipments = {
@@ -1951,7 +1885,7 @@ technologies = {
 		}
 
 		research_cost = 1.2
-		start_year = 1944
+		start_year = 1945
 		
 		categories = {
 			armor
