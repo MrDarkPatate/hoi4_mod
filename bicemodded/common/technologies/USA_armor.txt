@@ -1094,7 +1094,7 @@ technologies = {
 		}
 		
 		research_cost = 3.2
-		start_year = 1944
+		start_year = 1943
 
 		folder = {
 			name = usa_folder
@@ -1145,7 +1145,7 @@ technologies = {
 		}
 		
 		research_cost = 3.5
-		start_year = 1949
+		start_year = 1945
 
 		folder = {
 			name = usa_folder

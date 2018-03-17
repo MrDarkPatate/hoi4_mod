@@ -1199,7 +1199,7 @@ technologies = {
 		}
 
 		research_cost = 2.2
-		start_year = 1939
+		start_year = 1941
 
 		ai_will_do = {
 			factor = 0
@@ -1254,7 +1254,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1942
+		start_year = 1941
 		
 		folder = {
 			name = soviet_folder
@@ -1334,7 +1334,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1943
+		start_year = 1942
 		
 		folder = {
 			name = soviet_folder
@@ -1367,7 +1367,7 @@ technologies = {
 		}
 		
 		research_cost = 1.4
-		start_year = 1944
+		start_year = 1943
 		
 		folder = {
 			name = soviet_folder

@@ -329,37 +329,13 @@ equipments = {
 		
 	}
 
-	# 1940 not in the game?
+	# 1942
 	heavy_tank_artillery_equipment_2 = {
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_tank_artillery_equipment_1
 		family = heavy_tank_equipment_2
 		priority = 100
 		visual_level = 1
-
-		#Misc Abilities
-		maximum_speed = 5.5
-		reliability = 0.58
-
-		#Defensive Abilities
-		defense = 9
-		breakthrough = 7
-		armor_value = 69
-
-		#Offensive Abilities 
-		soft_attack = 48
-		hard_attack = 1.5
-		
-		build_cost_ic = 40
-	}
-
-	# 1942?
-	heavy_tank_artillery_equipment_3 = {
-		archetype = heavy_tank_artillery_equipment
-		parent = heavy_tank_artillery_equipment_2
-		family = heavy_tank_equipment_3
-		priority = 100
-		visual_level = 2
 
 		#Misc Abilities
 		maximum_speed = 6
@@ -376,8 +352,32 @@ equipments = {
 		
 		build_cost_ic = 42
 	}
+
+	# 1944
+	heavy_tank_artillery_equipment_3 = {
+		archetype = heavy_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_2
+		family = heavy_tank_equipment_3
+		priority = 100
+		visual_level = 2
+
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.68
+
+		#Defensive Abilities
+		defense = 11
+		breakthrough = 9
+		armor_value = 80
+
+		#Offensive Abilities
+		soft_attack = 58
+		hard_attack = 2
+		
+		build_cost_ic = 44
+	}
 	
-	# 1944?
+	# 1946 not in game
 	heavy_tank_artillery_equipment_4 = {
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_tank_artillery_equipment_3
@@ -463,7 +463,7 @@ equipments = {
 		
 	}
 
-	# 1940 not in the game
+	# 1942
 	heavy_tank_destroyer_equipment_2 = {
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_tank_destroyer_equipment_1
@@ -471,32 +471,6 @@ equipments = {
 		priority = 120
 		visual_level = 1
 
-		#Misc Abilities
-		maximum_speed = 4
-		reliability = 0.58
-
-		#Defensive Abilities
-		defense = 8
-		breakthrough = 8
-		armor_value = 75
-
-		#Offensive Abilities
-		soft_attack = 10
-		hard_attack = 45
-		ap_attack = 83
-		air_attack = 0
-		
-		build_cost_ic = 42
-	}
-	
-	# 1942
-	heavy_tank_destroyer_equipment_3 = {
-		archetype = heavy_tank_destroyer_equipment
-		parent = heavy_tank_destroyer_equipment_2
-		family = heavy_tank_equipment_3
-		priority = 120
-		visual_level = 2
-		
 		#Misc Abilities
 		maximum_speed = 5
 		reliability = 0.66
@@ -515,7 +489,39 @@ equipments = {
 		build_cost_ic = 44
 	}
 	
-	#1944?
+	# 1944
+	heavy_tank_destroyer_equipment_3 = {
+		archetype = heavy_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_2
+		family = heavy_tank_equipment_3
+		priority = 120
+		visual_level = 2
+		
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.7
+
+		#Defensive Abilities
+		defense = 10
+		breakthrough = 10
+		armor_value = 95
+
+		#Offensive Abilities
+		soft_attack = 14
+		hard_attack = 51
+		ap_attack = 125
+		air_attack = 0 #0
+		
+		build_cost_ic = 46
+		resources = {
+			oil = 2
+			steel = 5
+			tungsten = 6
+			chromium = 2
+		}
+	}
+	
+	#1946 not in game
 	heavy_tank_destroyer_equipment_4 = {
 		archetype = heavy_tank_destroyer_equipment
 		parent = heavy_tank_destroyer_equipment_3
@@ -1040,7 +1046,7 @@ equipments = {
 		}
 	}
 
-	# KV-85  --> 1941
+	# KV-85 1941
 	kv_tank_equipment_2 = {
 		archetype = heavy_tank_equipment
 		parent = kv_tank_equipment_1
@@ -1071,7 +1077,7 @@ equipments = {
 		}
 	}
 	
-		# IS-1 1943 --> 42
+		# IS-1 1942
 	is_tank_equipment_1 = {
 		archetype = heavy_tank_equipment
 		parent = kv_tank_equipment_1
@@ -1094,7 +1100,7 @@ equipments = {
 		
 		build_cost_ic = 52.65
 	}
-	# IS-2  1942 --> 1943
+	# IS-2  1943
 	is_tank_equipment_2 = {
 		archetype = heavy_tank_equipment
 		parent = is_tank_equipment_1
@@ -1631,7 +1637,7 @@ equipments = {
 		}
 	}
 
-	# M26 Super Pershing  1944 have to be 1943
+	# T26E4 Super Pershing  1944 have to be 1943
 	m26_superpershing_equipment_2 = {
 		archetype = heavy_tank_equipment
 		parent = american_heavy_tank_equipment_1		

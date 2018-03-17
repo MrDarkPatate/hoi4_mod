@@ -1,4 +1,4 @@
-# All equipment based on medium tank chassis
+﻿# All equipment based on medium tank chassis
 equipments = {
 
 	medium_tank_equipment = {
@@ -754,9 +754,9 @@ equipments = {
 			chromium = 1
 		}
 	}
-	# 1939 have to be 41!
+	# 1941
 	medium_tank_artillery_equipment_1 = {   
-		year = 1939
+		year = 1941
 		archetype = medium_tank_artillery_equipment
 		family = medium_tank_equipment_1
 		priority = 60
@@ -791,9 +791,9 @@ equipments = {
 			chromium = 1
 		}
 	}
-	# 1942 have to be 43!
+	# 1943
 	medium_tank_artillery_equipment_2 = {   
-		year = 1942
+		year = 1943
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_1
 		family = medium_tank_equipment_2
@@ -820,9 +820,9 @@ equipments = {
 		build_cost_ic = 25.5
 	}
 
-	# 1944 have to be 45!
+	# 1945
 	medium_tank_artillery_equipment_3 = {
-		year = 1944
+		year = 1945
 		archetype = medium_tank_artillery_equipment
 		parent = medium_tank_artillery_equipment_2
 		family = medium_tank_equipment_3
@@ -1840,7 +1840,7 @@ equipments = {
 	}
 	
 	# Pz IV Assault guns
-	#Brummbär --> 1943
+	#Brummbär 1943
 	panzer_iv_ag_equipment_1 = {
 		year = 1943
 		archetype = medium_assault_gun_equipment
