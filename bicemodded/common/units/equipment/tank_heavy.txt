@@ -1149,7 +1149,7 @@ equipments = {
 		}
 	}
 	
-	# KV-2  "Dreadnought"
+	# KV-2  "Dreadnought" --> 1941
 	kv_2_tank_equipment_1 = {
 		archetype = heavy_assault_gun_equipment
 		parent = heavy_assault_gun_equipment_1
@@ -1158,22 +1158,28 @@ equipments = {
 		visual_level = 0
 		
 		#Misc Abilities
-		maximum_speed = 5
-		reliability = 0.5
+		maximum_speed = 5.4
+		reliability = 0.62
 
 		#Defensive Abilities
-		defense = 10
-		breakthrough = 60
+		defense = 19
+		breakthrough = 70
 		
-		armor_value = 108
+		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 37
-		hard_attack = 20
-		ap_attack = 30
+		soft_attack = 29
+		hard_attack = 15
+		ap_attack = 58
 		air_attack = 0
 		
-		build_cost_ic = 44
+		build_cost_ic = 43
+		resources = {
+			oil = 2
+			tungsten = 2
+			steel = 5
+			chromium = 2
+		}
 	}
 	# KV-85 TD 1943
 	kv_tank_td_1 = {
@@ -1198,7 +1204,7 @@ equipments = {
 		build_cost_ic = 45
 	}
 	
-	# SU-152 1941
+	# SU-152 1941 --> 1943
 	kv_tank_art_1 = {
 		archetype = heavy_tank_artillery_equipment
 		parent = heavy_tank_artillery_equipment_1
@@ -1206,6 +1212,7 @@ equipments = {
 		priority = 60
 		visual_level = 0
 			
+		#Misc Abilities
 		maximum_speed = 5.2
 		reliability = 0.62
 
@@ -1223,6 +1230,7 @@ equipments = {
 		
 		build_cost_ic = 44
 	}
+
 	#SU-203 1943
 	kv_tank_art_2 = {
 		archetype = heavy_tank_artillery_equipment
@@ -1258,21 +1266,30 @@ equipments = {
 		family = is_tank_equipment_2 
 		priority = 100
 		visual_level = 0
-		maximum_speed = 5.6
-		reliability = 0.65
-		defense = 12
-		breakthrough = 70
-		armor_value = 118
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.69
 
-		soft_attack = 40
-		hard_attack = 18
-		ap_attack = 69
+		#Defensive Abilities
+		defense = 23
+		breakthrough = 80
+		
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 45
+		hard_attack = 20
+		ap_attack = 67
 		air_attack = 0
 		
-		build_cost_ic = 42
-	}
-	
-	
+		build_cost_ic = 46
+		resources = {
+			oil = 2
+			tungsten = 3
+			steel = 6
+			chromium = 1
+		}
+	}	
 	
 	# ISU-122 1943
 	is_tank_td_1 = {
