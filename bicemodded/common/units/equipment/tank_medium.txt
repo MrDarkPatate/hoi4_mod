@@ -1,4 +1,4 @@
-﻿# All equipment based on medium tank chassis
+# All equipment based on medium tank chassis
 equipments = {
 
 	medium_tank_equipment = {
@@ -468,8 +468,8 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 20
-		hard_attack = 13
-		ap_attack = 52
+		hard_attack = 14
+		ap_attack = 71
 		air_attack = 0
 
 		#Space taken in convoy
@@ -503,7 +503,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 24
 		hard_attack = 18
-		ap_attack = 62
+		ap_attack = 78
 		air_attack = 0
 
 		#Space taken in convoy
@@ -536,8 +536,8 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 28
-		hard_attack = 20
-		ap_attack = 72
+		hard_attack = 23
+		ap_attack = 83
 		air_attack = 0
 
 		#Space taken in convoy
@@ -584,22 +584,22 @@ equipments = {
 				
 		#Misc Abilities
 		maximum_speed = 5
-		reliability = 0.6
+		reliability = 0.63
 
 		#Defensive Abilities
 
-		defense = 8 
-		breakthrough = 45
+		defense = 9
+		breakthrough = 34
 		hardness = 0.8
-		armor_value = 45
+		armor_value = 35
 
 		#Offensive Abilities
-		soft_attack = 28 #70
-		hard_attack = 1.5
-		ap_attack = 6
+		soft_attack = 15
+		hard_attack = 8
+		ap_attack = 28
 		air_attack = 0 
 
-		build_cost_ic = 25
+		build_cost_ic = 22
 		
 		resources = {
 			oil = 2
@@ -609,14 +609,40 @@ equipments = {
 		}
 	}
 
-	medium_assault_gun_equipment_1 = {   # 1940
+	medium_assault_gun_equipment_1 = {   # 1939
 		archetype = medium_assault_gun_equipment
 		family = medium_tank_equipment_1
 		priority = 60
 		visual_level = 0
+
+		#Misc Abilities
+		maximum_speed = 5.6
+		reliability = 0.68
+
+		#Defensive Abilities
+
+		defense = 12
+		breakthrough = 46
+		hardness = 0.8
+		armor_value = 50
+
+		#Offensive Abilities
+		soft_attack = 19
+		hard_attack = 11
+		ap_attack = 43
+		air_attack = 0 
+
+		build_cost_ic = 22.75
+		
+		resources = {
+			oil = 2
+			tungsten = 2
+			steel = 4
+			chromium = 1
+		}
 	}
 	
-	medium_assault_gun_equipment_2 = {   # 1944
+	medium_assault_gun_equipment_2 = {   # 1942
 		archetype = medium_assault_gun_equipment
 		parent = medium_assault_gun_equipment_1
 		family = medium_tank_equipment_2
@@ -624,25 +650,59 @@ equipments = {
 		visual_level = 1
 
 		#Misc Abilities
-		maximum_speed = 5.5
-		reliability = 0.67
+		maximum_speed = 6.1
+		reliability = 0.75
 
 		#Defensive Abilities
-		defense = 10
-		breakthrough = 52
-		armor_value = 70
+		defense = 16.5
+		breakthrough = 58
+		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 33 
-		hard_attack = 1.7
+		soft_attack = 25 
+		hard_attack = 14
 		
-		build_cost_ic = 26
+		build_cost_ic = 23.5
 	}
-	
+
+#	medium_assault_gun_equipment_3 = {   # 1944
+#		archetype = medium_assault_gun_equipment
+#		family = medium_tank_equipment_1
+#		priority = 60
+#		visual_level = 0
+#
+#		#Misc Abilities
+#		maximum_speed = 6.3
+#		reliability = 0.79
+#
+#		#Defensive Abilities
+#
+#		defense = 19.5
+#		breakthrough = 66
+#		hardness = 0.8
+#		armor_value = 75
+#
+#		#Offensive Abilities
+#		soft_attack = 29
+#		hard_attack = 18
+#		ap_attack = 68
+#		air_attack = 0 
+#
+#		build_cost_ic = 25
+#		
+#		resources = {
+#			oil = 2
+#			tungsten = 2
+#			steel = 5
+#			chromium = 1
+#		}
+#	}
+#
 	########################################################
 	medium_tank_artillery_equipment = {
 		is_archetype = yes
 		is_buildable = no
+
 		family = medium_tank_equipment
 		type = { 
 			armor
@@ -1325,27 +1385,28 @@ equipments = {
 		is_convertable = yes
 		
 		#Misc Abilities
-		maximum_speed = 6
-		reliability = 0.65
+		maximum_speed = 5.6
+		reliability = 0.68
 
 		#Defensive Abilities
-		defense = 8
-		breakthrough = 40
+
+		defense = 12
+		breakthrough = 46
 		hardness = 0.8
-		armor_value = 43
+		armor_value = 50
 
 		#Offensive Abilities
 		soft_attack = 19
-		hard_attack = 6
-		ap_attack = 21
-		air_attack = 0
-		
-		build_cost_ic = 20.2
+		hard_attack = 11
+		ap_attack = 43
+		air_attack = 0 
+
+		build_cost_ic = 22.75
 		
 		resources = {
 			oil = 2
-			steel = 4
 			tungsten = 2
+			steel = 4
 			chromium = 1
 		}
 		
@@ -1361,22 +1422,20 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 		
-		maximum_speed = 6.5
-		reliability = 0.7
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.73
 
-        #Defensive Abilities
-		defense = 10
-		breakthrough = 45
-		hardness = 0.8
-		armor_value = 54
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 54
+		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 22
-		hard_attack = 7
-		ap_attack = 21
-		air_attack = 0
+		soft_attack = 23
+		hard_attack = 13
 		
-		build_cost_ic = 20.6
+		build_cost_ic = 23.25
 		
 		resources = {
 			oil = 2
@@ -1395,31 +1454,31 @@ equipments = {
 		visual_level = 0
 		is_convertable = yes
 		
-		maximum_speed = 7
-		reliability = 0.75
+		maximum_speed = 6.2
+		reliability = 0.77
 
 		#Defensive Abilities
-		defense = 13
-		breakthrough = 50
+		defense = 18
+		breakthrough = 62
 		hardness = 0.8
-		armor_value = 76
+		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 24
-		hard_attack = 12
-		ap_attack = 30
+		soft_attack = 27
+		hard_attack = 16
+		ap_attack = 63
 		air_attack = 0
 		
-		build_cost_ic = 21
+		build_cost_ic = 23.5
 		
 		resources = {
 			oil = 2
-			steel = 4
+			steel = 5
 			tungsten = 2
 			chromium = 1
 		}
 	}
-	#StuG III Ausf.G  1944   ***** NOT IN GAME
+	#StuG III Ausf.G  1944   ***** in game as TD
 	panzer_iii_ag_equipment_4 = {
 		archetype = medium_assault_gun_equipment
 		parent = panzer_iii_ag_equipment_3
@@ -1781,9 +1840,9 @@ equipments = {
 	}
 	
 	# Pz IV Assault guns
-	#Brummbär
+	#Brummbär --> 1943
 	panzer_iv_ag_equipment_1 = {
-		year = 1942
+		year = 1943
 		archetype = medium_assault_gun_equipment
 		parent = medium_assault_gun_equipment_1
 		family = panzer_iv_equipment_4
@@ -1793,27 +1852,27 @@ equipments = {
 			panzer_iv_equipment_3
 		}
 		
-		maximum_speed = 6
-		reliability = 0.7
+		maximum_speed = 6.2
+		reliability = 0.77
 
 		#Defensive Abilities
-		defense = 6
-		breakthrough = 45
+		defense = 18
+		breakthrough = 62
 		hardness = 0.8
-		armor_value = 59
+		armor_value = 70
 
 		#Offensive Abilities
-		soft_attack = 28
-		hard_attack = 1.5
-		ap_attack = 6
+		soft_attack = 27
+		hard_attack = 16
+		ap_attack = 63
 		air_attack = 0
 		
-		build_cost_ic = 25
+		build_cost_ic = 23.5
 		
 		resources = {
 			oil = 2
-			tungsten = 1
-			steel = 4
+			steel = 5
+			tungsten = 2
 			chromium = 1
 		}
 	}
