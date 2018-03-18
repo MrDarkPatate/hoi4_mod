@@ -98,6 +98,7 @@ technologies = {
 		
 		sub_technologies = {
 			subtech_czech_panzer_td_1
+			subtech_czech_panzer_td_2
 		}
 	
 		research_cost = 2
@@ -119,7 +120,7 @@ technologies = {
 		
 		
 		research_cost = 1.15
-		start_year = 1940
+		start_year = 1941
 		
 
 		
@@ -144,7 +145,7 @@ technologies = {
 		
 		
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1943
 		
 		ai_will_do = {
 			factor = 0
@@ -159,52 +160,8 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	subtech_czech_panzer_art_1 = {				#Grille	
-
-		enable_equipments = {
-			czech_panzer_art_equipment_1
-		}
-		
-		
-		research_cost = 1.5				#later year as parent
-		start_year = 1942
-		
-		ai_will_do = {
-			factor = 0							# AI can not do CZ tanks
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}	
-	subtech_czech_panzer_spaa_1 = {				#Flakpanzer 38(t)
-
-		enable_equipments = {
-			czech_panzer_spaa_equipment_1
-		}
-		
-		
-		research_cost = 1.5				#later year as parent
-		start_year = 1942
-		
-		ai_will_do = {
-			factor = 0							# AI can not do CZ tanks
-		}
-
-		dependencies = {
-			german_tech = 1
-		}
-
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}	
+	
+	# Pz. 38(t) F
 	tech_czech_panzer_3 = {
 	
 		enable_equipments = {
@@ -212,7 +169,7 @@ technologies = {
 		}
 		
 		sub_technologies = {
-			subtech_czech_panzer_td_2
+			subtech_czech_panzer_td_3
 			subtech_czech_panzer_art_1
 			subtech_czech_panzer_spaa_1
 		}
@@ -228,6 +185,79 @@ technologies = {
 			factor = 0
 		}
 	}
+	subtech_czech_panzer_td_3 = {
+
+		enable_equipments = {
+			czech_panzer_td_equipment_3
+		}
+		
+		
+		research_cost = 1.5
+		start_year = 1945
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		dependencies = {
+			german_tech = 1
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	subtech_czech_panzer_art_1 = {				#Grille	
+
+		enable_equipments = {
+			czech_panzer_art_equipment_1
+		}
+		
+		
+		research_cost = 1.5				#later year as parent
+		start_year = 1945
+		
+		ai_will_do = {
+			factor = 0							# AI can not do CZ tanks
+		}
+
+		dependencies = {
+			german_tech = 1
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+	
+	subtech_czech_panzer_spaa_1 = {				#Flakpanzer 38(t)
+
+		enable_equipments = {
+			czech_panzer_spaa_equipment_1
+		}
+		
+		
+		research_cost = 1.5				#later year as parent
+		start_year = 1943
+		
+		ai_will_do = {
+			factor = 0							# AI can not do CZ tanks
+		}
+
+		dependencies = {
+			german_tech = 1
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}	
+	
+#########	
 	#Panzer I
 	tech_panzer_i_equipment_1 = {
 		
@@ -294,7 +324,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	# Sturmpanzer I Bison
+	# Sturmpanzer I 'Bison'
 	subtech_panzer_i_art_equipment_1 = {
 
 		enable_equipments = {
@@ -472,7 +502,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	#Marder II Sd.Kfz. 131 Panzer II D/E based
+	#Marder I based on Pz. II E 1939
 	subtech_panzer_ii_td_equipment_1 = {
 
 		enable_equipments = {
@@ -484,7 +514,7 @@ technologies = {
 		}
 		
 		research_cost = 1.1
-		start_year = 1938
+		start_year = 1939
 		
 		ai_will_do = {
 			factor = 90
@@ -507,7 +537,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	#Sturmpanzer II Bison
+	#Sturmpanzer II
 	subtech_panzer_ii_art_equipment_1 = {
 
 		enable_equipments = {
@@ -519,7 +549,7 @@ technologies = {
 		}
 		
 		research_cost = 1.1
-		start_year = 1938
+		start_year = 1940
 		
 		ai_will_do = {
 			factor = 19
@@ -556,7 +586,6 @@ technologies = {
 		sub_technologies = {
 			subtech_panzer_ii_td_equipment_2
 			subtech_panzer_ii_art_equipment_2
-			subtech_panzer_ii_flamm_equipment_1
 		}				
 		ai_will_do = {
 			factor = 12
@@ -567,7 +596,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	#Marder II Sd.Kfz. 132 Panzer II C and F based
+	#Marder II Sd.Kfz. 132 based on Panzer II F 1941
 	subtech_panzer_ii_td_equipment_2 = {
 
 		enable_equipments = {
@@ -614,7 +643,7 @@ technologies = {
 		}
 		
 		research_cost = 1.1
-		start_year = 1940
+		start_year = 1942
 		
 		ai_will_do = {
 			factor = 18
@@ -625,29 +654,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	subtech_panzer_ii_flamm_equipment_1 = {
 
-		enable_equipments = {
-			panzer_ii_flamm_equipment_1
-		}
-	
-		dependencies = {
-			antiair2 = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1941
-		
-		ai_will_do = {
-			factor = 0
-
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
 	# Pz II L Luchs
 	tech_panzer_ii_equipment_5 = {
 		
@@ -673,8 +680,6 @@ technologies = {
 		
 		sub_technologies = {
 			subtech_panzer_ii_td_equipment_3
-			subtech_panzer_ii_art_equipment_3
-			subtech_panzer_ii_flamm_equipment_2
 		}
 			
 		ai_will_do = {
@@ -686,7 +691,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-		#Marder II Sd.Kfz. 132 Panzer II C and F based
+		#Marder II Sd.Kfz. 131 based on Panzer II L 1943
 	subtech_panzer_ii_td_equipment_3 = {
 
 		enable_equipments = {
@@ -721,52 +726,7 @@ technologies = {
 			cat_light_armor
 		}
 	}
-	#Wespe
-	subtech_panzer_ii_art_equipment_3 = {
 
-		enable_equipments = {
-			panzer_ii_art_equipment_3
-		}
-	
-		dependencies = {
-			german_tech = 1
-		}
-		
-		research_cost = 1.4
-		start_year = 1943
-		
-		ai_will_do = {
-			factor = 18
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
-	subtech_panzer_ii_flamm_equipment_2 = {
-
-		enable_equipments = {
-			panzer_ii_flamm_equipment_2
-		}
-	
-		dependencies = {
-			antiair2 = 1
-		}
-
-		research_cost = 1.3
-		start_year = 1943
-		
-		ai_will_do = {
-			factor = 0
-
-		}
-		
-		categories = {
-			armor
-			cat_light_armor
-		}
-	}
 	# Pz II L Leopard
 	tech_panzer_ii_equipment_6 = {
 		
