@@ -525,13 +525,7 @@ technologies = {
 		dependencies = {
 			american_tech_1 = 1
 		}
-		
-		sub_technologies = {
-		    subtech_hellcat_equipment_2
-			subtech_american_light_tank_artillery_equipment_2
-			subtech_american_light_tank_aa_equipment_2
-		}
-		
+				
 		research_cost = 1
 		start_year = 1946
 
@@ -547,73 +541,6 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
-		}
-	}
-	
-	subtech_hellcat_equipment_2 = {
-		enable_equipments = {
-		    hellcat_equipment_2
-		}
-	
-		dependencies = {
-			american_tech_1 = 1
-		}
-
-		research_cost = 1.4
-		start_year = 1946
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	
-	subtech_american_light_tank_artillery_equipment_2 = {
-
-		enable_equipments = {
-			american_light_tank_artillery_equipment_2
-		}
-	
-		dependencies = {
-			american_tech_1 = 1
-		}
-
-		research_cost = 1.4
-		start_year = 1946
-		
-		ai_will_do = {
-			factor = 12
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
-		}
-	}
-	
-	subtech_american_light_tank_aa_equipment_2 = {
-		enable_equipments = {
-		    american_light_tank_aa_equipment_3
-		}
-	
-		dependencies = {
-			antiair6 = 1
-		}
-
-		research_cost = 1.4
-		start_year = 1946
-		
-		ai_will_do = {
-			factor = 0
-		}
-		
-		categories = {
-			armor
-			cat_medium_armor
 		}
 	}
 
@@ -717,7 +644,7 @@ technologies = {
 		}
 
 		research_cost = 1.7
-		start_year = 1940
+		start_year = 1941
 		
 		ai_will_do = {
 			factor = 0
