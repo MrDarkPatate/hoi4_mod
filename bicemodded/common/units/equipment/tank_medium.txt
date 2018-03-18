@@ -665,39 +665,39 @@ equipments = {
 		build_cost_ic = 23.5
 	}
 
-#	medium_assault_gun_equipment_3 = {   # 1944
-#		archetype = medium_assault_gun_equipment
-#		family = medium_tank_equipment_1
-#		priority = 60
-#		visual_level = 0
-#
-#		#Misc Abilities
-#		maximum_speed = 6.3
-#		reliability = 0.79
-#
-#		#Defensive Abilities
-#
-#		defense = 19.5
-#		breakthrough = 66
-#		hardness = 0.8
-#		armor_value = 75
-#
-#		#Offensive Abilities
-#		soft_attack = 29
-#		hard_attack = 18
-#		ap_attack = 68
-#		air_attack = 0 
-#
-#		build_cost_ic = 25
-#		
-#		resources = {
-#			oil = 2
-#			tungsten = 2
-#			steel = 5
-#			chromium = 1
-#		}
-#	}
-#
+	medium_assault_gun_equipment_3 = {   # 1944
+		archetype = medium_assault_gun_equipment
+		family = medium_tank_equipment_1
+		priority = 60
+		visual_level = 0
+
+		#Misc Abilities
+		maximum_speed = 6.3
+		reliability = 0.79
+
+		#Defensive Abilities
+
+		defense = 19.5
+		breakthrough = 66
+		hardness = 0.8
+		armor_value = 75
+
+		#Offensive Abilities
+		soft_attack = 29
+		hard_attack = 18
+		ap_attack = 68
+		air_attack = 0 
+
+		build_cost_ic = 25
+		
+		resources = {
+			oil = 2
+			tungsten = 2
+			steel = 5
+			chromium = 1
+		}
+	}
+
 	########################################################
 	medium_tank_artillery_equipment = {
 		is_archetype = yes
@@ -902,7 +902,7 @@ equipments = {
 		}
 	}
 
-	# 1939 --> 41
+	# 41
 	medium_tank_destroyer_equipment_1 = {
 		year = 1939
 		archetype = medium_tank_destroyer_equipment
@@ -939,7 +939,7 @@ equipments = {
 		}
 	}
 
-	# 1942 --> 43
+	# 43
 	medium_tank_destroyer_equipment_2 = {
 		year = 1942
 		archetype = medium_tank_destroyer_equipment
@@ -977,7 +977,7 @@ equipments = {
 		}		
 	}
 
-	# 1944 --> 45
+	# 45
 	medium_tank_destroyer_equipment_3 = {
 		year = 1944
 		archetype = medium_tank_destroyer_equipment
@@ -1936,9 +1936,9 @@ equipments = {
 	}
 	
 		# Panzer IV TD
-	#StuG IV  1942 --> 43
+	#StuG IV  1943
 	panzer_iv_td_equipment_1 = {
-		year = 1942
+		year = 1943
 		archetype = medium_tank_destroyer_equipment
 		parent = medium_tank_destroyer_equipment_1
 		family = panzer_iv_equipment_4 
@@ -1973,9 +1973,9 @@ equipments = {
 			chromium = 1
 		}	
 	}
-	#Nashorn  1943 --> 44
+	#Nashorn  1944
 	panzer_iv_td_equipment_2 = {
-		year = 1943
+		year = 1944
 		archetype = medium_tank_destroyer_equipment
 		parent = panzer_iv_td_equipment_1
 		family = panzer_iv_equipment_5
@@ -2009,9 +2009,9 @@ equipments = {
 			chromium = 1
 		}
 	}
-	#Jagdpanzer IV/70  1944 --> 45
+	#Jagdpanzer IV/70  1945
 	panzer_iv_td_equipment_3 = {
-		year = 1944
+		year = 1945
 		archetype = medium_tank_destroyer_equipment
 		parent = panzer_iv_td_equipment_2
 		family = panzer_iv_equipment_6
@@ -4104,7 +4104,7 @@ equipments = {
 		}
 	}
 
-	# M36 Jackson --> 45
+	# M36 Jackson 1945
 	american_medium_tank_destroyer_equipment_3 = {
 		year = 1945
 		archetype = medium_tank_destroyer_equipment

@@ -800,7 +800,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1942
+		start_year = 1943
 		
 		ai_will_do = {
 			factor = 0
@@ -902,7 +902,7 @@ technologies = {
 		}
 
 		research_cost = 1.5
-		start_year = 1944
+		start_year = 1945
 		
 		ai_will_do = {
 			factor = 0
