@@ -46,9 +46,9 @@ equipments = {
 		build_cost_ic = 48.6
 		resources = {
 			oil = 2
-			tungsten = 3
+			tungsten = 4
 			steel = 5
-			chromium = 1
+			chromium = 2
 		}
 	}
 
@@ -84,12 +84,6 @@ equipments = {
 		ap_attack = 88
 		
 		build_cost_ic = 51.95 
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 2
-		}
 	}
 
 	# 1943
@@ -115,12 +109,6 @@ equipments = {
 		ap_attack = 98
 		
 		build_cost_ic = 53.35
-		resources = {
-			oil = 2
-			tungsten = 4
-			steel = 6
-			chromium = 2
-		}
 	}
 	
 	# 1945
@@ -146,12 +134,6 @@ equipments = {
 		ap_attack = 108
 		
 		build_cost_ic = 55.35
-		resources = {
-			oil = 2
-			steel = 6
-			tungsten = 4
-			chromium = 2
-		}
 	}
 	
 	heavy_assault_gun_equipment = {
@@ -205,7 +187,7 @@ equipments = {
 			oil = 2
 			tungsten = 2
 			steel = 5
-			chromium = 1
+			chromium = 2
 		}
 	}
 
@@ -258,12 +240,6 @@ equipments = {
 		air_attack = 0
 		
 		build_cost_ic = 47.5
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 6
-			chromium = 1
-		}
 	}
 
 	heavy_tank_artillery_equipment = {
@@ -313,7 +289,7 @@ equipments = {
 		build_cost_ic = 38
 		resources = {
 			oil = 2
-			steel = 5
+			steel = 4
 			tungsten = 2
 			chromium = 1
 		}
@@ -448,7 +424,7 @@ equipments = {
 		build_cost_ic = 42
 		resources = {
 			oil = 2
-			steel = 5
+			steel = 4
 			tungsten = 6
 			chromium = 1
 		}
@@ -513,12 +489,6 @@ equipments = {
 		air_attack = 0 #0
 		
 		build_cost_ic = 46
-		resources = {
-			oil = 2
-			steel = 5
-			tungsten = 6
-			chromium = 2
-		}
 	}
 	
 	#1946 not in game
@@ -545,12 +515,6 @@ equipments = {
 		air_attack = 0 #0
 		
 		build_cost_ic = 46
-		resources = {
-			oil = 2
-			steel = 5
-			tungsten = 6
-			chromium = 2
-		}
 	}
 
 	# Neubaufahrzeug  1935
@@ -580,12 +544,6 @@ equipments = {
 		lend_lease_cost = 14
 		
 		build_cost_ic = 48
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 1
-		}
 	}
 	
 	# Tiger I  1941
@@ -613,12 +571,6 @@ equipments = {
 		ap_attack = 88
 		
 		build_cost_ic = 51.95 
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 2
-		}
 	}
 	# Tiger II  1943
 	panzer_vi_equipment_2 = {
@@ -645,12 +597,6 @@ equipments = {
 		ap_attack = 98
 		
 		build_cost_ic = 53.35
-		resources = {
-			oil = 2
-			tungsten = 4
-			steel = 6
-			chromium = 2
-		}
 	}
 	# 1945
 	panzer_vi_equipment_3 = {
@@ -677,12 +623,6 @@ equipments = {
 		ap_attack = 108
 		
 		build_cost_ic = 55.35
-		resources = {
-			oil = 2
-			steel = 6
-			tungsten = 4
-			chromium = 2
-		}
 	}
 	
 		# TIGER AG not changed
@@ -746,16 +686,10 @@ equipments = {
 		air_attack = 0
 		
 		build_cost_ic = 47
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 6
-			chromium = 1
-		}
 	}
 	####################################################
 	# TIGER TD
-	# Panzerjäger Tiger P Ferdinand
+	# PanzerjÃ¤ger Tiger P Ferdinand
 	panzer_vi_td_equipment_1 = {
 		year = 1942
 		archetype = heavy_tank_destroyer_equipment
@@ -783,12 +717,6 @@ equipments = {
 		air_attack = 0
 		
 		build_cost_ic = 44
-		resources = {
-			oil = 2
-			tungsten = 6
-			steel = 5
-			chromium = 1
-		}
 	}
 	#Jagdtiger
 	panzer_vi_td_equipment_2 = {
@@ -818,12 +746,6 @@ equipments = {
 		air_attack = 0 #0
 		
 		build_cost_ic = 46
-		resources = {
-			oil = 2
-			steel = 5
-			tungsten = 6
-			chromium = 2
-		}
 	}
 	# Hetztiger not in the Game
 	panzer_vi_td_equipment_3 = {
@@ -854,12 +776,6 @@ equipments = {
 		air_attack = 0
 		
 		build_cost_ic = 48
-		resources = {
-			oil = 2
-			tungsten = 7
-			steel = 6
-			chromium = 3
-		}
 	}
 	
 	#name changed
@@ -972,12 +888,6 @@ equipments = {
 		lend_lease_cost = 14
 		
 		build_cost_ic = 48.2
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 1
-		}
 	}
 	
 	# T-35
@@ -1007,12 +917,6 @@ equipments = {
 		lend_lease_cost = 14
 		
 		build_cost_ic = 48.6
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 1
-		}
 	}
 	
 	# KV-1 1939
@@ -1038,12 +942,6 @@ equipments = {
 		ap_attack = 78
 		
 		build_cost_ic = 50.63
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 1
-		}
 	}
 
 	# KV-85 1941
@@ -1069,12 +967,7 @@ equipments = {
 		ap_attack = 88
 		
 		build_cost_ic = 51.96
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 2
-		}
+
 	}
 	
 		# IS-1 1942
@@ -1147,12 +1040,6 @@ equipments = {
 		ap_attack = 108
 		
 		build_cost_ic = 55.35
-		resources = {
-			oil = 2
-			tungsten = 6
-			steel = 4
-			chromium = 2
-		}
 	}
 	
 	# KV-2  "Dreadnought" --> 1941
@@ -1180,12 +1067,6 @@ equipments = {
 		air_attack = 0
 		
 		build_cost_ic = 43
-		resources = {
-			oil = 2
-			tungsten = 2
-			steel = 5
-			chromium = 2
-		}
 	}
 	# KV-85 TD 1943
 	kv_tank_td_1 = {
@@ -1289,12 +1170,6 @@ equipments = {
 		air_attack = 0
 		
 		build_cost_ic = 46
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 6
-			chromium = 1
-		}
 	}	
 	
 	# ISU-122 1943
@@ -1369,12 +1244,6 @@ equipments = {
 		ap_attack = 111 
 		
 		build_cost_ic = 58
-		resources = {
-			oil = 2
-			tungsten = 5
-			steel = 4
-			chromium = 1
-		}
 	}
 	japanese_heavy_tank_equipment_3 = {  # 1944
 		archetype = heavy_tank_equipment	
@@ -1398,12 +1267,6 @@ equipments = {
 		ap_attack = 128
 		
 		build_cost_ic = 65 
-		resources = {
-			oil = 2
-			steel = 4
-			tungsten = 3
-			chromium = 1
-		}
 	}
 	
 
@@ -1452,12 +1315,6 @@ equipments = {
 		ap_attack = 88
 		
 		build_cost_ic = 51.95 
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 2
-		}
 	}
 
 	#Carro Armato P30/43 (1943)
@@ -1483,12 +1340,6 @@ equipments = {
 		ap_attack = 98
 		
 		build_cost_ic = 53.35
-		resources = {
-			oil = 2
-			tungsten = 4
-			steel = 6
-			chromium = 2
-		}
 	}
 
 	#Carro Armato P35/43bis (1945)
@@ -1514,12 +1365,6 @@ equipments = {
 		ap_attack = 108
 		
 		build_cost_ic = 55.35
-		resources = {
-			oil = 2
-			steel = 6
-			tungsten = 4
-			chromium = 2
-		}
 	}
 	
     #Semovente da 149/40 1942?
@@ -1544,12 +1389,6 @@ equipments = {
 		hard_attack = 1.7
 		
 		build_cost_ic = 42
-		resources = {
-			oil = 2
-			steel = 5
-			tungsten = 2
-			chromium = 1
-		}
 	}	
 	#1944?
 	ita_heavy_art_equipment_2 = {
@@ -1598,12 +1437,6 @@ equipments = {
 		air_attack = 0
 		
 		build_cost_ic = 44
-		resources = {
-			oil = 2
-			steel = 5
-			tungsten = 6
-			chromium = 1
-		}
 	}
 	
 		# M6 Heavy Tank  1941
@@ -1629,12 +1462,6 @@ equipments = {
 		ap_attack = 88
 		
 		build_cost_ic = 51.95 
-		resources = {
-			oil = 2
-			tungsten = 3
-			steel = 5
-			chromium = 2
-		}
 	}
 
 	# T26E4 Super Pershing  1944 have to be 1943
@@ -1660,12 +1487,6 @@ equipments = {
 		ap_attack = 98
 		
 		build_cost_ic = 53.35
-		resources = {
-			oil = 2
-			tungsten = 4
-			steel = 6
-			chromium = 2
-		}
 	}	
  
 	# M103  1945
@@ -1696,12 +1517,6 @@ equipments = {
 		ap_attack = 108
 		
 		build_cost_ic = 55.35
-		resources = {
-			oil = 2
-			steel = 6
-			tungsten = 4
-			chromium = 2
-		}
 	}
 	# 1944
 	american_heavy_tank_art_equipment_1 = {
