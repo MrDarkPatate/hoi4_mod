@@ -1,0 +1,228 @@
+﻿add_namespace = prc_chi_jap # what does this do?
+
+	#Event-Chain to end the war in China in year 1941 based on South Anhui Incident 1940
+
+
+
+
+	# Trigger date (dec. 1940 - apr. 1941) if united front with PRC is formed
+
+	country_event = {
+		id = Anhui.1
+		title = Anhui.1.t
+		desc = Anhui.1.d
+		picture = event_china_lost_battle
+
+		fire_only_once = yes
+	
+		trigger = {
+			AND = {
+				has_war_with = JAP
+				is_in_faction_with = PRC
+				date = 1941.2.10
+				tag = CHI
+			}
+		}
+	
+		option = {
+			name = Anhui.1.a
+			ai_chance = {
+				base = 50
+			}
+			CHI = {
+				add_war_support = 0.05
+				add_stability = 0.05
+				# modifier 	Small Fighting Bonus against PRC (long)
+				#			Small Fighting Malus against JAP (long)			
+			}
+			PRC = {
+				country_event = {
+					id = Anhui.2  		
+
+				}
+			}
+		}
+	
+		option = {
+			name = Anhui.1.b		
+			ai_chance = {
+				base = 10
+					is_historical_focus_on = yes
+					factor = 0}
+			CHI = {
+				add_war_support = -0.05
+				add_stability = -0.05
+				# modifier	Small Fighting Bonus against JAP (long)
+				}
+			PRC = {
+				country_event = {
+					id = Anhui.3
+				}
+			}
+		}
+	}
+
+	# PRC - Answer onto the hard attack from nat. Chinese Troops
+
+	country_event = {
+		id = Anhui.2
+		title = Anhui.1.t
+		desc = Anhui.2.d
+		picture = event_china_lost_battle
+
+		is_triggered_only = yes
+	
+		option = {
+			name = Anhui.2.a
+			ai_chance = {
+				base = 50
+			}
+			PRC = { 
+				add_war_support = 0.05
+				add_stability = 0.05
+				add_manpower = -7000
+				#	Small Fighting Bonus against CHI (long)
+				#	Small Fighting Malus against JAP (short)
+				#	Army Bonus (div.trainspeed)
+			}
+			JAP = {
+				country_event = {
+					id = Anhui.4	
+				}
+			}
+		}
+	
+		option = {
+			name = Anhui.2.b
+			ai_chance = {
+				base = 50
+			}
+			PRC = {
+				add_war_support = -0.05
+				add_manpower = -7000
+				add_stability = -0.05
+				#	Small Fighting Bonus against JAP (long)
+                #	Small Fighting Bonus against CHI (long)
+				#	One fighting / support Malus
+			}
+			JAP = {
+				country_event = {
+					id = Anhui.5	
+				}				
+			}
+		}
+	}
+
+	# PRC - Answer for the Skirmish
+
+	country_event = {
+		id = Anhui.3
+		title = Anhui.1.t
+		desc = Anhui.3.d
+		picture = event_china_lost_battle
+
+		is_triggered_only = yes
+	
+		option = {
+			name = Anhui.3.a
+			ai_chance = {
+				base = 50
+			}
+			PRC = {
+				add_war_support = 0.05
+				add_stability = 0.05
+				add_manpower = -4000
+			}
+			country_event = {
+				id = Anhui.6	
+			}
+		}
+	
+		option = {
+			name = Anhui.3.b
+			ai_chance = {
+				base = 50
+			}
+			PRC = {
+				add_war_support = -0.05
+				add_stability = -0.05
+				add_manpower = -4000
+			}
+			JAP = {
+				country_event = {
+					id = Anhui.7
+				}
+			}
+		}
+	}
+
+	# JAP - Intelligence Report
+	
+	country_event = {
+		id = Anhui.4
+		title = Anhui.4.t
+		desc = Anhui.4.d
+		#picture = ##
+
+		is_triggered_only = yes
+		
+		option = {
+			name = anhui.4.a
+			ai_chance = {
+				base = 50
+			}
+			PRC = {
+				country_event = {
+					id = Anhui.5
+				}
+			}
+		}
+		
+		option = {
+			name = anhui.4.b
+			ai_chance = {
+				base = 50
+			}
+			JAP = {
+				country_event = {
+					id = Anhui.5
+				}
+			}
+		}		
+	}
+
+	# JAP - Dead End
+	
+	country_event = {
+		id = Anhui.5
+		title = Anhui.5.t
+		desc = Anhui.3.d
+		#picture = ##
+
+		is_triggered_only = yes
+		
+		JAP = {
+			# some core territories
+			# modifier	Higher suppression (long)
+			# 			Defence Bonus and Offense Malus against PRC/CHI (long)
+		}
+	}
+
+	#######################################################
+	country_event = {
+		id = Anhui.6
+		title = Anhui.1.t
+		desc = Anhui.3.d
+		#picture = ##
+
+		is_triggered_only = yes
+	}
+	
+	country_event = {
+		id = Anhui.7
+		title = Anhui.1.t
+		desc = Anhui.3.d
+		#picture = ##
+
+		is_triggered_only = yes
+	}

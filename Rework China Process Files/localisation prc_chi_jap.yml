@@ -1,0 +1,34 @@
+﻿l_english:
+
+ # CHI - Trigger date (dec. 1940 - apr. 1941) if united front with PRC is formed
+ Anhui.1.t:0 "South Anhui Incident"
+ Anhui.1.d:0 "The Communist are preparing their troops on our border. This is an incalculable threat we can not tolerate. Let us make a demonstration of power."
+ Anhui.1.a:0 "Teach them a lesson!"
+ Anhui.1.b:0 "Only a light demonstration of our Power."
+
+ # PRC - Answer onto the hard attack from nat. Chinese Troops
+ Anhui.2.d:0 "Our brothers in arms have deceived us. The national chinese forces have attacked our new established 4th Army on the Border to them. They will stay a great threat in our own homeland. We have to be prepared for a war against them."
+ Anhui.2.a:0 "YES - Prepare for a Chinese War!"
+ Anhui.2.b:0 "YES - But not now"
+ 
+ # PRC - Answer for the Skirmish
+ Anhui.3.d:0 "Our brothers in arms have showed their distrust against us. Our new established 4th Army was forced into a border skirmish with a much greater national chinese force. They will stay a permanent threat in our own homeland. Should we think about the end of our cooperation?"
+ Anhui.3.a:0 "YES - We can’t trust them anymore."
+ Anhui.3.b:0 "NO - Japan first"
+ 
+ # JAP - Intelligence Report
+ Anhui.4.t:0 "Intelligence report"
+ Anhui.4.d:0 "Rumors about rising tensions between the communist and nationalist chinese side have reached our intelligence. They seem to be on the verge of fighting each other again. Should we use this occasion to offer a truce?"
+ Anhui.4.a:0 "Yes. Focus on new targets."
+ Anhui.4.b:0 "No truce. Let us stay attentive for a good opportunity to strike."
+ 
+ # JAP - Dead End
+ Anhui.5.t:0 "Strategic dead end"
+ Anhui.5.d:0 "The war against the chinese on the continent has come to an dead end. Our troops are not able to advance further more into the underdeveloped backcountry. We should change our strategie and focus onto the protection of the coastal areas and industrial centers."
+ Anhui.5.a:0 "Send more police and garrisons to china to exploit the country."
+ 
+ # CHI
+ 
+ # PRC
+ 
+ # JAP - 
